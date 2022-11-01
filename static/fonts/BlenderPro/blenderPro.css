@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Blender Pro';
+  font-style:  normal;
+  font-display: swap;
+  src: url("BlenderPro-Book.woff") format("woff"),
+       url("BlenderPro-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Blender Pro Bold';
+  font-style:  bold;
+  font-display: swap;
+  src: url("BlenderPro-Bold.woff") format("woff"),
+       url("BlenderPro-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Blender Pro Thin';
+  font-style:  normal;
+  font-display: swap;
+  src: url("BlenderPro-Thin.woff") format("woff"),
+       url("BlenderPro-Thin.woff2") format("woff2");
+}

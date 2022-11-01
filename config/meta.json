@@ -1,0 +1,209 @@
+{
+	"de":{
+		"404": {
+			"title":"Seite nicht gefunden | BitTorrent",
+			"description": "Mit BitTorrent wird eine schnelle Torrent-Software für Windows, Mac und Android angeboten. Wir möchten Ihnen helfen, das zu finden, was Sie suchen."
+		},
+		"index":{
+			"title":"BitTorrent | Der weltweit beliebteste Torrent-Client",
+			"description":"BitTorrent ist ein führendes Softwareunternehmen und Anbieter der beliebten Torrent-Client-Software für Windows, Mac, Android und mehr. Jetzt herunterladen.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"en":{
+		"404": {
+			"title":"404 Error - Page not found - BitTorrent - Delivering the World's Content",
+			"description": "BitTorrent is a leading software company with the fastest torrent client and sync and share software for Mac, Windows, Linux, iOS and Android."
+		},
+
+		"index":{
+			"title":"Decentralized Autonomous Organization DAO | TRONDAO",
+			"description":"Accelerating the Future!",
+			"keywords":"Tron, trondao, hackathon, justin sun, etc "
+		}
+	},
+
+	"es":{
+		"404": {
+			"title":"Página no encontrada | BitTorrent",
+			"description": "BitTorrent ofrece un software de torrents rápido para Windows, Mac y Android. Déjanos ayudarte a encontrar lo que estás buscando."
+		},
+		"index":{
+			"title":"BitTorrent |El cliente de torrent más popular del mundo",
+			"description":"BitTorrent es una compañía de software líder con el popular software de cliente torrent para Windows, Mac, Android y más. Descargar ahora.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	
+	},
+
+	"fr":{
+		"404": {
+			"title":"Page non trouvée | BitTorrent",
+			"description": "BitTorrent propose un logiciel de torrenting rapide pour Windows, Mac et Android. Laissez-nous vous aider à trouver ce que vous cherchez."
+		},
+		"index":{
+			"title":"BitTorrent | Le Client torrent le plus populaire au monde",
+			"description":"BitTorrent est une société de logiciels de premier plan proposant un logiciel de client torrent populaire pour Windows, Mac, Android, et bien plus. Téléchargez-le maintenant.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+
+	},
+
+	"hi":{
+		"404": {
+			"title":"पेज नहीं मिला | BitTorrent",
+			"description": "Windows, Mac, और Android के लिए BitTorrent तीव्र torrenting सॉफ्टवेयर पेश करता है। आइए हम उस चीज़ को ढूँढने में आपकी मदद करते हैं जिसकी आप तलाश कर रहे हैं।"
+		},
+		"index":{
+			"title":"BitTorrent | विश्व का सबसे लोकप्रिय Torrent क्लाइंट",
+			"description":"BitTorrent Windows, Mac, Android, तथा और भी बहुतों के लिए लोकप्रिय     torrent क्लाइंट सॉफ्टवेयर के साथ एक अग्रणी सॉफ्टवेयर कंपनी है। अभी डाउनलोड करें।",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"it":{
+		"404": {
+			"title":"Pagina non trovata| BitTorrent",
+			"description": "BitTorrent mette a disposizione un software veloce per i torrent per Windows, Mac e Android. Siamo a disposizione per aiutarti a trovare quello che cerchi."
+		},
+		"index":{
+			"title":"BitTorrent | Il client Torrent più popolare al mondo ",
+			"description":"BitTorrent è una società software leader del settore con software torrent molto popolare per Windows, Mac, Android, e altro ancora. Scarica ora.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"ja":{
+		"404": {
+			"title":"ページが見つかりません | BitTorrent",
+			"description": "BitTorrentは、Windows、MacおよびAndroid向けの高速トレントソフトウェアです。お探しのページが見つかるようにお手伝いさせてください。"
+		},
+		"index":{
+			"title":"BitTorrent | 世界で最も利用されているトレントクライアント",
+			"description":"BitTorrent は、Windows、Mac、Android などで広くご利用いただいているクライアントソフトウェアを開発、販売する業界屈指のソフトウェア企業です。今すぐダウンロードしてください。",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"ko":{
+		"404": {
+			"title":"페이지를 찾을 수 없습니다 | BitTorrent",
+			"description": "BitTorrent는 Windows, Mac 및 Android를 위한 빠른 토렌트 소프트웨어를 제공합니다. 원하시는 것을 찾을 수 있도록 도와드리겠습니다."
+		},
+		"index":{
+			"title":"BitTorrent | 세계에서 가장 인기 있는 토렌트 클라이언트",
+			"description":"BitTorrent는 Windows, Mac, Android 등을 위한 인기있는 토렌트 클라이언트 소프트웨어를 제공하는 최고의 소프트웨어 회사입니다. 지금 다운로드하십시오. ",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"nl":{
+		"404": {
+			"title":"Pagina niet gevonden | BitTorrent",
+			"description": "BitTorrent biedt snelle torrenting-software voor Windows, Mac en Android.  Laat ons u helpen vinden wat u zoekt."
+		},
+		"index":{
+			"title":"BitTorrent | De populairste torrent-client ter wereld",
+			"description":"BitTorrent is een toonaangevend softwarebedrijf met populaire torrenting-clientsoftware voor Windows, Mac, Android en meer. Nu downloaden.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"pl":{
+		"404": {
+			"title":"Strona nie została znaleziona | BitTorrent",
+			"description": "BitTorrent oferuje szybkie oprogramowanie torrentingowe dla systemów Windows, Mac i Android. Pomożemy Ci znaleźć to, czego szukasz."
+		},
+		"index":{
+			"title":"BitTorrent | Najpopularniejszy klient sieci Torrent na świecie",
+			"description":"BitTorrent jest wiodącym producentem oprogramowania oferującym popularnego klienta sieci Torrent dla systemów Windows, Mac, Android i innych. Pobierz teraz.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+
+	},
+
+	"pt":{
+		"404": {
+			"title":"Página não Encontrada | BitTorrent",
+			"description": "BitTorrent oferece software de torrent rápido para Windows, Mac, e Android. Deixe-nos ajudá-lo a encontrar o que procura."
+		},
+		"index":{
+			"title":"BitTorrent | O Cliente de Torrent mais Popular do Mundo",
+			"description":"BitTorrent é uma empresa líder de software com software de clientes torrent populares para Windows, Mac, Android, entre outros. Transfira agora.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"pt_br":{
+		"404": {
+			"title":"Página não encontrada | BitTorrent",
+			"description": "BitTorrent oferece software de torrent rápido para Windows, Mac e Android. Permita-nos ajudá-lo a encontrar o que você está procurando."
+		},
+		"index":{
+			"title":"BitTorrent | O cliente torrent mais popular do mundo",
+			"description":"BitTorrent é uma empresa de software líder com software cliente torrent populares para Windows, Mac, Android e muito mais. Baixe agora.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"ru":{
+		"404": {
+			"title":"Страница не найдена | BitTorrent",
+			"description": "BitTorrent предлагает быстрое ПО для работы с торрентами для Windows, Mac и Android. Позвольте нам помочь вам в ваших поисках."
+		},
+		"index":{
+			"title":"BitTorrent | Самый популярный торрент-клиент в мире",
+			"description":"BitTorrent является лидирующей компанией по разработке ПО, разработавшей популярный торрент-клиент для Windows, Mac, Android и др. Скачайте прямо сейчас.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"tl":{
+		"404": {
+			"title":"Hindi Nakita ang Pahina | BitTorrent",
+			"description": "Naghahandog ang BitTorrent ng mabilis na torrenting software para sa Windows, Mac, at Android. Hayaan mong tulungan ka naming hanapin ang hinahanap mo."
+		},
+		"index":{
+			"title":"BitTorrent | Ang Pinakakilalang Torrent Client sa Mundo",
+			"description":"Ang BitTorrent ay isang nangungunang kompanya ng software na may kilalang software na torrent client para sa Windows, Mac, Android, at marami pa. I-download ngayon.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"tr":{
+		"404": {
+			"title":"Sayfa Bulunamadı | BitTorrent",
+			"description": "BitTorrent, Windows, Mac ve Android için hızlı torrent yazılımı sunar. Aradığınızı bulmanıza yardımcı olalım."
+		},
+		"index":{
+			"title":"BitTorrent | Dünyanın En Popüler Torrent İndirme Programı",
+			"description":"BitTorrent, Windows, Mac, Android ve diğerlerine yönelik popüler torrent indirme programı yazılımına sahip lider bir yazılım şirketidir. Şimdi indirin.",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"zh_cn":{
+		"404": {
+			"title":"找不到页面 | BitTorrent",
+			"description": "BitTorrent 为 Windows、Mac 和 Android 客户端提供了 torrent 快速传输软件。让我们帮助您找到您所需的内容吧。"
+		},
+		"index":{
+			"title":"BitTorrent | 全球最受欢迎的 Torrent 客户端",
+			"description":"BitTorrent 是一家顶尖的软件公司，其开发有适合 Windows、Mac、Android 等平台使用的热门 Torrent 客户端。立即下载。",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	},
+
+	"zh_tw":{
+		"404": {
+			"title":"找不到頁面 | BitTorrent",
+			"description": "BitTorrent 為 Windows、Mac 和 Android 提供快速的 torrent 下載軟體。讓我們幫助您尋找您正在尋找的內容。"
+		},
+		"index":{
+			"title":"BitTorrent | 世界上最熱門的 Torrent 用戶端",
+			"description":"BitTorrent 是一家領先的軟體公司，擁有專為 Windows、Mac、Android 等而設的熱門 torrent 用戶端軟體。立即下載。",
+			"keywords":"bittorrent, BitTorrent, torrent, bittorrent, client, windows, mac, osx"
+		}
+	}
+}
