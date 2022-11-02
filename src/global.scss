@@ -30,10 +30,6 @@ a {
 	text-decoration: none !important;
 }
 
-.blenderProHeavy {
-    font-family: 'Blender Pro Heavy';
-}
-
 .atb {
 	width: 445px;
 	height: 161px;
@@ -545,8 +541,32 @@ body {
 		}
 	}
 
+	&-other a {
+		font-family: 'Blender Pro';
+		line-height: 24px;
+		font-size: 18px;
+		font-weight: 400;
+
+		&:first-child {
+			font-size: 20px;
+			font-weight: 900;
+		} 		
+	}
+
 	ul {
-		padding-left: 0px;
+		padding-left: 10px;
+
+		&.left {
+			@media (min-width: $md) {
+				padding-left: 14rem;
+			}
+		}
+		
+		&.right {	
+			@media (min-width: $md) {
+				padding-right: 14rem;
+			}
+		}	
 	}
 
 	@media (max-width: 575px) {
@@ -701,19 +721,32 @@ body {
 		font-size: 20px;
 		line-height: 100%;
 		color: #9E9E9E;
-		margin-top: 20px;
 		border-bottom: 1px solid $tronRed;
 		padding-bottom: 19px;
+		@media (min-width: $sm) {
+			margin-top: 0;
+		}
 
+		@media (min-width: $md) {
+			margin-top: 20px;
+		}
 	}
 
     div > div {
-        margin-top: 2rem;
-        margin-left: 5rem;
+    	@media (min-width: $md) {
+    		margin: 1.5rem 0 1.5rem 4rem;
+    	}
+    	
+    	@media (max-width: $sm) {
+    		margin: 0.5rem 1rem;
+    		padding: 0 3rem;
+    	}
     }
 
     div div:first-child {
-        margin-left: 12rem !important;
+    	@media (min-width: $md) {
+    		margin-left: 8rem !important;
+    	}
     }
 
 	ul {
@@ -839,7 +872,7 @@ body {
 
 	&-name {
 		height: 98px;
-		padding-left: 250px;
+		padding-left: 100px;
 
 		a {
 			font-family: 'Blender Pro Heavy';
@@ -850,6 +883,10 @@ body {
 			letter-spacing: 0.1em;
 			color: #000000;
 			white-space: nowrap;
+		}
+
+		@media(min-width: lg) {
+			padding-left: 150px;
 		}
 	}
 
@@ -875,6 +912,14 @@ body {
 					text-align: left;
 					padding: 1.5rem 4rem 1.5rem 4rem !important;
 				}
+			}
+
+			button.dropdown-toggle {
+				&::after {
+					@media(max-width: $sm) {
+						float:right !important;
+					}
+				}	
 			}
 		}
 
