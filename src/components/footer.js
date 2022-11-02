@@ -1,5 +1,5 @@
 import React from "react"
-import {FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube, FaBriefcase} from 'react-icons/fa';
+import {FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube, FaBriefcase, FaRedditAlien} from 'react-icons/fa';
 import tronLogo from "../images/footer/tron_logo_dark.svg";
 
 const Footer = () => {
@@ -29,6 +29,9 @@ const Footer = () => {
                                            href="https://www.instagram.com/trondaoofficial/"
                                            className="social-icon" target="_blank"
                                            rel="noopener noreferrer"><FaInstagram/>Instagram</a></li>
+                                    <li className="py-1"><a id="footer-social-linkedin" href="https://www.linkedin.com/company/trondao"
+                                           className="social-icon" target="_blank"
+                                           rel="noopener noreferrer"><FaLinkedin/>LinkedIn</a></li>
                                 </ul>
                             </div>
                             <div className="text-left d-inline-block align-top px-0 mx-auto justify-content-center">
@@ -43,15 +46,15 @@ const Footer = () => {
                                     <li className="py-1"><a id="footer-social-tiktok" href="https://www.tiktok.com/@trondaoofficial"
                                            className="social-icon" target="_blank"
                                            rel="noopener noreferrer"><FaTiktok/>Tik Tok</a></li>
-                                    <li className="py-1"><a id="footer-social-linkedin" href="https://www.linkedin.com/company/trondao"
+                                    <li className="py-1"><a id="footer-social-tiktok" href="https://www.tiktok.com/@trondaoofficial"
                                            className="social-icon" target="_blank"
-                                           rel="noopener noreferrer"><FaLinkedin/>LinkedIn</a></li>
+                                           rel="noopener noreferrer"><FaRedditAlien/>Reddit</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="footer-container-other text-left col-md-12 py-3 mt-1 mb-4 mx-auto w-75 d-flex flex-column flex-md-row flex-lg-row align-items-start align-items-md-center justify-content-md-center border-top border-bottom my-2">
+                <div className="footer-container-other text-left col-md-12 py-3 mt-1 mb-2 mx-auto w-75 d-flex flex-column flex-md-row flex-lg-row align-items-start align-items-md-center justify-content-md-center border-top border-bottom my-2">
                     <a href="/" className="my-2 my-md-0">ALSO OF INTEREST</a>
                     <a href="/" className="ml-md-4 my-1 my-md-0">All-around Blockchain Inventions</a>
                     <a href="/" className="ml-md-4 my-1 my-md-0">Grand Hackathon Season 2 Winners</a>
@@ -60,7 +63,7 @@ const Footer = () => {
                 <div className="be-ix-link-block"/>
                 <div className="container">
                     <div className="row justify-content-center no-gutters footer-bottom mb-4">
-                        <div className="col-12 my-3">
+                        <div className="col-12 mt-3 mb-3">
                             <div className="d-flex align-items-center justify-content-center">
                                 <img src={tronLogo} alt="Tron Logo" />
                             </div>

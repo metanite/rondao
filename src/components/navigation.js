@@ -113,20 +113,19 @@ const Navigation = () => {
             </div>
             <NavbarToggler onClick={toggle} className="ml-auto mr-5 my-2"/>
             <Collapse isOpen={isOpen} navbar className="ml-md-5">
-              <ul className="navbar-nav small ml-auto mr-0 m-lg-5">
+              <ul className="navbar-nav small ml-auto mr-0 mr-lg-5">
                 <li className="nav-item dropdown position-static">
                     <div style={{border: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
-										<button
-												className={(isNavDropDown1Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
-												type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown1}>
-                      USE TRON
-										</button>
-										<div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div> 
+                    <button className={(isNavDropDown1Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
+                            type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown1}>
+                    USE TRON
+                    </button>
+                    <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div> 
                   <div className={isNavDropDown1Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton0">
                     <div className="d-flex flex-wrap">
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                  			className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <FaHubspot className="mr-2" />
                             NETWORK

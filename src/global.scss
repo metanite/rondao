@@ -872,8 +872,7 @@ body {
 
 	&-name {
 		height: 98px;
-		padding-left: 100px;
-
+	
 		a {
 			font-family: 'Blender Pro Heavy';
 			font-style: normal;
@@ -885,8 +884,12 @@ body {
 			white-space: nowrap;
 		}
 
-		@media(min-width: lg) {
-			padding-left: 150px;
+        @media(min-width: $md) {
+            padding-left: 80px;
+        }
+
+		@media(min-width: $lg) {
+			padding-left: 180px;
 		}
 	}
 
@@ -3447,13 +3450,14 @@ nav .navbar {
 			font-size: 15px;
 		}
 		@media (max-width: 671px) {
-			font-size: 10px;
+			font-size: 11px;
+            min-height: 50px;
 		}
 		&-one {
 			color: $hackathonGreen;
 		}
 		&-two {
-			color: white;
+			color: $hackathonGreen;
 		}
 		&-btn {
 			font-family: 'Press Start 2P'!important;
@@ -3461,7 +3465,7 @@ nav .navbar {
 			background: $hackathonGreen!important;
 			border-radius: 38px;
 			font-size: 13px!important;
-			color: #114828!important;
+			color: #000 !important;
 			width: 210px;
 			max-width: 100%;
 			@media (max-width: 1281px) {
@@ -3473,7 +3477,7 @@ nav .navbar {
 			@media (max-width: 576px) {
 				height: 25px;
 				min-height: 25px!important;
-				font-size: 10px!important;
+				font-size: 8px!important;
 				width: unset;
 			}
 			&:hover {
@@ -3482,6 +3486,11 @@ nav .navbar {
 				background: #114828!important;
 			}
 		}
+        div span {
+            color: $hackathonGreen;
+            width: 6px;
+            height: 6px;
+        }
 	}
 
 	button {
@@ -3546,7 +3555,7 @@ nav .navbar {
 			height: 100%;
 			&-overlay {
 				position: absolute;
-				top: 7vw;
+				top: 5vw;
 				width: 100%;
 				@media (max-width: 992px) {
 					top: -25vw;
@@ -3557,12 +3566,16 @@ nav .navbar {
 			}
 		}
 		&-title {
-			font-family: 'Blender Pro';
-			font-style: normal;
+			font-family: 'Blender Pro Heavy';
 			font-weight: 900;
-			font-size: 65px;
+			font-size: 50px;
+            position: absolute;
+            line-height: 50px;
+            top: 5vw;
 			@media (max-width: $lg) {
+                top: -10vw;
 				font-size: 35px;
+                line-height: 20px;
 			}
 			@media (max-width: $md) {
 				font-size: 30px;
@@ -3577,8 +3590,8 @@ nav .navbar {
 			font-family: 'Blender Pro';
 			font-style: normal;
 			font-weight: 900;
-			font-size: 75px;
-			line-height: 100%;
+			font-size: 50px;
+			line-height: 24.2px;
 			letter-spacing: 0.03em;
 			color: #000000;
 			margin-top: -50px;
@@ -3630,8 +3643,8 @@ nav .navbar {
 			font-family: 'Blender Pro Bold';
 			font-style: normal;
 			font-weight: 700;
-			font-size: 27.3444px;
-			line-height: 100%;
+			font-size: 24px;
+			line-height: 8px;
 			@media (max-width: $md) {
 				font-size: 20px;
 			}
@@ -3643,7 +3656,7 @@ nav .navbar {
 				font-family: 'Blender Pro';
 				font-style: normal;
 				font-weight: 500;
-				font-size: 23.3444px;
+				font-size: 26px;
 				line-height: 100%;
 				@media (max-width: $md) {
 					font-size: 17px;

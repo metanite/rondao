@@ -5,7 +5,7 @@ const HomepageHelps = () => {
     const items = [
         {
             title: "Gaming",
-            description: "TRON is empowering developers to create P2E games across each of its platforms. TRON will be vital for bringing P2E games to the masses, and work every day with developers to scale, and more importantly, perfect their games.",
+            description: "TRON is delighted to present the new standard in blockchain-based gaming. Finally take control of your gaming experience by actually owning the game that you are playing. Looking to make your own game? Our easy-to-use tools make it easy for anyone to get started building their own blockchain-based game. So why wait? Get started with TRON today!",
             url: "/gaming/",
             disabled: true
         },

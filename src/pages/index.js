@@ -29,28 +29,28 @@ const Index = ({ data }) => {
                 <meta property="og:description" content="Decentralized internet using blockchain technology and powering decentralized apps (DApps). TRON empowers developers to be creative. Build on TRON."/>
                 <meta property="og:title" content="Decentralized Autonomous Organization DAO | TRONDAO"/>
             </Helmet>
-            <div className="homepage-hackathon-banner mb-5 d-flex flex-row align-items-center text-center row no-gutters">
-                <div className="col-sm-7 col-12 homepage-hackathon-banner-one pt-3 pt-sm-0">
+            <div className="homepage-hackathon-banner mb-0 d-flex flex-row align-items-center justify-content-md-center no-gutters pl-2 pl-sm-0">
+                <div className="col-sm-4 col-6 homepage-hackathon-banner-one pt-sm-0">
                     TRON Grand Hackathon 2022 Season 3
+                    <span className="ml-md-5">&#183;</span>
                 </div>
-                <div className="col-sm-2 col-12 homepage-hackathon-banner-two">
+                <div className="col-sm-2 col-2 homepage-hackathon-banner-two">
                     #HackaTRON
                 </div>
-                <div className="col-sm-3 col-12 pb-3 pb-sm-0">
+                <div className="col-sm-2 col-4 pb-3 pb-sm-0 pt-3 pt-sm-0">
                     <a href="/hackathon/" id="homepage-hackathon-banner-button">
                         <button className="homepage-hackathon-banner-btn">Learn More</button>
                     </a>
                 </div>
-
             </div>
             <HomeHero/>
             <div className="row no-gutters p-5 my-5">
-                <div className="col-lg-5 offset-lg-1 offset-0 col-md-6 col-12 align-items-center order-2 order-md-1">
+                <div className="col-lg-3 offset-lg-3 offset-0 col-md-6 col-12 align-items-center order-2 order-md-1">
                     <div className="order-2 order-md-0">
                         <div className="homepage-introduction-header">TRON is Here to Help</div>
-                        <div className="homepage-introduction-content mt-4">TRON is the protocol dedicated to accelerating the decentralization of the Internet via blockchain technology and decentralized applications (DApps). Since its inception in 2017, the TRON network has focused on two ideals: empowering developers and putting the power in the hands of the people. TRON network completed full decentralization in Dec 2021 and is now a purely community-governed DAO focused on creating an internet for all.</div>
+                        <div className="homepage-introduction-content mt-4 text-justify">TRON is the protocol dedicated to accelerating the decentralization of the Internet via blockchain technology and decentralized applications (DApps). Since its inception in 2017, the TRON network has focused on two ideals: empowering developers and putting the power in the hands of the people. TRON network completed full decentralization in Dec 2021 and is now a purely community-governed DAO focused on creating an internet for all.</div>
                     </div>
-                    <div className="py-5 text-center">
+                    <div className="py-5 text-center float-left">
                         <a href="https://forms.gle/U5VH818cRvWNeXsHA" target="_blank" rel="noopener noreferrer" id="homepage-buttons-apply-funding">
                             <button className="homepage-apply-funding-button">> Apply for funding</button>
                         </a>
@@ -60,7 +60,7 @@ const Index = ({ data }) => {
                     <img src={tronbullCoins} className="homepage-introduction-icon pt-3 img-fluid" alt="TRON Bull Decentralizing the Web"/>
                 </div>
             </div>
-            <div className="homepage-rounded px-5">
+            <div className="homepage-rounded px-5 w-75 mx-auto">
                 <div className="homepage-grants-header col-lg-5 offset-lg-1 offset-0">TRON DAO GRANTS</div>
                 <div className="homepage-grants-subheader col-lg-5 offset-lg-1 offset-0 col-12">The TRON DAO Grant Program provides support to Communities, Developers, and Influencers that are building on the TRON network.
                 </div>
