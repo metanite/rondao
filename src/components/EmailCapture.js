@@ -7,16 +7,16 @@ const EmailCapture = () => {
 
     return (
         <div className="row no-gutters email-capture ">
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-lg-5 offset-lg-1 pl-md-5 mb-5">
                 <div className="col-12">
-                    <div className="d-flex justify-content-center">
-                        <div className="email-capture-know text-center">
-                            BE THE FIRST TO KNOW
+                    <div className="d-flex justify-content-start">
+                        <div className="email-capture-know text-left">
+                            BE THE FIRST <br /> TO KNOW
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-7 offset-lg-2 col-12 mt-5">
-                    <div className="d-flex flex-wrap justify-content-center">
+                <div className="col-lg-10 col-12 mt-1 pl-md-0">
+                    <div className="d-flex flex-wrap justify-content-between">
                         <a id="email-capture-social-twitter"
                            aria-label="social-icon-twitter"
                            href="https://twitter.com/trondao"
@@ -33,6 +33,8 @@ const EmailCapture = () => {
                            aria-label="social-icon-linkedin"
                            href="https://www.linkedin.com/company/trondao"
                            target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+                    </div>
+                    <div className="d-flex flex-wrap justify-content-between">
                         <a id="email-capture-social-youtube"
                            aria-label="social-icon-youtube"
                            href="https://www.youtube.com/channel/UC5OPOGRq02iK-0T9sKse_kA?view_as=subscriber"

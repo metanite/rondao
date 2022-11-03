@@ -8,7 +8,7 @@ const HomeHero = () => {
                 <h1 className="w-100 text-center homepage-hero-title px-3 text-uppercase">
                     Powering the <br/> Decentralized Web
                 </h1>
-                <video autoPlay muted loop playsInline className="homepage-hero-background">
+                <video autoPlay muted loop playsInline className="homepage-hero-background d-block mx-auto">
                     <source src={background} type="video/mp4"/>
                 </video>
                 <div className="homepage-hero-background-overlay">
@@ -20,7 +20,7 @@ const HomeHero = () => {
                         </div>
                         <div className="mr-5">
                             <p>Transaction Count</p>
-                            <span className="">3,751,469,056</span>
+                            <span className="ml-3">3,751,469,056</span>
                         </div>
                     </div>
                     <div

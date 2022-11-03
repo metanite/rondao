@@ -50,10 +50,10 @@ const HomepageHelps = () => {
                 <div
                     className="col-12 col-lg-6 offset-0 offset-lg-0 px-md-5 px-2 order-lg-0 order-1 mt-5 text-center text-lg-left">
                     HOW <span className="homepage-helps-inner-tron">TRON</span> HELPS
-                    <hr/>
+                    <hr className="my-4" />
                     <h3>{selectedItem.title}</h3>
-                    <hr/>
-                    <p>{selectedItem.description}
+                    <hr className="my-4" />
+                    <p className="text-justify">{selectedItem.description}
                     </p>
                     <a href={selectedItem.url} id={"home-how-tron-helps-" + selectedItem.title + "-visit"}
                        onClick={function (e) {
@@ -69,7 +69,7 @@ const HomepageHelps = () => {
                         <h4 className="text-center text-lg-left pl-0 pl-lg-5">Coming Soon!</h4>}
                 </div>
                 <div
-                    className="col-12 col-lg-6 offset-0 offset-lg-0 order-lg-1 order-0 d-inline-flex d-lg-block justify-content-center my-5 homepage-helps-inner-buttons p-2">
+                    className="col-12 col-lg-6 offset-0 offset-lg-0 order-lg-1 order-0 d-inline-flex d-lg-block justify-content-center mt-3 mb-4 homepage-helps-inner-buttons p-5">
                     <div className="d-flex justify-content-between flex-wrap mt-lg-5 mt-0">
                         <div id={"home-how-tron-helps-" + items[0].title}
                              className={"homepage-helps-inner-circle " + isSelected(items[0].title)}
