@@ -6,8 +6,8 @@ const EmailCapture = () => {
 
 
     return (
-        <div className="row no-gutters email-capture ">
-            <div className="col-12 col-lg-5 offset-lg-1 pl-md-5 mb-5">
+        <div className="row no-gutters email-capture">
+            <div className="email-capture-main col-12 col-lg-5 offset-lg-1 pl-md-5 mb-5">
                 <div className="col-12">
                     <div className="d-flex justify-content-start">
                         <div className="email-capture-know text-left">
@@ -15,8 +15,8 @@ const EmailCapture = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-10 col-12 mt-1 pl-md-0">
-                    <div className="d-flex flex-wrap justify-content-between">
+                <div className="col-lg-12 col-12 mt-1 pl-md-0">
+                    <div className="d-flex flex-wrap justify-content-start">
                         <a id="email-capture-social-twitter"
                            aria-label="social-icon-twitter"
                            href="https://twitter.com/trondao"
@@ -34,7 +34,7 @@ const EmailCapture = () => {
                            href="https://www.linkedin.com/company/trondao"
                            target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
                     </div>
-                    <div className="d-flex flex-wrap justify-content-between">
+                    <div className="d-flex flex-wrap justify-content-start">
                         <a id="email-capture-social-youtube"
                            aria-label="social-icon-youtube"
                            href="https://www.youtube.com/channel/UC5OPOGRq02iK-0T9sKse_kA?view_as=subscriber"
@@ -54,13 +54,13 @@ const EmailCapture = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-lg-6 email-capture-subscribe">
+            <div className="col-12 col-lg-6 col-xl-5 email-capture-subscribe mx-xl-auto">
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css"/>
                 <form
                     action="https://network.us19.list-manage.com/subscribe/post?u=5724a62f28217f1bf009679d6&amp;id=a313741a09&amp;f_id=00f086e4f0"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
                     target="_blank">
-                    <div className="mx-5">
+                    <div className="mx-5 mt-md-4">
                         <h3>SUBSCRIBE</h3>
                         <p className="email-capture-subscribe-signup">SIGN UP FOR OUR NEWSLETTER</p>
                         <div className="row no-gutters mr-lg-5 mr-0">
@@ -80,7 +80,7 @@ const EmailCapture = () => {
                                        tabIndex="-1"/>
                             </div>
                             <p className="col-12 email-capture-subscribe-disclaimer">By signing up for our Newsletter, I agree to the <a href={"/legal/privacy-policy/"} id={"email-capture-privacy-policy"}>Privacy Policy</a>.</p>
-                            <div className="col-12 text-center text-lg-left mt-2">
+                            <div className="col-12 text-center text-lg-left mt-5">
                                 <button id="email-subscribe" className="float-lg-right float-none" type="submit"
                                         value="Subscribe" name="subscribe">Subscribe
                                 </button>

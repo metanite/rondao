@@ -14,13 +14,13 @@ const HomeHero = () => {
                 <div className="homepage-hero-background-overlay">
                     <div
                         className="d-flex align-items-center justify-content-between homepage-hero-top homepage-hero-city-text">
-                        <div className="ml-5">
+                        <div className="homepage-hero-city-text-first">
                             <p>Total Number of Accounts</p>
-                            <span className="ml-5">108,376,306</span>
+                            <span className="">108,376,306</span>
                         </div>
-                        <div className="mr-5">
+                        <div className="homepage-hero-city-text-second">
                             <p>Transaction Count</p>
-                            <span className="ml-3">3,751,469,056</span>
+                            <span className="">3,751,469,056</span>
                         </div>
                     </div>
                     <div

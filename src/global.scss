@@ -894,6 +894,10 @@ body {
 			@media(min-width: $lg) {
 				padding-left: 150px;
 			}
+
+            @media(min-width: $xxl) {
+				padding-left: 240px;
+			}
 		}
 	}
 
@@ -3451,15 +3455,26 @@ nav .navbar {
 		font-size: 25px;
 		line-height: 170%;
 		@media (max-width: 1281px) {
-			font-size: 15px;
+			font-size: 18px;
 		}
 		@media (max-width: 671px) {
 			font-size: 8px;
             min-height: 50px;
             text-align: center;
 		}
+
 		&-one {
 			color: $hackathonGreen;
+
+            span {
+                @media (min-width: $xxl) {
+                    margin-left: 3rem;
+                }
+            }
+
+            @media (min-width: $xxl) {
+                max-width: 33.333333%;
+            }
 		}
 		&-two {
 			color: $hackathonGreen;
@@ -3677,6 +3692,33 @@ nav .navbar {
 					font-size: 12px;
 				}
 			}
+
+            &-first {
+                @media(min-width: $md) {
+                    margin-left: 3rem;
+                }
+
+                @media(min-width: $xxl) {
+                    margin-left: 10rem;
+                }
+
+                span {
+                    margin-left: 3rem;
+                }
+            }
+            &-second {
+                @media(min-width: $md) {
+                    margin-right: 3rem;
+                }
+
+                @media(min-width: $xxl) {
+                    margin-right: 11rem;
+                }
+
+                span {
+                    margin-left: 1rem;
+                }
+            }
 		}
 	}
 
@@ -3704,6 +3746,16 @@ nav .navbar {
 				max-width: 500px;
 				@media (max-width: $lg) {
 					max-width: unset;
+				}
+
+                @media (min-width: $xl) {
+					margin-left: 2rem;
+				}
+
+                @media (min-width: $xxl) {
+					margin-left: 5rem;
+                    padding: 3rem;
+                    margin-top: 0 !important;
 				}
 			}
 
@@ -3791,6 +3843,16 @@ nav .navbar {
 				font-size: 17.7715px;
 				line-height: 100%;
 			}
+
+            &-start {
+                @media (min-width: $xl) {
+                    margin-left: 3rem;
+                }
+
+                @media (min-width: $xxl) {
+                    margin-left: 10rem;
+                }
+            }
 		}
 
 	}
@@ -3969,6 +4031,19 @@ nav .navbar {
 			position: relative;
 			z-index: 1;
 		}
+
+        &-left {
+            @media (min-width: $xl) {
+                margin-left: 8rem;
+            }
+        }
+
+        &-right {
+            @media (min-width: $xl) {
+                margin-right: 8rem;
+            }
+        }
+
 		&-redline {
 			position: absolute;
 			height:570px;
@@ -3994,14 +4069,21 @@ nav .navbar {
 
 		&-container {
 			margin-top: -150px;
-			min-height: 316px;
 			background: rgba(205, 205, 205, 0.3);
 			backdrop-filter: blur(7.5px);
 			border-radius: 25px;
 			color: #232323;
 			padding: 2.9rem 4rem 2.9rem 4rem;
-			@media (max-width: 1385px) {
-				padding: 2rem 4rem 1rem 4rem;
+			@media (min-width: $xl) {
+                height: 400px;
+				padding: 3rem 4rem 1rem 4rem;
+			}
+
+            @media (min-width: $xxl) {
+                padding: 3rem 4rem 1rem 4rem;
+                height: 316px;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
 			}
 
 			@media (max-width: 992px) {
@@ -4033,6 +4115,13 @@ nav .navbar {
 
 		&-main {
 			margin-top: 250px;
+
+            &-div {
+                @media (min-width: $xxl) {
+                    max-width: 25%;
+                    margin-left: 16.666667%;
+                }
+            }
 		}
 
 		&-header {
@@ -4537,7 +4626,7 @@ nav .navbar {
 	}
 
 	&-know {
-		width: 60%;
+		width: 70%;
 		@media (max-width: $lg) {
 			width: 76%;
 		}
@@ -4572,6 +4661,7 @@ nav .navbar {
 			padding-left: 24px !important;
 
 			&::placeholder {
+                font-family: Blender Pro;
 				color: black;
 				letter-spacing: 0.185em;
 				font-weight: 400;
@@ -4592,7 +4682,18 @@ nav .navbar {
 			line-height: 100%;
 			margin-top: 55px;
 		}
+        
+        @media (min-width: $xxl) {
+            max-width: 33.333333%;
+        }
 	}
+
+    &-main {
+        @media (min-width: $xxl) {
+            max-width: 33.333333%;
+            margin-left: 16.66667%;
+        }
+    }
 }
 
 @keyframes blink-caret {
