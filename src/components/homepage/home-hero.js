@@ -25,12 +25,12 @@ const HomeHero = () => {
                     </div>
                     <div
                         className="row no-gutters text-center align-items-center homepage-hero-bottom homepage-hero-city-text">
-                        <div className="col-4 offset-2">
+                        <div className="col-5 col-xl-6 offset-xl-1 pl-xl-2">
                             <p>Transfer Amount of Core Tokens</p>
                             <span>$ 5,174.63 B</span>
                         </div>
 
-                        <div className="col-4 offset-0">
+                        <div className="col-5 offset-2 offset-xl-0 text-center text-xl-left">
                             <p>Token Value Locked</p>
                             <span>$ 5.46+ Billion</span>
                         </div>

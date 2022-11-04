@@ -34,7 +34,7 @@ const Index = ({ data }) => {
                 <meta property="og:title" content="Decentralized Autonomous Organization DAO | TRONDAO"/>
             </Helmet>
             <div className="homepage-hackathon-banner mb-0 d-flex flex-row align-items-center justify-content-md-center no-gutters pl-2 pl-sm-0">
-                <div className="col-sm-4 col-md-5 col-6 homepage-hackathon-banner-one pt-sm-0 text-md-center">
+                <div className="col-sm-4 col-md-5 col-xl-6 col-6 homepage-hackathon-banner-one pt-sm-0 text-md-center text-right">
                     TRON Grand Hackathon 2022 Season 3
                     <span className="ml-md-5 ml-1 ml-sm-2">&#183;</span>
                 </div>
@@ -49,18 +49,18 @@ const Index = ({ data }) => {
             </div>
             <HomeHero/>
             <div className="row no-gutters p-5 my-5">
-                <div className="col-lg-4 offset-lg-2 offset-0 col-md-6 col-12 align-items-center order-2 order-md-1">
-                    <div className="order-2 order-md-0">
-                        <div className="homepage-introduction-header">TRON is Here to Help</div>
-                        <div className="homepage-introduction-content mt-4 text-justify">TRON is the protocol dedicated to accelerating the decentralization of the Internet via blockchain technology and decentralized applications (DApps). Since its inception in 2017, the TRON network has focused on two ideals: empowering developers and putting the power in the hands of the people. TRON network completed full decentralization in Dec 2021 and is now a purely community-governed DAO focused on creating an internet for all.</div>
+                <div className="col-lg-4 offset-lg-2 offset-0 col-md-6 align-items-center order-md-1">
+                    <div className="">
+                        <div className="homepage-introduction-header order-1 order-md-0">TRON is Here to Help</div>
+                        <div className="homepage-introduction-content mt-4 text-justify order-3 order-md-0">TRON is the protocol dedicated to accelerating the decentralization of the Internet via blockchain technology and decentralized applications (DApps). Since its inception in 2017, the TRON network has focused on two ideals: empowering developers and putting the power in the hands of the people. TRON network completed full decentralization in Dec 2021 and is now a purely community-governed DAO focused on creating an internet for all.</div>
                     </div>
-                    <div className="py-5 text-center float-md-left">
+                    <div className="py-5 text-center float-md-left order-4 order-md-0">
                         <a href="https://forms.gle/U5VH818cRvWNeXsHA" target="_blank" rel="noopener noreferrer" id="homepage-buttons-apply-funding">
                             <button className="homepage-apply-funding-button">> Apply for funding</button>
                         </a>
                     </div>
                 </div>
-                <div className="col-lg-6 col-md-6 col-12 align-items-center text-center order-1 order-md-2 mb-5">
+                <div className="col-lg-6 col-md-6 col-12 align-items-center text-center order-2 order-md-2 mb-5">
                     <img src={tronbullCoins} className="homepage-introduction-icon pt-3 img-fluid" alt="TRON Bull Decentralizing the Web"/>
                 </div>
             </div>

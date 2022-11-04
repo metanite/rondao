@@ -106,9 +106,9 @@ const Navigation = () => {
                 <a onClick={closeMenu} className="" href="/">TRON DAO</a>
               </div>
             </div>
-            <div className="navbar-name d-none d-sm-block">
+            <div className="navbar-name d-none d-sm-block col-sm-4 col-md-3">
               <div className="mt-3">
-                <a onClick={closeMenu} className="" href="/">TRON DAO</a>
+                <a onClick={closeMenu} className="float-right" href="/">TRON DAO</a>
               </div>
             </div>
             <NavbarToggler onClick={toggle} className="ml-auto mr-5 my-2"/>
