@@ -106,13 +106,13 @@ const Navigation = () => {
                 <a onClick={closeMenu} className="" href="/">TRON DAO</a>
               </div>
             </div>
-            <div className="navbar-name d-none d-sm-block col-sm-4 col-md-3">
+            <div className="navbar-name d-none d-sm-block col-4 col-lg-3">
               <div className="mt-3">
                 <a onClick={closeMenu} className="float-right" href="/">TRON DAO</a>
               </div>
             </div>
             <NavbarToggler onClick={toggle} className="ml-auto mr-5 my-2"/>
-            <Collapse isOpen={isOpen} navbar className="ml-md-5">
+            <Collapse isOpen={isOpen} navbar>
               <ul className="navbar-nav small ml-auto mr-0 mr-lg-5">
                 <li className="nav-item dropdown position-static">
                     <div style={{border: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>

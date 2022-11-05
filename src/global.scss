@@ -3545,23 +3545,42 @@ nav .navbar {
 		}
 	}
 
+    &-border {
+        width: 100%;
+
+        @media (min-width: $lg) { 
+            width: 80%;
+        }
+    }
+
 	&-rounded {
 		border: $tronBorder;
+        border-bottom-left-radius: 30px;
+	    border-top-right-radius: 30px;
 		margin: 5px;
-		border-bottom-left-radius: 5%;
-		border-top-right-radius: 5%;
 		padding-bottom: 20px;
 		padding-top: 20px;
-		@media (min-width: $lg) {
+		@media (min-width: $md) {
 			border-bottom-left-radius: 125px;
 			border-top-right-radius: 125px;
 		}
 
 		&-banner {
 			@media (min-width: $lg) {
-				margin-right: 8rem;
+				margin-right: 12rem;
+			}
+
+            @media (min-width: $xxl) {
+				margin-right: 20rem;
 			}
 		}
+
+        &-icons {
+            margin-top: 1rem;
+            @media (min-width: $lg) {
+                margin-top: 5rem;
+            }
+        }
 	}
 
 	&-hero {
@@ -3606,9 +3625,9 @@ nav .navbar {
 				font-size: 42.41px;
                 line-height: 50px;
 			}
-			// @media (min-width: $md) {
-			// 	font-size: 30px;
-			// }
+			@media (min-width: $xxl) {
+				font-size: 50px;
+			}
 			// @media (max-width: $sm) {
 			// 	font-size: 25px;
 			// }
@@ -3662,6 +3681,10 @@ nav .navbar {
 			@media (min-width: $lg) {
 				margin-top: 25%;
 			}
+
+            @media (min-width: $xxl) {
+				margin-top: 28%;
+			}
 		}
 
 		&-city-text {
@@ -3699,7 +3722,7 @@ nav .navbar {
                 }
 
                 @media(min-width: $xxl) {
-                    margin-left: 10rem;
+                    //margin-left: 10rem;
                 }
 
                 span {
@@ -3716,7 +3739,7 @@ nav .navbar {
                 }
 
                 @media(min-width: $xxl) {
-                    margin-right: 11rem;
+                    //margin-right: 11rem;
                 }
 
                 span {
@@ -3737,7 +3760,6 @@ nav .navbar {
 			background: url('./images/homepage/helps-background.png') no-repeat;
 			border-radius: 25px;
 			background-size: 100% 100%;
-			width: 80%;
 			font-family: 'Blender Pro';
 			font-style: normal;
 			font-weight: 700;
@@ -3757,7 +3779,7 @@ nav .navbar {
 				}
 
                 @media (min-width: $xxl) {
-					margin-left: 5rem;
+					margin: 0 auto;
                     padding: 3rem;
                     margin-top: 0 !important;
 				}
@@ -3800,8 +3822,8 @@ nav .navbar {
 			}
 
 			&-circle {
-				width: 132px;
-				height: 131px;
+				width: 120px;
+				height: 120px;
 				background: #FFFFFF;
 				border: 3px solid #FF0000;
 				border-radius: 50%;
@@ -3826,11 +3848,16 @@ nav .navbar {
 				}
 
 				@media (max-width: 545px) {
-					width: 75px;
-					height: 75px;
+					width: 100px;
+					height: 100px;
 					max-width: 100%;
 					font-size: 12px;
 				}
+
+                @media (min-width: $lg) {
+                    width: 132px;
+				    height: 131px;
+                }
 			}
 
 			&-learn {
@@ -3855,6 +3882,31 @@ nav .navbar {
 
                 @media (min-width: $xxl) {
                     margin-left: 10rem;
+                }
+            }
+
+            &-content {
+                @media (min-width: $xxl) {
+                    max-width: 41.666667%;
+                }
+
+                div {
+                    @media (max-width: $sm) {
+                        width: 100%;
+                    }
+                    @media (min-width: $lg) {
+                        width: 100%;
+                        hr {
+                            width: 100%;
+                        }
+                    }
+                    
+                    h3 {
+                        @media (width: $md) {
+                            border-top: 0.5px solid #FF0000;
+                            border-bottom: 0.5px solid #FF0000;
+                        }                       
+                    }
                 }
             }
 		}
@@ -3901,9 +3953,9 @@ nav .navbar {
 	&-grants {
 		&-header {
 			margin-top: 50px;
-			font-family: Blender Pro;
+			font-family: Blender Pro Bold;
 			font-size: 30px;
-			font-weight: 700;
+			font-weight: 800;
 			line-height: 60px;
 			letter-spacing: 0em;
 			text-align: left;
@@ -3947,6 +3999,37 @@ nav .navbar {
 				min-height: 195px;
 			}
 		}
+
+        &-line {
+            &-upper {
+                position: absolute;
+                width: 180px;
+                height: 350px;
+                top: 8em;
+                right: 2em;
+                background:linear-gradient($tronRed, $tronRed) top no-repeat;
+                background-size: 150px 1px;
+                background-position: right top;
+                border-right: 1px solid $tronRed;
+                border-bottom: 1px solid $tronRed;
+                border-top-right-radius: 35px;
+                border-bottom-right-radius: 35px;
+            }
+            &-lower {
+                position: absolute;
+                width: 120px;
+                height: 380px;
+                top: 29.8em;
+                left: .9rem;
+                background:linear-gradient($tronRed, $tronRed) bottom no-repeat;
+                background-size: 150px 1px;
+                background-position: left bottom;
+                border-left: 1px solid $tronRed;
+                border-top: 0.1px solid $tronRed;
+                border-top-left-radius: 35px;
+                border-bottom-left-radius: 35px;
+            }
+        }
 	}
 
 	&-hackthon {
@@ -3970,12 +4053,20 @@ nav .navbar {
 			}
 
 			&-spacer {
-				width: 80%;
+				width: 100%;
 				border: 1px solid $tronRed;
+                @media (min-width: $md) {
+                    width: 80%;
+                }
 			}
 
 			&-learn-more {
 				margin: auto;
+                margin-top: 1.5rem;
+                
+                @media (min-width: $md) {
+                    margin-top: 6rem;
+                }
 
 				&-button {
 					width: 175px;
@@ -3991,14 +4082,31 @@ nav .navbar {
 		}
 
 		&-icons {
-			width: 108px;
-			height: 91px;
+			width: 50px;
+			height: 50px;
 			margin-top: 20px;
-			@media (max-width: $md) {
-				display: block;
-				margin: auto;
-				text-align: center;
+            display: block;
+            margin: auto;
+            text-align: center;
+            @media (min-width: $md) {
+                width: 70px;
+			    height: 70px;
 			}
+
+			@media (min-width: $lg) {
+                width: 108px;
+			    height: 91px;
+			}
+
+            &-title {
+                font-family: Blender Pro Bold;
+                text-transform: uppercase;
+                font-size: 1rem;
+                @media (min-width: $lg) {
+                    font-size: 1.5rem;
+                    font-weight: 500; 
+                }
+            }
 		}
 	}
 
@@ -4072,13 +4180,14 @@ nav .navbar {
 		}
 
 		&-container {
-			margin-top: -150px;
+			margin-top: -100px;
 			background: rgba(205, 205, 205, 0.3);
 			backdrop-filter: blur(7.5px);
 			border-radius: 25px;
 			color: #232323;
-			padding: 2.9rem 4rem 2.9rem 4rem;
+			padding: 2.9rem 2rem 2.9rem 2rem;
 			@media (min-width: $xl) {
+                margin-top: -110px;
                 height: 400px;
 				padding: 3rem 4rem 1rem 4rem;
 			}
@@ -4090,8 +4199,7 @@ nav .navbar {
                 max-width: 66.666667%;
 			}
 
-			@media (max-width: 992px) {
-				margin-top: 25px;
+			@media (min-width: 992px) {
 				min-height: unset;
 			}
 
@@ -4111,6 +4219,7 @@ nav .navbar {
 				line-height: 31px;
 				letter-spacing: 0em;
 				margin-top: 15px;
+                text-align: justify;
 			}
 		}
 	}
@@ -4118,7 +4227,11 @@ nav .navbar {
 	&-tronpedia {
 
 		&-main {
-			margin-top: 250px;
+			margin-top: 50px;
+
+            @media (min-width: $xxl) {
+                margin-top: 250px;
+            }
 
             &-div {
                 @media (min-width: $xxl) {
@@ -4158,10 +4271,15 @@ nav .navbar {
 				width: 293px;
 				height: 280px;
 			}
+
+            &-button {
+                width: 50px;
+                height: 50px;
+            }
 		}
 
 		&-lets-go {
-			float: right;
+            width: 100%;
 			text-align: center;
 			font-family: Blender Pro;
 			font-size: 18px;
@@ -4607,14 +4725,18 @@ nav .navbar {
 .email-capture {
 	font-family: 'Blender Pro';
 	color: #232323;
-	font-weight: 400;
-	font-size: 81px;
+	font-weight: 800;
+	font-size: 30px;
 	line-height: 113%;
 	font-style: normal;
 	margin-bottom: 160px;
-	margin-top: 250px;
-	@media (max-width: $lg) {
-		font-size: 40px;
+	margin-top: 50px;
+	@media (min-width: $lg) {
+		font-size: 76px;
+	}
+
+    @media (min-width: $xxl) {
+		margin-top: 250px;
 	}
 
 	a:hover {
@@ -4630,9 +4752,9 @@ nav .navbar {
 	}
 
 	&-know {
-		width: 70%;
-		@media (max-width: $lg) {
-			width: 76%;
+		width: 100%;
+		@media (min-width: $lg) {
+			width: 70%;
 		}
 	}
 
@@ -4649,9 +4771,13 @@ nav .navbar {
 		&-signup {
 			font-family: 'Blender Pro Thin';
 			font-weight: 250;
-			font-size: 25px;
+			font-size: 20px;
 			line-height: 100%;
-			margin-bottom: 45px;
+			margin-bottom: 20px;
+            @media (min-width: $lg) {
+                font-size: 25px;
+                margin-bottom: 45px;
+            }
 		}
 
 		input {
@@ -4684,7 +4810,10 @@ nav .navbar {
 			font-weight: 401;
 			font-size: 18px;
 			line-height: 100%;
-			margin-top: 55px;
+			margin-top: 20px;
+            @media (min-width: $lg) {
+                margin-top: 55px;
+            }
 		}
         
         @media (min-width: $xxl) {

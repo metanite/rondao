@@ -45,15 +45,21 @@ const HomepageHelps = () => {
     }
 
     return (
-        <div className="homepage-helps-inner mx-auto my-5 ">
+        <div className="homepage-border homepage-helps-inner mx-auto my-5 ">
             <div className="homepage-helps-inner-start row no-gutters py-5 justify-content-start">
                 <div
-                    className="col-12 col-lg-6 offset-0 offset-lg-0 px-md-5 px-2 order-lg-0 order-1 mt-5 text-center text-lg-left">
-                    HOW <span className="homepage-helps-inner-tron">TRON</span> HELPS
-                    <hr className="my-4" />
-                    <h3>{selectedItem.title}</h3>
-                    <hr className="my-4" />
-                    <p className="text-justify">{selectedItem.description}
+                    className="homepage-helps-inner-content col-12 col-lg-6 offset-0 offset-lg-0 px-md-5 px-2 order-lg-0 order-1 mt-4 text-center text-lg-left">
+                    <div className="d-flex flex-column flex-md-row flex-lg-column align-items-center align-items-lg-start my-4 my-lg-0">
+                        <div className="text-md-left">
+                            HOW <span className="homepage-helps-inner-tron">TRON</span> HELPS
+                            <hr className="my-4 d-block d-md-none d-lg-block" />
+                        </div>
+                        <div className="ml-0 ml-md-3 ml-lg-0">
+                            <h3>{selectedItem.title}</h3>
+                            <hr className="my-4 d-block d-md-none d-lg-block" />
+                        </div>
+                    </div>
+                    <p className="text-justify px-3 px-md-0">{selectedItem.description}
                     </p>
                     <a href={selectedItem.url} id={"home-how-tron-helps-" + selectedItem.title + "-visit"}
                        onClick={function (e) {
@@ -62,15 +68,15 @@ const HomepageHelps = () => {
                            }
                        }}>
                         <button id={"home-how-tron-helps-" + selectedItem.title + "-visit-btn"}
-                                className="homepage-helps-inner-learn"
+                                className="homepage-helps-inner-learn float-md-right float-lg-left mt-3 mt-lg-0"
                                 disabled={selectedItem.disabled}>&gt; Visit {selectedItem.title}</button>
                     </a>
                 </div>
                 <div
-                    className="col-12 col-lg-6 col-xl-5 offset-0 offset-lg-0 order-lg-1 order-0 d-inline-flex d-lg-block justify-content-center mt-4 mb-4 homepage-helps-inner-buttons p-4">
+                    className="d-none col-12 col-lg-6 col-xl-5 offset-0 offset-lg-0 order-lg-1 order-0 d-md-inline-flex d-lg-block justify-content-start justify-content-lg-center my-md-4 homepage-helps-inner-buttons p-4">
                     <div className="d-flex justify-content-between flex-wrap mt-lg-5 mt-0">
                         <div id={"home-how-tron-helps-" + items[0].title}
-                             className={"homepage-helps-inner-circle " + isSelected(items[0].title)}
+                             className={"homepage-helps-inner-circle" + isSelected(items[0].title)}
                              aria-labelledby={"how tron helps " + items[0].title}
                              role={"button"}
                              tabIndex="0"
@@ -91,7 +97,7 @@ const HomepageHelps = () => {
                                      selectItem(1)
                                  }
                              }}
-                             className={"homepage-helps-inner-circle " + isSelected(items[1].title)}
+                             className={"homepage-helps-inner-circle ml-md-4 ml-lg-0" + isSelected(items[1].title)}
                              onClick={function () {
                                  selectItem(1)
                              }}>{items[1].title}</div>
@@ -106,7 +112,7 @@ const HomepageHelps = () => {
                                      selectItem(2)
                                  }
                              }}
-                             className={"homepage-helps-inner-circle " + isSelected(items[2].title)}
+                             className={"homepage-helps-inner-circle mx-4 mx-lg-0" + isSelected(items[2].title)}
                              onClick={function () {
                                  selectItem(2)
                              }}>{items[2].title}</div>
@@ -134,11 +140,82 @@ const HomepageHelps = () => {
                                      selectItem(4)
                                  }
                              }}
-                             className={"homepage-helps-inner-circle" + isSelected(items[4].title)}
+                             className={"homepage-helps-inner-circle ml-md-4 ml-lg-0" + isSelected(items[4].title)}
                              onClick={function () {
                                  selectItem(4)
                              }}>{items[4].title}</div>
                     </div>
+                </div>
+
+                {/* for mobile page */}
+                <div className="d-flex d-md-none flex-row align-items-center justify-content-between px-4 w-100">
+                    <div id={"home-how-tron-helps-" + items[0].title}
+                             className={"homepage-helps-inner-circle" + isSelected(items[0].title)}
+                             aria-labelledby={"how tron helps " + items[0].title}
+                             role={"button"}
+                             tabIndex="0"
+                             onKeyDown={function (e) {
+                                 if (e.key === "Enter") {
+                                     selectItem(0)
+                                 }
+                             }}
+                             onClick={function () {
+                                 selectItem(0)
+                             }}>{items[0].title}</div>
+                    <div id={"home-how-tron-helps-" + items[2].title}
+                             aria-labelledby={"how tron helps " + items[2].title}
+                             role={"button"}
+                             tabIndex="0"
+                             onKeyDown={function (e) {
+                                 if (e.key === "Enter") {
+                                     selectItem(2)
+                                 }
+                             }}
+                             className={"homepage-helps-inner-circle" + isSelected(items[2].title)}
+                             onClick={function () {
+                                 selectItem(2)
+                             }}>{items[2].title}</div>
+                    <div id={"home-how-tron-helps-" + items[1].title}
+                            aria-labelledby={"how tron helps " + items[1].title}
+                            role={"button"}
+                            tabIndex="0"
+                            onKeyDown={function (e) {
+                                if (e.key === "Enter") {
+                                    selectItem(1)
+                                }
+                            }}
+                            className={"homepage-helps-inner-circle" + isSelected(items[1].title)}
+                            onClick={function () {
+                                selectItem(1)
+                            }}>{items[1].title}</div>        
+                </div>
+                <div className="d-flex d-md-none align-items-center justify-content-around px-4 w-100 pt-4">
+                    <div id={"home-how-tron-helps-" + items[3].title}
+                        aria-labelledby={"how tron helps " + items[3].title}
+                        role={"button"}
+                        tabIndex="0"
+                        onKeyDown={function (e) {
+                            if (e.key === "Enter") {
+                                selectItem(3)
+                            }
+                        }}
+                        className={"homepage-helps-inner-circle " + isSelected(items[3].title)}
+                        onClick={function () {
+                            selectItem(3)
+                        }}>{items[3].title}</div>
+                    <div id={"home-how-tron-helps-" + items[4].title}
+                        aria-labelledby={"how tron helps " + items[4].title}
+                        role={"button"}
+                        tabIndex="0"
+                        onKeyDown={function (e) {
+                            if (e.key === "Enter") {
+                                selectItem(4)
+                            }
+                        }}
+                        className={"homepage-helps-inner-circle" + isSelected(items[4].title)}
+                        onClick={function () {
+                            selectItem(4)
+                        }}>{items[4].title}</div>       
                 </div>
             </div>
         </div>

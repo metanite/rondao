@@ -7,15 +7,15 @@ const EmailCapture = () => {
 
     return (
         <div className="row no-gutters email-capture">
-            <div className="email-capture-main col-12 col-lg-5 offset-lg-1 pl-md-5 mb-5">
-                <div className="col-12">
+            <div className="email-capture-main col-12 col-lg-5 offset-lg-1 pl-md-5 mb-2 mb-lg-5">
+                <div className="col-12 offset-1 offset-lg-0">
                     <div className="d-flex justify-content-start">
                         <div className="email-capture-know text-left">
-                            BE THE FIRST <br /> TO KNOW
+                            BE THE FIRST <br className="d-none d-lg-block" /> TO KNOW
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-12 col-12 mt-1 pl-md-0">
+                <div className="d-none d-lg-block col-lg-12 col-12 mt-1 pl-md-0">
                     <div className="d-flex flex-wrap justify-content-start">
                         <a id="email-capture-social-twitter"
                            aria-label="social-icon-twitter"
@@ -54,22 +54,22 @@ const EmailCapture = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-lg-6 col-xl-5 email-capture-subscribe mx-xl-auto">
+            <div className="col-12 col-md-10 offset-md-1 col-lg-6 col-xl-5 email-capture-subscribe mx-xl-auto">
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css"/>
                 <form
                     action="https://network.us19.list-manage.com/subscribe/post?u=5724a62f28217f1bf009679d6&amp;id=a313741a09&amp;f_id=00f086e4f0"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
                     target="_blank">
                     <div className="mx-5 mt-md-4">
-                        <h3>SUBSCRIBE</h3>
+                        <h3 className="d-none d-lg-block">SUBSCRIBE</h3>
                         <p className="email-capture-subscribe-signup">SIGN UP FOR OUR NEWSLETTER</p>
                         <div className="row no-gutters mr-lg-5 mr-0">
                             <input type="email" name="EMAIL" placeholder="EMAIL" className="col-12 required email"
                                    id="mce-EMAIL" required/>
                             <input type="text" name="FNAME" id="mce-FNAME" placeholder="FIRST"
-                                   className="col-lg-4 col-12 mt-2"/>
+                                   className="col-lg-12 col-12 col-md-5 mr-md-4 mr-lg-0 mt-2"/>
                             <input type="text" name="LNAME" id="mce-LNAME" placeholder="LAST"
-                                   className="col-lg-7 offset-lg-1 col-12 mt-2"/>
+                                   className="col-lg-12 col-12 col-md-6 mt-2"/>
                             <div id="mce-responses" className="clear">
                                 <div className="response" id="mce-error-response" style={{display: 'none'}}/>
                                 <div className="response" id="mce-success-response" style={{display: 'none'}}/>
@@ -80,8 +80,8 @@ const EmailCapture = () => {
                                        tabIndex="-1"/>
                             </div>
                             <p className="col-12 email-capture-subscribe-disclaimer">By signing up for our Newsletter, I agree to the <a href={"/legal/privacy-policy/"} id={"email-capture-privacy-policy"}>Privacy Policy</a>.</p>
-                            <div className="col-12 text-center text-lg-left mt-5">
-                                <button id="email-subscribe" className="float-lg-right float-none" type="submit"
+                            <div className="col-12 text-center text-lg-left mt-4">
+                                <button id="email-subscribe" className="float-right" type="submit"
                                         value="Subscribe" name="subscribe">Subscribe
                                 </button>
                             </div>

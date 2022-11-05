@@ -19,6 +19,7 @@ import tronbullVideo from "../images/home/tronbull-video.gif"
 import tronbullExperiment from "../images/home/tronbull-puzzle.gif"
 import tronbullPlay from "../images/home/tronbull-play.gif"
 import tronbullWave from "../images/home/tronbull-wave.svg"
+import tronbullButton from "../images/home/tronbull-button.svg"
 import HomeHero from "../components/homepage/home-hero";
 import playButton from "../images/home/play-button.svg"
 import HomepageHelps from "../components/homepage/HomepageHelps";
@@ -48,27 +49,32 @@ const Index = ({ data }) => {
                 </div>
             </div>
             <HomeHero/>
-            <div className="row no-gutters p-5 my-5">
-                <div className="col-lg-4 offset-lg-2 offset-0 col-md-6 align-items-center order-md-1">
+            <div className="row no-gutters p-4 p-md-5 my-5">
+                <div className="col-lg-4 offset-lg-2 offset-0 col-md-6 align-items-center order-2 order-md-1">
                     <div className="">
                         <div className="homepage-introduction-header order-1 order-md-0">TRON is Here to Help</div>
+                        <div className="d-flex d-lg-none col-md-6 col-12 order-2">
+                            <img src={tronbullCoins} className="homepage-introduction-icon pt-3 img-fluid" alt="TRON Bull Decentralizing the Web"/>
+                        </div>
                         <div className="homepage-introduction-content mt-4 text-justify order-3 order-md-0">TRON is the protocol dedicated to accelerating the decentralization of the Internet via blockchain technology and decentralized applications (DApps). Since its inception in 2017, the TRON network has focused on two ideals: empowering developers and putting the power in the hands of the people. TRON network completed full decentralization in Dec 2021 and is now a purely community-governed DAO focused on creating an internet for all.</div>
                     </div>
+                    
                     <div className="py-5 text-center float-md-left order-4 order-md-0">
                         <a href="https://forms.gle/U5VH818cRvWNeXsHA" target="_blank" rel="noopener noreferrer" id="homepage-buttons-apply-funding">
                             <button className="homepage-apply-funding-button">> Apply for funding</button>
                         </a>
                     </div>
                 </div>
-                <div className="col-lg-6 col-md-6 col-12 align-items-center text-center order-2 order-md-2 mb-5">
+                <div className="d-none d-lg-block col-lg-6 col-md-6 col-12 align-items-center text-center order-1 order-md-2 mb-md-5">
                     <img src={tronbullCoins} className="homepage-introduction-icon pt-3 img-fluid" alt="TRON Bull Decentralizing the Web"/>
                 </div>
             </div>
-            <div className="homepage-rounded px-5 w-80 mx-auto">
-                <div className="homepage-grants-header col-lg-5 offset-lg-1 offset-0">TRON DAO GRANTS</div>
-                <div className="homepage-grants-subheader col-lg-5 offset-lg-1 offset-0 col-12">The TRON DAO Grant Program provides support to Communities, Developers, and Influencers that are building on the TRON network.
+            <div className="homepage-border homepage-rounded px-1 px-md-5 mx-auto">
+                <div className="homepage-grants-header col-lg-5 offset-lg-1 offset-0 text-left">TRON DAO GRANTS</div>
+                <div className="homepage-grants-subheader col-lg-5 offset-lg-1 offset-0 col-12 text-justify mt-3 mt-md-0">The TRON DAO Grant Program provides support to Communities, Developers, and Influencers that are building on the TRON network.
                 </div>
-                <div className="row no-gutters mt-5 text-center">
+                <div className="row no-gutters mt-5 text-center position-relative">
+                    <div className="d-block d-md-none homepage-grants-line-upper"></div>
                     <div className="col-md-4 col-12 align-items-center mb-5">
                         <div className="homepage-grants-container-icons text-center">
                             <img src={community} className="img-fluid" alt="TRON Bull Developer"/>
@@ -78,6 +84,7 @@ const Index = ({ data }) => {
                             <button className="homepage-grants-container-apply-button mt-5">> APPLY</button>
                         </a>
                     </div>
+                    <div className="d-block d-md-none homepage-grants-line-lower ml-3"></div>
                     <div className="col-md-4 col-12 align-items-center mb-5">
                         <div className="homepage-grants-container-icons text-center">
                             <img src={developer} className="img-fluid" alt="TRON Bull Community Ambassador"/>
@@ -104,48 +111,51 @@ const Index = ({ data }) => {
 
 
             </div>
-            <div className="homepage-rounded w-80 mx-auto">
-                <div className="row no-gutters mt-1 p-sm-5">
-                    <div className="homepage-rounded-banner col-lg-5 offset-lg-1 offset-0 col-md-6 col-12 align-items-center py-4">
+            <div className="homepage-border homepage-rounded mx-auto">
+                <div className="d-flex row no-gutters mt-1 mt-lg-5 px-3 px-md-0">
+                    <div className="homepage-rounded-banner col-lg-4 offset-lg-1 col-md-10 offset-md-1 offset-0 col-md-6 col-12 align-items-center py-lg-4 order-1 order-lg-0 mt-5 mt-lg-0">
                         <div className="homepage-hackthon-header">HACKATHON</div>
                         <div className="homepage-introduction-content mt-4 mb-4 text-justify">The future is not far from widespread decentralized storage, decentralized applications, digital assets, and cryptocurrency wallets. The TRON Grand Hackathon 2022 creates opportunities for you & all your undiscovered talents to make their marks and accelerate the development of Web 3.0 while promoting the growth of the blockchain ecosystem simultaneously.</div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 offset-lg-0 col-md-12 offset-md-1 col-12 text-center text-md-left order-3 order-lg-0">
+                        <div className="d-flex flex-column flex-md-row flex-lg-column">
+                        <div className="col-md-6 col-lg-12">
                         <div className="homepage-hackthon-details-content">$1.2M prize pool</div>
                         <div className="homepage-hackthon-details-spacer align-items-center" />
                         <div className="homepage-hackthon-details-content">30+ partners</div>
                         <div className="homepage-hackthon-details-spacer align-items-center" />
                         <div className="homepage-hackthon-details-content">90+ Judges</div>
-                        <div className="homepage-hackthon-details-learn-more">
+                        </div>
+                        <div className="homepage-hackthon-details-learn-more mt-lg-0 col-md-6 col-lg-12">
                             <a href="/hackathon/" id="homepage-button-hackathon-learn-more">
                                 <button className="homepage-hackthon-details-learn-more-button">> LEARN MORE</button>
                             </a>
                         </div>
+                        </div>
                     </div>
-                </div>
-
-                <div className="row no-gutters mt-md-1 mb-md-5 my-5 pb-5 mx-md-5 text-center">
-                    <div className="col-lg-3 col-md-6 col-12 text-center">
-                        <img src={defi} className="homepage-hackthon-icons" alt="TRON DAO DeFi"/>
-                        <h4 className="pt-2">Defi</h4>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-12 text-center">
-                        <img src={nft} className="homepage-hackthon-icons" alt="TRON DAO NFT"/>
-                        <h4 className="pt-2">NFT</h4>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-12 text-center">
-                        <img src={gamefi} className="homepage-hackthon-icons" alt="TRON DAO GameFi"/>
-                        <h4 className="pt-2">GameFi</h4>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-12 text-center">
-                        <img src={web3_normal} className="homepage-hackthon-icons" alt="TRON DAO Web3"/>
-                        <h4 className="pt-2">Web3</h4>
+                    <div className="homepage-rounded-icons row no-gutters mb-md-5 mx-md-5 text-center w-100 order-2 order-lg-0">
+                        <div className="col-3 text-center">
+                            <img src={defi} className="homepage-hackthon-icons" alt="TRON DAO DeFi"/>
+                            <p className="homepage-hackthon-icons-title pt-2">Defi</p>
+                        </div>
+                        <div className="col-3 text-center">
+                            <img src={nft} className="homepage-hackthon-icons" alt="TRON DAO NFT"/>
+                            <p className="homepage-hackthon-icons-title pt-2">NFT</p>
+                        </div>
+                        <div className="col-3 text-center">
+                            <img src={gamefi} className="homepage-hackthon-icons" alt="TRON DAO GameFi"/>
+                            <p className="homepage-hackthon-icons-title pt-2">GameFi</p>
+                        </div>
+                        <div className="col-3 text-center">
+                            <img src={web3_normal} className="homepage-hackthon-icons" alt="TRON DAO Web3"/>
+                            <p className="homepage-hackthon-icons-title pt-2">Web3</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             
-            <div className="homepage-starting-header-start mt-5 px-5 text-center">
+            <div className="homepage-starting-header-start mt-5 px-4 px-md-5 text-center">
                 <img src={playButton} className="homepage-starting-header-icon"/>
                 Start
             </div>
@@ -155,8 +165,8 @@ const Index = ({ data }) => {
                     <div className="homepage-starting-leftangle" />
                     <div className="col-lg-5 offset-lg-1 offset-0 col-md-12 col-12 align-items-center text-center">
                         <img src={tronbullLearn} className="homepage-starting-icons img-fluid" alt="TRON Bull Learn Development"/>
-                        <div className="homepage-starting-container text-left col-xl-10 mx-xl-auto">
-                            <div className="homepage-starting-container-header mt-xl-5">
+                        <div className="homepage-starting-container text-left col-md-10 offset-md-1 col-xl-10 mx-xl-auto">
+                            <div className="homepage-starting-container-header mt-xl-4 text-center text-md-left">
                                 Learn TRON development 
                             </div>
                             <div className="homepage-starting-container-content">Explore TRON’s unique architecture and core applications through the detailed guides written by devs for you--our future devs-- so you can embark on the Great Voyage of the TRON public chain. </div>
@@ -164,8 +174,8 @@ const Index = ({ data }) => {
                     </div>
                     <div className="col-lg-5 col-md-12 col-12 align-items-center text-center">
                         <img src={tronbullVideo} className="homepage-starting-icons img-fluid" alt="TRON Bull Learning Tutorials"/>
-                        <div className="homepage-starting-container text-left col-xl-10 mx-xl-auto">
-                            <div className="homepage-starting-container-header mt-xl-5">Learn through tutorials </div>
+                        <div className="homepage-starting-container text-left col-md-10 offset-md-1 col-xl-10 mx-xl-auto">
+                            <div className="homepage-starting-container-header mt-xl-4 text-center text-md-left">Learn through tutorials </div>
                             <div className="homepage-starting-container-content">TRON has multiple, in-depth tutorials that can help even the least knowledgeable newcomer accomplish their goals.
                             </div>
                         </div>
@@ -173,18 +183,18 @@ const Index = ({ data }) => {
                 </div>
                 {/* <div className="homepage-starting-redline col-10 offset-1 d-none d-lg-block" /> */}
                 <div className="row no-gutters mt-5 px-5">
-                    <div className="col-lg-5 offset-lg-1 offset-0 col-md-12 col-12 align-items-center text-center px-3">
+                    <div className="col-lg-5 offset-lg-1 offset-0 col-md-12 col-12 align-items-center text-center">
                         <img src={tronbullExperiment} className="homepage-starting-icons img-fluid" alt="TRON Bull Experimenting"/>
-                        <div className="homepage-starting-container text-left col-xl-10 mx-xl-auto">
-                            <div className="homepage-starting-container-header">Start experimenting with TRON</div>
+                        <div className="homepage-starting-container text-left col-md-10 offset-md-1 col-xl-10 mx-xl-auto">
+                            <div className="homepage-starting-container-header text-center text-md-left">Start experimenting with TRON</div>
                             <div className="homepage-starting-container-content">TRON's low barriers to entry makes it easy for everyone– yes, everyone– to interact with its blockchain, and thus, discover the powers that come with it. The best way to learn something new is by doing– so what are you waiting for?
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-5 col-md-12 col-12 align-items-center text-center px-3">
+                    <div className="col-lg-5 col-md-12 col-12 align-items-center text-center">
                         <img src={tronbullPlay} className="homepage-starting-icons img-fluid" alt="TRON Bull Set Up Local Environment"/>
-                        <div className="homepage-starting-container text-left col-xl-10 mx-xl-auto">
-                            <div className="homepage-starting-container-header">Set up local environment </div>
+                        <div className="homepage-starting-container text-left col-md-10 offset-md-1 col-xl-10 mx-xl-auto">
+                            <div className="homepage-starting-container-header text-center text-md-left">Set up local environment </div>
                             <div className="homepage-starting-container-content">Thanks to TRON’s impressive ecosystem, we are thrilled to be able to provide you all with easy access to the TRON private test network. The best part? The test network is run by us, so you can dedicate your hardware to what matters most: creativity.</div>
                         </div>
                     </div>
@@ -192,23 +202,24 @@ const Index = ({ data }) => {
             </div>
            
             <div className="homepage-tronpedia-main row no-gutters p-5">
-                <div className="homepage-tronpedia-main-div col-lg-5 offset-lg-1 pl-md-5 offset-0 col-md-6 col-12 align-items-center">
-                    <div className="homepage-tronpedia-header mb-5">TRONPEDIA</div>
-                    <div className="homepage-tronpedia-content mt-3 text-justify">Overwhelmed by the new age of the Internet and unsure where you should even begin? Look no further. TRONPedia is the place for you to start dissecting all the complex jargon that spawned with the creation of web3. TRONPedia was created to act as the first block in your blockchain journey so you can get involved & even lead all the new web3-driven conversations. </div>
-                    <div className="my-5 d-flex flex-wrap justify-content-between">
+                <div className="homepage-tronpedia-main-div col-lg-5 offset-lg-1 pl-md-5 offset-0 col-md-9 offset-md-1 col-12 align-items-start d-flex flex-column">
+                    <div className="homepage-tronpedia-header mb-2 order-1 order-lg-0">TRONPEDIA</div>
+                    <div className="homepage-tronpedia-content mt-3 text-justify order-3 order-lg-0">Overwhelmed by the new age of the Internet and unsure where you should even begin? Look no further. TRONPedia is the place for you to start dissecting all the complex jargon that spawned with the creation of web3. TRONPedia was created to act as the first block in your blockchain journey so you can get involved & even lead all the new web3-driven conversations. </div>
+                    <div className="my-3 my-lg-5 d-flex align-items-start justify-content-between w-100 order-2 order-lg-0">
                         <img src={defi_normal} className="homepage-tronpedia-icons" alt="tron dao defi"/>
                         <img src={gamefi_normal} className="homepage-tronpedia-icons" alt="tron dao web3"/>
                         <img src={web_normal} className="homepage-tronpedia-icons" alt="tron dao web3"/>
                         <img src={nft_normal} className="homepage-tronpedia-icons" alt="tron dao nft"/>
                         <img src={coins} className="homepage-tronpedia-icons" alt="tron dao coins"/>
                     </div>
-                    <div className="homepage-tronpedia-lets-go">
+                    <div className="homepage-tronpedia-lets-go d-flex align items-end justify-content-end order-4 order-lg-0">
+                        <image className="homepage-tronpedia-tronbull-button image-fluid" src={tronbullButton} alt="tron bull button" />
                         <button className="homepage-tronpedia-lets-go-button mt-3">
                             > Let's Go
                         </button>
                     </div>
                 </div>
-                <div className="col-lg-5 col-md-6 col-12 align-items-center mx-xl-auto">
+                <div className="col-lg-5 col-md-6 col-12 align-items-center mx-xl-auto d-none d-lg-block">
                     <div className="homepage-tronpedia-tronbull text-center text-center">
                         <img src={tronbullWave} className="homepage-tronpedia-tronbull-icon img-fluid" alt="tron bull wave"/>
                     </div>
