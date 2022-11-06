@@ -8,7 +8,7 @@ const EmailCapture = () => {
     return (
         <div className="row no-gutters email-capture">
             <div className="email-capture-main col-12 col-lg-5 offset-lg-1 pl-md-5 mb-2 mb-lg-5">
-                <div className="col-12 offset-1 offset-lg-0">
+                <div className="col-12 offset-lg-0">
                     <div className="d-flex justify-content-start">
                         <div className="email-capture-know text-left">
                             BE THE FIRST <br className="d-none d-lg-block" /> TO KNOW
@@ -60,7 +60,7 @@ const EmailCapture = () => {
                     action="https://network.us19.list-manage.com/subscribe/post?u=5724a62f28217f1bf009679d6&amp;id=a313741a09&amp;f_id=00f086e4f0"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
                     target="_blank">
-                    <div className="mx-5 mt-md-4">
+                    <div className="mt-md-4">
                         <h3 className="d-none d-lg-block">SUBSCRIBE</h3>
                         <p className="email-capture-subscribe-signup">SIGN UP FOR OUR NEWSLETTER</p>
                         <div className="row no-gutters mr-lg-5 mr-0">

@@ -49,14 +49,14 @@ const HomepageHelps = () => {
             <div className="homepage-helps-inner-start row no-gutters py-5 justify-content-start">
                 <div
                     className="homepage-helps-inner-content col-12 col-lg-6 offset-0 offset-lg-0 px-md-5 px-2 order-lg-0 order-1 mt-4 text-center text-lg-left">
-                    <div className="d-flex flex-column flex-md-row flex-lg-column align-items-center align-items-lg-start my-4 my-lg-0">
-                        <div className="text-md-left">
+                    <div className="d-flex flex-column flex-md-row flex-lg-column align-items-md-center align-items-lg-start my-4 my-lg-0">
+                        <div className="text-left ml-3 ml-md-0">
                             HOW <span className="homepage-helps-inner-tron">TRON</span> HELPS
-                            <hr className="my-4 d-block d-md-none d-lg-block" />
+                            <hr className="my-4 d-lg-block d-none" />
                         </div>
-                        <div className="ml-0 ml-md-3 ml-lg-0">
-                            <h3>{selectedItem.title}</h3>
-                            <hr className="my-4 d-block d-md-none d-lg-block" />
+                        <div className="ml-0 ml-lg-0 px-lg-0 col-4 col-md-3 col-lg-12">
+                            <h3 className="text-left text-md-center text-lg-left">{selectedItem.title}</h3>
+                            <hr className="my-4 d-lg-block d-none" />
                         </div>
                     </div>
                     <p className="text-justify px-3 px-md-0">{selectedItem.description}
@@ -73,8 +73,8 @@ const HomepageHelps = () => {
                     </a>
                 </div>
                 <div
-                    className="d-none col-12 col-lg-6 col-xl-5 offset-0 offset-lg-0 order-lg-1 order-0 d-md-inline-flex d-lg-block justify-content-start justify-content-lg-center my-md-4 homepage-helps-inner-buttons p-4">
-                    <div className="d-flex justify-content-between flex-wrap mt-lg-5 mt-0">
+                    className="d-none col-12 col-lg-6 col-xl-5 offset-0 offset-lg-0 order-lg-1 order-0 d-md-inline-flex d-lg-block justify-content-start justify-content-lg-center my-md-4 homepage-helps-inner-buttons px-md-2 px-lg-4">
+                    <div className="d-flex justify-content-start mt-lg-5 mt-0">
                         <div id={"home-how-tron-helps-" + items[0].title}
                              className={"homepage-helps-inner-circle" + isSelected(items[0].title)}
                              aria-labelledby={"how tron helps " + items[0].title}
@@ -117,7 +117,7 @@ const HomepageHelps = () => {
                                  selectItem(2)
                              }}>{items[2].title}</div>
                     </div>
-                    <div className="d-flex justify-content-end justify-content-lg-between flex-wrap">
+                    <div className="d-flex justify-content-start justify-content-lg-between">
                         <div id={"home-how-tron-helps-" + items[3].title}
                              aria-labelledby={"how tron helps " + items[3].title}
                              role={"button"}
@@ -148,7 +148,7 @@ const HomepageHelps = () => {
                 </div>
 
                 {/* for mobile page */}
-                <div className="d-flex d-md-none flex-row align-items-center justify-content-between px-4 w-100">
+                <div className="d-flex d-md-none flex-row px-1 align-items-center justify-content-between w-100">
                     <div id={"home-how-tron-helps-" + items[0].title}
                              className={"homepage-helps-inner-circle" + isSelected(items[0].title)}
                              aria-labelledby={"how tron helps " + items[0].title}
@@ -189,7 +189,7 @@ const HomepageHelps = () => {
                                 selectItem(1)
                             }}>{items[1].title}</div>        
                 </div>
-                <div className="d-flex d-md-none align-items-center justify-content-around px-4 w-100 pt-4">
+                <div className="d-flex d-md-none align-items-center justify-content-around w-100 pt-4">
                     <div id={"home-how-tron-helps-" + items[3].title}
                         aria-labelledby={"how tron helps " + items[3].title}
                         role={"button"}

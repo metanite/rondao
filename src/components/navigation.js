@@ -277,7 +277,7 @@ const Navigation = () => {
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/"
+                            <a onClick={closeMenu} href="/gaming/"
                                target="_blank" rel="noopener noreferrer"
                                id="nav-resources-gaming">
                               Gaming

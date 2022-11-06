@@ -46,7 +46,7 @@ const Footer = () => {
                                     <li className="py-1"><a id="footer-social-tiktok" href="https://www.tiktok.com/@trondaoofficial"
                                            className="social-icon" target="_blank"
                                            rel="noopener noreferrer"><FaTiktok/>Tik Tok</a></li>
-                                    <li className="py-1"><a id="footer-social-tiktok" href="https://www.tiktok.com/@trondaoofficial"
+                                    <li className="py-1"><a id="footer-social-tiktok" href="https://www.reddit.com/r/Tronix/"
                                            className="social-icon" target="_blank"
                                            rel="noopener noreferrer"><FaRedditAlien/>Reddit</a></li>
                                 </ul>
