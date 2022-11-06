@@ -74,7 +74,7 @@ const Gaming = ({data}) => {
                             <a href="/" className=""><button className="gaming-title-start-button">Apply For Funding</button></a>
                         </div>
                         <div className="col-md-6">
-                            <img src={tronbullGaming} alt="tronbull gaming hearts" className="d-block mx-auto"></img>
+                            <img src={tronbullGaming} alt="tronbull gaming hearts" className="gaming-bull-gaming d-block mx-auto"></img>
                         </div>
                     </div>
                 </div>

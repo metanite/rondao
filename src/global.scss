@@ -5186,6 +5186,11 @@ nav .navbar {
         height: 250px;
 
         @media (min-width: $lg) {
+            width: 450px;
+            height: 450px; 
+        }
+
+        @media (min-width: $xxl) {
             width: 550px;
             height: 550px; 
         }
@@ -5234,9 +5239,9 @@ nav .navbar {
         }
 
         div img {
-            @media (max-width: $md) {
+            @media (max-width: $xxl) {
                 margin-top: 5rem;
-                width:230px;
+                width: 230px;
                 height: 171px;
             }
         }
@@ -5278,6 +5283,11 @@ nav .navbar {
         }
 
         @media (min-width: $lg) {
+            width: 300px;
+            height: 300px;
+        }
+
+        @media (min-width: $xxl) {
             height: 358px;
             padding: 4rem 3rem 3rem 3rem;
 
