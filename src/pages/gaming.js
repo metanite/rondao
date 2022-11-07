@@ -19,7 +19,7 @@ const Gaming = ({data}) => {
             <div className="gaming">
                 <div className="gaming-main">
                     <div className="gaming-title flex-column d-flex flex-md-row align-items-start align-items-md-center align-items-lg-start justify-content-lg-center col-md-12">
-                        <div className="col-12 col-md-6 col-lg-4 offset-md-1 offset-lg-2 mt-lg-5">
+                        <div className="col-12 col-md-6 col-lg-4 offset-md-1 offset-lg-1 mt-lg-5">
                             <h1>Own the gaming experience</h1>
                             <p className="mb-lg-5">Welcome to the future of entertainment</p>
                             <a href="/" className=""><button className="gaming-title-start-button">Start Build</button></a>
@@ -73,7 +73,7 @@ const Gaming = ({data}) => {
                             </p>
                             <a href="/" className=""><button className="gaming-title-start-button">Apply For Funding</button></a>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 col-lg-4">
                             <img src={tronbullGaming} alt="tronbull gaming hearts" className="gaming-bull-gaming d-block mx-auto"></img>
                         </div>
                     </div>

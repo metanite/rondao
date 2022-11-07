@@ -113,9 +113,9 @@ const Navigation = () => {
             </div>
             <NavbarToggler onClick={toggle} className="ml-auto mr-5 my-2"/>
             <Collapse isOpen={isOpen} navbar>
-              <ul className="navbar-nav small ml-auto mr-0 mr-lg-5">
+              <ul className="navbar-nav small ml-auto mr-0 ml-lg-5">
                 <li className="nav-item dropdown position-static">
-                    <div style={{border: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
+                    <div style={{border: "0.5px solid #232323", width: "85%", top: "5vh"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
                     <button className={(isNavDropDown1Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
                             type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown1}>
                     USE TRON
@@ -270,7 +270,7 @@ const Navigation = () => {
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href=""
+                            <a onClick={closeMenu} href="/multimedia/"
                                target="_blank" rel="noopener noreferrer"
                                id="nav-resources-multimedia">
                               Multimedia

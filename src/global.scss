@@ -895,9 +895,9 @@ body {
 			// 	padding-left: 150px;
 			// }
 
-   //          @media(min-width: $xxl) {
-			// 	padding-left: 240px;
-			// }
+            @media(min-width: $xxl) {
+				margin-right: 3rem;
+			}
 		}
 	}
 
@@ -5141,6 +5141,12 @@ nav .navbar {
             padding-top: 60px;
         }
 
+    	@media (min-width: $xxl) {
+            & > div:first-child {
+            	margin-left: 16.6666667%;
+            }
+        }
+
         h1 {
             font-family: Blender Pro Bold;
             font-size: 35px;
@@ -5239,10 +5245,16 @@ nav .navbar {
         }
 
         div img {
-            @media (max-width: $xxl) {
+        	@media (max-width: $md) {
                 margin-top: 5rem;
                 width: 230px;
                 height: 171px;
+            }
+
+            @media (max-width: $xxl) {
+                margin-top: 5rem;
+                width: 300px;
+                height: 300px;
             }
         }
     }
@@ -5333,4 +5345,104 @@ nav .navbar {
             }
         }
     }
+}
+
+.multimedia {
+	&-main {
+		width: 100%;
+        height: auto;
+		background-image: url("images/multimedia/watching.gif");
+		background-repeat: y-repeat;
+		background-size: cover;
+		background-position: center;
+
+		@media (min-width: $lg) {
+			height: 650px;
+		}
+	}
+}
+
+.finance {
+	&-main {
+		background-color: #425368;
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+	&-title {
+		padding: 50px 30px;
+
+        @media (min-width: $lg) {
+            padding: 120px 120px 180px 120px;
+        }
+
+		h1 {
+            font-family: Blender Pro Bold;
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 100%;
+            text-transform: uppercase;
+
+            @media (min-width: $lg) {
+                font-size: 70px;
+            }
+        }
+
+        p {
+            font-family: Blender Pro Thin;
+            line-height: 170%;
+            font-size: 20px;
+        }
+	}
+
+	&-stats {
+		font-family: Blender Pro Thin;
+		width: 90%;
+		height: auto;
+		position: absolute;
+		margin: 0 auto;
+		bottom: -67px;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+		background: #F8F8F8;
+		box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+
+		@media (min-width: $md) {
+			width: 70%;
+		}
+
+		h1 {
+			color: $tronDarkBorder;
+			font-size: 20px;
+			font-weight: 250;
+			line-height: 100%;
+
+			@media (min-width: $lg) {
+				font-size: 60px;
+			}
+		}
+
+		p{
+			color: #656565;
+			font-size: 10px;
+			font-weight: 700;
+			line-height: 100%;
+
+			@media (min-width: $lg) {
+				font-size: 15px;
+			}
+		}
+
+		div > div:first-child {
+			border-right: 1px solid #9E9E9E;
+		}
+
+		div > div:last-child {
+			border-left: 1px solid #9E9E9E;
+		}
+	}
 }

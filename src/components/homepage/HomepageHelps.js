@@ -74,7 +74,7 @@ const HomepageHelps = () => {
                 </div>
                 <div
                     className="d-none col-12 col-lg-6 col-xl-5 offset-0 offset-lg-0 order-lg-1 order-0 d-md-inline-flex d-lg-block justify-content-start justify-content-lg-center my-md-4 homepage-helps-inner-buttons px-md-2 px-lg-4">
-                    <div className="d-flex justify-content-start mt-lg-5 mt-0">
+                    <div className="d-flex justify-content-start justify-content-lg-between mt-lg-5 mt-0">
                         <div id={"home-how-tron-helps-" + items[0].title}
                              className={"homepage-helps-inner-circle" + isSelected(items[0].title)}
                              aria-labelledby={"how tron helps " + items[0].title}
