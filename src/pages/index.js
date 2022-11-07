@@ -34,15 +34,13 @@ const Index = ({ data }) => {
                 <meta property="og:description" content="Decentralized internet using blockchain technology and powering decentralized apps (DApps). TRON empowers developers to be creative. Build on TRON."/>
                 <meta property="og:title" content="Decentralized Autonomous Organization DAO | TRONDAO"/>
             </Helmet>
-            <div className="homepage-hackathon-banner mb-0 d-flex flex-row align-items-center justify-content-md-center no-gutters pl-2 pl-sm-0">
-                <div className="col-sm-4 col-md-5 col-xl-6 col-7 homepage-hackathon-banner-one pt-sm-0 text-left text-md-center">
+            <div className="homepage-hackathon-banner d-flex flex-row align-items-center justify-content-center no-gutters">
+                <div className="">
                     TRON Grand Hackathon 2022 Season 3
-                    <span className="ml-md-5 ml-1 ml-sm-2">&#183;</span>
-                </div>
-                <div className="col-sm-2 col-2 homepage-hackathon-banner-two">
+                    <span className="mx-md-5 ml-1 ml-sm-2">&#183;</span>
                     #HackaTRON
                 </div>
-                <div className="col-sm-2 col-4 col-md-3 pb-3 pb-sm-0 pt-3 pt-sm-0">
+                <div className="col-3 d-flex justify-content-end">
                     <a href="/hackathon/" id="homepage-hackathon-banner-button">
                         <button className="homepage-hackathon-banner-btn">Learn More</button>
                     </a>
