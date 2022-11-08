@@ -54,7 +54,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="footer-container-other text-left col-md-12 py-3 mt-1 mb-2 mx-auto w-75 d-flex flex-column flex-md-row flex-lg-row align-items-start align-items-md-center justify-content-md-center border-top border-bottom my-2">
+                <div className="footer-container-other text-left col-md-12 py-3 mt-1 mb-2 mx-auto w-75 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-center border-top border-bottom my-2">
                     <a href="/" className="my-2 my-md-0">ALSO OF INTEREST</a>
                     <a href="/" className="ml-md-4 my-1 my-md-0">All-around Blockchain Inventions</a>
                     <a href="/" className="ml-md-4 my-1 my-md-0">Grand Hackathon Season 2 Winners</a>

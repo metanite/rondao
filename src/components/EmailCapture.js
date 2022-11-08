@@ -10,7 +10,7 @@ const EmailCapture = () => {
             <div className="email-capture-main col-12 col-lg-5 offset-lg-1 pl-md-5 mb-2 mb-lg-5">
                 <div className="col-12 offset-lg-0">
                     <div className="d-flex justify-content-start">
-                        <div className="email-capture-know text-left">
+                        <div className="email-capture-know text-left pl-md-3 pl-lg-0">
                             BE THE FIRST <br className="d-none d-lg-block" /> TO KNOW
                         </div>
                     </div>
@@ -61,15 +61,23 @@ const EmailCapture = () => {
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
                     target="_blank">
                     <div className="mt-md-4">
-                        <h3 className="d-none d-lg-block">SUBSCRIBE</h3>
-                        <p className="email-capture-subscribe-signup">SIGN UP FOR OUR NEWSLETTER</p>
-                        <div className="row no-gutters mr-lg-5 mr-0">
-                            <input type="email" name="EMAIL" placeholder="EMAIL" className="col-12 required email"
+                        <h3 className="d-none d-lg-block px-3">SUBSCRIBE</h3>
+                        <p className="email-capture-subscribe-signup px-3">SIGN UP FOR OUR NEWSLETTER</p>
+                        <div className="col-12 col-lg-11">
+                            <div className="form-group">
+                                <input type="email" name="EMAIL" placeholder="EMAIL" className="form-control required email"
                                    id="mce-EMAIL" required/>
-                            <input type="text" name="FNAME" id="mce-FNAME" placeholder="FIRST"
-                                   className="col-lg-12 col-12 col-md-5 mr-md-4 mr-lg-0 mt-2"/>
-                            <input type="text" name="LNAME" id="mce-LNAME" placeholder="LAST"
-                                   className="col-lg-12 col-12 col-md-6 mt-2"/>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <input type="text" name="FNAME" id="mce-FNAME" placeholder="FIRST"
+                                           className="form-control"/>
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <input type="text" name="LNAME" id="mce-LNAME" placeholder="LAST"
+                                           className="form-control"/>
+                                </div>
+                            </div>
                             <div id="mce-responses" className="clear">
                                 <div className="response" id="mce-error-response" style={{display: 'none'}}/>
                                 <div className="response" id="mce-success-response" style={{display: 'none'}}/>

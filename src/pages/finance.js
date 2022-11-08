@@ -52,26 +52,26 @@ const Finance = ({data}) => {
     			</div>
 
                 <div className="finance-body d-flex flex-column align-items-center justify-content-center">
-                    <div className="d-flex flex-colum flex-lg-row align-items-center justify-content-between">
+                    <div className="d-flex flex-column flex-md-row align-items-center justify-content-between col-md-10">
                         <div className="finance-body-row-one text-center ">
                             <img src={hexagon} alt="hexagon with circle in each side icon" className="image-fluid"></img>
                             <h1 className="text-uppercase">Defi Revolutionized</h1>
-                            <p className="col-7 mx-auto">
+                            <p className="col-lg-7 mx-lg-auto">
                             TRON is at the forefront of redefining how the world interacts with and experiences the financial world.
                             </p>
                         </div>
                         <div className="finance-body-row-one text-center ">
                             <img src={pantheon} alt="pantheon icon" className="image-fluid"></img>
                             <h1 className="text-uppercase">Cefi Innovated</h1>
-                            <p className="col-7 mx-auto">
+                            <p className="col-lg-7 mx-lg-auto">
                             TRON has altered several structures to create the truly open and cooperative financial network that you deserve. 
                             </p>
                         </div>
                     </div>
 
-                    <div className="mt-5 d-flex flex-colum flex-lg-row align-items-center justify-content-around flex-wrap">
-                        <div className="col-6">
-                            <div className="finance-body-row-two d-flex flex-column align-items-center justify-content-center col-12">
+                    <div className="mt-5 d-flex flex-column flex-md-row align-items-center justify-content-around flex-wrap">
+                        <div className="col-11 col-md-6">
+                            <div className="finance-body-row-two d-flex flex-column align-items-center col-12">
                                 <img src={dollar} alt="dollar icon"></img>
                                 <h1 className="text-uppercase">No Fees</h1>
                                 <p>
@@ -79,8 +79,8 @@ const Finance = ({data}) => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-6">
-                            <div className="finance-body-row-two d-flex flex-column align-items-center justify-content-center col-12">
+                        <div className="col-11 col-md-6 mt-5 mt-md-0">
+                            <div className="finance-body-row-two d-flex flex-column align-items-center col-12">
                                 <img src={chats} alt="chat icon"></img>
                                 <h1 className="text-uppercase">Transparent relationships</h1>
                                 <p>
@@ -89,9 +89,9 @@ const Finance = ({data}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-5 d-flex flex-colum flex-lg-row align-items-center justify-content-around flex-wrap finance-body-end">
-                        <div className="col-6">
-                            <div className="finance-body-row-two d-flex flex-column align-items-center justify-content-center col-12">
+                    <div className="mt-5 d-flex flex-column flex-md-row align-items-center justify-content-around flex-wrap finance-body-end">
+                        <div className="col-11 col-md-6">
+                            <div className="finance-body-row-two d-flex flex-column align-items-center col-12">
                                 <img src={gear} alt="gear icon"></img>
                                 <h1 className="text-uppercase">Frictionless Finance </h1>
                                 <p>
@@ -99,8 +99,8 @@ const Finance = ({data}) => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-6">
-                            <div className="finance-body-row-two d-flex flex-column align-items-center justify-content-center col-12">
+                        <div className="col-11 col-md-6 mt-5 mt-md-0">
+                            <div className="finance-body-row-two d-flex flex-column align-items-center col-12">
                                 <img src={gift} alt="gift icon"></img>
                                 <h1 className="text-uppercase">User Incentives</h1>
                                 <p>

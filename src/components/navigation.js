@@ -113,7 +113,7 @@ const Navigation = () => {
             </div>
             <NavbarToggler onClick={toggle} className="ml-auto mr-5 my-2"/>
             <Collapse isOpen={isOpen} navbar>
-              <ul className="navbar-nav small mr-0">
+              <ul className="navbar-nav small mr-0 ml-lg-auto">
                 <li className="nav-item dropdown position-static">
                     <button className={(isNavDropDown1Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
                             type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown1}>
@@ -262,7 +262,7 @@ const Navigation = () => {
 												</p>
 												<ul>
 													<li>
-                            <a onClick={closeMenu} href=""
+                            <a onClick={closeMenu} href="/art/"
                                target="_blank" rel="noopener noreferrer"
                                id="nav-build-get-started">
                               Get Started
