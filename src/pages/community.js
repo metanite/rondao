@@ -20,8 +20,8 @@ const Community = ({data}) => {
                 <div className="community-main">
                     <div className="community-title flex-column d-flex flex-md-row align-items-center justify-content-center col-md-12">
                         <div className="d-flex flex-column align-items-center">
-                            <h1 className="text-uppercase">Become a <span>#Tronic</span></h1>
-                            <p className="col-8 mx-auto text-center mt-4">Looking to help build the future of the internet? Well... what are you waiting for? Become a TRONIC now!</p>
+                            <h1 className="text-uppercase text-center">Become a <span>#Tronic</span></h1>
+                            <p className="col-12 col-md-8 mx-auto text-center mt-md-4">Looking to help build the future of the internet? Well... what are you waiting for? Become a TRONIC now!</p>
                             <a href="/" className=""><button className="gaming-title-start-button">Call To Action</button></a>
                         </div>
                     </div>                
@@ -32,7 +32,7 @@ const Community = ({data}) => {
                    		<h1 className="community-headline">Reliable Community</h1>
                     </div>
 
-                    <div className="community-row d-flex flex-column flex-md-row">
+                    <div className="community-row d-flex flex-column flex-md-row justify-content-center">
                     	<div className="col-12 col-md-6">
                     		<div className="community-features d-flex flex-column align-items-center col-12"> 
                             <img src={checkCircle} alt="check circle with rotating arrow icon" className="mb-2 mb-lg-0"></img>
@@ -57,29 +57,29 @@ const Community = ({data}) => {
               	<div className="community-grants d-flex flex-column mx-auto">
               		<div className="community-grants-header d-flex flex-column align-items-center justify-content-center col-12">
               			<h1 className="text-uppercase text-center">Grants</h1>
-              			<p className="col-7 mx-auto text-center">
+              			<p className="col-12 col-md-7 mx-md-auto text-md-center text-justify">
               			We recognize that TRONICS are the heart of TRON and represent its future. Understanding that, we find it imperative to provide the tools to turn your brilliant ideas into realities. 
               			</p>
               		</div>
 
               		<div className="community-grants-subheader d-flex flex-column flex-md-row col-12">
-              			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center">
+              			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center mb-5 mb-md-0">
               				<h1 className="text-uppercase">Community</h1>
-              				<p>
+              				<p className="text-justify text-md-center">
               				TRON provides valuable funding and resources to creators who are building projects within its ecosystem.
               				</p>
               				<a href="/" className=""><button className="community-grants-subheader-button">Call To Action</button></a>
               			</div>
-              			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center">
+              			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center mb-5 mb-md-0">
               				<h1 className="text-uppercase">Influencer</h1>
-              				<p>
+              				<p className="text-justify text-md-center">
               				TRON is looking to support TRON eco-educators and influencers who are working on DAO-related projects and outreach.
               				</p>
               				<a href="/" className=""><button className="community-grants-button">Call To Action</button></a>
               			</div>
               			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center">
               				<h1 className="text-uppercase">Developer</h1>
-              				<p>
+              				<p className="text-justify text-md-center">
               				TRON is looking to help developers that are making this network more secure through discovery of bugs and vulnerabilties 
               				</p>
               				<a href="/" className=""><button className="community-grants-button">Call To Action</button></a>
@@ -93,7 +93,7 @@ const Community = ({data}) => {
                     </div>
 
                     <div className="community-team-members community-trait d-flex flex-column flex-md-row justify-content-center mx-auto">
-                    	<div className="col-12 col-md-4">
+                    	<div className="col-12 col-md-4 mb-4 mb-md-0">
                     		<div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
                     			<img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
                     			<h1>Member Name</h1>
@@ -120,7 +120,7 @@ const Community = ({data}) => {
                     			</div>
                     		</div>
                     	</div>
-                    	<div className="col-12 col-md-4">
+                    	<div className="col-12 col-md-4 mb-4 mb-md-0">
                     		<div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
                     			<img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
                     			<h1>Member Name</h1>
@@ -147,7 +147,7 @@ const Community = ({data}) => {
                     			</div>
                     		</div>
                     	</div>
-                    	<div className="col-12 col-md-4">
+                    	<div className="col-12 col-md-4 mb-4 mb-md-0">
                     		<div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
                     			<img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
                     			<h1>Member Name</h1>

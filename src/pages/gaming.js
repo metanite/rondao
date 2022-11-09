@@ -19,13 +19,13 @@ const Gaming = ({data}) => {
             <div className="gaming">
                 <div className="gaming-main">
                     <div className="gaming-title flex-column d-flex flex-md-row align-items-start align-items-md-center align-items-lg-start justify-content-lg-center col-md-12">
-                        <div className="col-12 col-md-6 col-lg-4 offset-md-1 offset-lg-1 mt-lg-5">
+                        <div className="col-12 col-md-6 col-lg-5 offset-md-1 offset-lg-1">
                             <h1>Own the gaming experience</h1>
                             <p className="mb-lg-5">Welcome to the future of entertainment</p>
                             <a href="/" className=""><button className="gaming-title-start-button">Start Build</button></a>
                         </div>
                         <div className="col-12 col-md-4 col-lg-6 mt-3 mt-md-0">
-                           <img src={tronBullRocket} alt="tron bull riding a rocket" className="gaming-tronbull-rocket img-fluid d-lg-block mx-lg-auto"></img>
+                           <img src={tronBullRocket} alt="tron bull riding a rocket" className="gaming-tronbull-rocket img-fluid"></img>
                         </div>  
                     </div>                
                 </div>

@@ -5116,7 +5116,7 @@ nav .navbar {
     }
 
     &-main {
-        //width: 100%;
+        width: 100%;
         height: auto;
         background-color: #200F46;
         background-image: url("images/gaming/vector.png");
@@ -5125,7 +5125,7 @@ nav .navbar {
         background-position: center center;
 
         @media (min-width: $lg) {
-            height: 650px;
+            height: 85vh;
         }
     }
 
@@ -5142,6 +5142,7 @@ nav .navbar {
 
     	@media (min-width: $xxl) {
             & > div:first-child {
+                margin-top: 7rem;
             	margin-left: 16.6666667%;
             }
         }
@@ -5154,7 +5155,7 @@ nav .navbar {
             text-transform: uppercase;
 
             @media (min-width: $lg) {
-                font-size: 70px;
+                font-size: 90px;
             }
         }
         
@@ -5196,8 +5197,8 @@ nav .navbar {
         }
 
         @media (min-width: $xxl) {
-            width: 550px;
-            height: 550px; 
+            width: 75%;
+            height: 100%; 
         }
     }
 
@@ -5578,6 +5579,10 @@ nav .navbar {
 		background-color: #C7D9E2;
 		width: 100%;
 		height: auto;
+
+        @media (min-width: $lg) {
+            height: 85vh;
+        }
 	}
 
 	&-title {
@@ -5590,7 +5595,7 @@ nav .navbar {
         @media (min-width: $xxl) {
             & > div:first-child {
                 margin-top: 2rem;
-                max-width: 33.33333%;
+                max-width: 45%;
             }
         }
 
@@ -5602,7 +5607,7 @@ nav .navbar {
             text-transform: uppercase;
 
             @media (min-width: $lg) {
-                font-size: 70px;
+                font-size: 85px;
             }
         }
 
@@ -5623,6 +5628,8 @@ nav .navbar {
 
 	&-body {
         margin-top: 5rem;
+        // width: 400px;
+        // height: 358px;
 
         @media (min-width: $lg) {
             margin-top: 15rem;
@@ -5632,15 +5639,15 @@ nav .navbar {
         	width: 100%;
         	height: 100%;
 
-            @media (min-width: $md) {
-                width: 50%;
-        	    height: 50%;
-            }
+            // @media (min-width: $md) {
+            //     width: 50%;
+        	//     height: 50%;
+            // }
 
-            @media (min-width: $lg) {
-                width: 70%;
-        	    height: 70%;
-            }
+            // @media (min-width: $lg) {
+            //     width: 70%;
+        	//     height: 70%;
+            // }
         }
 
         h1 {
@@ -5676,8 +5683,8 @@ nav .navbar {
 
             &-col {
                 @media (min-width: $xxl) {
-                    max-width: 33.33333%;
-                    margin-left: auto;
+                    //max-width: 33.33333%;
+                    //margin-left: auto;
                 }
             }
         }
@@ -5740,22 +5747,27 @@ nav .navbar {
 	&-main {
 		background-color: #425368;
 		width: 100%;
-		height: 650px;
+		height: 500px;
 		background-image: url("images/community/tronbulls.png");
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;	
+        background-size: 200% auto;
+        background-position: bottom;
+
+        @media (min-width: $md) {
+            height: 85vh;
+            background-size: contain;
+        }
     }
 
 	&-title {
-		padding: 50px 30px;
+		padding: 90px 30px 40px 30px;
 
         @media (min-width: $lg) {   
             padding: 80px 120px 20px 120px;
         }
 
         h1 {
-            font-size: 35px;
+            font-size: 40px;
             font-weight: 700;
             line-height: 100%;
             text-transform: uppercase;
@@ -5763,6 +5775,10 @@ nav .navbar {
 
             @media (min-width: $lg) {
                 font-size: 70px;
+            }
+
+            @media (min-width: $xxl) {
+                font-size: 90px;
             }
 
             span {
@@ -5773,15 +5789,27 @@ nav .navbar {
         p {
 			font-style: normal;
 			font-weight: 400;
-			font-size: 20px;
+			font-size: 15px;
 			line-height: 170%;
             margin-bottom: 1.5rem;
             color: white;
+
+            @media (min-width: $md) {
+                font-size: 20px;
+            }
+
+            @media (min-width: $xxl) {
+                font-size: 25px;
+            }
         }
 	}
 
 	&-trait {
-		margin: 3rem 0px;
+		margin: 1rem 0px;
+
+        @media (min-width: $lg) {
+            margin: 3rem 0px;
+        }
 	}
 
 	&-headline {
@@ -5800,13 +5828,14 @@ nav .navbar {
     }
 
     &-row {
-        @media (max-width: $sm) {
-            width: 100%;
-        }
+        width: 90%;
 
         @media (width: $md) {
-            width: 90%;
             height: auto;
+        }
+
+        @media (min-width: $xxl) {
+            width: 60%;
         }
     }
 
@@ -5881,16 +5910,19 @@ nav .navbar {
     &-grants {
     	width: 90%;
     	border: 0.5px solid $tronDarkBorder;
-    	border-top-right-radius: 50px;
-    	border-bottom-left-radius: 50px;
-    	padding: 5rem 2rem;
+    	border-top-right-radius: 174px;
+    	border-bottom-left-radius: 174px;
+    	padding: 5rem 0.5rem;
     	margin-top: 5rem;
 
     	@media (min-width: $lg) {
-    		border-top-right-radius: 174px;
-	    	border-bottom-left-radius: 174px;
+            padding: 5rem 2rem;
 	    	padding: 90px 120px 80px 120px;
     	}
+
+        @media (min-width: $xxl) {
+            width: 80%;
+        }
 
     	&-header {
 
@@ -5952,7 +5984,11 @@ nav .navbar {
     	margin-bottom: 134px;
 
     	&-members {
-    		width: 80%;
+    		width: 90%;
+
+            @media (min-width: $xxl) {
+                width: 60%;
+            }
     	}
 
 	    &-member {
