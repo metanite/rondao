@@ -262,7 +262,7 @@ const Navigation = () => {
 												</p>
 												<ul>
 													<li>
-                            <a onClick={closeMenu} href="/art/"
+                            <a onClick={closeMenu} href=""
                                target="_blank" rel="noopener noreferrer"
                                id="nav-build-get-started">
                               Get Started
@@ -290,7 +290,7 @@ const Navigation = () => {
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/"
+                            <a onClick={closeMenu} href="/art/"
                                target="_blank" rel="noopener noreferrer"
                                id="nav-resources-art">
                               Art
@@ -370,7 +370,7 @@ const Navigation = () => {
 													COMMUNITY
 												</p>
                         <ul>
-                          <li><a onClick={closeMenu} href="/grants/">Home</a></li>
+                          <li><a onClick={closeMenu} href="/community/">Home</a></li>
                           <li><a onClick={closeMenu} href="/grants/">Branding</a></li>
                           <li><a onClick={closeMenu} href="/grants/">TRONIC</a></li>
                           {/* <li><a onClick={closeMenu} href="/grants/" id="nav-community-grants">Grants</a></li> */}
