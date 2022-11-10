@@ -21,7 +21,7 @@ const Art = ({data}) => {
     				<div className="art-title d-flex flex-column flex-md-row align-items-start justify-content-center col-12">
                         <div className="col-lg-6">
     				        <h1 className="text-uppercase">Power Back To The Artists</h1>
-                            <p>
+                            <p className="col-lg-10">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et orem ipsum dolor sit amet 
                             </p>
                             <a href="/" className=""><button className="gaming-title-start-button">Call To Action</button></a>  

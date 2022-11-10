@@ -5472,7 +5472,7 @@ nav .navbar {
 
         & > div:first-child {
         	@media (min-width: $xxl) {
-        		max-width: 100%;
+        		max-width: 60%;
         	}
         }
 
@@ -5587,6 +5587,10 @@ nav .navbar {
 		background-color: #C7D9E2;
 		width: 100%;
 		height: auto;
+
+        @media (min-width: $xxl) {
+            height: 85vh;
+        }
 	}
 
 	&-title {
@@ -5594,6 +5598,10 @@ nav .navbar {
 
         @media (min-width: $lg) {   
             padding: 120px;
+        }
+
+        @media (min-width: $xxl) {   
+            padding: 120px 250px;
         }
 
         @media (min-width: $xxl) {
@@ -5613,10 +5621,6 @@ nav .navbar {
             @media (min-width: $lg) {
                 font-size: 70px;
             }
-
-            @media (min-width: $xxl) {
-                font-size: 85px;
-            }
         }
 
         p {
@@ -5628,8 +5632,8 @@ nav .navbar {
 
         img {
             @media (min-width: $xxl) {
-                width: 70%;
-                height: 70%;
+                width: 90%;
+                height: 100%;
             }
         }
 	}
@@ -5652,10 +5656,10 @@ nav .navbar {
         	//     height: 50%;
             // }
 
-            // @media (min-width: $lg) {
-            //     width: 70%;
-        	//     height: 70%;
-            // }
+            @media (min-width: $xxl) {
+                width: 80%;
+        	    height: 100%;
+            }
         }
 
         h1 {

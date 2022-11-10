@@ -56,14 +56,14 @@ const Finance = ({data}) => {
                         <div className="finance-body-row-one text-center ">
                             <img src={hexagon} alt="hexagon with circle in each side icon" className="image-fluid"></img>
                             <h1 className="text-uppercase">Defi Revolutionized</h1>
-                            <p className="col-lg-7 mx-lg-auto">
+                            <p className="col-lg-10 mx-lg-auto">
                             TRON is at the forefront of redefining how the world interacts with and experiences the financial world.
                             </p>
                         </div>
                         <div className="finance-body-row-one text-center ">
                             <img src={pantheon} alt="pantheon icon" className="image-fluid"></img>
                             <h1 className="text-uppercase">Cefi Innovated</h1>
-                            <p className="col-lg-7 mx-lg-auto">
+                            <p className="col-lg-10 mx-lg-auto">
                             TRON has altered several structures to create the truly open and cooperative financial network that you deserve. 
                             </p>
                         </div>
