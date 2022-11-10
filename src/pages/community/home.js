@@ -1,8 +1,8 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-import borderCircle from "../images/community/border-circle.svg"
-import checkCircle from "../images/community/check-circle.svg"
-import avatar from "../images/community/avatar.png"
+import borderCircle from "../../images/community/border-circle.svg"
+import checkCircle from "../../images/community/check-circle.svg"
+import avatar from "../../images/community/avatar.png"
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 
 const Community = ({data}) => {

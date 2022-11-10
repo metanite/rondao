@@ -1,10 +1,10 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import tronBullRocket from "../images/gaming/tronbull-rocket.svg"
-import controller from "../images/gaming/controller.svg"
-import arrowDown from "../images/gaming/arrow-down.svg"
-import key from "../images/gaming/key.svg"
-import tronbullGaming from "../images/gaming/tronbull-gaming.svg"
+import tronBullRocket from "../../images/gaming/tronbull-rocket.svg"
+import controller from "../../images/gaming/controller.svg"
+import arrowDown from "../../images/gaming/arrow-down.svg"
+import key from "../../images/gaming/key.svg"
+import tronbullGaming from "../../images/gaming/tronbull-gaming.svg"
 
 const Gaming = ({data}) => {
     return (

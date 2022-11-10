@@ -269,29 +269,29 @@ const Navigation = () => {
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/multimedia/"
+                            <a onClick={closeMenu} href="/developers/multimedia/"
                                target="_blank" rel="noopener noreferrer"
                                id="nav-resources-multimedia">
                               Multimedia
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/gaming/"
-                               target="_blank" rel="noopener noreferrer"
-                               id="nav-resources-gaming">
+                            <a onClick={closeMenu} href="/developers/gaming/"
+                              rel="noopener noreferrer"
+                              id="nav-resources-gaming">
                               Gaming
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/finance/"
-                               target="_blank" rel="noopener noreferrer"
-                               id="nav-resources-finance">
+                            <a onClick={closeMenu} href="/developers/finance/"
+                              rel="noopener noreferrer"
+                              id="nav-resources-finance">
                               Finance
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/art/"
-                               target="_blank" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/art/"
+                              rel="noopener noreferrer"
                                id="nav-resources-art">
                               Art
                             </a>
@@ -370,7 +370,7 @@ const Navigation = () => {
 													COMMUNITY
 												</p>
                         <ul>
-                          <li><a onClick={closeMenu} href="/community/">Home</a></li>
+                          <li><a onClick={closeMenu} href="/community/home">Home</a></li>
                           <li><a onClick={closeMenu} href="/grants/">Branding</a></li>
                           <li><a onClick={closeMenu} href="/grants/">TRONIC</a></li>
                           {/* <li><a onClick={closeMenu} href="/grants/" id="nav-community-grants">Grants</a></li> */}
