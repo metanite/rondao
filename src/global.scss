@@ -30,6 +30,68 @@ a {
 	text-decoration: none !important;
 }
 
+.subscribe-button {
+    font-family: Blender Pro;
+    text-transform: uppercase;
+    background: #FF0000;
+    border-radius: 54px;
+    min-height: 53px;
+    color: white;
+    padding: 0 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+
+    &:hover {
+        background-color: black;
+        border-color: black;
+    }
+
+    &:disabled {
+        background: rgba(0, 0, 0, 0.8);
+        border: none;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+            border: none;
+        }
+    }
+}
+
+.cta-button {
+    font-family: Blender Pro Bold;
+    background-color: #FF0000;
+    text-transform: uppercase;
+    border-radius: 54px;
+    height: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 8px;
+    padding: 0px 10px;
+    line-height: 100%;
+    border: none;
+    width: 80px;
+
+    @media (min-width: $md) {
+        font-size: 15px;
+        width: 120px;
+        height: 40px;
+    }
+
+    @media (min-width: $lg) {
+        font-size: 18px;
+        width: 200px;
+        height: 53px;
+        padding: 0px 20px;
+    }
+
+    &:hover {
+        background-color: $tronDarkBorder;
+        color: white;
+    }
+}
+
 .atb {
 	width: 445px;
 	height: 161px;
@@ -3497,14 +3559,15 @@ nav .navbar {
 			color: #000 !important;
 			width: 210px;
 			max-width: 100%;
+            height: 25px;
 			@media (min-width: $lg) {
 				height: 53px;
-				font-size: 10px!important;
-				width: unset;
+				font-size: 15px!important;
+				width: 210px;
 			}
 			@media (max-width: $sm) {
-				height: 5px;
-				font-size: 6px!important;
+				height: 30px;
+				font-size: 5px!important;
 				width: unset;
 			}
 			&:hover {
@@ -3520,7 +3583,7 @@ nav .navbar {
         }
 	}
 
-	button {
+	button:not(.homepage-hackathon-banner-btn) {
 		font-family: Blender Pro;
 		text-transform: uppercase;
 		background: #FF0000;
@@ -4822,7 +4885,6 @@ nav .navbar {
 
 			height: 64px;
 			color: black;
-			margin-bottom: 29px;
 			padding-left: 24px !important;
 
 			&::placeholder {
@@ -5356,18 +5418,206 @@ nav .navbar {
 }
 
 .multimedia {
-	&-main {
-		width: 100%;
-        height: auto;
-		background-image: url("images/multimedia/watching.gif");
-		background-repeat: y-repeat;
-		background-size: cover;
-		background-position: center;
-
-		@media (min-width: $lg) {
-			height: 650px;
-		}
+    & * > h1 {
+		font-family: Blender Pro Bold;
 	}
+
+	& * > p {
+		font-family: Blender Pro;
+	}
+
+	&-main {
+		position: relative;
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        &-header {
+            position: absolute;
+            top: 5vh;
+            left: 5vw;
+
+            @media (min-width: $md) {
+                top: 8vh;
+                left: 6vh;
+            }
+
+            @media (min-width: $lg) {
+                top: 20vh;
+                left: 7vw;
+            }
+
+            @media (min-width: $xxl) {
+                top: 22vh;
+                left: 12vw;
+            }
+
+            h1 {
+                font-size: clamp(1.2rem, 7vw, 6.25rem);
+                line-height: clamp(1rem, 5vw, 5.6rem);
+
+                span {
+                    font-size: clamp(2rem, 8vw, 9.3rem);
+                }
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: clamp(8px, 3vw, 1.8rem);
+                line-height: clamp(0.5rem, 3vw, 2.25rem);
+                margin-bottom: 0;
+
+                @media (min-width: $xxl) {
+                    margin-top: 2rem;
+                }
+            }
+        }
+	}
+
+    &-container {
+        margin-top: 50px;
+        color: $tronDarkBorder;
+
+        @media (min-width: $md) {
+            margin-top: 80px;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 260px;
+        }
+
+        & > div:not(:first-child) {
+            margin-top: 20px;
+
+            @media (min-width: $md) {
+                margin-top: 80px;
+            }
+
+            @media (min-width: $lg) {
+                margin-top: 250px;
+            }
+        }
+
+        img {
+        	width: 100%;
+        	height: 100%;
+
+            @media (min-width: $xxl) {
+                width: 80%;
+        	    height: 100%;
+            }
+        }
+
+        h1 {
+            font-family: Blender Pro Heavy;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 100%;
+            margin: 2rem 0;
+
+            @media (min-width: $xxl) {
+                font-size: 82px;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 170%;
+            color: #000;
+
+            @media (min-width: $lg) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &-ecosystem {
+        background: url('./images/multimedia/background.png') no-repeat;
+        backdrop-filter: blur(137.5px);
+        border-radius: 25px;
+        background-size: 100% 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        @media (min-width: $lg) {
+            width: 80%;
+            padding: 5rem;
+        }
+
+        @media (min-width: $xxl) {
+            width: 60%;
+            padding: 5rem;
+        }
+
+        h1 {
+            font-family: 'Blender Pro Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 100%;
+        }
+
+        p {
+            font-family: 'Blender Pro Bold';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 170%;
+            color: #000;
+        }
+
+        &-circle {
+            font-family: 'Blender Pro Bold';
+            width: 80px;
+            height: 80px;
+            border: 2px solid $tronRed;
+            border-radius: 50%;
+            font-size: 13px;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-align: center;
+            color: $tronRed;
+            text-transform: uppercase;
+
+            &:hover, &-active {
+                background-color: $tronRed;
+                color: white;
+            }
+
+            @media (min-width: $lg) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &-button {
+            font-family: Blender Pro;
+            text-transform: uppercase;
+            background: #FF0000;
+            border-radius: 54px;
+            min-height: 53px;
+            color: white;
+            padding: 22px;
+            border: none;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 100%;
+
+            &:hover {
+                color: white;
+                background-color: $tronDarkBorder;
+            }
+        }
+    }
 }
 
 .finance {
@@ -6070,4 +6320,214 @@ nav .navbar {
 			}
 	    }
 	}
+}
+
+.governance {
+    & * > h1 {
+		font-family: Blender Pro Heavy;
+	}
+
+	& * > p {
+		font-family: Blender Pro;
+	}
+
+    &-main {
+		position: relative;
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-header {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            h1 {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 1.0625rem;
+                line-height: 1;
+
+                @media (min-width: $md) {
+                    font-size: 2.5rem;
+                }
+
+                @media (min-width: $lg) {
+                    font-size: 3.75rem;
+                }
+
+                @media (min-width: $xxl) {
+                    font-size: 5.6rem;
+                }
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.6875rem;
+                line-height: 1;
+                width: 100%;
+                margin-bottom: 10px;
+
+                @media (min-width: $md) {
+                    width: 70%;
+                    font-size: 1.2rem;
+                }
+
+                @media (min-width: $lg) {
+                    width: 60%;
+                    font-size: 1.25rem;
+                }
+
+                @media (min-width: $xxl) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    &-body {
+        margin-top: 50px;
+        color: $tronDarkBorder;
+
+        @media (min-width: $lg) {
+            margin-top: 270px;
+        }
+
+        &-metrics {
+            @media (min-width: $xxl) {
+                width: 50%;
+            }
+
+            &-title {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 1.18rem;
+                line-height: 38px;
+
+                @media (min-width: $lg) {
+                    font-size: 1.9rem;
+                }
+            }
+
+            &-section {
+                padding: 3rem;
+                background: url('./images/multimedia/background.png');
+                backdrop-filter: blur(137.5px);
+                border-radius: 25px;
+                background-color: #FFC2C2;
+                background-size: cover;
+                max-height: 250px;
+
+                h1 {
+                    font-weight: 900;
+                    font-size: 1.18rem;
+                    color: $tronRed;
+                    line-height: 1;
+
+                    @media (min-width: $md) {
+                        font-size: 3.75rem;
+                    }
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 1.9rem;
+                    line-height: 1;
+                }
+            }
+        }
+        
+        &-section {
+            & > div {
+                margin-top: 70px;
+
+                @media (min-width: $lg) {
+                    margin-top: 150px;
+                }
+
+                @media (min-width: $xxl) {
+                    width: 66.666667%;
+                }
+            }
+
+            h1 {
+                font-family: Blender Pro Heavy;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 100%;
+                margin: 2rem 0;
+    
+                @media (min-width: $xxl) {
+                    font-size: 82px;
+                }
+            }
+    
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 170%;
+                color: #000;
+    
+                @media (min-width: $lg) {
+                    font-size: 18px;
+                }
+            }
+
+            &-circle {
+                &-small {
+                    background-color: #F7F7F7;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 70px;
+                    height: 70px;
+
+                    h1 {
+                        font-size: 50px;
+                        color: $tronRed;
+                    }
+                }
+
+                &-big {
+                    background-color: #F7F7F7;
+                    border-radius: 50%;
+                    width: 250px;
+                    min-height: 250px;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+
+            &-byd {
+                @media (max-width: $sm) {
+                    align-items: center;
+                }
+
+                p {
+                    font-family: 'Blender Pro';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 23px;
+                    color: #656565;
+                }
+
+                @media (max-width: $md) {
+                    button {
+                        font-size: 25px;
+                        width: 250px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
 }

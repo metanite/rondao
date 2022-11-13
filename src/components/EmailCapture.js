@@ -63,7 +63,7 @@ const EmailCapture = () => {
                     <div className="mt-md-4">
                         <h3 className="d-none d-lg-block px-3">SUBSCRIBE</h3>
                         <p className="email-capture-subscribe-signup px-3">SIGN UP FOR OUR NEWSLETTER</p>
-                        <div className="col-12 col-lg-11">
+                        <div className="col-12 col-lg-10">
                             <div className="form-group">
                                 <input type="email" name="EMAIL" placeholder="EMAIL" className="form-control required email"
                                    id="mce-EMAIL" required/>
@@ -89,7 +89,7 @@ const EmailCapture = () => {
                             </div>
                             <p className="col-12 email-capture-subscribe-disclaimer">By signing up for our Newsletter, I agree to the <a href={"/legal/privacy-policy/"} id={"email-capture-privacy-policy"}>Privacy Policy</a>.</p>
                             <div className="col-12 text-center text-lg-left mt-4">
-                                <button id="email-subscribe" className="float-right" type="submit"
+                                <button id="email-subscribe" className="float-right subscribe-button" type="submit"
                                         value="Subscribe" name="subscribe">Subscribe
                                 </button>
                             </div>
