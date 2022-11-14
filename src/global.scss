@@ -6531,3 +6531,187 @@ nav .navbar {
         }
     }
 }
+
+.get-started {
+	& * > h1 {
+		font-family: Blender Pro Heavy;
+	}
+
+	& * > p {
+		font-family: Blender Pro;
+	}
+
+    &-main {
+		position: relative;
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-header {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            @media (min-width: $lg) {
+            	margin-left: 3%;
+            	margin-top: 10%;
+            }
+
+            h1 {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 1.0625rem;
+                line-height: 1;
+                color: $tronRed;
+
+                @media (min-width: $md) {
+                    font-size: 2.5rem;
+                }
+
+                @media (min-width: $lg) {
+                    font-size: 6.75rem;
+                }
+
+                @media (min-width: $xxl) {
+                    font-size: 8.9875rem;
+                }
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.6875rem;
+                line-height: 1;
+                width: 100%;
+                margin-bottom: 10px;
+                color: $tronDarkBorder;
+
+                span {
+                	font-family: Blender Pro Bold;
+                	color: $tronRed;
+                }
+
+                @media (min-width: $md) {
+                    width: 70%;
+                    font-size: 1.2rem;
+                }
+
+                @media (min-width: $lg) {
+                    width: 100%;
+                    font-size: 3rem;
+                }
+
+                @media (min-width: $xxl) {
+                    font-size: 4.1875rem;
+                }
+            }
+        }
+    }
+
+    &-body {
+    	margin-top: 235px;
+    	color: $tronDarkBorder;
+
+    	& > div:last-child {
+    		margin-top: 300px;
+    	}
+
+    	&-section {
+    		width: 100%;
+
+    		& > div:first-child {
+    			margin-top: 240px;
+    		}
+
+    		& > div:not(:first-child) {
+    			margin-top: 86px;
+    		}
+
+    		& > div:nth-child(2):before {
+    			content: "";
+    			width: 50px;
+    			height: 50px;
+    			border: 1px solid $tronRed;
+    			border-radius: 50%;
+    			background-color: $tronRed;
+    			float: right;
+    		}
+
+    		&-title {
+    			h1 {
+    				font-family: Blender Pro Bold;
+    				font-size: 2rem;
+    				font-weight: 700;
+    				display: flex;
+    				flex-direction: row;
+
+    				&:before {
+    					content: "";
+    					flex: 1 1;
+    					width: 300px;
+	    				border-bottom: 2px solid $tronRed;
+	    				margin: auto;
+    				}
+
+    				span {
+    					width: 18px;
+    					height: 18px;
+    					margin-block: auto;
+    					margin-right: 35px;
+    					border: 1px solid $tronRed;
+    					background-color: $tronRed;
+    					border-radius: 50%;
+    				}
+    			}
+    		}
+
+    		&-cards {
+    			display: grid;
+    			grid-template-columns: repeat(3, 1fr);
+    			gap: 2rem;
+    		}
+
+    		&-card {
+    			background: #FBFBFB;
+				border-radius: 16.8959px;
+				padding: 2rem;
+
+				h1 {
+					font-family: 'Space Mono';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 148%;
+					color: $tronRed;
+				}
+
+				p {
+					font-style: normal;
+					font-weight: 700;
+					font-size: 11.5199px;
+					line-height: 170%;
+					text-align: justify;
+				}
+
+				&-icon {
+					width: 30px;
+					height: 25px;
+					background: $tronRed;
+					border-radius: 3px;
+					cursor: pointer;
+
+					svg {
+						fill: white;
+					}
+				}
+
+				&:hover {
+					box-shadow: 2.30398px 2.30398px 13.0559px rgba(0, 0, 0, 0.25);
+				}
+    		}
+    	}
+    }	
+}

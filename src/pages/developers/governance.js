@@ -65,7 +65,7 @@ const Governance = ({data}) => {
                             </div>
                             <div className="col-12 col-md-6 order-1 order-md-2">
                             <img src={tronbullBallot} alt="trons putting their vote in the ballot box" className="gaming-tronbull-chart img-fluid d-lg-block mx-lg-auto"></img>
-                            </div>
+                        </div>
                         </div>
                             <div className="d-flex flex-column flex-md-row align-items-center justify-content-center col-11 col-md-12 col-lg-10 mx-auto">
                             <div className="col-md-6 col-lg-5 mx-auto order-2 order-md-2">
@@ -76,7 +76,7 @@ const Governance = ({data}) => {
                             </div>
                             <div className="col-12 col-md-6 order-1 order-md-1">
                             <img src={tronCommunities} alt="different communites" className="gaming-tronbull-chart img-fluid d-lg-block mx-lg-auto"></img>
-                            </div>
+                        </div>
                         </div>
                         <div className="governance-body-section-byd d-flex flex-column col-11 col-md-12 col-lg-10 mx-auto">
                             <div>

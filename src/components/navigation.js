@@ -232,8 +232,8 @@ const Navigation = () => {
                             </a>
                           </li>
                           <li>
-                            <a onClick={closeMenu} href=""
-                               target="_blank" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/initiatives/research/"
+                               rel="noopener noreferrer"
                                id="nav-about-research">
                               Research
                             </a>
@@ -262,8 +262,8 @@ const Navigation = () => {
 												</p>
 												<ul>
 													<li>
-                            <a onClick={closeMenu} href=""
-                               target="_blank" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/get-started/"
+                              rel="noopener noreferrer"
                                id="nav-build-get-started">
                               Get Started
                             </a>
