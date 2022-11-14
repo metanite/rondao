@@ -33,9 +33,11 @@ const GetStarted = ({data}) => {
                 </div>
 
                 <div className="get-started-body">
-                	<div className="d-flex flex-column flex-md-row align-items-center justify-content-center col-11 col-md-12 col-lg-8 mx-auto">
-                        <div className="col-md-6 col-lg-5 mx-auto order-2 order-md-1">
+                	<div className="d-flex flex-column flex-md-row col-11 col-md-12 col-lg-8 mx-auto">
+                        <div className="col-lg-8">
                             <h1 className="text-uppercase mb-4">Get Started</h1>
+                        </div>
+                        <div>
                             <p className="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -44,7 +46,7 @@ const GetStarted = ({data}) => {
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                        <div className="col-12 col-md-6 order-1 order-md-2">
+                        <div className="">
                         	<img src={tronbullFlask} alt="tronbull holding a flask" className="gaming-tronbull-chart img-fluid d-lg-block mx-lg-auto"></img>
                     	</div>
                     </div>
@@ -54,7 +56,8 @@ const GetStarted = ({data}) => {
                 			<div className="get-started-body-section-title d-flex">
                 				<h1><span></span>dApp Development guide</h1>
                 			</div>
-                			<div className="get-started-body-section-cards col-lg-8 mx-auto mt-4">
+                			<div className="get-started-body-section-cards col-11 col-md-10  col-lg-8 mx-auto mt-4 position-relative">
+                                <img src={tronbullRocket} alt="tronbull riding a rocket" className="get-started-body-section-img1"></img>
             					<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
                 					<div>
 	                					<h1>DApp Development Tools</h1>
@@ -62,7 +65,7 @@ const GetStarted = ({data}) => {
 	                					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -73,7 +76,7 @@ const GetStarted = ({data}) => {
 	                					Lorem ipsum dolor sit amet, asdasdasd Lorem ipsum dolor sit amet, asdasdasd Lorem ipsum dolor sit amet, asdasdasd asdi ajsid jaisjd aisjd aisjd iasjd aisj dasjdia j consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 	                					</p>
 	                				</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -84,7 +87,7 @@ const GetStarted = ({data}) => {
 	                					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -95,7 +98,7 @@ const GetStarted = ({data}) => {
                 			<div className="get-started-body-section-title d-flex">
                 				<h1><span></span>TRON Protocol</h1>
                 			</div>
-                			<div className="get-started-body-section-cards col-lg-8 mx-auto mt-4">
+                			<div className="get-started-body-section-cards col-11 col-md-10 col-lg-8 mx-auto mt-4">
             					<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
                 					<div>
 	                					<h1>Account</h1>
@@ -105,7 +108,7 @@ const GetStarted = ({data}) => {
 	                					quis nostrud 
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -118,7 +121,7 @@ const GetStarted = ({data}) => {
 	                					quis nostrud
 	                					</p>
 	                				</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -131,7 +134,7 @@ const GetStarted = ({data}) => {
 	                					quis nostrud
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -142,7 +145,8 @@ const GetStarted = ({data}) => {
                 			<div className="get-started-body-section-title d-flex">
                 				<h1 className="text-uppercase"><span></span>Build Mode</h1>
                 			</div>
-                			<div className="get-started-body-section-cards col-lg-8 mx-auto mt-4">
+                			<div className="get-started-body-section-cards col-11 col-md-10 col-lg-8 mx-auto mt-4 position-relative">
+                            <img src={tronbullSidewaving} alt="tronbull waiving" className="d-none d-lg-block get-started-body-section-img2"></img>
             					<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
                 					<div>
 	                					<h1>Deploy A Node</h1>
@@ -151,7 +155,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -163,7 +167,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 	                					</p>
 	                				</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -175,7 +179,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -186,7 +190,7 @@ const GetStarted = ({data}) => {
                 			<div className="get-started-body-section-title d-flex">
                 				<h1 className="text-uppercase"><span></span>Smart Contracts</h1>
                 			</div>
-                			<div className="get-started-body-section-cards col-lg-8 mx-auto mt-4">
+                			<div className="get-started-body-section-cards col-11 col-md-10 col-lg-8 mx-auto mt-4">
             					<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
                 					<div>
 	                					<h1>Introduction</h1>
@@ -195,7 +199,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -207,7 +211,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 	                					</p>
 	                				</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -219,7 +223,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -230,7 +234,8 @@ const GetStarted = ({data}) => {
                 			<div className="get-started-body-section-title d-flex">
                 				<h1 className="text-uppercase"><span></span>Token Standards</h1>
                 			</div>
-                			<div className="get-started-body-section-cards col-lg-8 mx-auto mt-4">
+                			<div className="get-started-body-section-cards col-11 col-md-10 col-lg-8 mx-auto mt-4 position-relative">
+                            <img src={tronbullOpenarms} alt="tronbull waiving" className="get-started-body-section-img3"></img>
             					<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
                 					<div>
 	                					<h1>Overview</h1>
@@ -239,7 +244,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud   
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -251,7 +256,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 	                					</p>
 	                				</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
@@ -263,7 +268,7 @@ const GetStarted = ({data}) => {
 	                					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 	                					</p>
                 					</div>
-                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center mt-4">
+                					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
                 						<a href="/"><FaArrowRight /></a>
                 					</div>
                 				</div>
