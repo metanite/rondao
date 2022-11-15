@@ -1,6 +1,8 @@
 import React, {useRef, useState} from "react"
 import {graphql, StaticQuery} from "gatsby"
-import {BsArrowLeftCircleFill, BsArrowRightCircleFill, CgClose, FaCircle} from "react-icons/all";
+import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
+import {CgClose} from "react-icons/cg";
+import {FaCircle} from "react-icons/fa";
 
 const Judges = ({data}) => {
     const [isOpen, setIsOpen] = useState(false);

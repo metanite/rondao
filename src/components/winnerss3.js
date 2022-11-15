@@ -4,7 +4,7 @@ import nft from "../images/tracks/icon-track-nft-dark.svg"
 import defi from "../images/tracks/icon-track-defi-dark.svg"
 import gamefi from "../images/tracks/icon-track-gamefi-dark.svg"
 import testImg from "../images/trondao-logo-white.svg"
-import {CgClose} from "react-icons/all";
+import {CgClose} from "react-icons/cg";
 import HackerText from "./hackerText";
 import tronbullHype from "../images/hackathons3/TRON Bull Hype.png";
 
@@ -24,22 +24,22 @@ const Winnerss3 = ({data}) => {
 
     let web3Season1Winners = [];
     let web3Season2Winners = [];
-    let web3Season3Winners = [];
+    //let web3Season3Winners = [];
 
     let defiSeason1Winners = [];
     let defiSeason2Winners = [];
-    let defiSeason3Winners = [];
+    //let defiSeason3Winners = [];
 
     let nftSeason1Winners = [];
     let nftSeason2Winners = [];
-    let nftSeason3Winners = [];
+    //let nftSeason3Winners = [];
 
     let gamefiSeason1Winners = [];
     let gamefiSeason2Winners = [];
-    let gamefiSeason3Winners = [];
+    //let gamefiSeason3Winners = [];
 
     let bonusPrizeSeason2Winners = [];
-    let bonusPrizeSeason3Winners = [];
+    //let bonusPrizeSeason3Winners = [];
 
 
     for (let i = 0; i < data.nodes.length; i++) {
@@ -87,7 +87,7 @@ const Winnerss3 = ({data}) => {
                 <div className="col-lg-3 col-md-6 col-12">
                     <div className="">
                         <div className="d-flex align-items-center justify-content-center winners-s3-image"><img
-                            src={web3}/></div>
+                            src={web3} alt="web3" /></div>
                         <h3 className="mb-5">Web3</h3>
                         <p className="w-75 mx-auto winners-s3-description">The future of the Web is in your hands. The
                             judges are looking to developers for a contribution that will help transition this new
@@ -110,7 +110,7 @@ const Winnerss3 = ({data}) => {
                 <div className="col-lg-3 col-md-6 col-12">
                     <div className="">
                         <div className="d-flex align-items-center justify-content-center winners-s3-image"><img
-                            src={defi}/></div>
+                            src={defi} alt="defi" /></div>
                         <h3 className="mb-5">DeFi</h3>
                         <p className="w-75 mx-auto winners-s3-description">DeFi continues to be a crucial movement for
                             the crypto space as it enables financial services to operate in an open, accessible, and
@@ -134,7 +134,7 @@ const Winnerss3 = ({data}) => {
                 <div className="col-lg-3 col-md-6 col-12">
                     <div className="">
                         <div className="d-flex align-items-center justify-content-center winners-s3-image"><img
-                            src={nft}/></div>
+                            src={nft} alt="nft" /></div>
                         <h3 className="mb-5">NFT</h3>
                         <p className="w-75 mx-auto winners-s3-description">We are embracing creator economies by working
                             to empower developers who create novel NFT applications. By giving them both financial
@@ -157,7 +157,7 @@ const Winnerss3 = ({data}) => {
                 <div className="col-lg-3 col-md-6 col-12">
                     <div className="">
                         <div className="d-flex align-items-center justify-content-center winners-s3-image"><img
-                            src={gamefi}/></div>
+                            src={gamefi} alt="gamefi" /></div>
                         <h3 className="mb-5">GameFi</h3>
                         <p className="w-75 mx-auto winners-s3-description">There’s nothing like feeling the victory when
                             your game comes out on top. This track is all about developing the next big game idea. With

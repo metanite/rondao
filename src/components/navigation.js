@@ -201,8 +201,8 @@ const Navigation = () => {
                             </a>
                           </li>
                           <li>
-                            <a onClick={closeMenu} href=""
-                               target="_blank" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/initiatives/tron-academy"
+                               rel="noopener noreferrer"
                                id="nav-programs-tron-academy">
                               TRON Academy
                             </a>

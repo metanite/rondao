@@ -33,8 +33,8 @@ const GetStarted = ({data}) => {
                 </div>
 
                 <div className="get-started-body">
-                	<div className="d-flex flex-column flex-md-row col-11 col-md-12 col-lg-8 mx-auto">
-                        <div className="col-lg-8">
+                	<div className="get-started-body-opening col-11 col-md-8 mx-auto">
+                        <div className="">
                             <h1 className="text-uppercase mb-4">Get Started</h1>
                         </div>
                         <div>
@@ -66,7 +66,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -77,7 +77,7 @@ const GetStarted = ({data}) => {
 	                					</p>
 	                				</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -88,13 +88,13 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 			</div>
                 		</div>
 
-                		<div>
+                		<div className="position-relative">
                 			<div className="get-started-body-section-title d-flex">
                 				<h1><span></span>TRON Protocol</h1>
                 			</div>
@@ -109,7 +109,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -122,7 +122,7 @@ const GetStarted = ({data}) => {
 	                					</p>
 	                				</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -135,13 +135,13 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 			</div>
                 		</div>
 
-                		<div>
+                		<div className="position-relative">
                 			<div className="get-started-body-section-title d-flex">
                 				<h1 className="text-uppercase"><span></span>Build Mode</h1>
                 			</div>
@@ -156,7 +156,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -168,7 +168,7 @@ const GetStarted = ({data}) => {
 	                					</p>
 	                				</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -180,7 +180,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 			</div>
@@ -200,7 +200,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -212,7 +212,7 @@ const GetStarted = ({data}) => {
 	                					</p>
 	                				</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -224,13 +224,13 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 			</div>
                 		</div>
-
-                		<div>
+ 
+                		<div className="position-relative">
                 			<div className="get-started-body-section-title d-flex">
                 				<h1 className="text-uppercase"><span></span>Token Standards</h1>
                 			</div>
@@ -245,7 +245,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -257,7 +257,7 @@ const GetStarted = ({data}) => {
 	                					</p>
 	                				</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 				<div className="get-started-body-section-card d-flex flex-column justify-content-between col-12">
@@ -269,7 +269,7 @@ const GetStarted = ({data}) => {
 	                					</p>
                 					</div>
                 					<div className="get-started-body-section-card-icon d-flex align-self-end justify-content-center">
-                						<a href="/"><FaArrowRight /></a>
+                						<a href="/"><FaArrowRight role="button" aria-label="redirect link" /></a>
                 					</div>
                 				</div>
                 			</div>
