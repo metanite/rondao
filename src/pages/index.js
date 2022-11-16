@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+//import { Link, graphql } from "gatsby";
 import {Helmet} from "react-helmet";
 import community from "../images/home/community.svg"
 import developer from "../images/home/developer.svg"
@@ -56,7 +56,7 @@ const Index = ({ data }) => {
                     <div className="d-block d-md-none homepage-grants-line-upper"></div>
                     <div className="col-md-4 col-12 align-items-center mb-5">
                         <div className="homepage-grants-container-icons text-center">
-                            <img src={community} className="img-fluid" alt="TRON Bull Developer"/>
+                            <img src={developer} className="img-fluid" alt="TRON Bull Developer"/>
                         </div>
                         <div className="homepage-grants-container-header" >Developer</div>
                         <a href="/grants/#grants-developers" id="homepage-button-grants-developer">
@@ -66,7 +66,7 @@ const Index = ({ data }) => {
                     <div className="d-block d-md-none homepage-grants-line-lower ml-3"></div>
                     <div className="col-md-4 col-12 align-items-center mb-5">
                         <div className="homepage-grants-container-icons text-center">
-                            <img src={developer} className="img-fluid" alt="TRON Bull Community Ambassador"/>
+                            <img src={community} className="img-fluid" alt="TRON Bull Community Ambassador"/>
                         </div>
                         <div className="homepage-grants-container-header" >Community Ambassador</div>
                         <a href="/grants/#grants-community" id="homepage-button-grants-community">
@@ -153,7 +153,7 @@ const Index = ({ data }) => {
 
             
             <div className="homepage-starting-header-start mt-5 px-md-5 text-center">
-                <img src={playButton} className="homepage-starting-header-icon"/>
+                <img src={playButton} alt="play button icon" className="homepage-starting-header-icon"/>
                 Start
             </div>
             <div className="homepage-starting-header mt-5 px-md-5 text-center homepage-starting-header-building">Building with TRON</div>

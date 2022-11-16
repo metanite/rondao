@@ -52,15 +52,17 @@ const TronAcademy = ({data}) => {
 	           	<div className="tron-academy-research d-flex flex-column flex-lg-row justify-content-center align-items-center col-lg-10 mx-auto">
 	           		<div className="d-flex flex-column col-12 col-lg-6 mt-5 mt-lg-0 order-2 order-lg-0">
 	           			<div className="position-relative">
-	           			<h1 className="text-uppercase text-center text-lg-left">Tron Research</h1>
+	           				<h1 className="text-uppercase text-center text-lg-left">Tron Research</h1>
 	           			</div>
-	           			<p>
+	           			<p className="text-center text-lg-left">
 	           			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 	           			euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
 	           			enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
 	           			nisl ut aliquip ex ea commodo consequat. 	
 	           			</p>
-	           			<a href="/"><button type="button" className="cta-button mt-lg-5">Call To Action</button></a>
+	           			<a href="/" className="d-flex justify-content-center justify-content-lg-start my-5">
+	           				<button type="button" className="cta-button">Call To Action</button>
+	           			</a>
 	           		</div>
 	           		<div className="order-1 order-lg-0 d-flex align-items-center align-items-lg-start">
 	           			<img src={tronbullMagnifyingGlass} alt="tronbull holding a magnifying glass" 

@@ -341,10 +341,9 @@ const Navigation = () => {
                             </a>
                           </li>
                           <li>
-                            <a onClick={closeMenu} href="https://tron.network/faq?lng=en"
-                               target="_blank" rel="noopener noreferrer" id="nav-learning-faqs">
+                            <a onClick={closeMenu} href="/developers/learning/faq/"
+                              rel="noopener noreferrer" id="nav-learning-faqs">
                               FAQs
-                              <FaArrowRight className="navbar-outside-link"/>
                             </a>
                           </li>
                         </ul>
