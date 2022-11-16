@@ -1,10 +1,10 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import cryptoCoin from "../../images/art/cryptocoin.png"
-import tronbullPainting from "../../images/art/tronbull-painting.png"
-import tronbullNft from "../../images/art/tronbull-nft.png"
-import tronbullRainbow from "../../images/art/tronbull-rainbow.png"
-import tronbullGuardCoins from "../../images/art/tronbull-guard-coins.png"
+import cryptoCoin from "../../../images/art/cryptocoin.png"
+import tronbullPainting from "../../../images/art/tronbull-painting.png"
+import tronbullNft from "../../../images/art/tronbull-nft.png"
+import tronbullRainbow from "../../../images/art/tronbull-rainbow.png"
+import tronbullGuardCoins from "../../../images/art/tronbull-guard-coins.png"
 
 const Art = ({data}) => {
     return (

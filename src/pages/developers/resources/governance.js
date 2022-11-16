@@ -1,12 +1,12 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-import governanceBackground from "../../images/governance/background.mp4"
-import tronbullBallot from "../../images/governance/tronbull-ballot.png"
-import tronCommunities from "../../images/governance/communities.png"
-import tronbullCircuit from "../../images/governance/tronbull-circuit.svg"
-import tronbullVoting from "../../images/governance/tronbull-vote.svg"
-import tronbullLink from "../../images/governance/tronbull-link.svg"
-import EmailCapture from "../../components/EmailCapture"
+import governanceBackground from "../../../images/governance/background.mp4"
+import tronbullBallot from "../../../images/governance/tronbull-ballot.png"
+import tronCommunities from "../../../images/governance/communities.png"
+import tronbullCircuit from "../../../images/governance/tronbull-circuit.svg"
+import tronbullVoting from "../../../images/governance/tronbull-vote.svg"
+import tronbullLink from "../../../images/governance/tronbull-link.svg"
+import EmailCapture from "../../../components/EmailCapture"
 
 const Governance = ({data}) => {
     return (

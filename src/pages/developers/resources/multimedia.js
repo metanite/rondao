@@ -1,10 +1,10 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-import tronBullWatching from "../../images/multimedia/watching.mp4";
-import tronbullDirector from "../../images/multimedia/tronbull-director.png"
-import tronbullGraph from "../../images/multimedia/tronbull-graph.png"
-import tronTv from "../../images/multimedia/tron-tv.png"
-import EmailCapture from "../../components/EmailCapture"
+import tronBullWatching from "../../../images/multimedia/watching.mp4";
+import tronbullDirector from "../../../images/multimedia/tronbull-director.png"
+import tronbullGraph from "../../../images/multimedia/tronbull-graph.png"
+import tronTv from "../../../images/multimedia/tron-tv.png"
+import EmailCapture from "../../../components/EmailCapture"
 
 const Multimedia = ({data}) => {
     return (
@@ -87,7 +87,7 @@ const Multimedia = ({data}) => {
                                     </div>
                                 </div>
                                 <div className="mt-5 col-12">
-                                    <a href="/"><button className="multimedia-ecosystem-button w-100">> Visit Ecosystem</button></a>
+                                    <a href="/ecosystem/"><button className="multimedia-ecosystem-button w-100">> Visit Ecosystem</button></a>
                                 </div>
                             </div>
                         </div>

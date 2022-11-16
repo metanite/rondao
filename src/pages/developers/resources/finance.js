@@ -1,12 +1,12 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import tronbullChart from "../../images/finance/tronbull-chart.svg"
-import hexagon from "../../images/finance/hexagon.svg"
-import pantheon from "../../images/finance/pantheon.svg"
-import gift from "../../images/finance/gift.svg"
-import gear from "../../images/finance/gear.svg"
-import dollar from "../../images/finance/dollar.svg"
-import chats from "../../images/finance/chats.svg"
+import tronbullChart from "../../../images/finance/tronbull-chart.svg"
+import hexagon from "../../../images/finance/hexagon.svg"
+import pantheon from "../../../images/finance/pantheon.svg"
+import gift from "../../../images/finance/gift.svg"
+import gear from "../../../images/finance/gear.svg"
+import dollar from "../../../images/finance/dollar.svg"
+import chats from "../../../images/finance/chats.svg"
 
 const Finance = ({data}) => {
     return (

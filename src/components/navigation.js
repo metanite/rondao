@@ -10,7 +10,6 @@ import grant from "../images/grant.svg";
 import calendar from "../images/calendar.svg";
 import content from "../images/content.svg";
 import node from "../images/node.svg";
-import arrowDown from "../images/arrow-down.svg";
 import {
   FaArrowRight,
   FaDiscord,
@@ -262,41 +261,41 @@ const Navigation = () => {
 												</p>
 												<ul>
 													<li>
-                            <a onClick={closeMenu} href="/developers/get-started/"
+                            <a onClick={closeMenu} href="/developers/resources/get-started/"
                               rel="noopener noreferrer"
                                id="nav-build-get-started">
                               Get Started
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/multimedia/" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/resources/multimedia/" rel="noopener noreferrer"
                                id="nav-resources-multimedia">
                               Multimedia
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/gaming/"
+                            <a onClick={closeMenu} href="/developers/resources/gaming/"
                               rel="noopener noreferrer"
                               id="nav-resources-gaming">
                               Gaming
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/finance/"
+                            <a onClick={closeMenu} href="/developers/resources/finance/"
                               rel="noopener noreferrer"
                               id="nav-resources-finance">
                               Finance
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/art/"
+                            <a onClick={closeMenu} href="/developers/resources/art/"
                               rel="noopener noreferrer"
                                id="nav-resources-art">
                               Art
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/governance/" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/resources/governance/" rel="noopener noreferrer"
                                id="nav-resources-governance">
                               Governance
                             </a>

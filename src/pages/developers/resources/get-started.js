@@ -1,12 +1,12 @@
 import React from "react"
 import {Helmet} from "react-helmet"
 import {FaArrowRight} from "react-icons/fa"
-import researchBackGround from "../../images/started/tronbull-lab.mp4"
-import tronbullOpenarms from "../../images/started/tronbull-openarms.png"
-import tronbullSidewaving from "../../images/started/tronbull-sidewaving.png"
-import tronbullRocket from "../../images/started/tronbull-rocket.png"
-import tronbullFlask from "../../images/started/tronbull-flask.png"
-import EmailCapture from "../../components/EmailCapture"
+import researchBackGround from "../../../images/started/tronbull-lab.mp4"
+import tronbullOpenarms from "../../../images/started/tronbull-openarms.png"
+import tronbullSidewaving from "../../../images/started/tronbull-sidewaving.png"
+import tronbullRocket from "../../../images/started/tronbull-rocket.png"
+import tronbullFlask from "../../../images/started/tronbull-flask.png"
+import EmailCapture from "../../../components/EmailCapture"
 
 const GetStarted = ({data}) => {
     return (
