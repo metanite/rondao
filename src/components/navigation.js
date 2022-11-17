@@ -231,7 +231,7 @@ const Navigation = () => {
                             </a>
                           </li>
                           <li>
-                            <a onClick={closeMenu} href="/initiatives/research/"
+                            <a onClick={closeMenu} href="/initiatives/about/research/"
                                rel="noopener noreferrer"
                                id="nav-about-research">
                               Research
