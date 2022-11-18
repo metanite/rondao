@@ -23,7 +23,7 @@ const Governance = ({data}) => {
                     <video autoPlay muted loop playsInline className="d-block mx-auto">
                             <source src={governanceBackground} type="video/mp4"/>
                     </video>
-                    <div className="governance-main-header col-5 col-lg-4 d-flex flex-column justify-content-center align-items-start offset-md-1">
+                    <div className="governance-main-header col-5 col-lg-4 d-flex flex-column justify-content-center align-items-start">
                         <h1 className="text-uppercase">Efficient Governance</h1>
                         <p className="my-lg-4">
                         Some description about this section will go here 

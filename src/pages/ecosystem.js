@@ -91,13 +91,13 @@ const Ecosystem = ({data}) => {
                 <video autoPlay muted loop playsInline className="ecosystem-hero-background">
                     <source src={background} type="video/mp4"/>
                 </video>
-                <div className="pt-5 ecosystem-hero-front">
-                    <h1 className="mt-5 ecosystem-hero-header">
+                <div className="ecosystem-hero-front d-flex flex-column align-items-center justify-content-center">
+                    <h1 className="ecosystem-hero-header">
                         TRON
                         <div className="mt-2 w-100"/>
                         ECOSYSTEM
                     </h1>
-                    <p className="mt-5 ecosystem-hero-subheader">Discover the latest dApps built on TRON, actively
+                    <p className="ecosystem-hero-subheader">Discover the latest dApps built on TRON, actively
                         defining decentralization and fulfilling TRON’s mission of creating an internet for all.</p>
                     <a href="https://docs.google.com/forms/d/1aw1KTjKxxEhKNqF5WyvKlPy_YDM4ueti4f_707g7Qa8/edit"
                        id="ecosystem-btn-submit-your-project" target="_blank" rel="noopener noreferrer">
@@ -107,7 +107,7 @@ const Ecosystem = ({data}) => {
 
             </div>
             <div className="w-100 ecosystem-container ecosystem-buttons">
-                <div className="d-flex flex-wrap my-5 w-100">
+                <div className="d-flex flex-wrap w-100">
                     <button className={'m-2' + activeIfSelected(infrastructure)} onClick={function () {
                         filterByCategory(infrastructure)
                     }} id="ecosystem-dapp-filter-infrastructure">Infrastructure
@@ -136,7 +136,7 @@ const Ecosystem = ({data}) => {
                 </div>
             </div>
 
-            <div className="d-flex flex-wrap mt-5 pb-5 ecosystem-container-lower justify-content-between">
+            <div className="pb-5 ecosystem-container-lower ecosystem-items">
                 {
                     displayedEcosystems.length > 0 && displayedEcosystems.map(system => {
                         return <a href={system.node.dappinfo.url} className="ecosystem-card px-3" key={system.node.title}
