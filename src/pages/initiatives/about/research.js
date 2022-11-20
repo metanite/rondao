@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet"
 import {FaArrowRight} from "react-icons/fa"
 import GridCarousel from "../../../components/gridCarousel"
 import tronResearchBackground from "../../../images/research/tron-research.mp4"
+import EmailCapture from "../../../components/EmailCapture"
 
 const Research = ({data}) => {
     return (
@@ -36,10 +37,12 @@ const Research = ({data}) => {
                     </div>
 
                     <div className="research-body-article">
-                        <div className="d-flex flex-column justify-content-between">
+                        <div className="research-body-article-card">
+                            <div className="research-background"></div>
                             <div>
-                                <div className="research-background"></div>
                                 <h1 className="text-uppercase">Month 2022</h1>
+                            </div>
+                            <div>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
@@ -47,32 +50,45 @@ const Research = ({data}) => {
                                 quis nostrud exerci tation ullamcorper. 
                                 </p>
                             </div>
-                            <div className="arrow-icon d-flex align-items-center justify-content-center mt-3">
-                                <a href="/#"><FaArrowRight size={20} role="button" aria-label="arrow right icon" /></a>
+                            <div className="">
+                                <a href="/#" className="arrow-icon d-flex align-items-center justify-content-center"><FaArrowRight size={20} role="button" aria-label="arrow right icon" /></a>
                             </div>
                         </div>
-                        <div className="d-flex flex-column justify-content-between">
+                        <div className="research-body-article-card">
+                            <div className="research-background"></div>
                             <div>
-                                <div className="research-background"></div>
                                 <h1 className="text-uppercase">Month 2022</h1>
+                            </div>
+                            <div>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
                                 magna aliquam erat volutpat. 
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                                 </p>
                             </div>
-                            <div className="arrow-icon d-flex align-items-center justify-content-center mt-3">
-                                <a href="/#"><FaArrowRight size={20} role="button" aria-label="arrow right icon" /></a>
+                            <div className="">
+                                <a href="/#" className="arrow-icon d-flex align-items-center justify-content-center"><FaArrowRight size={20} role="button" aria-label="arrow right icon" /></a>
                             </div>
                         </div>
                     </div>
 
                     <div className="research-projects">
-                        <h1 className="text-uppercase">Project Studies</h1>
-                        
-                        {/*<GridCarousel />*/}
-                    </div> 
+                        <h1 className="research-projects-title">Project Studies</h1>
+            
+                        <GridCarousel />
+                    </div>
+                    <div className="research-reports">
+                        <h1 className="research-reports-title">Reports</h1>
+            
+                        <GridCarousel />
+                    </div>
                 </div>
+
+                <div>
+                    <EmailCapture />
+                </div>  
             </div>
         </div>
     )

@@ -126,9 +126,112 @@ a {
 	}
 }
 
+.mini-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-wrapper {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    &-content-wrapper {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-content {
+        display: flex;
+        transition: all 250ms linear;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        & > * {
+            width: 100%;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        
+        & > div {
+            padding-left: 0;
+            padding-right: 1rem;
+
+            @media (min-width: $xxl) {
+                padding-right: 3rem;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &-show-3 {
+            width: 100%;
+
+            @media (min-width: $md) {
+                width: calc(100% / 3);
+            }
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            line-height: 26px;
+            margin-top: 3rem;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 170%;
+            margin: 1rem 0;
+        }
+    }
+
+    &-left-arrow, &-right-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 25%;
+        border: none;
+        outline: none;
+        background: none;
+        
+        svg {
+            fill: $tronRed;
+        }
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    &-left-arrow {
+        left: -80px;
+    }
+
+    &-right-arrow {
+        right: -30px;
+    }
+
+    &-dot {
+        svg {
+            fill: #D9D9D9;
+        }
+
+        &.active {
+            svg {
+                fill: $tronRed;
+            }
+        }
+    }
+}
+
 .arrow-icon {
-	width: 30px;
-	height: 25px;
+	width: 40px;
+	height: 32px;
 	background: $tronRed;
 	border-radius: 3px;
 	cursor: pointer;
@@ -136,6 +239,10 @@ a {
 	svg {
 		fill: white;
 	}
+
+    &:hover {
+        background: $tronDarkBorder;
+    }
 }
 
 
@@ -4468,6 +4575,10 @@ nav .navbar {
     	@media (min-width: $lg) {
     		grid-template-columns: repeat(3, 1fr);
     	}
+
+        @media (min-width: $lg) {
+    		gap: 2rem;
+    	}
 	}
 
 	&-card:hover {
@@ -4476,7 +4587,7 @@ nav .navbar {
 
 	&-card {
 		width: 100%;
-		margin: 35px 0;
+		margin: 15px 0;
 		@media (max-width: 1100px) {
 			width: 100%;
 		}
@@ -4552,24 +4663,29 @@ nav .navbar {
 			text-align: center;
 			margin-top: 30px;
 		}
+
+        @media (min-width: $lg) {
+            margin: 35px 0;
+        }
 	}
 
 	&-container {
-		padding: 100px 50px;
+		padding: 100px 25px;
 
 		&-lower {
 			min-height: 70vh;
 			padding: 0 125px;
-			@media (max-width: $md) {
-				padding: 100px 25px;
+			@media (max-width: $sm) {
+				padding: 20px 25px;
+			}
+
+            @media (min-width: $md) {
+				padding: 20px 125px;
 			}
 		}
 
-		@media (min-width: $lg) {
+		@media (min-width: $md) {
 			padding: 100px 125px;
-		}
-		@media (max-width: 450px) {
-			padding: 100px 10px;
 		}
 	}
 
@@ -4588,31 +4704,49 @@ nav .navbar {
 		}
 
 		&-header {
-			font-family: Blender Pro;
-			font-size: 90px;
+			font-family: Blender Pro Bold;
+			font-size: 36px;
 			font-weight: 700;
-			line-height: 90px;
+			line-height: 1;
 			letter-spacing: 0em;
 			text-align: center;
-			@media (max-width: $md) {
-				font-size: 70px;
-			}
-			@media (max-width: 400px) {
-				font-size: 36px;
-			}
+            
+            @media (min-width: $md) {
+                font-size: 50px;
+            }
+
+            @media (min-width: $lg) {
+                font-size: 90px;
+                line-height: 90px;
+            }
+
+            @media (min-width: $xxl) {
+                font-size: 100px;
+            }
 		}
 
 		&-subheader {
 			font-family: Blender Pro;
-			font-size: 20px;
+			font-size: 15px;
 			font-weight: 400;
-			line-height: 34px;
+			line-height: 20px;
 			letter-spacing: 0em;
 			text-align: center;
 			max-width: 600px;
-			@media (max-width: $md) {
-				font-size: 20px;
+            margin-bottom: 2px;
+            width: 85%;
+			@media (min-width: $md) {
+                font-size: 18px;
 			}
+
+            @media (min-width: $lg) {
+                font-size: 20px;
+                line-height: 34px;
+            }
+
+            @media (min-width: $xxl) {
+                font-size: 25px;
+            }
 		}
 
 	}
@@ -4645,30 +4779,29 @@ nav .navbar {
 
 	button {
 		&.cta {
-			width: 240px;
-			height: 76px;
+			width: 150px;
+			height: 40px;
 			background: $tronRed;
 			border-color: $tronRed;
 			border-radius: 38px;
 			font-family: 'Blender Pro';
 			font-style: normal;
 			font-weight: 700;
-			font-size: 18px;
+			font-size: 13px;
 			line-height: 100%;
 			max-width: 100%;
 			color: #FFFFFF;
 
 			&:hover {
-				width: 240px;
-				height: 76px;
-				border-radius: 38px;
-				font-family: 'Blender Pro';
-				font-style: normal;
-				font-weight: 700;
-				font-size: 18px;
-				line-height: 100%;
+                border-radius: 38px;
 				color: #FFFFFF;
 			}
+
+            @media (min-width: $lg) {
+                width: 240px;
+			    height: 76px;
+                font-size: 18px;
+            }
 		}
 
 		text-transform: uppercase;
@@ -7404,7 +7537,11 @@ nav .navbar {
     }
 
     &-body {
-    	margin-top: 200px;
+    	margin-top: 50px;
+
+        @media (min-width: $lg) {
+            margin-top: 200px;
+        }
 
     	&-tabs {
     		border-bottom: 1px solid $tronRed;
@@ -7419,30 +7556,38 @@ nav .navbar {
     			border-radius: 20px 20px 0px 0px;
     			padding: 0.5rem 1rem;
     			text-decoration: none;
-    			font-size: 1.25rem;
+    			font-size: 1rem;
     			font-weight: 900;
-    			min-width: 200px;
     			text-align: center;
     			text-transform: uppercase;
+                min-width: 150px;
 
     			&:hover, &.active {
     				background-color: $tronRed;
     				color: white;
     			}
+
+                @media (min-width: $lg) {
+                    min-width: 200px;
+                    font-size: 1.25rem;
+                }
     		}
     	}
 
     	&-article {
     		margin-top: 50px;
     		display: grid;
-        	grid-template-columns: repeat(2, 1fr);
+        	grid-template-columns: 1fr;
     		gap: 2rem;
     		min-height: 350px;
+            @media (min-width: $lg) {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
     		h1 {
     			font-size: 1.25rem;
     			line-height: 26px;
-    			margin-top: 3rem;
+                margin-bottom: 0;
     		}
 
     		p {
@@ -7452,20 +7597,233 @@ nav .navbar {
 				margin: 1rem 0;
     		}
 
-    		& > div div.arrow-icon {
-    			width: 40px;
-    			height: 32px;
-    		}
+            &-card {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 5rem 10rem;
+
+                & > div:nth-child(2) {
+                    display: flex;
+                    align-items: end;
+                }
+
+                @media (max-width: $md) {
+                    grid-template-columns: 1fr 1fr;
+                    & > div:first-child, & > div:nth-child(3) {
+                        grid-column: span 2;
+                    }
+
+                    & > div:last-child{
+                        grid-column-start: 2;
+                        grid-row-start: 2;
+                        display: flex;
+                        align-items: end;
+                        justify-content: end;
+                    }
+                }
+            }
     	}
     }
 
-    &-projects {
-    	margin-top: 180px;
+    &-projects, &-reports {
+    	margin-top: 120px;
+
+        @media (min-width: $lg) {
+            margin-top: 180px;
+        }
+
+        &-title {
+            font-size: 30px;
+            font-weight: 900;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+
+            @media (min-width: $lg) {
+                font-size: 50px;
+                margin-bottom: 130px;
+            }
+        }
     }
 
     &-background {
     	width: 100%;
     	height: 250px;
     	background-color: #D9D9D9;
+    }
+}
+
+.events {
+    color: $tronDarkBorder;
+	& * > h1, a, button, h6 {
+		font-family: Blender Pro Bold;
+	}
+
+	& * > p {
+		font-family: Blender Pro;
+	}
+
+    &-main {
+        width: 100%;
+        height: 85vh;
+        background: 
+        	url("./images/events/dots-bg.svg") top center no-repeat,
+        	linear-gradient(180deg, rgba(255, 0, 0, 0.4) 0%, rgba(255, 0, 0, 0) 100%) 
+            top center no-repeat;
+        background-size: 100%, 100% 60%;
+
+        &-title {
+            height: 70%;
+
+            @media (min-width: $xxl) {
+                max-width: 50%;
+            }
+
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 100%;
+
+                @media (min-width: $lg) {
+                    font-size: 80px;
+                }
+
+                @media (min-width: $xxl) {
+                    font-size: 98px;
+                }
+            }
+        }
+
+        &-tags {
+            @media (min-width: $xxl) {
+                max-width: 33.333333%;
+            }
+
+            button {
+                background: #D9D9D9;
+                color: $tronDarkBorder;
+                border: none;
+                border-radius: 10px;
+                padding: 10px 25px;
+                font-size: 20px;
+                text-transform: uppercase;
+
+                &:hover, &.active {
+                    background-color: $tronDarkBorder;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &-body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 120px;
+
+        @media (min-width: $xxl) {
+            max-width: 66.666667%;
+        }
+
+        &-card {
+            min-height: 350px;
+            background: #F8F8F8;
+            box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 2.30398px 2.30398px 13.0559px rgba(0, 0, 0, 0.25);
+            }
+        
+            h1 {
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 100%;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 170%;
+            }
+
+            &-date {
+                font-family: Blender Pro;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+            }
+
+            &-tag {
+                font-family: Blender Pro Bold;
+                background: #D9D9D9;
+                color: $tronDarkBorder;
+                border: none;
+                border-radius: 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 2px 12px;
+            }
+        }
+    }
+
+    &-lightbox {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(0 , 0, 0, 0.8);
+        overflow-y: hidden;
+        transition: opacity 0.2s;
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            border-bottom: none;
+            border: 1px solid #D9D9D9;
+            text-transform: uppercase;
+            font-size: 15px;
+            background: transparent;
+            outline: none;
+            padding: 15px 0;
+        }
+
+        &-box {
+            max-width: 50%;
+            height: auto;
+            background-color: white;
+            margin: 1% auto;
+            border-radius: 10px;
+
+            @media (min-width: $xxl) {
+                max-width: 40%;
+            }
+        }
+
+        &-details {
+            width: 100%;
+            overflow-y: auto;
+
+            @media (min-width: $xxl) {
+                width: 70%;
+            }
+        }
+
+        &-cover {
+            gap: 1rem;
+            overflow: hidden;
+
+            img {
+                width: 30%;
+            }
+        }
     }
 }

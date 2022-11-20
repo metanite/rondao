@@ -91,22 +91,22 @@ const Ecosystem = ({data}) => {
                 <video autoPlay muted loop playsInline className="ecosystem-hero-background">
                     <source src={background} type="video/mp4"/>
                 </video>
-                <div className="ecosystem-hero-front d-flex flex-column align-items-center justify-content-center">
+                <div className="ecosystem-hero-front d-flex flex-column align-items-center justify-content-md-center">
                     <h1 className="ecosystem-hero-header">
                         TRON
-                        <div className="mt-2 w-100"/>
+                        <div className="mt-lg-2 w-100"/>
                         ECOSYSTEM
                     </h1>
                     <p className="ecosystem-hero-subheader">Discover the latest dApps built on TRON, actively
                         defining decentralization and fulfilling TRON’s mission of creating an internet for all.</p>
                     <a href="https://docs.google.com/forms/d/1aw1KTjKxxEhKNqF5WyvKlPy_YDM4ueti4f_707g7Qa8/edit"
                        id="ecosystem-btn-submit-your-project" target="_blank" rel="noopener noreferrer">
-                        <button className="cta mt-5">Submit your project</button>
+                        <button className="cta mt-md-3 mt-lg-5">Submit your project</button>
                     </a>
                 </div>
 
             </div>
-            <div className="w-100 ecosystem-container ecosystem-buttons">
+            <div className="mt-3 mt-lg-0 w-100 ecosystem-container ecosystem-buttons">
                 <div className="d-flex flex-wrap w-100">
                     <button className={'m-2' + activeIfSelected(infrastructure)} onClick={function () {
                         filterByCategory(infrastructure)
