@@ -12,6 +12,7 @@ import tronSpeaker from "../../images/events/tron-speaker.png"
 import videoCover1 from "../../images/events/video-cover1.png"
 import videoCover2 from "../../images/events/video-cover2.png"
 import videoCover3 from "../../images/events/video-cover3.png"
+import {FaAngleLeft, FaAngleRight, FaTimes, FaCircle} from "react-icons/fa"
 
 
 const Events = ({data}) => {
@@ -95,9 +96,13 @@ const Events = ({data}) => {
         document.body.style.overflow = (open) ? "hidden" : "auto"
     }, [open])
 
-    const openLightbox = (event) => {
+    const openLightbox = (event, prev, next) => {
         setIsOpen(!open)
-        setSelected(event)
+        setSelected({
+            "event": event,
+            "prev" : prev,
+            "next" : next
+        })
     }
 
     const filterTags = (tag) => {
@@ -111,6 +116,18 @@ const Events = ({data}) => {
         if (!e.target.closest(".events-lightbox-box")) {
             setIsOpen(!open)
         }
+    }
+
+    const navigate = (eventNumber) => {
+        if(eventNumber > events.length - 1 || eventNumber < 0) {
+            return;
+        }
+
+        setSelected({
+            "event": events[eventNumber],
+            "prev" : eventNumber - 1,
+            "next" : eventNumber + 1
+        })
     }
 
     return (
@@ -143,7 +160,7 @@ const Events = ({data}) => {
                     {
                         filteredTags.map((event, key) => {
                             return (
-                                <div key={key} onClick={() => openLightbox(event)} role="presentation"  className="events-body-card">
+                                <div key={key} onClick={() => openLightbox(event, key-1, key+1)} onKeyDown={() => openLightbox(event)} role="presentation"  className="events-body-card">
                                     <div>
                                         <img src={event.image} alt={event.alt} className="img-fluid" />
                                     </div>
@@ -171,22 +188,40 @@ const Events = ({data}) => {
 
                 {
                     open ? 
-                    <div onClick={(e)=> clickLightbox(e)} className="events-lightbox" id="events-lightbox">
+                    <div onClick={(e)=> clickLightbox(e)} onKeyDown={(e)=> clickLightbox(e)} className="events-lightbox" id="events-lightbox" role="presentation">
                         <div className="events-lightbox-box">
-                            <div>
-                                <img src={selected.image} alt={selected.alt} className="img-fluid" />
+                            <div className="position-relative">
+                                <button className="events-lightbox-box-left-arrow mr-5">
+                                    <FaAngleLeft size={20} alt="angle left icon" />
+                                </button>
+                                <button className="events-lightbox-box-right-arrow">
+                                    <FaAngleRight size={20} alt="angle right icon" />
+                                </button>
+                                <button onClick={() => setIsOpen(!open)} className="events-lightbox-box-close">
+                                    <FaTimes size={20} alt="close icon" />
+                                </button>
+                                <img src={selected.event.image} alt={selected.event.alt} className="img-fluid" />
+                                <div className="events-lightbox-box-dots">
+                                    {
+                                        [...Array(6).keys()].map(i => {
+                                            return (
+                                                <FaCircle key={i} size={12} alt="dots" style={{fill: (i === 3) ? "white" : ""}} />
+                                            )
+                                        })
+                                    }
+                                </div>
                             </div>
-                            <div className="px-5 py-4 d-flex flex-column justify-content-between">
+                            <div className="p-3 px-lg-5 py-lg-4 d-flex flex-column justify-content-between">
                                 <div className="events-lightbox-details d-flex flex-column">
                                     <div>
-                                        <h1>{selected.title}</h1>
+                                        <h1>{selected.event.title}</h1>
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <div className="events-body-card-date mr-3">
                                             August 10, 2022 • NYC
                                         </div>
                                         <div className="events-body-card-tag">
-                                            {selected.tag}
+                                            {selected.event.tag}
                                         </div>
                                     </div>
                                     <div className="mt-4">
@@ -197,7 +232,7 @@ const Events = ({data}) => {
                                 </div>
                                 <div className="d-flex flex-column mt-4">
                                     <div>
-                                    <h6 className="text-uppercase">Videos</h6>
+                                        <h6 className="text-uppercase">Videos</h6>
                                     </div>
                                     <div className="events-lightbox-cover d-flex">
                                     {
@@ -210,9 +245,9 @@ const Events = ({data}) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="d-flex">
-                                <button type="button" className="events-lightbox-prev">Previous</button>
-                                <button type="button" className="events-lightbox-next">Next</button>
+                            <div className="events-lightbox-buttons d-flex">
+                                <button type="button" onClick={() => navigate(selected.prev)} className="events-lightbox-prev">Previous</button>
+                                <button type="button" onClick={() => navigate(selected.next)} className="events-lightbox-next">Next</button>
                             </div>
                         </div>
                     </div> : ""
