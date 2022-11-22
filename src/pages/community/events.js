@@ -91,10 +91,15 @@ const Events = ({data}) => {
     const [open, setIsOpen] = useState(false)
     const [selected, setSelected] = useState("")
     const [filteredTags, setFilterTags] = useState(events)
+    const [carouselIndex, setCarouselIndex] = useState(0)
 
     useEffect(() => {
         document.body.style.overflow = (open) ? "hidden" : "auto"
     }, [open])
+
+    useEffect(() => {
+        setCarouselIndex(0)
+    }, [selected])
 
     const openLightbox = (event, prev, next) => {
         setIsOpen(!open)
@@ -130,6 +135,18 @@ const Events = ({data}) => {
         })
     }
 
+    const carouselNext = () => {
+        if (carouselIndex < 3) {
+            setCarouselIndex(prevState => prevState + 1)
+        }
+    }
+
+    const carouselPrev = () => {
+        if (carouselIndex > 0) {
+            setCarouselIndex(prevState => prevState - 1)
+        }
+    }
+
     return (
         <div className="trondao-events">
             <Helmet>
@@ -145,7 +162,7 @@ const Events = ({data}) => {
             			<h1 className="text-uppercase text-center">What is happening in the world of TRON</h1>
             		</div>
 
-                    <div className="events-main-tags col-md-6 d-flex justify-content-between mx-auto">
+                    <div className="events-main-tags col-11 col-md-6 d-flex justify-content-between mx-auto">
                         {
             				tags.map((tag) => {
             					return (
@@ -156,7 +173,7 @@ const Events = ({data}) => {
                     </div>
             	</div>
 
-                <div className="events-body col-lg-10 mx-auto">
+                <div className="events-body col-11 col-lg-10 mx-auto">
                     {
                         filteredTags.map((event, key) => {
                             return (
@@ -190,22 +207,31 @@ const Events = ({data}) => {
                     open ? 
                     <div onClick={(e)=> clickLightbox(e)} onKeyDown={(e)=> clickLightbox(e)} className="events-lightbox" id="events-lightbox" role="presentation">
                         <div className="events-lightbox-box">
-                            <div className="position-relative">
-                                <button className="events-lightbox-box-left-arrow mr-5">
+                            <div className="events-lightbox-box-slider">
+                                <button onClick={carouselPrev} className="events-lightbox-box-left-arrow mr-5">
                                     <FaAngleLeft size={20} alt="angle left icon" />
                                 </button>
-                                <button className="events-lightbox-box-right-arrow">
+                                <button onClick={carouselNext} className="events-lightbox-box-right-arrow">
                                     <FaAngleRight size={20} alt="angle right icon" />
                                 </button>
                                 <button onClick={() => setIsOpen(!open)} className="events-lightbox-box-close">
                                     <FaTimes size={20} alt="close icon" />
                                 </button>
-                                <img src={selected.event.image} alt={selected.event.alt} className="img-fluid" />
+                                <div className="events-lightbox-box-slide"
+                                style={{ transform: `translateX(-${carouselIndex * 100}%)` }}>
+                                {
+                                    [selected.event.image, tronBalloon, tronBunny, tronEvent].map((img) => {
+                                        return (
+                                            <img src={img} alt="sample images" className="img-fluid" />
+                                        )
+                                    })
+                                }
+                                </div>
                                 <div className="events-lightbox-box-dots">
                                     {
-                                        [...Array(6).keys()].map(i => {
+                                        [...Array(4).keys()].map(i => {
                                             return (
-                                                <FaCircle key={i} size={12} alt="dots" style={{fill: (i === 3) ? "white" : ""}} />
+                                                <FaCircle key={i} size={12} alt="dots" style={{fill: (i === carouselIndex) ? "white" : ""}} />
                                             )
                                         })
                                     }

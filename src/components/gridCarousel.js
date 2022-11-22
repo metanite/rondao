@@ -26,25 +26,14 @@ const GridCarousel = (data) => {
     const next = () => {
         if (currentIndex < (children.length - 3)) {
             setCurrentIndex(prevState => prevState + 1)
-            console.log(currentIndex)
         }
     }
 
     const prev = () => {
         if (currentIndex > 0) {
             setCurrentIndex(prevState => prevState - 1)
-            console.log(currentIndex)
         }
     }
-
-    const dots = []
-    for (var j = 0; j <= children.length/3; j++) {
-        dots.push(
-            <div className={"ml-3 mini-carousel-dot " + (j === currentIndex ? 'active' : '')}>
-                <FaCircle size={15} alt="circle icon" />
-            </div>
-        )
-    }   
 
 	return (
 		<div className="mini-carousel">
@@ -68,7 +57,15 @@ const GridCarousel = (data) => {
                 }
 			</div>
             <div className="d-flex align-items-center justify-content-center mt-5">
-                {dots}
+                {
+                    [...Array(Math.round(children.length/3)).keys()].map(i => {
+                        return (
+                            <div className={"ml-3 mini-carousel-dot " + (i === currentIndex ? 'active' : '')}>
+                                <FaCircle size={15} alt="circle icon" />
+                            </div>
+                        )
+                    })
+                }
             </div>
 		</div>
 	)
