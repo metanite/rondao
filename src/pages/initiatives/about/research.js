@@ -30,7 +30,7 @@ const Research = ({data}) => {
                     </div>
                 </div>
 
-                <div className="research-body col-lg-8 mx-auto">
+                <div className="research-body col-11 col-lg-8 mx-auto">
                     <div className="research-body-tabs d-flex flex-wrap" role="tablist">
                         <a href="/#" className="research-body-tabs-item active">Project Studies</a>
                         <a href="/#" className="research-body-tabs-item">Reports</a>
@@ -39,7 +39,7 @@ const Research = ({data}) => {
                     <div className="research-body-article">
                         <div className="research-body-article-card">
                             <div className="research-background"></div>
-                            <div>
+                            <div className="mt-lg-2">
                                 <h1 className="text-uppercase">Month 2022</h1>
                             </div>
                             <div>
@@ -47,7 +47,8 @@ const Research = ({data}) => {
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
                                 magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
-                                quis nostrud exerci tation ullamcorper. 
+                                quis nostrud exerci tation ullamcorper.
+                                Ut wisi enim ad minim veniam,
                                 </p>
                             </div>
                             <div className="">
@@ -56,7 +57,7 @@ const Research = ({data}) => {
                         </div>
                         <div className="research-body-article-card">
                             <div className="research-background"></div>
-                            <div>
+                            <div className="mt-lg-2">
                                 <h1 className="text-uppercase">Month 2022</h1>
                             </div>
                             <div>
@@ -86,7 +87,7 @@ const Research = ({data}) => {
                     </div>
                 </div>
 
-                <div>
+                <div className="mt-5">
                     <EmailCapture />
                 </div>  
             </div>

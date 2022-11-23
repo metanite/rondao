@@ -18,15 +18,6 @@ const Faq = ({data}) => {
 		'ETC'
 	];
 
-	let collapse = []
-	for (var i = 0; i <= 4; i++) {
-		collapse.push(
-			<div className="mb-4">
-				<Collapsible />
-			</div>
-		)
-	}
-
     return (
     	<div className="trondao-faq">
             <Helmet>
@@ -82,7 +73,15 @@ const Faq = ({data}) => {
             		</div>
 
             		<div className="faq-collapsible">
-            			{collapse}
+            			{
+            				[...Array(5).keys()].map(i => {
+            					return (
+            						<div className="mb-4">
+										<Collapsible />
+									</div>
+            					)
+            				})
+            			}
             		</div>	
             	</div>
             </div>
