@@ -7970,3 +7970,57 @@ nav .navbar {
         }
     }
 }
+
+.history {
+	& * > h1, a, button, h6 {
+		font-family: Blender Pro Bold;
+	}
+
+	& * > p {
+		font-family: Blender Pro;
+	}
+
+	&-main {
+        height: 58vw;
+		background-image: url("images/history/bg.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: relative;
+
+		&-title {
+			position: absolute;
+			inset: 0;
+			margin-top: 15%;
+			margin-left: 7%;
+
+			h1 {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 90px;
+				line-height: 100%;
+			}
+
+			p {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 170%;
+			}
+		}
+	}
+
+	&-body {
+		background-image: url("images/history/mountain.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center bottom;
+
+
+		&-timeline {
+			color: $tronDarkBorder;
+			border-left: 2px solid $tronRed;
+			height: 100vh;
+			z-index: -1;
+		}
+	}
+}
