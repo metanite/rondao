@@ -55,7 +55,7 @@ const History = ({data}) => {
                                                             <div>
                                                                 <h2>Date Here</h2>
                                                             </div>
-                                                            <hr />
+                                                            <hr className={key === 0 ? 'outline' : ''} />
                                                         </div>
                                                         <div>
                                                             <a href="/#">

@@ -8106,6 +8106,11 @@ nav .navbar {
                         position: absolute;
                         right: 0;
                     }
+
+                    &.outline:before {
+                        outline: 1px solid $tronRed;
+                        outline-offset: 5px;
+                    }
                 }
             }
 
