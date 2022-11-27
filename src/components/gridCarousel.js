@@ -63,7 +63,7 @@ const GridCarousel = (data) => {
                 {
                     [...Array(Math.round(children/show)).keys()].map(i => {
                         return (
-                            <div className={"ml-3 mini-carousel-dot " + (i === currentIndex ? 'active' : '')}>
+                            <div key={i} className={"ml-3 mini-carousel-dot " + (i === currentIndex ? 'active' : '')}>
                                 <FaCircle size={15} alt="circle icon" />
                             </div>
                         )

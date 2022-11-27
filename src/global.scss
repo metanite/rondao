@@ -7568,7 +7568,6 @@ nav .navbar {
 
     		&-item {
     			color: $tronDarkBorder;
-    			background: 0 0;
     			border: 1px solid $tronRed;
     			border-radius: 20px 20px 0px 0px;
     			padding: 0.5rem 1rem;
@@ -7651,8 +7650,8 @@ nav .navbar {
                         grid-column-start: 2;
                         grid-row-start: 2;
                         display: flex;
-                        align-items: end;
-                        justify-content: end;
+                        align-items: flex-end;
+                        justify-content: flex-end;
                     }
                 }
             }
@@ -7972,7 +7971,7 @@ nav .navbar {
 }
 
 .history {
-	& * > h1, a, button, h6 {
+	& * > h1, h2, h5, a, button {
 		font-family: Blender Pro Bold;
 	}
 
@@ -8010,17 +8009,143 @@ nav .navbar {
 	}
 
 	&-body {
+        color: $tronDarkBorder;
 		background-image: url("images/history/mountain.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: center bottom;
 
 
-		&-timeline {
-			color: $tronDarkBorder;
-			border-left: 2px solid $tronRed;
-			height: 100vh;
-			z-index: -1;
+		&-line {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                border-left: 2px solid $tronRed;
+                z-index: -1;
+                height: 100%;
+            }
+
+            a {
+                margin-top: 100px;
+                margin-bottom: 700px;
+            }
 		}
+
+        &-timeline {
+            margin-top: 50px;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &-details {
+                margin-top: 5rem;
+                position: relative;
+            }
+
+            &-year {
+                background: #FFFFFF;
+                box-shadow: 2.30398px 2.30398px 13.0559px rgba(0, 0, 0, 0.25);
+                border-radius: 14px;
+                padding: 0.8rem 4rem;
+                width: 120px;
+                position: absolute;
+                left: -65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                h5 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 100%;
+                    margin-bottom: 0;
+                }
+            }
+
+            &-date {
+                width: 35%;
+
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 100%;
+                }
+
+                hr {
+                    width: 80%;
+                    border-bottom: 2px solid $tronRed;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        width: 25px;
+                        height: 25px;
+                        background-color: $tronRed;
+                        position: absolute;
+                        left: -26px;
+                        border-radius: 50%;
+                        margin: auto;
+                    }
+
+                    &:after {
+                        content: "";
+                        background-color: $tronRed;
+                        transform: rotate(-45deg);
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+
+            &-info {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                height: 198px;
+
+                &-bg {
+                    background-color: #D9D9D9;
+                    width: 90%;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+
+                &-details {
+                    //width: 60%;
+                    hr {
+                        background-color: $tronDarkBorder;
+                        width: 100%;
+                        height: 0.5px;
+                    }
+                    
+                    h2 {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 100%;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
 	}
 }
