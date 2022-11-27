@@ -8110,6 +8110,7 @@ nav .navbar {
                     &.outline:before {
                         outline: 1px solid $tronRed;
                         outline-offset: 5px;
+                        box-shadow: 0 0 0 5px hsl(0deg 0% 100%);
                     }
                 }
             }
