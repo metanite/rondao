@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import {Helmet} from "react-helmet"
 import {FaArrowDown} from "react-icons/fa"
 
@@ -16,7 +16,23 @@ const History = ({data}) => {
             "year": "2019",
             "date": 8 
         },
+        {
+            "year": "2020",
+            "date": 8 
+        },
+        {
+            "year": "2021",
+            "date": 5 
+        },
     ]
+
+    const [filteredTimelines, setTimelines] = useState(timelines.slice(0, 3))
+    const [isButtonClicked, setIsButtonClicked] = useState(false)
+
+    const showRemaining = () => {
+        setIsButtonClicked(!isButtonClicked)
+        setTimelines(timelines)
+    }
 
 
     return (
@@ -31,7 +47,7 @@ const History = ({data}) => {
 
             <div className="history">
             	<div className="history-main">
-					<div className="history-main-title col-4 col-lg-3 d-flex flex-column align-items-start">
+					<div className="history-main-title col-5 col-lg-3 d-flex flex-column align-items-start">
 	                    <h1 className="text-uppercase">Tron History</h1>
 	                    <p>
 	                    Sub-header placeholder here
@@ -39,9 +55,9 @@ const History = ({data}) => {
 	                </div>
 				</div>
 				<div className="history-body">
-					<div className="history-body-line col-lg-8 mx-auto d-flex flex-column">
+					<div className="history-body-line col-10 offset-2 col-lg-8 offset-lg-0 mx-lg-auto d-flex flex-column">
                         {
-                            timelines.map((timeline, key) => {
+                            filteredTimelines.map((timeline, key) => {
                                 return (
                                     <div key={key} className="history-body-timeline">
                                         <div className="history-body-timeline-year">
@@ -50,16 +66,16 @@ const History = ({data}) => {
                                         {
                                             [...Array(timeline.date).keys()].map(i => {
                                                 return (
-                                                    <div key={i} className="history-body-timeline-details d-flex">
-                                                        <div className="history-body-timeline-date d-flex flex-column justify-content-center align-items-center">
-                                                            <div>
+                                                    <div key={i} className="history-body-timeline-details d-flex flex-column flex-lg-row flex-wrap flex-lg-nowrap">
+                                                        <div className="history-body-timeline-date d-flex flex-row flex-lg-column justify-content-start justify-content-lg-center align-items-start align-items-lg-center">
+                                                            <div className="ml-3 ml-lg-0">
                                                                 <h2>Date Here</h2>
                                                             </div>
                                                             <hr className={key === 0 ? 'outline' : ''} />
                                                         </div>
                                                         <div>
                                                             <a href="/#">
-                                                                <div className="history-body-timeline-info d-flex">
+                                                                <div className="history-body-timeline-info d-flex flex-column flex-lg-row">
                                                                     <div className="history-body-timeline-info-bg"></div>
                                                                     <div className="history-body-timeline-info-details d-flex flex-column align-items-start justify-content-center px-4 py-2">
                                                                         <h2>Event Title</h2>
@@ -79,9 +95,13 @@ const History = ({data}) => {
                                 )
                             })
                         }
-                        <a href="/#" className="mx-auto">
-                            <button type="button" className="cta-button text-uppercase vertical-middle">More Events <span className="ml-1"><FaArrowDown /></span></button>
-                        </a>
+                        {
+                           !isButtonClicked &&
+                            <button type="button" onClick={showRemaining} className="cta-button text-uppercase mx-auto">
+                            More Events <span className="ml-1"><FaArrowDown /></span>
+                            </button>
+                        }
+                        <div className="history-body-bottom-margin"></div>
 					</div>
 				</div>
            	</div>
