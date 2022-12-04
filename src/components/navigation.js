@@ -324,8 +324,8 @@ const Navigation = () => {
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href=""
-                               target="_blank" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/learning/tronpedia/"
+                               rel="noopener noreferrer"
                                id="nav-learning-tronpedia">
                               TRONpedia
                             </a>
@@ -395,7 +395,7 @@ const Navigation = () => {
                             Grand Hackathon</a></li>
 														<li><a onClick={closeMenu} href="/" id="nav-events-whale-night">TRON
                             Whale Night</a></li>
-                          <li><a onClick={closeMenu} href="/events/conferences/"
+                          <li><a onClick={closeMenu} href="/community/events/"
                             id="nav-events-upcoming">Upcoming Events</a></li>
                         </ul>
                       </div>

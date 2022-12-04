@@ -11,7 +11,7 @@ import web3_normal from "../images/home/web3.svg"
 import defi_normal from "../images/home/defi_normal.svg"
 import nft_normal from "../images/home/nft_normal.svg"
 import gamefi_normal from "../images/home/gamefi_normal.svg"
-import web_normal from "../images/home/web_normal.svg"
+import web_normal from "../images/home/web3_normal.svg"
 import coins from "../images/home/coins.svg"
 import tronbullLearn from "../images/home/tronbull-learn.gif"
 import tronbullVideo from "../images/home/tronbull-video.gif"
@@ -212,9 +212,11 @@ const Index = ({ data }) => {
                     <div className="homepage-tronpedia-lets-go d-flex align-items-end justify-content-end order-4 order-lg-0">
                         <div className="d-flex align-items-end justify-content-end position-relative">
                         <img className="homepage-tronpedia-tronbull-button image-fluid d-lg-none" src={tronbullButton} alt="tron bull button" />
-                        <button className="homepage-tronpedia-lets-go-button mt-3">
-                            > Let's Go
-                        </button>
+                        <a href="/developers/learning/tronpedia/">
+                            <button className="homepage-tronpedia-lets-go-button mt-3">
+                                > Let's Go
+                            </button>
+                        </a>
                         </div>
                     </div>
                 </div>
