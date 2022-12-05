@@ -8253,7 +8253,11 @@ nav .navbar {
 	}
 
     &-main {
-        margin-top: 170px;
+        margin-top: 70px;
+
+        @media (min-width: $lg) {
+        	margin-top: 170px;
+        }
 
         @media (min-width: $xxl) {
             width: 58.333333%;
@@ -8263,100 +8267,196 @@ nav .navbar {
     &-header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
+        gap: 2rem;
 
-        & > div:first-child, div:nth-child(2), div:nth-child(3) {
-            grid-column-start: 1;
+        @media (min-width: $lg) {
+        	column-gap: 2rem;
+ 			row-gap: 0;
+
+        	& > div:first-child, div:nth-child(2), div:nth-child(3) {
+	            grid-column-start: 1;
+	        }
+        }
+
+        & > div:first-child {
+        	@media (max-width: $md) {
+        		display: flex;
+        		align-items: center;
+        	}
+        }
+
+        & > div:nth-child(2) {
+        	@media (max-width: $md) {
+        		grid-column: span 2;
+        	}
+        }
+
+        & > div:nth-child(3) {
+        	@media (max-width: $md) {
+        		grid-row-start: 2;
+        		grid-column: span 2;
+        	}
         }
 
         & > div:last-child {
-            grid-column-start: 2;
-            grid-row-start: 1;
-            grid-row-end: 3;
+        	grid-column-start: 2;
+        	grid-row-start: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-left: 5%;
+
+            @media (min-width: $lg) {
+            	grid-column-start: 2;
+	            grid-row-start: 1;
+	            grid-row-end: 3;
+            }
         }
         
         h1 {
             text-transform: uppercase;
             font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 100%;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 100%;
+
+            @media (min-width: $md) {
+            	font-style: normal;
+	            font-weight: 700;
+	            font-size: 48px;
+	            line-height: 100%;
+            } 
         }
 
         p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 220%;
+        	font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 170%;
+
+            @media (min-width: $md) {
+            	font-style: normal;
+	            font-weight: 400;
+	            font-size: 18px;
+	            line-height: 220%;
+            }
         }
 
         &-icons {
-            width: 70px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
+
+            @media (min-width: $md) {
+            	width: 70px;
+            	height: 60px;
+            }
         }
     }
 
     &-search {
-        margin-top: 50px;
-        
+        margin-top: 30px;
+        	
+        @media (min-width: $lg) {
+        	margin-top: 50px;
+        }
+
         h2 {
             text-transform: uppercase;
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 20px;
             line-height: 100%;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
+
+            @media (min-width: $lg) {
+            	font-size: 30px;
+	            line-height: 100%;
+	            margin-bottom: 50px;
+            }
         }
 
         &-section {
-            gap: 1rem;
+            gap: 10px;
+
+            @media (min-width: $lg) {
+            	gap: 1rem;      	
+            }
 
             & > div:first-child {
-                width: 80%;
                 position: relative;
+                width: 70%;
+
+                @media (min-width: $lg) {
+	            	width: 80%;    	
+	            }
 
                 svg {
                     position: absolute;
-                    left: 35px;
-                    top: 20px;
+                    left: 20px;
+                    top: 10px;
                     color: $tronRed;
+
+                    @media (min-width: $lg) {
+                    	left: 35px;
+                    	top: 20px;
+                    }
                 }
 
                 input {
                     width: 100%;
-                    height: 70px;
+                    height: 50px;
                     border: 1px solid #232323;
-                    border-radius: 20px;
-                    padding: 1rem 2rem 1rem 6rem;
+                    border-radius: 15px;
+                    padding: 1rem 2rem 1rem 4rem;
                     outline: none;
                     font-style: normal;
                     font-weight: 250;
-                    font-size: 18px;
+                    font-size: 15px;
                     line-height: 100%;
         
                     &::placeholder {
                         text-transform: uppercase;
                     }
+
+                    @media (min-width: $lg) {
+                    	border-radius: 20px;
+                    	padding: 1rem 2rem 1rem 6rem;
+                    	height: 70px;
+                    	font-size: 18px;
+                    }
                 }
             }
 
             & > div:last-child {
-                width: 20%;
+                width: 30%;
+
+                @media (min-width: $lg) {
+	            	width: 20%;    	
+	            }
 
                 button {
                     background: #FF0000;
-                    border-radius: 20px;
+                    border-radius: 15px;
                     color: white;
-                    padding: 1rem 2rem;
+                    padding: 10px 12px;
                     text-transform: uppercase;
                     outline: none;
                     border: none;
-                    height: 70px;
-    
+                    height: 50px;
+                    font-size: 10px;
+
+    				
+                    @media (min-width: $lg) {
+                    	border-radius: 20px;
+                    	height: 70px;
+                    	font-size: 17px;
+                    	padding: 1rem;
+                    }
+
+                    @media (min-width: $xxl) {
+                    	padding: 1rem 2rem;
+                    }
+
                     &:hover {
                         background-color: $tronDarkBorder;
                     }
@@ -8366,45 +8466,89 @@ nav .navbar {
     }
 
     &-topics {
-        margin-top: 80px;
+        margin-top: 25px;
+
+        @media (min-width: $lg) {
+        	margin-top: 80px;
+        }
 
         h2 {
             text-transform: uppercase;
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 20px;
             line-height: 100%;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+
+            @media (min-width: $lg) {
+            	font-size: 30px;
+	            line-height: 100%;
+	            margin-bottom: 40px;
+            }
         }
 
-        button {
-            color: white;
-            background: #232323;
-            border-radius: 12.3228px;
-            padding: 10px 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        &-buttons {
+        	display: grid;
+        	grid-template-columns: repeat(2, 1fr);
+        	gap: 10px;
 
-            img {
-                background:transparent;
-            }
+        	@media(min-width: $lg) {
+        		display: flex;
+        		justify-content: space-between;
+        	}
 
-            &:hover {
-                box-shadow: 1px 1px 5px #232323, -1px -1px 5px #232323;
-            }
+        	button {
+	            color: white;
+	            background: $tronDarkBorder;
+	            border-radius: 12.3228px;
+	            padding: 10px;
+	            display: flex;
+	            align-items: center;
+	            justify-content: center;
+	            gap: 5px;
+	            outline: none;
+	            border: none;
+	            width: 100%;
+
+	            @media (min-width: $xxl) {
+	            	padding: 10px 16px;
+	            }
+
+	            img {
+	                background:transparent;
+
+	                @media (max-width: $sm) {
+	                	width: 25px;
+	                	height: 25px;
+	                }
+	            }
+
+	            &:hover {
+	                box-shadow: 1px 1px 5px $tronDarkBorder, -1px -1px 5px $tronDarkBorder;
+	            }
+	        }
         }
     }
 
     &-carousel {
-        margin-top: 150px;
+        margin-top: 40px;
         margin-bottom: 100px;
 
+        @media (min-width: $lg) {
+        	margin-top: 150px;
+        }
+
         &-cards {
-            width: 100%;
-            height: 650px;
+            width: 80%;
+            height: 450px;
             position: relative;
             transform-style: preserve-3d;
+            margin: 0 auto;
+
+            @media (min-width: $lg) {
+            	width: 100%;
+            	height: 650px;
+            }
         }
 
         &-card {
@@ -8412,31 +8556,48 @@ nav .navbar {
             background-color: $tronRed;
             border-radius: 20px;
             height: 100%;
-            width: 60%;
+            width: 100%;
             position: absolute;
             left: 0;
             right: 0;
             margin: auto;
             color: white;
 
+            @media (min-width: $lg) {
+            	width: 60%;
+            }
+
             &-front {
                 z-index: 1;
-                padding: 2rem 8rem;
+                padding: 2rem;
                 transform: translatex(0%) scale(1);
                 background: linear-gradient(91.27deg, #FF0015 15.81%, rgba(140, 0, 7, 0.97) 123.07%);
                 
+                @media (min-width: $lg) {
+                	padding: 2rem 8rem;
+                }
+
                 h2 {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 30px;
+                    font-size: 20px;
                     line-height: 100%;
+
+                    @media (min-width: $lg) {
+                    	font-size: 30px;
+                    }
                 }
 
                 p {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 18px;
-                    line-height: 150%;
+                    font-size: 15px;
+                    line-height: 100%;
+
+                    @media (min-width: $lg) {
+                    	font-size: 18px;
+                    	line-height: 150%;
+                    }
                 }
 
                 ul {
@@ -8446,11 +8607,17 @@ nav .navbar {
                 li {
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 30px;
+                    font-size: 20px;
                     line-height: 100%;
-                    margin-top: 30px;
-                    margin-bottom: 64px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
                     padding-left: 50px;
+
+                    @media (min-width: $lg) {
+                    	font-size: 30px;
+                    	margin-top: 30px;
+                    	margin-bottom: 64px;
+                    }
                 }
 
                 img {
@@ -8460,7 +8627,6 @@ nav .navbar {
             }
 
             &-back {
-                z-index: 0;
                 background-color: #760101;
                 cursor: pointer;
 
@@ -8470,7 +8636,11 @@ nav .navbar {
             }
 
             &-right {
-                transform: translatex(40%) scale(.8);
+                transform: translatex(30%) scale(.8);
+
+                @media (min-width: $lg) {
+                	transform: translatex(40%) scale(.8);
+                }
 
                 img {
                     margin-right: 15%;
@@ -8478,7 +8648,11 @@ nav .navbar {
             }
 
             &-left {
-                transform: translatex(-40%) scale(.8);
+                transform: translatex(-30%) scale(.8);
+
+                @media (min-width: $lg) {
+                	transform: translatex(-40%) scale(.8);
+                }
 
                 img {
                     margin-left: 15%;
@@ -8527,8 +8701,13 @@ nav .navbar {
 
     &-featured {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+        @media (min-width: $lg) {
+        	grid-template-columns: repeat(2, 1fr);
+        	gap: 5rem;
+        }
 
         img {
             border-radius: 10px;
@@ -8547,4 +8726,58 @@ nav .navbar {
             color: $tronDarkBorder;
         }
     }
+
+    &-email-capture {
+    	margin-top: 100px;
+
+    	@media (min-width: $lg) {
+    		margin-top: 200px;
+    	}
+    }
+}
+
+.tronpedia-search {
+	color: $tronDarkBorder;
+	& * > h1, h2, button {
+		font-family: Blender Pro Bold;
+	}
+
+	& * > p, input, li {
+		font-family: Blender Pro;
+	}
+
+	&-query {
+		width: 70%;
+		margin-top: 100px;
+
+		h1 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 100%;
+		}
+
+		p {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 220%;
+		}
+	}
+
+	&-form {
+		margin-top: 60px;
+	}
+
+	&-popular-topics {
+		margin-top: 100px;
+
+		h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 100%;
+			margin-bottom: 30px;
+		}
+	}
 }

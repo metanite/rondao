@@ -7,14 +7,56 @@ const TronpediaCard = ({topics}) => {
     const [frontTopicIndex, setFrontTopicIndex] = useState(1)
     const [rotate, setRotation] = useState("")
 
-    const next = () => {
-        setFrontTopicIndex((frontTopicIndex) => frontTopicIndex + 1)
+    const isClose = (num1, num2, tolerance) => {
+
+        const diff = Math.abs(num1 - num2)
+
+        return diff < tolerance
     }
 
-    const rotation = (motion) => {
-        if(motion === 'right') {
-            setRotation("")
+    const zIndex = (number) => {
+        switch(number) {
+            case 1:
+            case 2:
+                return -1
+            case 3:
+            case 4:
+                return -2
+            case 5:
+            case 6:
+                return -3
         }
+    }
+
+    const next = () => {
+        let allCards = document.querySelectorAll(".tronpedia-carousel-card")
+        let lastFrontIndex = frontTopicIndex
+        setFrontTopicIndex((frontTopicIndex) => frontTopicIndex - 1)
+        
+        allCards.forEach((card, index) => {
+            if(index === frontTopicIndex) {
+                card.classList.remove = "tronpedia-carousel-card-left"
+                card.classList.add = "tronpedia-carousel-card-front"
+                card.style.zIndex = 1
+                return
+            }else if(index === lastFrontIndex) {
+                card.classList.remove = "tronpedia-carousel-card-front"
+                card.classList.add = "tronpedia-carousel-card-right"
+                card.style.zIndex = -1
+                return
+            }else if(card.parentElement.lastElementChild === card && card.classList.contains("tronpedia-carousel-card-right")) {
+                card.classList.remove = "tronpedia-carousel-card-right"
+                card.classList.add = "tronpedia-carousel-card-left"
+                card.style.zIndex = -1
+                return
+            }else {
+                if([5,6].includes(index)) {
+                    card.style.zIndex = -3
+                }else {
+                    card.style.zIndex = -2
+                }
+            }
+        })
     }
 
     return (
@@ -23,7 +65,7 @@ const TronpediaCard = ({topics}) => {
             <button className="tronpedia-carousel-left-arrow">
                 <GoTriangleLeft size={60} alt="angle left icon" />
             </button>
-            <button className="tronpedia-carousel-right-arrow">
+            <button onClick={next} className="tronpedia-carousel-right-arrow">
                 <GoTriangleRight size={60} alt="angle right icon" />
             </button>
             {
@@ -31,7 +73,7 @@ const TronpediaCard = ({topics}) => {
                     if(index === frontTopicIndex) {
                         return  <div className="tronpedia-carousel-card tronpedia-carousel-card-front d-flex flex-column justify-content-start align-items-start">
                             <div className="d-flex align-items-center">
-                                <img src={topic.image2} alt={topic.alt} className="mr-4" />
+                                <img src={topic.image} alt={topic.alt} className="mr-4" />
                                 <h2>{topic.title}</h2> 
                             </div> 
                             <div>
@@ -54,7 +96,9 @@ const TronpediaCard = ({topics}) => {
                             </div>
                         </div>
                     }else {
-                        return  <div className={"tronpedia-carousel-card tronpedia-carousel-card-back d-flex align-items-center " + ([1,4,7].includes(index) ? "tronpedia-carousel-card-left justify-content-start" : "tronpedia-carousel-card-right justify-content-end")}>
+                        return  <div className={"tronpedia-carousel-card tronpedia-carousel-card-back d-flex align-items-center " 
+                        + ([0,3,5].includes(index) ? "tronpedia-carousel-card-left justify-content-start" : "tronpedia-carousel-card-right justify-content-end")}
+                        style={{zIndex: zIndex(index)}}>
                             <img src={topic.image_bg} alt={topic.alt} className="img-fluid" />
                         </div>
                     }

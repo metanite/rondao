@@ -1,38 +1,31 @@
-import React, { useState } from "react"
+import React from "react"
 import {Helmet} from "react-helmet"
-import TronpediaCarousel from "../../../components/tronpedia/tronpediaCarousel"
+import TronpediaCarousel from "../../../components/tronpedia/carousel"
 import TronpediaFeatured from "../../../components/tronpedia/featured"
+import TronpediaSearch from "../../../components/tronpedia/search"
+import TronpediaTopics from "../../../components/tronpedia/topics"
 import EmailCapture from "../../../components/EmailCapture"
 import defi from "../../../images/home/defi_normal.svg"
-import defi_red from "../../../images/tronpedia/defi-red.svg"
 import defi_bg from "../../../images/tronpedia/defi-bg.svg"
 import nft from "../../../images/home/nft_normal.svg"
-import nft_red from "../../../images/tronpedia/nft-red.svg"
 import nft_bg from "../../../images/tronpedia/nft-bg.svg"
 import gamefi from "../../../images/home/gamefi_normal.svg"
-import gamefi_red from "../../../images/tronpedia/gamefi-red.svg"
 import gamefi_bg from "../../../images/tronpedia/gamefi-bg.svg"
 import web3 from "../../../images/home/web3_normal.svg"
-import web3_red from "../../../images/tronpedia/web3-red.svg"
 import web3_bg from "../../../images/tronpedia/web3-bg.svg"
 import stablecoin from "../../../images/home/coins.svg"
-import stablecoin_red from "../../../images/tronpedia/stablecoin-red.svg"
 import stablecoin_bg from "../../../images/tronpedia/stablecoin-bg.svg"
-import crypto_red from "../../../images/tronpedia/crypto-red.svg"
 import crypto_bg from "../../../images/tronpedia/crypto-bg.svg"
 import blockchain from "../../../images/home/blockchain.svg"
-import blockchain_red from "../../../images/tronpedia/blockchain-red.svg"
 import blockchain_bg from "../../../images/tronpedia/blockchain-bg.svg"
 import tronbullHi from "../../../images/tronpedia/tronbull-hi.png"
-import {FaSearch} from "react-icons/fa"
 
 const Tronpedia = ({data}) => {
 
     const topics = [
         {
             "title": 'DEFI',
-            "image1": defi_red,
-            "image2": defi,
+            "image": defi,
             "image_bg": defi_bg,
             "alt": "trondao defi",
             "description": "This is the place to be for everything related to Decentralized Finance and the new coming age of the internet. Here you'll find articles on all sorts of concepts and topics, so be sure to check them out!",
@@ -44,8 +37,7 @@ const Tronpedia = ({data}) => {
         },
         {
             "title": 'GAME-FI',
-            "image1": gamefi_red,
-            "image2": gamefi,
+            "image": gamefi,
             "image_bg": gamefi_bg,
             "alt": "trondao gamefi",
             "description": "If you're looking for information on the latest and greatest games, or want to learn about the cutting-edge technologies that are shaping the future of gaming, you have found your destination",
@@ -57,8 +49,7 @@ const Tronpedia = ({data}) => {
         },
         {
             "title": 'NFT',
-            "image1": nft_red,
-            "image2": nft,
+            "image": nft,
             "image_bg": nft_bg,
             "alt": "trondao nft",
             "description": "NFTs provide a sense of community and access to perks that can't be found anywhere else. Discover why many think NFT’s will revolutionize the world",
@@ -70,8 +61,7 @@ const Tronpedia = ({data}) => {
         },
         {
             "title": 'WEB3',
-            "image1": web3_red,
-            "image2": web3,
+            "image": web3,
             "image_bg": web3_bg,
             "alt": "trondao web3",
             "description": "Web3 is a movement that's all about giving people control of their data and letting them enjoy its potential. Seize that control back by gaining an understanding of the basics of Web3.",
@@ -83,8 +73,7 @@ const Tronpedia = ({data}) => {
         },
         {
             "title": 'STABLECOIN',
-            "image1": stablecoin_red,
-            "image2": stablecoin,
+            "image": stablecoin,
             "image_bg": stablecoin_bg,
             "alt": "trondao stablecoin",
             "description": "The digital landscape is volatile. That's why it pays to know about stablecoins. You might think that these coins don't seem all too exciting at first glance, but looks can be deceiving",
@@ -96,8 +85,7 @@ const Tronpedia = ({data}) => {
         },
         {
             "title": 'CRYPTO',
-            "image1": crypto_red,
-            "image2": crypto,
+            "image": crypto,
             "image_bg": crypto_bg,
             "alt": "trondao crypto",
             "description": "Crypto is a new and exciting way to transact business online. Their use cases are so impressive  that it's hard not be drawn in by their potential! But where do you start? Right here!",
@@ -109,8 +97,7 @@ const Tronpedia = ({data}) => {
         },
         {
             "title": 'BLOCKCHAIN',
-            "image1": blockchain_red,
-            "image2": blockchain,
+            "image": blockchain,
             "image_bg": blockchain_bg,
             "alt": "trondao blockchain",
             "description": "Let us be the first block in your blockchain journey. This section is packed full of useful information, whether you're a complete newcomer or you're already familiar with the basics and looking to learn more",
@@ -133,7 +120,7 @@ const Tronpedia = ({data}) => {
             </Helmet>
 
             <div className="tronpedia">
-                <div className="tronpedia-main col-8 mx-auto">
+                <div className="tronpedia-main col-11 col-md-9 mx-auto">
                     <div className="tronpedia-header">
                         <div>
                             <h1>Tronpedia</h1>
@@ -149,7 +136,7 @@ const Tronpedia = ({data}) => {
                                     return !["CRYPTO", "BLOCKCHAIN"].includes(topic.title)
                                 }).map(i => {
                                     return (
-                                        <img src={i.image2} className="tronpedia-header-icons" alt={i.alt} />
+                                        <img src={i.image} className="tronpedia-header-icons" alt={i.alt} />
                                     )
                                 })
                             }
@@ -161,31 +148,12 @@ const Tronpedia = ({data}) => {
 
                     <div className="tronpedia-search">
                         <h2>Tronpedia</h2>
-                        <div className="d-flex tronpedia-search-section">
-                            <div>
-                                <FaSearch size={30} />
-                                <input type="text" className="tronpedia-search-input" placeholder="topic or article" />
-                            </div>
-                            <div>
-                                <button type="button" className="tronpedia-search-button">Search Database</button>
-                            </div>
-                        </div>
+                        <TronpediaSearch />
                     </div>
 
                     <div className="tronpedia-topics">
                         <h2>Topics</h2>
-                        <div className="tronpedia-topics-buttons d-flex justify-content-between">
-                        {
-                            topics.map(topic => {
-                                return (
-                                    <button type="button" className="tronpedia-topics-button">
-                                    <img src={topic.image1} alt="button image" />    
-                                    {topic.title}
-                                    </button>
-                                )
-                            })
-                        }
-                        </div>
+                        <TronpediaTopics />
                     </div>
 
                     <div className="tronpedia-carousel">
@@ -196,7 +164,9 @@ const Tronpedia = ({data}) => {
                         <TronpediaFeatured />
                     </div>
                 </div>
-                <EmailCapture />
+                <div className="tronpedia-email-capture">
+                    <EmailCapture />
+                </div>
             </div>
         </div>
     )
