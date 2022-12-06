@@ -1,8 +1,8 @@
-import React, {useState, useReducer} from "react"
+import React, {useState, useReducer, useEffect} from "react"
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go"
 import {FaCircle} from "react-icons/fa"
 
-const reduce = (topics, action) => {
+const cardMover = (topics, action) => {
     switch (action.type) {
         case "move":
             return topics.map((t, index) => {
@@ -32,39 +32,44 @@ const reduce = (topics, action) => {
     }
 }
 
-const TronpediaCard = ({topics}) => {
+const TronpediaCarousel = ({topics}) => {
 
-    const [frontTopic, setFrontTopic] = useState(3)
-    const [initTopics, dispatch] = useReducer(reduce, topics)
+    const [frontTopic, setFrontTopic] = useState({current: 3, direction: ""})
+    const [initTopics, dispatch] = useReducer(cardMover, topics)
+
+    useEffect(() => {
+        const className = (frontTopic.direction === "right") ? "tronpedia-carousel-card-right" : "tronpedia-carousel-card-left"
+
+        dispatch({
+            type: "move", 
+            currentTopic: (frontTopic.direction === "right") ? frontTopic.current + 1 : frontTopic.current - 1, 
+            nextTopic: frontTopic.current, 
+            class: className
+        }) 
+
+    }, [frontTopic])
+
 
     const right = () => {
-        const n = frontTopic - 1
-        if(n < 0) {
+        if(frontTopic.current < 1) {
             return
         }
 
-        setFrontTopic((frontTopic) => frontTopic - 1)
-        dispatch({
-            type: "move", 
-            currentTopic: frontTopic, 
-            nextTopic: n, 
-            class: "tronpedia-carousel-card-right"
-        })     
+        setFrontTopic({"current": frontTopic.current - 1, "direction": "right"})  
     }
 
     const left = () => {
-        let n = frontTopic + 1
-        if(n > 6) {
+        if(frontTopic.current > 5) {
             return
         }
 
-        setFrontTopic((frontTopic) => frontTopic + 1)
-        dispatch({
-            type: "move", 
-            currentTopic: frontTopic, 
-            nextTopic: n, 
-            class: "tronpedia-carousel-card-left"
-        })          
+        setFrontTopic({"current": frontTopic.current + 1, "direction": "left"})          
+    }
+
+    const clickTopic = (topicNumber) => {
+        const direction = (topicNumber < frontTopic.current) ? "left" : "right"
+
+        setFrontTopic({"current": topicNumber, "direction": direction})
     }
 
     return (
@@ -118,7 +123,7 @@ const TronpediaCard = ({topics}) => {
         {
             [...Array(topics.length).keys()].map(i => {
                 return (
-                    <div key={i} className={"ml-3 mini-carousel-dot " + (i === frontTopic ? 'active' : '')}>
+                    <div key={i} onClick={() => clickTopic(i)} className={"ml-3 mini-carousel-dot " + (i === frontTopic.current ? 'active' : '')}>
                         <FaCircle size={15} alt="circle icon" />
                     </div>
                 )
@@ -130,4 +135,4 @@ const TronpediaCard = ({topics}) => {
 
 } 
 
-export default TronpediaCard
+export default TronpediaCarousel
