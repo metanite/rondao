@@ -28,6 +28,8 @@ const Tronpedia = ({data}) => {
             "image": defi,
             "image_bg": defi_bg,
             "alt": "trondao defi",
+            "class": "tronpedia-carousel-card-left",
+            "zIndex": -3,
             "description": "This is the place to be for everything related to Decentralized Finance and the new coming age of the internet. Here you'll find articles on all sorts of concepts and topics, so be sure to check them out!",
             "subTopics": [
                 "What is DEFI?",
@@ -40,6 +42,8 @@ const Tronpedia = ({data}) => {
             "image": gamefi,
             "image_bg": gamefi_bg,
             "alt": "trondao gamefi",
+            "class": "tronpedia-carousel-card-left",
+            "zIndex": -2,
             "description": "If you're looking for information on the latest and greatest games, or want to learn about the cutting-edge technologies that are shaping the future of gaming, you have found your destination",
             "subTopics": [
                 "What is GAMEFI?",
@@ -52,6 +56,8 @@ const Tronpedia = ({data}) => {
             "image": nft,
             "image_bg": nft_bg,
             "alt": "trondao nft",
+            "class": "tronpedia-carousel-card-left",
+            "zIndex": -1,
             "description": "NFTs provide a sense of community and access to perks that can't be found anywhere else. Discover why many think NFT’s will revolutionize the world",
             "subTopics": [
                 "What is NFT?",
@@ -64,6 +70,8 @@ const Tronpedia = ({data}) => {
             "image": web3,
             "image_bg": web3_bg,
             "alt": "trondao web3",
+            "class": "tronpedia-carousel-card-front",
+            "zIndex": 1,
             "description": "Web3 is a movement that's all about giving people control of their data and letting them enjoy its potential. Seize that control back by gaining an understanding of the basics of Web3.",
             "subTopics": [
                 "What is WEB3?",
@@ -76,6 +84,8 @@ const Tronpedia = ({data}) => {
             "image": stablecoin,
             "image_bg": stablecoin_bg,
             "alt": "trondao stablecoin",
+            "class": "tronpedia-carousel-card-right",
+            "zIndex": -1,
             "description": "The digital landscape is volatile. That's why it pays to know about stablecoins. You might think that these coins don't seem all too exciting at first glance, but looks can be deceiving",
             "subTopics": [
                 "What is Stablecoin?",
@@ -88,6 +98,8 @@ const Tronpedia = ({data}) => {
             "image": crypto,
             "image_bg": crypto_bg,
             "alt": "trondao crypto",
+            "class": "tronpedia-carousel-card-right",
+            "zIndex": -2,
             "description": "Crypto is a new and exciting way to transact business online. Their use cases are so impressive  that it's hard not be drawn in by their potential! But where do you start? Right here!",
             "subTopics": [
                 "What is Crypto?",
@@ -100,6 +112,8 @@ const Tronpedia = ({data}) => {
             "image": blockchain,
             "image_bg": blockchain_bg,
             "alt": "trondao blockchain",
+            "class": "tronpedia-carousel-card-right",
+            "zIndex": -3,
             "description": "Let us be the first block in your blockchain journey. This section is packed full of useful information, whether you're a complete newcomer or you're already familiar with the basics and looking to learn more",
             "subTopics": [
                 "What is Blockchain?",
