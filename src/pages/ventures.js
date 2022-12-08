@@ -14,15 +14,15 @@ const TrondaoVentures = () => {
 		{"title": "Climate", "icon": climateIcon},
 		{"title": "Relief Fund", "icon": reliefIcon}, 
 		{"title": "Grants", "icon": grantsIcon}, 
-		{"title": "Venture", "icon": ventureIcon} 
+		{"title": "Hackathon", "icon": ventureIcon} 
 	]
 
-	const collapse = [
-		{"title": "STORY", "info": "clearly articulate and educate about decentralized finance and blockchain technology"},
-		{"title": "DISCOVER", "info": "actively search for the creatives and developers with proven future-shaping abilities"},
-		{"title": "INVEST", "info": "profoundly support early stage blockchain based startups who believe in the decentralized future"},
-		{"title": "MAXIMIZE", "info": "strategically collaborate with those teams to empower their entrepreneurialism and make the most of what they are building"},
-		{"title": "UNLEASH", "info": "intentionally release those investments to change the world as they define decentralization, with TDV exiting ownership via token or equity sale in good timing"},
+	const info = [
+		{"title": "STORY", "detail": "clearly articulate and educate about decentralized finance and blockchain technology"},
+		{"title": "DISCOVER", "detail": "actively search for the creatives and developers with proven future-shaping abilities"},
+		{"title": "INVEST", "detail": "profoundly support early stage blockchain based startups who believe in the decentralized future"},
+		{"title": "MAXIMIZE", "detail": "strategically collaborate with those teams to empower their entrepreneurialism and make the most of what they are building"},
+		{"title": "UNLEASH", "detail": "intentionally release those investments to change the world as they define decentralization, with TDV exiting ownership via token or equity sale in good timing"},
 	]
 
 	return (
@@ -74,9 +74,9 @@ const TrondaoVentures = () => {
             			<h2 className="text-uppercase text-center">How TDV will help?</h2>
             			<div className="ventures-help-collapsibles d-flex flex-column">
             				{
-            					collapse.map((i) => {
+            					info.map((i) => {
             						return (
-            							<Collapsible title={i.title} info={i.info} />
+            							<Collapsible title={i.title} info={i.detail} />
             						)
             					})
             				}
@@ -86,7 +86,7 @@ const TrondaoVentures = () => {
             		<div className="ventures-last d-flex flex-column flex-md-row justify-content-between">
             			<div className="order-2 order-md-1 d-flex flex-column align-items-center align-items-md-start mt-4 mt-md-0">
             				<h1>A “perfect fit” for TRON DAO Ventures is a project:</h1>
-            				<div className="mt-2 mt-md-3">
+            				<div className="mt-2 mt-md-4">
             					<ul>
 	            					<li>Built on a trusted Layer1 (including but not limited to TRON)</li>
 	            					<li>With a MVP, Testnet, or Beta ready </li>

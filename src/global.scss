@@ -111,16 +111,20 @@ a {
 		font-family: "Blender Pro Bold";
 		font-style: normal;
 		font-weight: 700;
-		font-size: 25px;
+		font-size: 20px;
 		line-height: 100%;
 		margin: 0;
+
+        @media (min-width: $md) {
+            font-size: 25px;
+        }
 	}	
 
 	&-detail {
 		font-family: "Blender Pro";
 		font-style: normal;
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 15px;
 		line-height: 170%;
 		margin: 0;
 		
@@ -128,6 +132,9 @@ a {
 			text-transform: capitalize;
 		}
 
+        @media (min-width: $md) {
+            font-size: 20px;
+        }
 	}
 }
 
@@ -4685,6 +4692,10 @@ nav .navbar {
         @media (min-width: $lg) {
             margin: 35px 0;
         }
+
+        @media (min-width: $xxl) {
+            height: 500px;
+        }
 	}
 
 	&-container {
@@ -4700,10 +4711,18 @@ nav .navbar {
             @media (min-width: $md) {
 				padding: 20px 125px;
 			}
+
+            @media (min-width: $xxl) {
+                padding: 100px 250px;
+            }
 		}
 
 		@media (min-width: $md) {
 			padding: 100px 125px;
+		}
+
+        @media (min-width: $xxl) {
+			padding: 100px 250px;
 		}
 	}
 
@@ -7970,6 +7989,10 @@ nav .navbar {
 	            background: transparent;
 	            outline: none;
 	            padding: 15px 0;
+
+                &:hover {
+                    color: $tronRed;
+                }
 	        }
         }
     }
@@ -8828,6 +8851,10 @@ nav .navbar {
 				@media (min-width: $lg) {
 					font-size: 60px;
 				}
+
+                @media (min-width: $xxl) {
+					font-size: 90px;
+				}
 			}
 
 			p {
@@ -8874,6 +8901,10 @@ nav .navbar {
 
 	&-sections {
 		margin-top: 80px;
+
+        @media (min-width: $xxl) {
+            max-width: 66.666667%;
+        }
 	}
 
 	&-program {
@@ -8908,7 +8939,7 @@ nav .navbar {
 			flex: 0 0 calc(50% - 20px);
 
 			@media (min-width: $lg) {
-				height: 220px;
+				height: 230px;
 				padding: 3rem 0;
 				flex: 0 0 calc(33.33% - 22px);
 				padding: 3rem 1rem;
@@ -8969,6 +9000,10 @@ nav .navbar {
 				width: 55%;
 			}
 
+            @media (min-width: $xxl) {
+				width: 60%;
+			}
+
 			h1 {
 				font-style: normal;
 				font-weight: 700;
@@ -8979,6 +9014,10 @@ nav .navbar {
 				@media (min-width: $lg) {
 					font-size: 40px;
 				}
+
+                @media (min-width: $xxl) {
+					font-size: 60px;
+				}
 			}
 
 			p {
@@ -8988,10 +9027,18 @@ nav .navbar {
 				line-height: 170%;
 				width: 100%;
 				margin-top: 1rem;
+
+                @media (min-width: $xxl) {
+                    font-size: 20px;
+                }
 			}
 
 			li {
 				font-size: 18px;
+
+                @media (min-width: $xxl) {
+                    font-size: 20px;
+                }
 			}
 		}
 
@@ -9004,8 +9051,8 @@ nav .navbar {
 		}
 
 		&-box {
-			width: 350px;
-			height: 300px;
+			width: 400px;
+			height: 400px;
 			background: linear-gradient(72.19deg, #DEDEDE -41.89%, rgba(222, 222, 222, 0.21) 44.61%, #DEDEDE 140.6%);
 		}
 	}	

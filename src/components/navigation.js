@@ -40,6 +40,7 @@ const Navigation = () => {
     closeNavDropDown2();
     closeNavDropDown3();
     closeNavDropDown4();
+    closeNavDropDown5();
   }
 
   const [isNavDropDown1Open, setIsNavDropDown1Open] = useState(hide);
@@ -85,6 +86,17 @@ const Navigation = () => {
     }
   };
   const closeNavDropDown4 = () => setIsNavDropDown4Open(hide);
+
+  const [isNavDropDown5Open, setIsNavDropDown5Open] = useState(hide);
+  const toggleNavDropDown5 = () => {
+    if (isNavDropDown5Open === show) {
+      setIsNavDropDown5Open(hide)
+    } else {
+      closeNavDropDowns();
+      setIsNavDropDown5Open(show)
+    }
+  };
+  const closeNavDropDown5 = () => setIsNavDropDown5Open(hide);
 
   let isHackathon = false;
   if (typeof window !== "undefined") {
@@ -502,13 +514,49 @@ const Navigation = () => {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item dropdown">
-                  <a onClick={closeMenu} href="/ecosystem/" id="nav-ecosystem">
-                    <button className="nav-link w-100">
-                      ECOSYSTEM
-                    </button>
-                    <div style={{borderBottom: "0.5px solid #232323", width: "85%", marginBottom: '1.5rem'}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
-                  </a>
+                <li className="nav-item dropdown position-static">
+                  <button
+                      className={(isNavDropDown5Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
+                      type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown5}>
+                    ECOSYSTEM
+                  </button>
+                    <div className={isNavDropDown5Open + ' dropdown-menu'}
+                       aria-labelledby="dropdownMenuButton0">
+                        <div className="d-flex flex-wrap">
+                            <div
+                                className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                                <p className="dropdown-menu-subtitle">
+                                    <img src={globe} alt="Globe" className="mr-2"/>
+                                    PROGRAMS
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a onClick={closeMenu} href="/ventures/"
+                                        rel="noopener noreferrer"
+                                        id="nav-programs-launchpad">
+                                        Trondao Ventures
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                                <p className="dropdown-menu-subtitle">
+                                    <img src={globe} alt="Globe" className="mr-2"/>
+                                    PROJECTS
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a onClick={closeMenu} href="/ecosystem/"
+                                        rel="noopener noreferrer"
+                                        id="nav-programs-launchpad">
+                                        Ecosystem
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </li>
               </ul>
             </Collapse>
