@@ -6,6 +6,7 @@ import climateIcon from "../images/ventures/climate-icon.svg"
 import grantsIcon from "../images/ventures/grants-icon.svg"
 import reliefIcon from "../images/ventures/relief-icon.svg"
 import ventureIcon from "../images/ventures/venture-icon.svg"
+import tronGraphs from "../images/ventures/tron-graphs.png"
 
 const TrondaoVentures = () => {
 
@@ -39,10 +40,10 @@ const TrondaoVentures = () => {
             	<div className="ventures-header">
             		<div className="ventures-header-title d-flex flex-column flex-md-row align-items-start">
                         <div className="col-11 mx-auto col-lg-8 mx-lg-0">
-    				        <h1 className="text-uppercase">Tron Dao Ventures will <span>define centralization</span></h1>
+    				        <h1 className="text-uppercase">Tron Dao Ventures will <span>define decentralization</span></h1>
                             <p>
                             TRON DAO is determined to discover web3 projects in alignment with our 
-                            vision to decentralize the internet. As one of the premier Layer Ones, 
+                            vision to decentralize the internet. As one of the Premier Layer-1 blockchains, 
                             with the third most Total Value Locked (TVL) among all blockchains, 
                             we are positioned to do more than just strengthen our own ecosystem. That’s why we launched TRON DAO Ventures.
                             </p>
@@ -99,7 +100,7 @@ const TrondaoVentures = () => {
             				<a href="/" className="mt-3 mt-md-0"><button className="ventures-button">Submit Your Project</button></a>
             			</div>
             			<div className="order-1 order-md-2 d-flex align-items-center justify-content-center">
-            				<div className="ventures-last-box"></div>
+            				<img src={tronGraphs} alt="tron logo and different types of graphs" className="img-fluid" />
             			</div>
             		</div>
             	</div>
