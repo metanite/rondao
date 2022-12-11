@@ -531,10 +531,10 @@ const Navigation = () => {
                                 </p>
                                 <ul>
                                     <li>
-                                        <a onClick={closeMenu} href="/ventures/"
+                                        <a onClick={closeMenu} href="/ecosystem-fund/"
                                         rel="noopener noreferrer"
                                         id="nav-programs-launchpad">
-                                        Trondao Ventures
+                                        Trondao Ecosystem Fund
                                         </a>
                                     </li>
                                 </ul>

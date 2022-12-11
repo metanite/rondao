@@ -20,7 +20,7 @@ import blockchain from "../../../images/home/blockchain.svg"
 import blockchain_bg from "../../../images/tronpedia/blockchain-bg.svg"
 import tronbullHi from "../../../images/tronpedia/tronbull-hi.png"
 
-const Tronpedia = ({data}) => {
+const Tronpedia = () => {
 
     const topics = [
         {

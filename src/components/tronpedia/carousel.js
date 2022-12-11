@@ -87,7 +87,7 @@ const TronpediaCarousel = ({topics}) => {
                         return  <div key={index} className="tronpedia-carousel-card tronpedia-carousel-card-front d-flex 
                         flex-column justify-content-start align-items-start" style={{zIndex: 1}}>
                             <div className="d-flex align-items-center">
-                                <img src={topic.image} alt={topic.alt} className="mr-4" />
+                                <img src={topic.image_bg} alt={topic.alt} className="mr-4" />
                                 <h2>{topic.title}</h2> 
                             </div> 
                             <div>
