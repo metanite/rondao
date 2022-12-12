@@ -907,7 +907,8 @@ body {
 		border-image-width: 0;
 
 		&::after {
-			transform: rotate(180deg);
+			vertical-align: 0 !important;
+			transform: rotate(-135deg) !important;
 		}
 	}
 
@@ -960,7 +961,7 @@ body {
 	}
 
 	&-subtitle {
-		font-family: 'Blender Pro Heavy';
+		font-family: 'Blender Pro Bold';
 		font-style: normal;
 		font-weight: 900;
 		font-size: 20px;
@@ -1100,7 +1101,7 @@ body {
 		}
 
 		&-mobile-text a {
-			font-family: 'Blender Pro Heavy';
+			font-family: 'Blender Pro Bold';
 			font-style: normal;
 			font-weight: 900;
 			font-size: 30px;
@@ -1119,7 +1120,7 @@ body {
 		height: 98px;
 	
 		a {
-			font-family: 'Blender Pro Heavy';
+			font-family: 'Blender Pro Bold';
 			font-style: normal;
 			font-weight: 900;
 			font-size: 40px;
@@ -1151,7 +1152,7 @@ body {
 		li {
 			button {
 				border: none;
-				font-family: 'Blender Pro Heavy';
+				font-family: 'Blender Pro Bold';
 				font-style: normal;
 				font-weight: 900;
 				font-size: 18px;
@@ -1168,6 +1169,14 @@ body {
 
 			button.dropdown-toggle {
 				&::after {
+					content: "";
+					display: inline-block;
+					margin-left: 0.4em;
+					vertical-align: 0.20em;
+					border: solid;
+					border-width: 0 2px 2px 0;
+					transform: rotate(45deg);
+					padding: 3.2px;
 					@media(max-width: $sm) {
 						float:right !important;
 					}
@@ -3860,7 +3869,7 @@ nav .navbar {
 			}
 		}
 		&-title {
-			font-family: 'Blender Pro Heavy';
+			font-family: 'Blender Pro Bold';
 			font-weight: 900;
 			font-size: 14px;
             position: absolute;
@@ -4392,7 +4401,7 @@ nav .navbar {
                 }
 			}
 			&-building {
-				font-family: 'Blender Pro Heavy';
+				font-family: 'Blender Pro Bold';
 				margin-top: -10px !important;
 				text-transform: uppercase;
 
@@ -4514,7 +4523,7 @@ nav .navbar {
 		}
 
 		&-header {
-			font-family: Blender Pro Heavy;
+			font-family: Blender Pro Bold;
 			font-size: 30px;
 			font-weight: 900;
 			line-height: 30px;
@@ -5744,7 +5753,7 @@ nav .navbar {
         }
 
         h1 {
-            font-family: Blender Pro Heavy;
+            font-family: Blender Pro Bold;
             font-size: 30px;
             font-weight: 700;
             line-height: 100%;
@@ -6553,7 +6562,7 @@ nav .navbar {
 
 .governance {
     & * > h1 {
-		font-family: Blender Pro Heavy;
+		font-family: Blender Pro Bold;
 	}
 
 	& * > p {
@@ -6692,7 +6701,7 @@ nav .navbar {
             }
 
             h1 {
-                font-family: Blender Pro Heavy;
+                font-family: Blender Pro Bold;
                 font-size: 30px;
                 font-weight: 700;
                 line-height: 100%;
@@ -6771,7 +6780,7 @@ nav .navbar {
 
 .get-started {
 	& * > h1 {
-		font-family: Blender Pro Heavy;
+		font-family: Blender Pro Bold;
 	}
 
 	& * > p {
@@ -8819,27 +8828,30 @@ nav .navbar {
 		position: relative;
         video {
             width: 100%;
-            height: 100%;
+            object-fit: initial;
 
             @media (max-width: $sm) {
-                object-fit: initial;
                 height: 400px;
+            }
+
+            @media (min-width: $lg) {
+                height: 821px;
             }
         }
 		
 		&-title {
 			position: absolute;
             inset: 0;
-            padding: 40px 0;
+            padding: 37px 0;
 
 			@media (min-width: $lg) {
                 width: 90%;
-				padding-top: 7%;
+				padding-top: 136px;
 				padding-left: 16%;
 			}
 
             @media (min-width: $xxl) {
-				padding-top: 10%;
+				padding-left: 325px;
 			}
 
 			h1 {
@@ -8853,7 +8865,7 @@ nav .navbar {
 				}
 
 				@media (min-width: $xl) {
-					font-size: 60px;
+					font-size: 70px;
 				}
 
                 @media (min-width: $xxl) {
@@ -8863,16 +8875,20 @@ nav .navbar {
 
 			p {
 				font-style: normal;
-				font-weight: 700;
+				font-weight: 400;
 				font-size: 12px;
 				line-height: 170%;
                 color: #000000;
                 margin-top: 1rem;
+                width: 80%;
 
 				@media (min-width: $md) {
-                    width: 70%;
 					font-size: 20px;
                     margin-top: 2rem;
+				}
+
+				@media (min-width: $xxl) {
+					width: 70%;
 				}
 			}
 		}
@@ -8885,7 +8901,7 @@ nav .navbar {
 	    color: white;
 	    font-weight: 700;
 	    font-size: 12px;
-	    padding: 15px 20px;
+	    padding: 15px 24px;
 	    line-height: 100%;
 	    border: none;
 	    width: auto;
@@ -8896,7 +8912,7 @@ nav .navbar {
 
 	    @media (min-width: $md) {
 	        font-size: 18px;
-	        padding: 25px 35px;
+	        padding: 29px 45px;
 	        margin-top: 20px;
 	    }
 
@@ -8944,10 +8960,6 @@ nav .navbar {
             font-weight: 400;
             font-size: 18px;
             line-height: 170%;
-            
-            @media(min-width: $lg) {
-                max-width: 80%;
-            }
         }
     }
 
@@ -8955,7 +8967,7 @@ nav .navbar {
         margin-top: 100px;
 
         @media(min-width: $lg) {
-            margin-top: 130px;
+            margin-top: 122px;
         }
 
 		h2 {
@@ -9000,7 +9012,7 @@ nav .navbar {
             gap: 1rem;
 
             @media (min-width: $lg) {
-                padding: 2.5rem 2.5rem;
+                padding: 45px 55px;
             }
 
 			h3 {	
@@ -9027,6 +9039,7 @@ nav .navbar {
                 font-style: normal;
                 font-weight: 700;
                 font-size: 15px;
+                display: block;
 
                 &:hover {
                     background-color: #E71E26;
@@ -9063,10 +9076,6 @@ nav .navbar {
 				text-transform: uppercase;
 
 				@media (min-width: $lg) {
-					font-size: 40px;
-				}
-
-                @media (min-width: $xxl) {
 					font-size: 60px;
 				}
 			}
@@ -9077,11 +9086,7 @@ nav .navbar {
 				font-size: 18px;
 				line-height: 170%;
 				width: 100%;
-				margin-top: 1rem;
-
-                @media (min-width: $xxl) {
-                    font-size: 20px;
-                }
+				margin-top: 2.5rem;
 			}
 
 			li {
@@ -9089,10 +9094,6 @@ nav .navbar {
 
                 @media (max-width: $sm) {
                     line-height: 200%;
-                }
-
-                @media (min-width: $xxl) {
-                    font-size: 20px;
                 }
 			}
 		}

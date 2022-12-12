@@ -67,7 +67,7 @@ const TrondaoVentures = () => {
                         <source src={background} type="video/mp4"/>
                     </video>
             		<div className="ecosystem-fund-header-title d-flex flex-column flex-md-row align-items-start">
-                        <div className="col-11 mx-auto col-lg-8 mx-lg-0">
+                        <div className="col-11 mx-auto col-lg-10 mx-lg-0">
     				        <h1 className="text-uppercase">Tron Dao Ecosystem Fund will <span>define decentralization</span></h1>
                             <p>
                             The TRON DAO Ecosystem Fund aims at innovating web3. It has a variety of options, including HackaTron, TRON/BTTC integration Fund, TRON DAO ventures, a relief fund, grants offering, academy program, and climate initiative and upcoming programs. All of these make up the $1 billion allocated to empower the best and brightest building on TRON.
@@ -77,7 +77,7 @@ const TrondaoVentures = () => {
                     </div>
             	</div>
 
-            	<div className="ecosystem-fund-sections col-11 col-lg-9 mx-auto">
+            	<div className="ecosystem-fund-sections col-11 col-lg-10 mx-auto">
 
                     <div className="ecosystem-fund-define d-flex flex-column flex-lg-row align-items-center justify-content-between">
                         <div>
@@ -104,7 +104,7 @@ const TrondaoVentures = () => {
                                                 <p className="mt-3">{program.description}</p>
                                             </div>
                                             <div>
-                                                <a href="/#" className="mt-4">Apply</a>
+                                                <a href="/#">Apply</a>
                                             </div>
 	            						</div>
             						)
