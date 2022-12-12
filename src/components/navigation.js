@@ -527,30 +527,21 @@ const Navigation = () => {
                                 className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
                                 <p className="dropdown-menu-subtitle">
                                     <img src={globe} alt="Globe" className="mr-2"/>
-                                    PROGRAMS
+                                    ECOSYSTEM
                                 </p>
                                 <ul>
                                     <li>
                                         <a onClick={closeMenu} href="/ecosystem-fund/"
                                         rel="noopener noreferrer"
                                         id="nav-programs-launchpad">
-                                        Trondao Ecosystem Fund
+                                        Ecosystem Fund
                                         </a>
                                     </li>
-                                </ul>
-                            </div>
-                            <div
-                                className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
-                                <p className="dropdown-menu-subtitle">
-                                    <img src={globe} alt="Globe" className="mr-2"/>
-                                    PROJECTS
-                                </p>
-                                <ul>
                                     <li>
                                         <a onClick={closeMenu} href="/ecosystem/"
                                         rel="noopener noreferrer"
                                         id="nav-programs-launchpad">
-                                        Ecosystem
+                                        Featured Projects
                                         </a>
                                     </li>
                                 </ul>

@@ -17,7 +17,7 @@ const TrondaoVentures = () => {
         {
             "title": "HackaTRON", 
             "icon": hackatronIcon, 
-            "description": "Equipping, coaching, and rewarding forward-thinking, future-shaping teams developing for the TRON ecosystem."
+            "description": "Equipping, coaching, and rewarding early state projects shaping the future for the TRON ecosystem."
         },
         {
             "title": "TRON/BTTC Integration Fund", 
@@ -27,7 +27,7 @@ const TrondaoVentures = () => {
         {
             "title": "TRON DAO Ventures", 
             "icon": ventureIcon, 
-            "description": "Discovering elite early-stage startups, investing profoundly, maximizing strategically, then exiting at an empowering moment."
+            "description": "Discovering elite startups, investing profoundly, maximizing strategically, then exiting at an empowering moment."
         },
         {
             "title": "Ambassador Grants", 
@@ -47,7 +47,7 @@ const TrondaoVentures = () => {
 		{
             "title": "Terra Developer Incentive Fund", 
             "icon": terraIcon, 
-            "description": "Providing support and sympathy to the ones who were affected in the UST crash"
+            "description": "Providing grant support to developers and communities impacted by the UST crash."
         }
 	]
 
@@ -116,9 +116,9 @@ const TrondaoVentures = () => {
             		<div className="ecosystem-fund-last d-flex flex-column flex-lg-row justify-content-between">
             			<div className="order-2 order-lg-1 d-flex flex-column align-items-start align-items-md-center align-items-lg-start mt-5 mt-lg-0">
             				<h1>A Perfect Fit</h1>
-            				<div className="mt-2 mt-md-4">
+            				<div className="ecosystem-fund-last-list">
             					<ul>
-	            					<li>Building on a trusted Layer1 (including but not limited to TRON)</li>
+	            					<li>Building on a trusted Layer1</li>
 	            					<li>Working toward or already possessing a MVP, Testnet, or Beta</li>
 	            					<li>Leveraging their own resources while stewarding outside funding</li>
 	            					<li>Uniting a team of innovators and investors who are dedicated to success</li>

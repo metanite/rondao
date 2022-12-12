@@ -1120,7 +1120,7 @@ body {
 		height: 98px;
 	
 		a {
-			font-family: 'Blender Pro Bold';
+			font-family: 'Blender Pro Heavy';
 			font-style: normal;
 			font-weight: 900;
 			font-size: 40px;
@@ -1152,7 +1152,7 @@ body {
 		li {
 			button {
 				border: none;
-				font-family: 'Blender Pro Bold';
+				font-family: 'Blender Pro Heavy';
 				font-style: normal;
 				font-weight: 900;
 				font-size: 18px;
@@ -8826,6 +8826,7 @@ nav .navbar {
 
 	&-header {
 		position: relative;
+
         video {
             width: 100%;
             object-fit: initial;
@@ -8851,6 +8852,7 @@ nav .navbar {
 			}
 
             @media (min-width: $xxl) {
+                width: 80%;
 				padding-left: 325px;
 			}
 
@@ -8888,7 +8890,7 @@ nav .navbar {
 				}
 
 				@media (min-width: $xxl) {
-					width: 70%;
+					width: 61%;
 				}
 			}
 		}
@@ -8948,9 +8950,10 @@ nav .navbar {
             font-size: 29px;
             line-height: 100%;
             text-transform: uppercase;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
 
             @media (min-width: $md) {
+                margin-bottom: 35px;
                 font-size: 60px;
             }
         }
@@ -8958,8 +8961,15 @@ nav .navbar {
         p {
             font-style: normal;
             font-weight: 400;
-            font-size: 18px;
-            line-height: 170%;
+            font-size: 14px;
+            line-height: 200%;
+            width: 98%;
+
+            @media (min-width: $lg) {
+                font-size: 18px;
+                line-height: 170%;
+                width: 79%;
+            }
         }
     }
 
@@ -8999,6 +9009,18 @@ nav .navbar {
                 & > div:nth-child(3), & > div:nth-child(6) {
                     border-left: 1px solid #E4E4E7;
                 }
+
+                & > div:nth-child(2) {
+                    h3 {
+                        padding: 0 22px;
+                    }
+                }
+
+                & > div:last-child {
+                    h3 {
+                        padding: 0 10px;
+                    }
+                }
             } 
 
             & > div:not(:last-child) {
@@ -9012,7 +9034,7 @@ nav .navbar {
             gap: 1rem;
 
             @media (min-width: $lg) {
-                padding: 45px 55px;
+                padding: 45px 43px;
             }
 
 			h3 {	
@@ -9057,6 +9079,10 @@ nav .navbar {
 			margin-top: 250px;
 		}
 
+        &-list {
+            margin-top: 39px;
+        }
+
 		& > div:first-child {
 			width: 100%;
 
@@ -9074,6 +9100,7 @@ nav .navbar {
 				font-size: 30px;
 				line-height: 100%;
 				text-transform: uppercase;
+                margin-bottom: 0;
 
 				@media (min-width: $lg) {
 					font-size: 60px;
@@ -9086,7 +9113,7 @@ nav .navbar {
 				font-size: 18px;
 				line-height: 170%;
 				width: 100%;
-				margin-top: 2.5rem;
+                margin-top: 30px;
 			}
 
 			li {
