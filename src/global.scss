@@ -8738,7 +8738,7 @@ nav .navbar {
 
         @media (min-width: $lg) {
         	grid-template-columns: repeat(2, 1fr);
-        	gap: 5rem;
+        	gap: 100px;
         }
 
         img {
@@ -8753,7 +8753,7 @@ nav .navbar {
             text-transform: uppercase;
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 25px;
             line-height: 100%;
             color: $tronDarkBorder;
         }
@@ -8766,6 +8766,75 @@ nav .navbar {
     		margin-top: 200px;
     	}
     }
+}
+
+.tronpedia-articles {
+	& * > a {
+		font-family: Blender Pro Bold !important;
+	}
+
+	& * > h2, p {
+		font-family: Blender Pro !important;
+	}
+
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+	row-gap: 61px;
+
+	&-article {
+		min-height: 230px;
+		padding: 38px 49px;
+		background: linear-gradient(91.27deg, #FF0015 15.81%, rgba(140, 0, 7, 0.97) 123.07%);
+		border-radius: 25px;
+		color: white;
+		gap: 40px;
+
+		img {
+			width: 140px;
+			height: 140px;
+		}
+
+		&-title {
+			font-style: normal;
+			font-weight: 700 !important;
+			font-size: 25px !important;
+			line-height: 150% !important;
+			margin-bottom: 23px !important;
+		}
+
+		&-description {
+			font-style: normal !important;
+			font-weight: 700 !important;
+			font-size: 18px !important;
+			line-height: 150% !important;
+		}
+	}
+
+	&-pagination {
+		margin-top: 80px;
+		gap: 20px;
+
+		&-page {
+			color: $tronDarkBorder;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 150%;
+
+			&.current {
+				background-color: $tronRed;
+				border-radius: 50%;
+				width: 40px;
+				color: white;
+				text-align: center;
+			}
+
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
 }
 
 .tronpedia-search {
@@ -8811,6 +8880,18 @@ nav .navbar {
 			line-height: 100%;
 			margin-bottom: 30px;
 		}
+	}
+
+	&-results {
+		margin-top: 125px;
+	}
+
+	&-featured {
+		margin-top: 140px;
+	}
+
+	&-email {
+		margin-top: 235px;
 	}
 }
 
