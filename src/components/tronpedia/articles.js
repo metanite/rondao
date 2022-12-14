@@ -7,12 +7,12 @@ const Articles = ({articles}) => {
 			{
 				articles.map((article, index) => {
 					return (
-						<a key={index} href="/#">
+						<a key={index} href="/#" target="_blank" rel="noopenner noreferrer">
 							<div className="tronpedia-articles-article d-flex">
-								<div className="d-flex align-items-center justify-content-center">
+								<div className="d-flex align-items-lg-center justify-content-start justify-content-lg-center">
 									<img src={article.image} alt={article.alt} className="" /> 
 								</div>
-								<div className="flex-fill d-flex flex-column">
+								<div className="flex-fill d-flex flex-column my-2 my-lg-0">
 									<h2 className="tronpedia-articles-article-title">{article.title}</h2>
 									<p className="tronpedia-articles-article-description">{article.description}</p>
 								</div>

@@ -5,6 +5,7 @@ import TronpediaArticle from "../../../../components/tronpedia/articles"
 import TronpediaFeatured from "../../../../components/tronpedia/featured"
 import TronpediaSearch from "../../../../components/tronpedia/search"
 import TronpediaTopics from "../../../../components/tronpedia/topics"
+import Tron404 from "../../../../components/tronpedia/404"
 import web3_bg from "../../../../images/tronpedia/web3-bg.svg"
 
 const Search = () => {
@@ -49,8 +50,8 @@ const Search = () => {
                 <meta property="og:title" content="TRONPEDIA SEARCH | TRONDAO"/>
             </Helmet>
 
-            <div className="tronpedia-search col-11 col-lg-9 mx-auto">
-            	<div className="tronpedia-search-query d-flex flex-column">
+            <div className="tronpedia-search-page col-11 col-lg-9 mx-auto">
+            	<div className="tronpedia-search-page-query d-flex flex-column">
             		<div>
             			<h1>Search: "{searchQuery}"</h1>
             		</div>
@@ -62,25 +63,29 @@ const Search = () => {
             		</div>
             	</div>
 
-            	<div className="tronpedia-search-form">
+            	<div className="tronpedia-search-page-form">
             		<TronpediaSearch />
             	</div>
 
-            	<div className="tronpedia-search-popular-topics">
+            	<div className="tronpedia-search-page-popular-topics">
             		<h2>Popular Topics</h2>
             		<TronpediaTopics limit={5} />
             	</div>
 
-                <div className="tronpedia-search-results">
-                    <h2>Results</h2>
-                    <TronpediaArticle articles={web3} />
+                <div className="tronpedia-search-page-results">
+                    {
+                        // for demonstration only. not real results
+                        (searchQuery.toLowerCase() === 'what is nft') 
+                            ? <> <h2>Results</h2> <TronpediaArticle articles={web3} /> </>
+                            : <Tron404 />
+                    }
                 </div>
 
-                <div className="tronpedia-search-featured">
+                <div className="tronpedia-search-page-featured">
                     <TronpediaFeatured />
                 </div>
             </div>
-            <div className="tronpedia-search-email">
+            <div className="tronpedia-search-page-email">
                 <EmailCapture />
             </div>
         </div>

@@ -20,8 +20,9 @@ const Featured = () => {
 
     return (
         <>
-        <h2 className="mb-5 text-uppercase">Featured</h2>
         <div className="tronpedia-featured">
+            <h2 className="tronpedia-featured-header">Featured</h2>
+            <div className="tronpedia-featured-articles">
             {
                 featuredTopics.sort(() => Math.random() - 0.5).slice(0,4).map(topic => {
                     return (
@@ -30,14 +31,15 @@ const Featured = () => {
                                 <div>
                                     <img src={topic.image} alt={topic.question} className="img-fluid" />
                                 </div>
-                                <div className="mt-3">
-                                    <h2>{topic.question}</h2>
+                                <div className="tronpedia-featured-articles-title mt-1 mt-lg-3">
+                                    <h3>{topic.question}</h3>
                                 </div>
                             </div>
                         </a>    
                     )
                 })
             }
+            </div>
         </div>
         </>
     )

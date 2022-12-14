@@ -174,7 +174,7 @@ const Tronpedia = () => {
                         <TronpediaCarousel topics={topics} />
                     </div>
                     
-                    <div>
+                    <div className="tronpedia-feature">
                         <TronpediaFeatured />
                     </div>
                 </div>

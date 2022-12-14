@@ -11,7 +11,7 @@ import tronGraphs from "../images/ecosystem/fund/tron-graphs.png"
 import defineCentralization from "../images/ecosystem/fund/define-centralization.png"
 import background from "../images/ecosystem/fund/background.mp4"
 
-const TrondaoVentures = () => {
+const EcosystemFund = () => {
 
 	const programs = [
         {
@@ -72,7 +72,7 @@ const TrondaoVentures = () => {
                             <p>
                             The TRON DAO Ecosystem Fund aims at innovating web3. It has a variety of options, including HackaTron, TRON/BTTC integration Fund, TRON DAO ventures, a relief fund, grants offering, academy program, and climate initiative and upcoming programs. All of these make up the $1 billion allocated to empower the best and brightest building on TRON.
                             </p>
-                            <a href="/" className=""><button className="ecosystem-fund-button">Submit Your Project</button></a>  
+                            <a href="/#" target="_blank" rel="noopener noreferrer"><button className="ecosystem-fund-button">Submit Your Project</button></a>  
                         </div>
                     </div>
             	</div>
@@ -104,7 +104,7 @@ const TrondaoVentures = () => {
                                                 <p className="mt-3">{program.description}</p>
                                             </div>
                                             <div>
-                                                <a href="/#">Apply</a>
+                                                <a href="/#" target="_blank" id={"ecosystem-fund-btn-apply-"+program.title} rel="noopener noreferrer">Apply</a>
                                             </div>
 	            						</div>
             						)
@@ -126,7 +126,7 @@ const TrondaoVentures = () => {
 	            				</ul>
 	            				<p>Does this sound like you? We'd like to hear from you.</p>
             				</div>
-            				<a href="/" className="mt-3 mt-md-0"><button className="ecosystem-fund-button">Submit Your Project</button></a>
+            				<a href="/" className="mt-3 mt-md-0" target="_blank" rel="noopener noreferrer"><button className="ecosystem-fund-button">Submit Your Project</button></a>
             			</div>
             			<div className="order-1 order-lg-2 d-flex align-items-center justify-content-center">
             				<img src={tronGraphs} alt="tron logo and different types of graphs" className="img-fluid" />
@@ -138,4 +138,4 @@ const TrondaoVentures = () => {
    	)
 }
 
-export default TrondaoVentures
+export default EcosystemFund
