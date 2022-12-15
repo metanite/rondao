@@ -26,10 +26,17 @@ const Topics = ({limit}) => {
 		{
 			filteredTopics.map(topic => {
 	            return (
-	                <button type="button" className="tronpedia-topics-button">
-	                <img src={topic.image} alt={topic.title} />    
-	                {topic.title}
-	                </button>
+	                <a 
+	                	href="/#" 
+	                	target="_blank" 
+	                	rel="noopenner noreferrer" 
+	                	type="button" 
+	                	className="tronpedia-topics-button flex-fill"
+	                	id={"tronpedia-topics-button-"+topic.title}
+	                >
+	                	<img src={topic.image} alt={topic.title} />    
+	                	{topic.title}
+	                </a>
 	            )
 	        })
 		}

@@ -7,7 +7,7 @@ const Articles = ({articles}) => {
 			{
 				articles.map((article, index) => {
 					return (
-						<a key={index} href="/#" target="_blank" rel="noopenner noreferrer">
+						<a key={index} href="/developers/learning/tronpedia/article/" target="_blank" rel="noopenner noreferrer">
 							<div className="tronpedia-articles-article d-flex">
 								<div className="d-flex align-items-lg-center justify-content-start justify-content-lg-center">
 									<img src={article.image} alt={article.alt} className="" /> 
@@ -15,6 +15,9 @@ const Articles = ({articles}) => {
 								<div className="flex-fill d-flex flex-column my-2 my-lg-0">
 									<h2 className="tronpedia-articles-article-title">{article.title}</h2>
 									<p className="tronpedia-articles-article-description">{article.description}</p>
+									<div className="tronpedia-articles-article-button d-flex d-lg-none">
+										<FaArrowRight size={23} />
+									</div>
 								</div>
 							</div>
 						</a>

@@ -74,10 +74,6 @@ const Ecosystem = ({data}) => {
 
     const [displayedEcosystems, setDisplayedEcosystem] = useState(init);
 
-
-
-
-
     return (
         <div className="ecosystem">
             <Helmet>
@@ -91,7 +87,7 @@ const Ecosystem = ({data}) => {
                 <video autoPlay muted loop playsInline className="ecosystem-hero-background">
                     <source src={background} type="video/mp4"/>
                 </video>
-                <div className="ecosystem-hero-front d-flex flex-column align-items-center justify-content-md-center">
+                <div className="ecosystem-hero-front d-flex flex-column align-items-center justify-content-center mt-4 mt-md-0">
                     <h1 className="ecosystem-hero-header">
                         TRON
                         <div className="mt-lg-2 w-100"/>
@@ -101,34 +97,34 @@ const Ecosystem = ({data}) => {
                         defining decentralization and fulfilling TRON’s mission of creating an internet for all.</p>
                     <a href="https://docs.google.com/forms/d/1aw1KTjKxxEhKNqF5WyvKlPy_YDM4ueti4f_707g7Qa8/edit"
                        id="ecosystem-btn-submit-your-project" target="_blank" rel="noopener noreferrer">
-                        <button className="cta mt-md-3 mt-lg-5">Submit your project</button>
+                        <button className="cta mt-2 mt-md-3 mt-lg-5">Submit your project</button>
                     </a>
                 </div>
 
             </div>
             <div className="mt-3 mt-lg-0 w-100 ecosystem-container ecosystem-buttons">
-                <div className="d-flex flex-wrap w-100">
-                    <button className={'m-2' + activeIfSelected(infrastructure)} onClick={function () {
+                <div className="d-flex flex-wrap flex-lg-nowrap w-100">
+                    <button className={'m-1 m-md-2' + activeIfSelected(infrastructure)} onClick={function () {
                         filterByCategory(infrastructure)
                     }} id="ecosystem-dapp-filter-infrastructure">Infrastructure
                     </button>
-                    <button className={'m-2' + activeIfSelected(defi)} onClick={function () {
+                    <button className={'m-1 m-md-2' + activeIfSelected(defi)} onClick={function () {
                         filterByCategory(defi)
                     }} id="ecosystem-dapp-filter-defi">Defi
                     </button>
-                    <button className={'m-2' + activeIfSelected(gamefi)} onClick={function () {
+                    <button className={'m-1 m-md-2' + activeIfSelected(gamefi)} onClick={function () {
                         filterByCategory(gamefi)
                     }} id="ecosystem-dapp-filter-gamefi">Gamefi
                     </button>
-                    <button className={'m-2' + activeIfSelected(nft)} onClick={function () {
+                    <button className={'m-1 m-md-2' + activeIfSelected(nft)} onClick={function () {
                         filterByCategory(nft)
                     }} id="ecosystem-dapp-filter-nft">NFT
                     </button>
-                    <button className={'m-2' + activeIfSelected(stablecoin)} onClick={function () {
+                    <button className={'m-1 m-md-2' + activeIfSelected(stablecoin)} onClick={function () {
                         filterByCategory(stablecoin)
                     }} id="ecosystem-dapp-filter-stablecoin">Stablecoin
                     </button>
-                    <button className={'m-2' + activeIfSelected(crosschain)} onClick={function () {
+                    <button className={'m-1 m-md-2' + activeIfSelected(crosschain)} onClick={function () {
                         filterByCategory(crosschain)
                     }} id="ecosystem-dapp-filter-crosschain">cross-chain
                     </button>
