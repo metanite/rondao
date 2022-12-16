@@ -1,32 +1,40 @@
-import React, {useState, useReducer, useEffect} from "react"
+import React, { useState } from "react"
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go"
-import {FaCircle} from "react-icons/fa"
+import { FaCircle } from "react-icons/fa"
 
 const TronpediaCarousel = ({topics}) => {
-    const [frontTopic, setFrontTopic] = useState({current: Math.round((topics.length - 1) / 2), direction: ""})
+    const [frontTopic, setFrontTopic] = useState(Math.round((topics.length - 1) / 2))
  
     const moveRight = () => {
-        if(frontTopic.current < 1) {
+        if(frontTopic < 1) {
             return
         }
 
-        setFrontTopic({"current": frontTopic.current - 1, "direction": "right"})  
+        setFrontTopic((frontTopic) => frontTopic - 1)  
     }
 
     const moveLeft = () => {
-        if(frontTopic.current > 5) {
+        if(frontTopic > topics.length - 2) {
             return
         }
 
-        setFrontTopic({"current": frontTopic.current + 1, "direction": "left"})          
+        setFrontTopic((frontTopic) => frontTopic + 1)         
     }
 
     const clickCard = (topicNumber) => {
-        if (topicNumber < frontTopic.current) {
+        if (topicNumber < frontTopic) {
             moveRight()
         }else {
             moveLeft()
         }
+    }
+
+    const clickDot = (topicNumber) => {
+        if(topicNumber === frontTopic) {
+            return
+        }
+
+        setFrontTopic(topicNumber)
     }
 
     return (
@@ -40,7 +48,7 @@ const TronpediaCarousel = ({topics}) => {
             </button>
             {
                 topics.map((topic, index) => {
-                    if(index === frontTopic.current) {
+                    if(index === frontTopic) {
                         return  <div key={index} className="tronpedia-carousel-card tronpedia-carousel-card-front d-flex 
                         flex-column justify-content-start align-items-start" style={{zIndex: 1}}>
                             <div className="d-flex align-items-center">
@@ -74,9 +82,9 @@ const TronpediaCarousel = ({topics}) => {
                             </div>
                         </div>
                     }else {
-                        return  <div key={index} onClick={() => clickCard(index)} className={"tronpedia-carousel-card tronpedia-carousel-card-back d-flex align-items-center " 
-                        + (index < frontTopic.current ? "tronpedia-carousel-card-left" : "tronpedia-carousel-card-right") }
-                        style={{zIndex: index < frontTopic.current ? index - frontTopic.current : frontTopic.current - index}}>
+                        return  <div key={index} onClick={() => clickCard(index)} onKeyPress={() => clickCard(index)} className={"tronpedia-carousel-card tronpedia-carousel-card-back d-flex align-items-center " 
+                        + (index < frontTopic ? "tronpedia-carousel-card-left" : "tronpedia-carousel-card-right") }
+                        style={{zIndex: index < frontTopic ? index - frontTopic : frontTopic - index}} role="presentation">
                             <img src={topic.image_bg} alt={topic.alt} className="img-fluid" />
                         </div>
                     }
@@ -87,7 +95,14 @@ const TronpediaCarousel = ({topics}) => {
         {
             [...Array(topics.length).keys()].map(i => {
                 return (
-                    <div key={i} className={"ml-3 mini-carousel-dot " + (i === frontTopic.current ? 'active' : '')}>
+                    <div 
+                        key={i} 
+                        onClick={() => clickDot(i)} 
+                        onKeyPress={() => clickDot(i)} 
+                        className={"ml-3 mini-carousel-dot " + (i === frontTopic ? 'active' : '')} 
+                        role="presentation"
+                        style={{cursor: "pointer"}}
+                    >
                         <FaCircle size={15} alt="circle icon" />
                     </div>
                 )
