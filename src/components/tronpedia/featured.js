@@ -24,9 +24,9 @@ const Featured = () => {
             <h2 className="tronpedia-featured-header">Featured</h2>
             <div className="tronpedia-featured-articles">
             {
-                featuredTopics.sort(() => Math.random() - 0.5).slice(0,4).map(topic => {
+                featuredTopics.sort(() => Math.random() - 0.5).slice(0,4).map((topic, i) => {
                     return (
-                        <a href="/#" target="_blank" rel="noopener noreferrer" id={"tronpedia-featured-button-"+topic.question}>
+                        <a key={i} href="/#" target="_blank" rel="noopener noreferrer" id={"tronpedia-featured-button-"+topic.question}>
                             <div className="d-flex flex-column align-items-start">
                                 <div>
                                     <img src={topic.image} alt={topic.question} className="img-fluid" />

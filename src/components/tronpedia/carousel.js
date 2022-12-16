@@ -100,9 +100,9 @@ const TronpediaCarousel = ({topics}) => {
                             <div>
                                 <ul>
                                     {
-                                        topic.subTopics.map(sub => {
+                                        topic.subTopics.map((sub, i) => {
                                             return (
-                                                <li>
+                                                <li key={i}>
                                                     <a
                                                         href="/#"
                                                         target="_blank"

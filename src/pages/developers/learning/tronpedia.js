@@ -134,9 +134,9 @@ const Tronpedia = () => {
                             {
                                 topics.filter(topic => {
                                     return !["CRYPTO", "BLOCKCHAIN"].includes(topic.title)
-                                }).map(i => {
+                                }).map((t, i) => {
                                     return (
-                                        <img src={i.image} className="tronpedia-header-icons" alt={i.alt} />
+                                        <img key={i} src={t.image} className="tronpedia-header-icons" alt={t.alt} />
                                     )
                                 })
                             }
