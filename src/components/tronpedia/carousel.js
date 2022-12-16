@@ -76,10 +76,10 @@ const TronpediaCarousel = ({topics}) => {
         <>
         <div className="tronpedia-carousel-cards d-flex align-items-center justify-content-center">
             <button onClick={left} className="tronpedia-carousel-left-arrow">
-                <GoTriangleLeft size={60} alt="angle left icon" />
+                <GoTriangleLeft alt="angle left icon" />
             </button>
             <button onClick={right} className="tronpedia-carousel-right-arrow">
-                <GoTriangleRight size={60} alt="angle right icon" />
+                <GoTriangleRight alt="angle right icon" />
             </button>
             {
                 initTopics.map((topic, index) => {
@@ -101,7 +101,14 @@ const TronpediaCarousel = ({topics}) => {
                                         topic.subTopics.map(sub => {
                                             return (
                                                 <li>
-                                                    {sub}
+                                                    <a
+                                                        href="/#"
+                                                        target="_blank"
+                                                        rel="noopenner noreferrer"
+                                                        id={"tronpedia-carousel-subtopic-"+{sub}}
+                                                    >
+                                                        {sub}
+                                                    </a>
                                                 </li>
                                             )
                                         })
