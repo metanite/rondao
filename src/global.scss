@@ -9217,11 +9217,7 @@ nav .navbar {
 		&-back {
 			position: absolute;
 			top: 0;
-			left: -30px;
-
-			@media (min-width: $lg) {
-				left: 0;
-			}
+			left: 0;
 
 			svg {
 				fill: $tronRed;
@@ -9301,8 +9297,10 @@ nav .navbar {
 				font-weight: 700;
 				font-size: 30px;
 				line-height: 100%;
+				text-align: center;
 
 				@media (min-width: $lg) {
+					text-align: left;
 					font-size: 50px;
 				}
 			}

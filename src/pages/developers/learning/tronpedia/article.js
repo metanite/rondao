@@ -18,7 +18,7 @@ const TronpediaArticle = () => {
                 <meta property="og:title" content="Sample Tronpedia Article | TRONDAO"/>
             </Helmet>
 
-            <div className="tronpedia-article-page col-10 col-md-9 mx-auto">
+            <div className="tronpedia-article-page col-11 col-md-9 mx-auto">
             	<div className="tronpedia-article-page-search">
                     <TronpediaSearch />
                 </div>
@@ -30,7 +30,7 @@ const TronpediaArticle = () => {
 
                 <div className="tronpedia-article-page-main d-flex flex-column flex-md-row">
                 	<a 
-                		href="/tronpedia/"
+                		href="/developers/learning/tronpedia/"
                 		className="tronpedia-article-page-main-back"
                 	>
                 		<FaArrowLeft />
