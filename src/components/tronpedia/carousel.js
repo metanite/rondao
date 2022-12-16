@@ -2,54 +2,9 @@ import React, {useState, useReducer, useEffect} from "react"
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go"
 import {FaCircle} from "react-icons/fa"
 
-const cardMover = (topics, action) => {
-    switch (action.type) {
-        case "move":
-            return topics.map((t, index) => {
-                if(index === action.nextTopic) {
-                    return {
-                        ...t,
-                        class: "tronpedia-carousel-card-front",
-                        zIndex: 1
-                    }
-                } else if(index === action.currentTopic) {
-                    return {
-                        ...t,
-                        class: action.class,
-                        zIndex: -1
-                    }
-                } else if(t.class === action.class) {
-                    return {
-                        ...t,
-                        zIndex: t.zIndex - 1 
-                    }
-                }else {
-                    return t
-                }
-            })
-        default:
-            return topics
-    }
-}
-
 const TronpediaCarousel = ({topics}) => {
-
     const [frontTopic, setFrontTopic] = useState({current: Math.round((topics.length - 1) / 2), direction: ""})
-    const [initTopics, dispatch] = useReducer(cardMover, topics)
-
-    useEffect(() => {
-        const className = (frontTopic.direction === "right") ? "tronpedia-carousel-card-right" : "tronpedia-carousel-card-left"
-
-        dispatch({
-            type: "move", 
-            currentTopic: (frontTopic.direction === "right") ? frontTopic.current + 1 : frontTopic.current - 1, 
-            nextTopic: frontTopic.current, 
-            class: className
-        }) 
-
-    }, [frontTopic])
-
-
+ 
     const moveRight = () => {
         if(frontTopic.current < 1) {
             return
@@ -84,7 +39,7 @@ const TronpediaCarousel = ({topics}) => {
                 <GoTriangleRight alt="angle right icon" />
             </button>
             {
-                initTopics.map((topic, index) => {
+                topics.map((topic, index) => {
                     if(index === frontTopic.current) {
                         return  <div key={index} className="tronpedia-carousel-card tronpedia-carousel-card-front d-flex 
                         flex-column justify-content-start align-items-start" style={{zIndex: 1}}>
