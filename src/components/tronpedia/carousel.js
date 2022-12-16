@@ -34,7 +34,7 @@ const cardMover = (topics, action) => {
 
 const TronpediaCarousel = ({topics}) => {
 
-    const [frontTopic, setFrontTopic] = useState({current: 3, direction: ""})
+    const [frontTopic, setFrontTopic] = useState({current: Math.round((topics.length - 1) / 2), direction: ""})
     const [initTopics, dispatch] = useReducer(cardMover, topics)
 
     useEffect(() => {
@@ -50,7 +50,7 @@ const TronpediaCarousel = ({topics}) => {
     }, [frontTopic])
 
 
-    const right = () => {
+    const moveRight = () => {
         if(frontTopic.current < 1) {
             return
         }
@@ -58,7 +58,7 @@ const TronpediaCarousel = ({topics}) => {
         setFrontTopic({"current": frontTopic.current - 1, "direction": "right"})  
     }
 
-    const left = () => {
+    const moveLeft = () => {
         if(frontTopic.current > 5) {
             return
         }
@@ -66,24 +66,26 @@ const TronpediaCarousel = ({topics}) => {
         setFrontTopic({"current": frontTopic.current + 1, "direction": "left"})          
     }
 
-    const clickTopic = (topicNumber) => {
-        const direction = (topicNumber < frontTopic.current) ? "left" : "right"
-
-        setFrontTopic({"current": topicNumber, "direction": direction})
+    const clickCard = (topicNumber) => {
+        if (topicNumber < frontTopic.current) {
+            moveRight()
+        }else {
+            moveLeft()
+        }
     }
 
     return (
         <>
         <div className="tronpedia-carousel-cards d-flex align-items-center justify-content-center">
-            <button onClick={left} className="tronpedia-carousel-left-arrow">
+            <button onClick={moveRight} className="tronpedia-carousel-left-arrow">
                 <GoTriangleLeft alt="angle left icon" />
             </button>
-            <button onClick={right} className="tronpedia-carousel-right-arrow">
+            <button onClick={moveLeft} className="tronpedia-carousel-right-arrow">
                 <GoTriangleRight alt="angle right icon" />
             </button>
             {
                 initTopics.map((topic, index) => {
-                    if(topic.zIndex === 1) {
+                    if(index === frontTopic.current) {
                         return  <div key={index} className="tronpedia-carousel-card tronpedia-carousel-card-front d-flex 
                         flex-column justify-content-start align-items-start" style={{zIndex: 1}}>
                             <div className="d-flex align-items-center">
@@ -117,9 +119,9 @@ const TronpediaCarousel = ({topics}) => {
                             </div>
                         </div>
                     }else {
-                        return  <div key={index} className={"tronpedia-carousel-card tronpedia-carousel-card-back d-flex align-items-center " 
-                        + topic.class}
-                        style={{zIndex: topic.zIndex}}>
+                        return  <div key={index} onClick={() => clickCard(index)} className={"tronpedia-carousel-card tronpedia-carousel-card-back d-flex align-items-center " 
+                        + (index < frontTopic.current ? "tronpedia-carousel-card-left" : "tronpedia-carousel-card-right") }
+                        style={{zIndex: index < frontTopic.current ? index - frontTopic.current : frontTopic.current - index}}>
                             <img src={topic.image_bg} alt={topic.alt} className="img-fluid" />
                         </div>
                     }
@@ -130,7 +132,7 @@ const TronpediaCarousel = ({topics}) => {
         {
             [...Array(topics.length).keys()].map(i => {
                 return (
-                    <div key={i} onClick={() => clickTopic(i)} className={"ml-3 mini-carousel-dot " + (i === frontTopic.current ? 'active' : '')}>
+                    <div key={i} className={"ml-3 mini-carousel-dot " + (i === frontTopic.current ? 'active' : '')}>
                         <FaCircle size={15} alt="circle icon" />
                     </div>
                 )
