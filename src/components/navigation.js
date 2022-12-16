@@ -122,7 +122,7 @@ const Navigation = () => {
                 <a onClick={closeMenu} className="float-right" href="/">TRON DAO</a>
               </div>
             </div>
-            <NavbarToggler onClick={toggle} className="ml-auto mr-5 my-2"/>
+            <NavbarToggler onClick={toggle} className="ml-auto mr-2 my-2"/>
             <Collapse isOpen={isOpen} navbar>
               <ul className="navbar-nav small mr-0 ml-lg-auto">
                 <li className="nav-item dropdown position-static">
