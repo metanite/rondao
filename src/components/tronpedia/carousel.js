@@ -106,7 +106,7 @@ const TronpediaCarousel = ({topics}) => {
                                                     <a
                                                         href="/#"
                                                         target="_blank"
-                                                        rel="noopenner noreferrer"
+                                                        rel="noopener noreferrer"
                                                         id={"tronpedia-carousel-subtopic-"+{sub}}
                                                     >
                                                         {sub}

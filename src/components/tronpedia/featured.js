@@ -26,7 +26,7 @@ const Featured = () => {
             {
                 featuredTopics.sort(() => Math.random() - 0.5).slice(0,4).map(topic => {
                     return (
-                        <a href="/#" target="_blank" rel="noopenner noreferrer" id={"tronpedia-featured-button-"+topic.question}>
+                        <a href="/#" target="_blank" rel="noopener noreferrer" id={"tronpedia-featured-button-"+topic.question}>
                             <div className="d-flex flex-column align-items-start">
                                 <div>
                                     <img src={topic.image} alt={topic.question} className="img-fluid" />
