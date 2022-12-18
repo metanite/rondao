@@ -61,15 +61,24 @@ const HomepageHelps = () => {
                     </div>
                     <p className="text-justify px-3 px-md-0">{selectedItem.description}
                     </p>
-                    <a href={selectedItem.url} id={"home-how-tron-helps-" + selectedItem.title + "-visit"}
-                       onClick={function (e) {
-                           if (selectedItem.disabled === true) {
-                               e.preventDefault();
-                           }
-                       }}>
-                        <button id={"home-how-tron-helps-" + selectedItem.title + "-visit-btn"}
-                                className="homepage-helps-inner-learn float-md-right float-lg-left mt-3 mt-lg-0"
-                                disabled={selectedItem.disabled}>&gt; Visit {selectedItem.title}</button>
+                    <a 
+                        href={selectedItem.url}
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        id={"home-how-tron-helps-" + selectedItem.title + "-visit"}
+                        onClick={function (e) {
+                            if (selectedItem.disabled === true) {
+                                e.preventDefault();
+                            }
+                        }}
+                    >
+                        <button 
+                            id={"home-how-tron-helps-" + selectedItem.title + "-visit-btn"}
+                            className="homepage-helps-inner-learn float-md-right float-lg-left mt-3 mt-lg-0"
+                            disabled={selectedItem.disabled}
+                        >
+                            &gt; Visit {selectedItem.title}
+                        </button>
                     </a>
                 </div>
                 <div

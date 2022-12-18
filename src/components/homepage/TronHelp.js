@@ -14,8 +14,14 @@ const TronHelp = () => {
                 </p>
             </div>
             <div className="homepage-introduction-button">
-                <a href="https://forms.gle/U5VH818cRvWNeXsHA" target="_blank" rel="noopener noreferrer" id="homepage-buttons-apply-funding">
-                    <button className="homepage-apply-funding-button">> Apply for funding</button>
+                <a 
+                    href="https://forms.gle/U5VH818cRvWNeXsHA" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    id="homepage-buttons-apply-funding"
+                >
+                    <button className="homepage-apply-funding-button">> Apply for funding
+                    </button>
                 </a>
             </div>
             <div className="homepage-introduction-image">

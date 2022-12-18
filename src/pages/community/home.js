@@ -22,7 +22,16 @@ const Community = ({data}) => {
                         <div className="d-flex flex-column align-items-center">
                             <h1 className="text-uppercase text-center">Become a <span>#Tronic</span></h1>
                             <p className="col-12 col-md-8 mx-auto text-center mt-md-4">Looking to help build the future of the internet? Well... what are you waiting for? Become a TRONIC now!</p>
-                            <a href="/" className=""><button className="gaming-title-start-button">Call To Action</button></a>
+                            <a 
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="community-cta-button"
+                            >
+                                <button className="gaming-title-start-button">
+                                    Call To Action
+                                </button>
+                            </a>
                         </div>
                     </div>                
                 </div>
@@ -68,21 +77,48 @@ const Community = ({data}) => {
               				<p className="text-justify text-md-center">
               				TRON provides valuable funding and resources to creators who are building projects within its ecosystem.
               				</p>
-              				<a href="/" className=""><button className="community-grants-subheader-button">Call To Action</button></a>
+              				<a 
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="community-grants-button"
+                            >
+                                <button className="community-grants-subheader-button">
+                                    Call To Action
+                                </button>
+                            </a>
               			</div>
               			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center mb-5 mb-md-0">
               				<h1 className="text-uppercase">Influencer</h1>
               				<p className="text-justify text-md-center">
               				TRON is looking to support TRON eco-educators and influencers who are working on DAO-related projects and outreach.
               				</p>
-              				<a href="/" className=""><button className="community-grants-button">Call To Action</button></a>
+              				<a 
+                                href="/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="influencer-grants-button"
+                            >
+                                <button className="community-grants-button">
+                                    Call To Action
+                                </button>
+                            </a>
               			</div>
               			<div className="col-12 col-md-4 d-flex flex-column justify-content-between text-center">
               				<h1 className="text-uppercase">Developer</h1>
               				<p className="text-justify text-md-center">
               				TRON is looking to help developers that are making this network more secure through discovery of bugs and vulnerabilties 
               				</p>
-              				<a href="/" className=""><button className="community-grants-button">Call To Action</button></a>
+              				<a 
+                                href="/#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="community-grants-button"
+                            >
+                                <button className="community-grants-button">
+                                    Call To Action
+                                </button>
+                            </a>
               			</div>
               		</div>
               	</div>
@@ -93,87 +129,55 @@ const Community = ({data}) => {
                     </div>
 
                     <div className="community-team-members community-trait d-flex flex-column flex-md-row justify-content-center mx-auto">
-                    	<div className="col-12 col-md-4 mb-4 mb-md-0">
-                    		<div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
-                    			<img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
-                    			<h1>Member Name</h1>
-                    			<p>
-                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, adipiscing tincidunt tempor tellus. Ridiculus habitasse in hendrerit urna.
-                    			</p>
-                    			<div className="community-team-member-socials d-flex flex-row align-items-center justify-content-between col-8 mx-auto">
-                    				<a id="email-capture-social-facebook"
-		                           aria-label="social-icon-facebook"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaFacebook size={20}/></a>
-                    				<a id="email-capture-social-twitter"
-		                           aria-label="social-icon-twitter"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaTwitter size={20}/></a>
-		                           <a id="email-capture-social-instagram"
-		                           aria-label="social-icon-instagram"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaInstagram size={20}/></a>
-		                           <a id="email-capture-social-linkedin"
-		                           aria-label="social-icon-linkedin"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaLinkedin size={20}/></a>
-                    			</div>
-                    		</div>
-                    	</div>
-                    	<div className="col-12 col-md-4 mb-4 mb-md-0">
-                    		<div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
-                    			<img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
-                    			<h1>Member Name</h1>
-                    			<p>
-                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, adipiscing tincidunt tempor tellus. Ridiculus habitasse in hendrerit urna.
-                    			</p>
-                    			<div className="community-team-member-socials d-flex flex-row align-items-center justify-content-between col-8 mx-auto">
-                    				<a id="email-capture-social-facebook"
-		                           aria-label="social-icon-facebook"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaFacebook size={20}/></a>
-                    				<a id="email-capture-social-twitter"
-		                           aria-label="social-icon-twitter"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaTwitter size={20}/></a>
-		                           <a id="email-capture-social-instagram"
-		                           aria-label="social-icon-instagram"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaInstagram size={20}/></a>
-		                           <a id="email-capture-social-linkedin"
-		                           aria-label="social-icon-linkedin"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaLinkedin size={20}/></a>
-                    			</div>
-                    		</div>
-                    	</div>
-                    	<div className="col-12 col-md-4 mb-4 mb-md-0">
-                    		<div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
-                    			<img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
-                    			<h1>Member Name</h1>
-                    			<p>
-                    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, adipiscing tincidunt tempor tellus. Ridiculus habitasse in hendrerit urna.
-                    			</p>
-                    			<div className="community-team-member-socials d-flex flex-row align-items-center justify-content-between col-8 mx-auto">
-                    				<a id="email-capture-social-facebook"
-		                           aria-label="social-icon-facebook"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaFacebook size={20}/></a>
-                    				<a id="email-capture-social-twitter"
-		                           aria-label="social-icon-twitter"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaTwitter size={20}/></a>
-		                           <a id="email-capture-social-instagram"
-		                           aria-label="social-icon-instagram"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaInstagram size={20}/></a>
-		                           <a id="email-capture-social-linkedin"
-		                           aria-label="social-icon-linkedin"
-		                           href="/"
-		                           target="_blank" rel="noopener noreferrer"><FaLinkedin size={20}/></a>
-                    			</div>
-                    		</div>
-                    	</div>
+                    	{
+                            [...Array(3).keys()].map(i => {
+                                return (
+                                    <div key={i} className="col-12 col-md-4 mb-4 mb-md-0">
+                                        <div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
+                                            <img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
+                                            <h1>Member Name</h1>
+                                            <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, adipiscing tincidunt tempor tellus. Ridiculus habitasse in hendrerit urna.
+                                            </p>
+                                            <div className="community-team-member-socials d-flex flex-row align-items-center justify-content-between col-8 mx-auto">
+                                                <a id="email-capture-social-facebook"
+                                                    aria-label="social-icon-facebook"
+                                                    href="/#"
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaFacebook size={20}/>
+                                                </a>
+                                                <a  id="email-capture-social-twitter"
+                                                    aria-label="social-icon-twitter"
+                                                    href="/#"
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaTwitter size={20}/>
+                                                </a>
+                                                <a  id="email-capture-social-instagram"
+                                                    aria-label="social-icon-instagram"
+                                                    href="/#"
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                >
+                                                        <FaInstagram size={20}/>
+                                                </a>
+                                                <a  id="email-capture-social-linkedin"
+                                                    aria-label="social-icon-linkedin"
+                                                    href="/#"
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                >
+                                                        <FaLinkedin size={20}/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
               	</div>
             </div>

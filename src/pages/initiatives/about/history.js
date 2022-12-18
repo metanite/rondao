@@ -74,7 +74,12 @@ const History = ({data}) => {
                                                             <hr className={key === 0 ? 'outline' : ''} />
                                                         </div>
                                                         <div>
-                                                            <a href="/#">
+                                                            <a 
+                                                                href="/#"
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                id={"history-event-title-"+i}    
+                                                            >
                                                                 <div className="history-body-timeline-info d-flex flex-column flex-lg-row">
                                                                     <div className="history-body-timeline-info-bg"></div>
                                                                     <div className="history-body-timeline-info-details d-flex flex-column align-items-start justify-content-center px-4 py-2">

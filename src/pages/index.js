@@ -59,8 +59,15 @@ const Index = ({ data }) => {
                             <img src={developer} className="img-fluid" alt="TRON Bull Developer"/>
                         </div>
                         <div className="homepage-grants-container-header" >Developer</div>
-                        <a href="/grants/#grants-developers" id="homepage-button-grants-developer">
-                            <button className="homepage-grants-container-apply-button mt-5">> APPLY</button>
+                        <a 
+                            href="/grants/#grants-developers"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            id="homepage-button-grants-developer"
+                        >
+                            <button className="homepage-grants-container-apply-button mt-5">
+                                > APPLY
+                            </button>
                         </a>
                     </div>
                     <div className="d-block d-md-none homepage-grants-line-lower ml-3"></div>
@@ -69,8 +76,15 @@ const Index = ({ data }) => {
                             <img src={community} className="img-fluid" alt="TRON Bull Community Ambassador"/>
                         </div>
                         <div className="homepage-grants-container-header" >Community Ambassador</div>
-                        <a href="/grants/#grants-community" id="homepage-button-grants-community">
-                            <button className="homepage-grants-container-apply-button mt-5">> APPLY</button>
+                        <a 
+                            href="/grants/#grants-community"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            id="homepage-button-grants-community"
+                        >
+                            <button className="homepage-grants-container-apply-button mt-5">
+                                > APPLY
+                            </button>
                         </a>
                     </div>
                     <div className="col-md-4 col-12 align-items-center mb-5">
@@ -78,8 +92,15 @@ const Index = ({ data }) => {
                             <img src={influencer} className="img-fluid" alt="TRON Bull Influencer"/>
                         </div>
                         <div className="homepage-grants-container-header homepage-grants-container-header-influencer" >INFLUENCER</div>
-                        <a href="/grants/#grants-influencers" id="homepage-button-grants-influencer">
-                            <button className="homepage-grants-container-apply-button homepage-grants-container-apply-button-influencer mt-5">> APPLY</button>
+                        <a 
+                            href="/grants/#grants-influencers"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            id="homepage-button-grants-influencer"
+                        >
+                            <button className="homepage-grants-container-apply-button homepage-grants-container-apply-button-influencer mt-5">
+                                > APPLY
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -124,8 +145,15 @@ const Index = ({ data }) => {
                                 <div className="homepage-hackthon-details-content text-center text-md-right text-lg-left">90+ Judges</div>
                             </div>
                             <div className="homepage-hackthon-details-learn-more mt-lg-0 col-md-6 offset-md-1 col-lg-12">
-                                <a href="/hackathon/" id="homepage-button-hackathon-learn-more">
-                                    <button className="homepage-hackthon-details-learn-more-button ml-md-5 ml-lg-0">> LEARN MORE</button>
+                                <a 
+                                    href="/hackathon/"
+                                    target="_blank"
+                                    rel="noopener noreferrer" 
+                                    id="homepage-button-hackathon-learn-more"
+                                >
+                                    <button className="homepage-hackthon-details-learn-more-button ml-md-5 ml-lg-0">
+                                        > LEARN MORE
+                                    </button>
                                 </a>
                             </div>
                         </div>
@@ -212,7 +240,12 @@ const Index = ({ data }) => {
                     <div className="homepage-tronpedia-lets-go d-flex align-items-end justify-content-end order-4 order-lg-0">
                         <div className="d-flex align-items-end justify-content-end position-relative">
                         <img className="homepage-tronpedia-tronbull-button image-fluid d-lg-none" src={tronbullButton} alt="tron bull button" />
-                        <a href="/developers/learning/tronpedia/">
+                        <a 
+                            href="/developers/learning/tronpedia/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="homepage-tronpedia-lets-go-button"    
+                        >
                             <button className="homepage-tronpedia-lets-go-button mt-3">
                                 > Let's Go
                             </button>
