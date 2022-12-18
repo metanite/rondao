@@ -26,7 +26,7 @@ const Multimedia = ({data}) => {
                         <p>
                         Throw the popcorn in the microwave and get streaming now!
                         </p>
-                        <a href="/" className=""><button className="cta-button">Get Started</button></a>
+                        <a href="/#" target="_blank" rel="noopener noreferrer" id="multimedia-get-started-button"><button className="cta-button">Get Started</button></a>
                     </div>
                 </div>
 
@@ -69,12 +69,12 @@ const Multimedia = ({data}) => {
                     <div className="multimedia-ecosystem">
                         <div className="d-flex flex-column flex-md-row">
                             <div className="col-12 col-md-6 col-lg-5">
-                                <h1 className="text-uppercase">Ecosystem</h1>
+                                <h2 className="text-uppercase">Ecosystem</h2>
                                 <p>
                                 TRON is empowering developers to create P2E games across each of its platforms. TRON will be vital for bringing P2E games to the masses, and work every day with developers to scale, and more importantly, perfect their games.
                                 </p>
                             </div>
-                            <div className="d-flex flex-column col-12 col-md-6 col-lg-5 offset-lg-2">
+                            <div className="d-flex flex-column col-12 col-md-6 col-lg-5 offset-lg-2 mt-4 mt-md-0">
                                 <div className="">
                                     <div className="d-flex justify-content-between">
                                         <div className=" multimedia-ecosystem-circle">Finance</div>
@@ -87,13 +87,13 @@ const Multimedia = ({data}) => {
                                     </div>
                                 </div>
                                 <div className="mt-5 col-12">
-                                    <a href="/ecosystem/"><button className="multimedia-ecosystem-button w-100">> Visit Ecosystem</button></a>
+                                    <a href="/ecosystem/" target="_blank" rel="noopener noreferrer" id="multimedia-visit-ecosystem-button"><button className="multimedia-ecosystem-button w-100">> Visit Ecosystem</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="col-11 col-md-10 col-lg-7 px-md-0 mx-auto">
                         <EmailCapture />
                     </div>
                 </div>

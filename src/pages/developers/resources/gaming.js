@@ -22,7 +22,16 @@ const Gaming = ({data}) => {
                         <div className="col-12 col-md-6 col-lg-5 offset-md-1 offset-lg-1">
                             <h1>Own the gaming experience</h1>
                             <p className="mb-lg-5">Welcome to the future of entertainment</p>
-                            <a href="/" className=""><button className="gaming-title-start-button">Start Build</button></a>
+                            <a 
+                                href="/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                id="gaming-start-build-button"
+                            >
+                                <button className="gaming-title-start-button">
+                                    Start Build
+                                </button>
+                            </a>
                         </div>
                         <div className="col-12 col-md-4 col-lg-6 mt-3 mt-md-0">
                            <img src={tronBullRocket} alt="tron bull riding a rocket" className="gaming-tronbull-rocket img-fluid"></img>
@@ -34,7 +43,7 @@ const Gaming = ({data}) => {
                     <div className="gaming-motto">
                     Faster, Safer, Better
                     </div>
-
+                    
                     <div className="gaming-row-one d-flex flex-column flex-md-row">
                         <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-md-4">
                             <img src={controller} alt="nintendo controller icon" className="mb-2 mb-lg-0"></img>
@@ -71,7 +80,16 @@ const Gaming = ({data}) => {
                             <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et orem ipsum dolor sit amet
                             </p>
-                            <a href="/" className=""><button className="gaming-title-start-button">Apply For Funding</button></a>
+                            <a 
+                                href="/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                id="gaming-apply-for-funding-button"
+                            >
+                                <button className="gaming-title-start-button">
+                                    Apply For Funding
+                                </button>
+                            </a>
                         </div>
                         <div className="col-md-6 col-lg-4">
                             <img src={tronbullGaming} alt="tronbull gaming hearts" className="gaming-bull-gaming d-block mx-auto"></img>

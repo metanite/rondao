@@ -122,7 +122,7 @@ const Navigation = () => {
                 <a onClick={closeMenu} className="float-right" href="/">TRON DAO</a>
               </div>
             </div>
-            <NavbarToggler onClick={toggle} className="ml-auto mr-2 my-2"/>
+            <NavbarToggler onClick={toggle} className="ml-auto mr-2 mr-md-4 my-2"/>
             <Collapse isOpen={isOpen} navbar>
               <ul className="navbar-nav small mr-0 ml-lg-auto">
                 <li className="nav-item dropdown position-static">
@@ -167,7 +167,7 @@ const Navigation = () => {
                           <li>
                             <a onClick={closeMenu} href="https://tron.network/bttc?lng=en"
                                target="_blank" rel="noopener noreferrer"
-                               id="nav-network-bittorrent">
+                               id="nav-network-staking">
                               Staking
                               <FaArrowRight className="navbar-outside-link"/>
                             </a>
@@ -189,12 +189,12 @@ const Navigation = () => {
                 <li className="nav-item dropdown position-static">
                   <button
                       className={(isNavDropDown2Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
-                      type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown2}>
+                      type="button" id="dropdownMenuButton1" onClick={toggleNavDropDown2}>
                     INITIATIVES
                   </button>
 									<div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
                   <div className={isNavDropDown2Open + ' dropdown-menu'}
-                       aria-labelledby="dropdownMenuButton0">
+                       aria-labelledby="dropdownMenuButton1">
                     <div className="d-flex flex-wrap">
                       <div
                           className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
@@ -206,14 +206,14 @@ const Navigation = () => {
                          <li>
                             <a onClick={closeMenu} href="/"
                                target="_blank" rel="noopener noreferrer"
-                               id="nav-programs-launchpad">
+                               id="nav-programs-charity">
                               Charity
                               <FaArrowRight className="navbar-outside-link"/>
                             </a>
                           </li>
                           <li>
                             <a onClick={closeMenu} href="/initiatives/tron-academy"
-                               rel="noopener noreferrer"
+                               rel="noopener noreferrer" target="_blank"
                                id="nav-programs-tron-academy">
                               TRON Academy
                             </a>
@@ -244,7 +244,7 @@ const Navigation = () => {
                           </li>
                           <li>
                             <a onClick={closeMenu} href="/initiatives/about/research/"
-                               rel="noopener noreferrer"
+                               rel="noopener noreferrer" target="_blank"
                                id="nav-about-research">
                               Research
                             </a>
@@ -258,12 +258,12 @@ const Navigation = () => {
                 <li className="nav-item dropdown position-static">
                   <button
                       className={(isNavDropDown3Open === show ? 'active' : '') + ' nav-link dropdown-toggle w-100'}
-                      type="button" id="dropdownMenuButton1" onClick={toggleNavDropDown3}>
+                      type="button" id="dropdownMenuButton2" onClick={toggleNavDropDown3}>
                     DEVELOPERS/BUILD
                   </button>
                   <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
                   <div className={isNavDropDown3Open + ' dropdown-menu'}
-                       aria-labelledby="dropdownMenuButton1">
+                       aria-labelledby="dropdownMenuButton2">
                     <div className="d-flex flex-wrap">
                       <div
                           className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
@@ -274,20 +274,20 @@ const Navigation = () => {
 												<ul>
 													<li>
                             <a onClick={closeMenu} href="/developers/resources/get-started/"
-                              rel="noopener noreferrer"
-                               id="nav-build-get-started">
+                              rel="noopener noreferrer" target="_blank"
+                               id="nav-resources-get-started">
                               Get Started
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/resources/multimedia/" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/resources/multimedia/" rel="noopener noreferrer" target="_blank"
                                id="nav-resources-multimedia">
                               Multimedia
                             </a>
                           </li>
 													<li>
                             <a onClick={closeMenu} href="/developers/resources/gaming/"
-                              rel="noopener noreferrer"
+                              rel="noopener noreferrer" target="_blank"
                               id="nav-resources-gaming">
                               Gaming
                             </a>
@@ -301,13 +301,13 @@ const Navigation = () => {
                           </li>
 													<li>
                             <a onClick={closeMenu} href="/developers/resources/art/"
-                              rel="noopener noreferrer"
+                              rel="noopener noreferrer" target="_blank"
                                id="nav-resources-art">
                               Art
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/resources/governance/" rel="noopener noreferrer"
+                            <a onClick={closeMenu} href="/developers/resources/governance/" rel="noopener noreferrer" target="_blank"
                                id="nav-resources-governance">
                               Governance
                             </a>
@@ -337,7 +337,7 @@ const Navigation = () => {
                           </li>
 													<li>
                             <a onClick={closeMenu} href="/developers/learning/tronpedia/"
-                               rel="noopener noreferrer"
+                               rel="noopener noreferrer" target="_blank"
                                id="nav-learning-tronpedia">
                               TRONpedia
                             </a>
@@ -353,7 +353,7 @@ const Navigation = () => {
                           </li>
                           <li>
                             <a onClick={closeMenu} href="/developers/learning/faq/"
-                              rel="noopener noreferrer" id="nav-learning-faqs">
+                              rel="noopener noreferrer" target="_blank" id="nav-learning-faqs">
                               FAQs
                             </a>
                           </li>
@@ -365,83 +365,104 @@ const Navigation = () => {
                 <li className="nav-item dropdown position-static">
                   <button
                       className={(isNavDropDown4Open === show ? 'active' : '') + ' nav-link dropdown-toggle w-100'}
-                      type="button" id="dropdownMenuButton2" onClick={toggleNavDropDown4}>COMMUNITY
+                      type="button" id="dropdownMenuButton3" onClick={toggleNavDropDown4}>COMMUNITY
                   </button>
                   <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
                   <div className={isNavDropDown4Open + ' dropdown-menu'}
-                       aria-labelledby="dropdownMenuButton2">
+                       aria-labelledby="dropdownMenuButton3">
                     <div className="d-flex flex-wrap flex-column flex-md-row flex-lg-row">
                       <div
                           className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
-												 <img src={people} alt="People Icon" className="mr-2"/>
-													COMMUNITY
-												</p>
+                            <img src={people} alt="People Icon" className="mr-2"/>
+                                COMMUNITY
+                        </p>
                         <ul>
-                          <li><a onClick={closeMenu} href="/community/home">Home</a></li>
-                          <li><a onClick={closeMenu} href="/grants/">Branding</a></li>
-                          <li><a onClick={closeMenu} href="/grants/">TRONIC</a></li>
-                          {/* <li><a onClick={closeMenu} href="/grants/" id="nav-community-grants">Grants</a></li> */}
+                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-home" href="/community/home">Home</a></li>
+                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-branding" href="/grants/">Branding</a></li>
+                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-tronic" href="/grants/">TRONIC</a></li>
                         </ul>
                       </div>
-											<div
+						<div
                           className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
-                        <p className="dropdown-menu-subtitle">
-												  <img src={grant} alt="Contract Icon" className="mr-2"/>
-													GRANTS
-												</p>
-												<ul>
-                          <li><a onClick={closeMenu} href="/">For Community</a></li>
-													<li><a onClick={closeMenu} href="/">For Developers</a></li>
-													<li><a onClick={closeMenu} href="/">For Influencers</a></li>
-												</ul>
-											</div>
+                            <p className="dropdown-menu-subtitle">
+                                <img src={grant} alt="Contract Icon" className="mr-2"/>
+                                GRANTS
+                            </p>
+                            <ul>
+                                <li><a onClick={closeMenu} href="/">For Community</a></li>
+                                <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-grants-for-developers" href="/#">For Developers</a></li>
+                                <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-grants-for-influencers" href="/#">For Influencers</a></li>
+                            </ul>
+                        </div>
                       <div
                           className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
-													<img src={calendar} alt="Calendar Icon" className="mr-2"/>
-													EVENTS
-												</p>
+                            <img src={calendar} alt="Calendar Icon" className="mr-2"/>
+                            EVENTS
+                        </p>
                         <ul>
-                          <li><a onClick={closeMenu} href="/hackathon/" id="nav-events-hackathon">TRON
-                            Grand Hackathon</a></li>
-														<li><a onClick={closeMenu} href="/" id="nav-events-whale-night">TRON
-                            Whale Night</a></li>
-                          <li><a onClick={closeMenu} href="/community/events/"
-                            id="nav-events-upcoming">Upcoming Events</a></li>
+                            <li>
+                                <a onClick={closeMenu} href="/hackathon/" target="_blank" rel="noopener noreferrer" id="nav-events-hackathon">
+                                    TRON Grand Hackathon
+                                </a>
+                            </li>
+							<li>
+                                <a onClick={closeMenu} href="/" target="_blank" rel="noopener noreferrer" id="nav-events-whale-night">
+                                    TRON Whale Night
+                                </a>
+                            </li>
+                            <li>
+                                <a onClick={closeMenu} href="/community/events/" target="_blank" rel="noopener noreferrer"
+                                id="nav-events-upcoming">
+                                    Upcoming Events
+                                </a>
+                            </li>
                         </ul>
                       </div>
                       <div
                           className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
-												  <img src={content} alt="Content Icon" className="mr-2"/>
-													CONTENT
-												</p>
+                            <img src={content} alt="Content Icon" className="mr-2"/>
+                            CONTENT
+                        </p>
                         <ul>
-                          <li><a onClick={closeMenu} href="/podcasts/"
-                                 id="nav-content-podcast">ATB Podcast</a></li>
-                          <li><a onClick={closeMenu} href="/videos/"
-                                 id="nav-content-videos">Videos</a></li>
-                          <li><a onClick={closeMenu} href="/press/" id="nav-content-press">Press
-                            Releases</a></li>
-                          <li><a onClick={closeMenu} href="/blog/" id="nav-content-blog">Blog</a>
-                          </li>
-                          <li>
-                            <a onClick={closeMenu} href="https://forum.trondao.org"
-                               id="nav-content-forum" rel="noopener noreferrer">
-                              Forum<FaArrowRight className="navbar-outside-link"/>
-                            </a>
-                          </li>
+                            <li>
+                                <a onClick={closeMenu} href="/podcasts/" target="_blank" rel="noopener noreferrer" id="nav-content-podcast">
+                                    ATB Podcast
+                                </a>
+                            </li>
+                            <li>
+                                <a onClick={closeMenu} href="/videos/" target="_blank" rel="noopener noreferrer"
+                                 id="nav-content-videos">
+                                    Videos
+                                </a>
+                            </li>
+                            <li>
+                                <a onClick={closeMenu} href="/press/" target="_blank" rel="noopener noreferrer" id="nav-content-press-releases">
+                                    Press Releases
+                                </a>
+                            </li>
+                            <li>
+                                <a onClick={closeMenu} href="/blog/" target="_blank" rel="noopener noreferrer" id="nav-content-blog">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a onClick={closeMenu} href="https://forum.trondao.org"
+                                id="nav-content-forum" rel="noopener noreferrer">
+                                Forum<FaArrowRight className="navbar-outside-link"/>
+                                </a>
+                            </li>
                         </ul>
                       </div>
-											<div className="d-flex flex-column" style={{marginLeft: "0px", marginTop: "0px"}}>
+					<div className="d-flex flex-column" style={{marginLeft: "0px", marginTop: "0px"}}>
                       <div
-                          className="text-left d-inline-block align-top px-0 justify-content-center col-md-8 offset-md-0 col-10 offset-1"
-													>
+                          className="text-left d-inline-block align-top px-0 justify-content-center col-md-8 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle" style={{marginTop: "0px"}}>
-												 <img src={node} alt="Node Icon" className="mr-2"/>
-													SOCIAL
-												</p>
+                            <img src={node} alt="Node Icon" className="mr-2"/>
+                            SOCIAL
+                        </p>
                         <ul>
                           <li className="d-sm-inline-flex d-block">
                             <a onClick={closeMenu} id="nav-social-twitter"
@@ -517,11 +538,11 @@ const Navigation = () => {
                 <li className="nav-item dropdown position-static">
                   <button
                       className={(isNavDropDown5Open === show ? 'active' : '') + ' nav-link w-100 dropdown-toggle'}
-                      type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown5}>
+                      type="button" id="dropdownMenuButton4" onClick={toggleNavDropDown5}>
                     ECOSYSTEM
                   </button>
                     <div className={isNavDropDown5Open + ' dropdown-menu'}
-                       aria-labelledby="dropdownMenuButton0">
+                       aria-labelledby="dropdownMenuButton4">
                         <div className="d-flex flex-wrap">
                             <div
                                 className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
@@ -533,14 +554,14 @@ const Navigation = () => {
                                     <li>
                                         <a onClick={closeMenu} href="/ecosystem-fund/"
                                         rel="noopener noreferrer"
-                                        id="nav-programs-launchpad">
+                                        id="nav-ecosystem-fund">
                                         Ecosystem Fund
                                         </a>
                                     </li>
                                     <li>
                                         <a onClick={closeMenu} href="/ecosystem/"
                                         rel="noopener noreferrer"
-                                        id="nav-programs-launchpad">
+                                        id="nav-ecosystem-feature-projects">
                                         Featured Projects
                                         </a>
                                     </li>

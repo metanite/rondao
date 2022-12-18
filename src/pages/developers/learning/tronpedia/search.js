@@ -84,9 +84,10 @@ const Search = () => {
                 <div className="tronpedia-search-page-featured">
                     <TronpediaFeatured />
                 </div>
-            </div>
-            <div className="tronpedia-search-page-email">
-                <EmailCapture />
+
+                <div className="tronpedia-search-page-email">
+                    <EmailCapture />
+                </div>
             </div>
         </div>
    	)

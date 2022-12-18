@@ -163,9 +163,10 @@ const Tronpedia = () => {
                     <div className="tronpedia-feature">
                         <TronpediaFeatured />
                     </div>
-                </div>
-                <div className="tronpedia-email-capture">
-                    <EmailCapture />
+
+                    <div className="tronpedia-email-capture">
+                        <EmailCapture />
+                    </div>
                 </div>
             </div>
         </div>

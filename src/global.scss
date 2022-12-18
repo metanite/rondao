@@ -35,13 +35,17 @@ a {
     text-transform: uppercase;
     background: #FF0000;
     border-radius: 54px;
-    min-height: 53px;
     color: white;
-    padding: 0 25px;
+    padding: 14px 25px;
     border: none;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 100%;
+
+    @media (min-width: $md) {
+        padding: 19px 30px;
+        font-size: 18px;
+    }
 
     &:hover {
         background-color: black;
@@ -4187,6 +4191,18 @@ nav .navbar {
 	}
 
 	&-introduction {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 60px;
+
+        @media(min-width: $md) {
+            margin-bottom: 295px;
+        }
+
+        @media(min-width: $xxl) {
+            width: 58.333333%;
+        }
+
 		&-header {
 			font-family: Blender Pro;
 			font-size: 30px;
@@ -4194,19 +4210,74 @@ nav .navbar {
 			line-height: 30px;
 			letter-spacing: 0em;
 			color: #232323;
+            margin-bottom: 30px;
+
+            @media (max-width: $sm) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media (min-width: $md) {
+                margin-bottom: 50px;
+                grid-column-start: 1;
+                grid-row-start: 2;      
+            }
 		}
 
 		&-content {
 			font-family: Blender Pro;
-			font-size: 18px;
-			font-weight: 700;
-			line-height: 30px;
-			letter-spacing: 0em;
+			font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 170%;
 			color: #000000;
+            grid-column: span 2;
+
+            @media (min-width: $md) {
+                font-size: 17.9357px;
+                width: 89%;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                margin-top: 0px;
+            }
 		}
-		&-icon {
-			margin-top: -70px !important;
-		}
+
+        &-button {
+            grid-column: span 2;
+            margin: 25px auto;
+
+            @media(min-width: $md) {
+                grid-column-start: 2;
+                grid-row-start: 4;
+                grid-column-start: 1;
+                margin: 30px 0;
+            }
+
+            button {
+                width: auto !important;
+                height: auto !important;
+                min-height: unset !important;
+                font-style: normal !important;
+                font-weight: 700 !important;
+                font-size: 16px !important;
+                line-height: 100% !important;
+                padding: 15px 25px !important;
+            }
+        }
+        
+        &-image {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (min-width: $md) {
+                grid-row-end: 6;
+            }
+        }
 	}
 
 	&-apply-funding-button {
@@ -4591,12 +4662,17 @@ nav .navbar {
 				border: 1px solid $tronRed;
 				color: #FFFFFF;
 				max-width: 100%;
-				@media (min-width: $md) {
-					//margin-right: 7rem;
-				}
 			}
 		}
 	}
+
+    &-email-capture {
+        margin-top: 50px;
+
+        @media (min-width: $md) {
+            margin-top: 265px;
+        }
+    }
 }
 
 .ecosystem {
@@ -5101,14 +5177,11 @@ nav .navbar {
 	font-size: 30px;
 	line-height: 113%;
 	font-style: normal;
-	margin-bottom: 160px;
+	margin-bottom: 30px;
 	margin-top: 50px;
-	@media (min-width: $lg) {
+	@media (min-width: $md) {
 		font-size: 76px;
-	}
-
-    @media (min-width: $xxl) {
-		margin-top: 250px;
+        margin-bottom: 190px;
 	}
 
 	a:hover {
@@ -5145,7 +5218,7 @@ nav .navbar {
 			font-weight: 250;
 			font-size: 20px;
 			line-height: 100%;
-			margin-bottom: 20px;
+			margin-bottom: 30px;
             @media (min-width: $lg) {
                 font-size: 25px;
                 margin-bottom: 45px;
@@ -5186,10 +5259,6 @@ nav .navbar {
                 margin-top: 55px;
             }
 		}
-        
-        @media (min-width: $xxl) {
-            max-width: 33.333333%;
-        }
 	}
 
     &-main {
@@ -5777,7 +5846,7 @@ nav .navbar {
         }
 
         & > div:not(:first-child) {
-            margin-top: 20px;
+            margin-top: 50px;
 
             @media (min-width: $md) {
                 margin-top: 80px;
@@ -5803,7 +5872,8 @@ nav .navbar {
             font-size: 30px;
             font-weight: 700;
             line-height: 100%;
-            margin: 2rem 0;
+            margin-top: 48px;
+            margin-bottom: 16px;
 
             @media (min-width: $xxl) {
                 font-size: 82px;
@@ -5813,7 +5883,7 @@ nav .navbar {
         p {
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 12px;
             line-height: 170%;
             color: #000;
 
@@ -5825,15 +5895,20 @@ nav .navbar {
 
     &-ecosystem {
         background: url('./images/multimedia/background.png') no-repeat;
-        backdrop-filter: blur(137.5px);
-        border-radius: 25px;
+        border-radius: 14px;
         background-size: 100% 100%;
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
-        padding: 2rem 1rem;
+        padding: 32px 24px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
+        @media (min-width: $md) {
+            width: 90%;
+        }
+
         @media (min-width: $lg) {
+            backdrop-filter: blur(137.5px);
+            border-radius: 25px;
             width: 80%;
             padding: 5rem;
         }
@@ -5843,30 +5918,40 @@ nav .navbar {
             padding: 5rem;
         }
 
-        h1 {
+        h2 {
             font-family: 'Blender Pro Bold';
             font-style: normal;
             font-weight: 700;
-            font-size: 50px;
+            font-size: 30px;
             line-height: 100%;
+
+            @media (min-width: $md) {
+                margin-top: 48px;
+                font-size: 50px;
+            }
         }
 
         p {
             font-family: 'Blender Pro Bold';
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 12px;
             line-height: 170%;
             color: #000;
+
+            @media (min-width: $md) {
+                font-size: 18px;
+                margin-top: 34px;
+            }
         }
 
         &-circle {
             font-family: 'Blender Pro Bold';
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             border: 2px solid $tronRed;
             border-radius: 50%;
-            font-size: 13px;
+            font-size: 6px;
             font-style: normal;
             display: flex;
             align-items: center;
@@ -5881,7 +5966,8 @@ nav .navbar {
                 color: white;
             }
 
-            @media (min-width: $lg) {
+            @media (min-width: $md) {
+                font-size: 13px;
                 width: 100px;
                 height: 100px;
             }
@@ -5892,17 +5978,20 @@ nav .navbar {
             text-transform: uppercase;
             background: #FF0000;
             border-radius: 54px;
-            min-height: 53px;
             color: white;
-            padding: 22px;
+            padding: 14px;
             border: none;
             font-weight: 700;
-            font-size: 22px;
+            font-size: 14px;
             line-height: 100%;
 
             &:hover {
                 color: white;
                 background-color: $tronDarkBorder;
+            }
+
+            @media (min-width: $md) {
+                font-size: 22px;
             }
         }
     }
@@ -6682,7 +6771,7 @@ nav .navbar {
     }
 
     &-body {
-        margin-top: 50px;
+        margin-top: 80px;
         color: $tronDarkBorder;
 
         @media (min-width: $lg) {
@@ -6691,32 +6780,33 @@ nav .navbar {
 
         &-metrics {
             @media (min-width: $xxl) {
-                width: 50%;
+                width: 58.333333%;
             }
 
             &-title {
                 font-style: normal;
-                font-weight: 900;
-                font-size: 1.18rem;
+                font-weight: 900;   
+                font-size: 20px;
                 line-height: 38px;
 
                 @media (min-width: $lg) {
-                    font-size: 1.9rem;
+                    font-size: 32px;
                 }
             }
 
             &-section {
                 padding: 3rem;
-                background: url('./images/multimedia/background.png');
-                backdrop-filter: blur(137.5px);
                 border-radius: 25px;
-                background-color: #FFC2C2;
-                background-size: cover;
                 max-height: 250px;
+                background-image: url('./images/multimedia/background.png');
+                backdrop-filter: blur(137.5px);
+                background-size: cover;
+                background-repeat: repeat;
+                background-position: center;
 
                 h1 {
                     font-weight: 900;
-                    font-size: 1.18rem;
+                    font-size: 40px;
                     color: $tronRed;
                     line-height: 1;
 
@@ -6727,8 +6817,12 @@ nav .navbar {
 
                 p {
                     font-weight: 500;
-                    font-size: 1.9rem;
+                    font-size: 20px;
                     line-height: 1;
+
+                    @media (min-width: $md) {
+                        font-size: 31px;
+                    }
                 }
             }
         }
@@ -6819,6 +6913,14 @@ nav .navbar {
                         height: 60px;
                     }
                 }
+            }
+        }
+
+        &-email-capture {
+            margin-top: 90px;
+
+            @media (min-width: $md) {
+                margin-top: 170px;
             }
         }
     }
@@ -7754,6 +7856,14 @@ nav .navbar {
                 font-size: 50px;
                 margin-bottom: 130px;
             }
+        }
+    }
+
+    &-email-capture {
+        margin-top: 145px;
+
+        @media (min-width: $md) {
+            margin-top: 160px;
         }
     }
 
@@ -9080,6 +9190,10 @@ nav .navbar {
 		font-family: Blender Pro;
 	}
 
+    @media (min-width: $xxl) {
+        width: 58.333333%;
+    }
+
 	&-query {
 		width: 100%;
 		margin-top: 50px;
@@ -9188,6 +9302,10 @@ nav .navbar {
 	& * > p {
 		font-family: Blender Pro;
 	}
+
+    @media (min-width: $xxl) {
+        width: 58.333333%;
+    }
 
 	&-search {
 		margin-top: 30px;

@@ -28,18 +28,27 @@ const Governance = ({data}) => {
                         <p className="my-lg-4">
                         Some description about this section will go here 
                         </p>
-                        <a href="/"><button className="cta-button mt-md-3">CTA Button</button></a>
+                        <a 
+                            href="/#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="governance-call-to-action-button"
+                        >
+                            <button className="cta-button mt-md-3">
+                                CTA Button
+                            </button>
+                        </a>
                     </div>
                 </div>
 
                 <div className="governance-body">
-                    <div className="governance-body-metrics d-flex flex-column col-12 col-lg-9 mx-auto">
+                    <div className="governance-body-metrics d-flex flex-column col-12 col-lg-10 mx-auto">
                         <div className="col-12">
                             <h1 className="governance-body-metrics-title text-uppercase">
                             Important Metrics
                             </h1>  
                         </div>
-                        <div className="d-flex flex-column flex-md-row mt-md-5">
+                        <div className="d-flex flex-column justify-content-between flex-md-row mt-md-5">
                             <div className="col-12 col-md-6">
                                 <div className="governance-body-metrics-section col-12 text-center d-flex flex-column justify-content-center">
                                     <h1>145,000</h1>
@@ -120,13 +129,22 @@ const Governance = ({data}) => {
                                 </div>
                             </div>
                                 <div className="d-flex justify-content-center justify-content-md-end col-12 mt-5">
-                                <a href="/"><button className="cta-button mt-md-3">Start Building</button></a>
+                                <a 
+                                    href="/#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    id="governance-start-building-button"
+                                >
+                                    <button className="cta-button mt-md-3">
+                                        Start Building
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         
                     </div>  
 
-                    <div className="">
+                    <div className="governance-body-email-capture col-11 col-md-12 col-lg-8 mx-auto">
                         <EmailCapture />
                     </div>
                 </div>

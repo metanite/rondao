@@ -24,7 +24,16 @@ const Art = ({data}) => {
                             <p className="col-lg-10">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et orem ipsum dolor sit amet 
                             </p>
-                            <a href="/" className=""><button className="gaming-title-start-button">Call To Action</button></a>  
+                            <a 
+                                href="/#" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="art-call-to-action-button"
+                            >
+                                <button className="gaming-title-start-button">
+                                    Call To Action
+                                </button>
+                            </a>  
                         </div>
                         <div className="col-lg-6 mt-4 mt-md-0">
                            <img src={tronbullPainting} alt="tron bull painting" className="gaming-tronbull-chart img-fluid d-lg-block mx-lg-auto"></img>
@@ -92,7 +101,16 @@ const Art = ({data}) => {
                             <p className="text-justify my-4">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i]
                             </p>
-                            <a href="/" className=""><button className="gaming-title-start-button">Call To Action</button></a>
+                            <a 
+                                href="/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="art-call-to-action-button"
+                            >
+                                <button className="gaming-title-start-button">
+                                    Call To Action
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

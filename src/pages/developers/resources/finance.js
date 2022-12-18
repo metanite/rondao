@@ -26,7 +26,16 @@ const Finance = ({data}) => {
                             <p>
                             Experience finance as it was always intended: a free space where censorship and control are less apparent. 
                             </p>
-                            <a href="/" className=""><button className="gaming-title-start-button">Start Build</button></a>  
+                            <a 
+                                href="/#" 
+                                target="_blank"
+                                rel="noopenner noreferrer"
+                                id="finance-start-build-button"
+                            >
+                                <button className="gaming-title-start-button">
+                                    Start Build
+                                </button>
+                            </a>  
                         </div>
                         <div className="col-lg-6">
                            <img src={tronbullChart} alt="tron bull chart" className="gaming-tronbull-chart img-fluid d-lg-block mx-lg-auto"></img>

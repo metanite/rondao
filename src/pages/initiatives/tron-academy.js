@@ -60,8 +60,16 @@ const TronAcademy = ({data}) => {
 	           			enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
 	           			nisl ut aliquip ex ea commodo consequat. 	
 	           			</p>
-	           			<a href="/" className="d-flex justify-content-center justify-content-lg-start my-5">
-	           				<button type="button" className="cta-button">Call To Action</button>
+	           			<a 
+                            href="/" 
+                            className="d-flex justify-content-center justify-content-lg-start my-5"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="tron-academy-cta-button"
+                        >
+	           				<button type="button" className="cta-button">
+                                Call To Action
+                            </button>
 	           			</a>
 	           		</div>
 	           		<div className="order-1 order-lg-0 d-flex align-items-center align-items-lg-start">

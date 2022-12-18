@@ -6,16 +6,16 @@ const EmailCapture = () => {
 
 
     return (
-        <div className="row no-gutters email-capture">
-            <div className="email-capture-main col-12 col-lg-5 offset-lg-1 pl-md-5 mb-2 mb-lg-5">
-                <div className="col-12 offset-lg-0">
+        <div className="email-capture d-flex flex-column flex-md-row justify-content-between">
+            <div className="mb-2 mb-lg-5">
+                <div className="col-12 pl-0 pl-md-4">
                     <div className="d-flex justify-content-start">
                         <div className="email-capture-know text-left pl-md-3 pl-lg-0">
                             BE THE FIRST <br className="d-none d-lg-block" /> TO KNOW
                         </div>
                     </div>
                 </div>
-                <div className="d-none d-lg-block col-lg-12 col-12 mt-1 pl-md-0">
+                <div className="d-none d-md-block col-lg-12 col-12 mt-1 pl-md-0">
                     <div className="d-flex flex-wrap justify-content-start">
                         <a id="email-capture-social-twitter"
                            aria-label="social-icon-twitter"
@@ -54,26 +54,26 @@ const EmailCapture = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-md-10 offset-md-1 col-lg-6 col-xl-5 email-capture-subscribe mx-xl-auto">
+            <div className="email-capture-subscribe">
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css"/>
                 <form
                     action="https://network.us19.list-manage.com/subscribe/post?u=5724a62f28217f1bf009679d6&amp;id=a313741a09&amp;f_id=00f086e4f0"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
                     target="_blank">
-                    <div className="mt-md-4">
-                        <h3 className="d-none d-lg-block px-3">SUBSCRIBE</h3>
-                        <p className="email-capture-subscribe-signup px-3">SIGN UP FOR OUR NEWSLETTER</p>
-                        <div className="col-12 col-lg-10">
+                    <div className="mt-md-4 d-flex flex-column align-items-end">
+                        <div className="col-12 col-lg-11 px-0">
+                            <h3 className="d-none d-lg-block">SUBSCRIBE</h3>
+                            <p className="email-capture-subscribe-signup">SIGN UP FOR OUR NEWSLETTER</p>
                             <div className="form-group">
                                 <input type="email" name="EMAIL" placeholder="EMAIL" className="form-control required email"
                                    id="mce-EMAIL" required/>
                             </div>
                             <div className="form-row">
-                                <div className="form-group col-md-6">
+                                <div className="form-group col-5 col-md-6">
                                     <input type="text" name="FNAME" id="mce-FNAME" placeholder="FIRST"
                                            className="form-control"/>
                                 </div>
-                                <div className="form-group col-md-6">
+                                <div className="form-group col-7 col-md-6">
                                     <input type="text" name="LNAME" id="mce-LNAME" placeholder="LAST"
                                            className="form-control"/>
                                 </div>
@@ -99,8 +99,6 @@ const EmailCapture = () => {
                 <script type='text/javascript'
                         src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
             </div>
-
-
         </div>
     )
 }

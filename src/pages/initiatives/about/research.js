@@ -26,14 +26,39 @@ const Research = ({data}) => {
                         <p className="my-lg-4">
                         Some description about this section will go here 
                         </p>
-                        <a href="/#"><button className="cta-button mt-md-3">CTA Button</button></a>
+                        <a 
+                            href="/#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="research-cta-button"
+                        >
+                            <button className="cta-button mt-md-3">
+                                CTA Button
+                            </button>
+                        </a>
                     </div>
                 </div>
 
                 <div className="research-body col-11 col-lg-8 mx-auto">
                     <div className="research-body-tabs d-flex flex-wrap" role="tablist">
-                        <a href="/#" className="research-body-tabs-item active">Project Studies</a>
-                        <a href="/#" className="research-body-tabs-item">Reports</a>
+                        <a 
+                            href="/#" 
+                            className="research-body-tabs-item active"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="research-project-studies-button"
+                        >
+                            Project Studies
+                        </a>
+                        <a 
+                            href="/#" 
+                            className="research-body-tabs-item"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            id="research-reports-button"
+                        >
+                            Reports
+                        </a>
                     </div>
 
                     <div className="research-body-article">
@@ -85,10 +110,10 @@ const Research = ({data}) => {
             
                         <GridCarousel />
                     </div>
-                </div>
 
-                <div className="mt-5">
-                    <EmailCapture />
+                    <div className="research-email-capture">
+                        <EmailCapture />
+                    </div>
                 </div>  
             </div>
         </div>
