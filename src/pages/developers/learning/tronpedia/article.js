@@ -50,7 +50,6 @@ const TronpediaArticle = () => {
                 				return (
                 					<a 
                 						href="/#"
-                						target="_blank"
                 						rel="noopener noreferrer"
                 						className="tronpedia-article-page-main-related-article"
                 						id={"tronpedia-related-article-button-"+article}

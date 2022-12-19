@@ -28,7 +28,6 @@ const Topics = ({limit}) => {
 	            return (
 	                <a 
 	                	href="/#" 
-	                	target="_blank" 
 	                	rel="noopener noreferrer" 
 	                	type="button" 
 	                	className="tronpedia-topics-button flex-fill"
