@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState, useEffect } from "react"
 import {Collapse, NavbarToggler,} from 'reactstrap';
 import logo from "../images/nav/nav-logo.png";
 import globe from "../images/globe.svg";
@@ -26,14 +26,16 @@ import {
 const Navigation = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = (event) => {
-    setIsOpen(!isOpen)
+  const toggle = (event) => setIsOpen(!isOpen)
+    
+  useEffect(() => {
+    const span = document.querySelector('.navbar-toggler-icon')
     if(isOpen) {
-      event.target.classList.remove("navbar-toggler-icon-close")
+      span.classList.add("navbar-toggler-icon-close")
     }else {
-      event.target.classList.add("navbar-toggler-icon-close")
+      span.classList.remove("navbar-toggler-icon-close")
     }
-  };
+  }, [isOpen])
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -130,7 +132,7 @@ const Navigation = () => {
                 <a onClick={closeMenu} className="float-right" href="/">TRON DAO</a>
               </div>
             </div>
-            <NavbarToggler onClick={(e) => toggle(e)} className="ml-auto mr-2 mr-md-4 my-2"/>
+            <NavbarToggler onClick={toggle} className="ml-auto mr-2 mr-md-4 my-2"/>
             <Collapse isOpen={isOpen} navbar>
               <ul className="navbar-nav small mr-0 ml-lg-auto">
                 <li className="nav-item dropdown position-static">
@@ -221,7 +223,7 @@ const Navigation = () => {
                           </li>
                           <li>
                             <a onClick={closeMenu} href="/initiatives/tron-academy"
-                               rel="noopener noreferrer" target="_blank"
+                               rel="noopener noreferrer"
                                id="nav-programs-tron-academy">
                               TRON Academy
                             </a>
@@ -252,7 +254,7 @@ const Navigation = () => {
                           </li>
                           <li>
                             <a onClick={closeMenu} href="/initiatives/about/research/"
-                               rel="noopener noreferrer" target="_blank"
+                               rel="noopener noreferrer"
                                id="nav-about-research">
                               Research
                             </a>
@@ -282,20 +284,20 @@ const Navigation = () => {
 												<ul>
 													<li>
                             <a onClick={closeMenu} href="/developers/resources/get-started/"
-                              rel="noopener noreferrer" target="_blank"
+                              rel="noopener noreferrer"
                                id="nav-resources-get-started">
                               Get Started
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/resources/multimedia/" rel="noopener noreferrer" target="_blank"
+                            <a onClick={closeMenu} href="/developers/resources/multimedia/" rel="noopener noreferrer"
                                id="nav-resources-multimedia">
                               Multimedia
                             </a>
                           </li>
 													<li>
                             <a onClick={closeMenu} href="/developers/resources/gaming/"
-                              rel="noopener noreferrer" target="_blank"
+                              rel="noopener noreferrer"
                               id="nav-resources-gaming">
                               Gaming
                             </a>
@@ -309,13 +311,13 @@ const Navigation = () => {
                           </li>
 													<li>
                             <a onClick={closeMenu} href="/developers/resources/art/"
-                              rel="noopener noreferrer" target="_blank"
+                              rel="noopener noreferrer"
                                id="nav-resources-art">
                               Art
                             </a>
                           </li>
 													<li>
-                            <a onClick={closeMenu} href="/developers/resources/governance/" rel="noopener noreferrer" target="_blank"
+                            <a onClick={closeMenu} href="/developers/resources/governance/" rel="noopener noreferrer"
                                id="nav-resources-governance">
                               Governance
                             </a>
@@ -345,7 +347,7 @@ const Navigation = () => {
                           </li>
 													<li>
                             <a onClick={closeMenu} href="/developers/learning/tronpedia/"
-                               rel="noopener noreferrer" target="_blank"
+                               rel="noopener noreferrer"
                                id="nav-learning-tronpedia">
                               TRONpedia
                             </a>
@@ -361,7 +363,7 @@ const Navigation = () => {
                           </li>
                           <li>
                             <a onClick={closeMenu} href="/developers/learning/faq/"
-                              rel="noopener noreferrer" target="_blank" id="nav-learning-faqs">
+                              rel="noopener noreferrer" id="nav-learning-faqs">
                               FAQs
                             </a>
                           </li>
@@ -386,7 +388,7 @@ const Navigation = () => {
                                 COMMUNITY
                         </p>
                         <ul>
-                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-home" href="/community/home">Home</a></li>
+                          <li><a onClick={closeMenu} rel="noopener noreferrer" id="nav-community-home" href="/community/home">Home</a></li>
                           <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-branding" href="/grants/">Branding</a></li>
                           <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-tronic" href="/grants/">TRONIC</a></li>
                         </ul>
@@ -411,17 +413,17 @@ const Navigation = () => {
                         </p>
                         <ul>
                             <li>
-                                <a onClick={closeMenu} href="/hackathon/" target="_blank" rel="noopener noreferrer" id="nav-events-hackathon">
+                                <a onClick={closeMenu} href="/hackathon/" rel="noopener noreferrer" id="nav-events-hackathon">
                                     TRON Grand Hackathon
                                 </a>
                             </li>
 							<li>
-                                <a onClick={closeMenu} href="/" target="_blank" rel="noopener noreferrer" id="nav-events-whale-night">
+                                <a onClick={closeMenu} href="/" rel="noopener noreferrer" id="nav-events-whale-night">
                                     TRON Whale Night
                                 </a>
                             </li>
                             <li>
-                                <a onClick={closeMenu} href="/community/events/" target="_blank" rel="noopener noreferrer"
+                                <a onClick={closeMenu} href="/community/events/" rel="noopener noreferrer"
                                 id="nav-events-upcoming">
                                     Upcoming Events
                                 </a>
@@ -436,23 +438,23 @@ const Navigation = () => {
                         </p>
                         <ul>
                             <li>
-                                <a onClick={closeMenu} href="/podcasts/" target="_blank" rel="noopener noreferrer" id="nav-content-podcast">
+                                <a onClick={closeMenu} href="/podcasts/" rel="noopener noreferrer" id="nav-content-podcast">
                                     ATB Podcast
                                 </a>
                             </li>
                             <li>
-                                <a onClick={closeMenu} href="/videos/" target="_blank" rel="noopener noreferrer"
+                                <a onClick={closeMenu} href="/videos/" rel="noopener noreferrer"
                                  id="nav-content-videos">
                                     Videos
                                 </a>
                             </li>
                             <li>
-                                <a onClick={closeMenu} href="/press/" target="_blank" rel="noopener noreferrer" id="nav-content-press-releases">
+                                <a onClick={closeMenu} href="/press/" rel="noopener noreferrer" id="nav-content-press-releases">
                                     Press Releases
                                 </a>
                             </li>
                             <li>
-                                <a onClick={closeMenu} href="/blog/" target="_blank" rel="noopener noreferrer" id="nav-content-blog">
+                                <a onClick={closeMenu} href="/blog/" rel="noopener noreferrer" id="nav-content-blog">
                                     Blog
                                 </a>
                             </li>

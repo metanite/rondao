@@ -63,7 +63,6 @@ const HomepageHelps = () => {
                     </p>
                     <a 
                         href={selectedItem.url}
-                        target="_blank"
                         rel="noopener noreferrer" 
                         id={"home-how-tron-helps-" + selectedItem.title + "-visit"}
                         onClick={function (e) {

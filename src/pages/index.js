@@ -61,7 +61,6 @@ const Index = ({ data }) => {
                         <div className="homepage-grants-container-header" >Developer</div>
                         <a 
                             href="/grants/#grants-developers"
-                            target="_blank"
                             rel="noopener noreferrer" 
                             id="homepage-button-grants-developer"
                         >
@@ -78,7 +77,6 @@ const Index = ({ data }) => {
                         <div className="homepage-grants-container-header" >Community Ambassador</div>
                         <a 
                             href="/grants/#grants-community"
-                            target="_blank"
                             rel="noopener noreferrer" 
                             id="homepage-button-grants-community"
                         >
@@ -94,7 +92,6 @@ const Index = ({ data }) => {
                         <div className="homepage-grants-container-header homepage-grants-container-header-influencer" >INFLUENCER</div>
                         <a 
                             href="/grants/#grants-influencers"
-                            target="_blank"
                             rel="noopener noreferrer" 
                             id="homepage-button-grants-influencer"
                         >
@@ -147,7 +144,6 @@ const Index = ({ data }) => {
                             <div className="homepage-hackthon-details-learn-more mt-lg-0 col-md-6 offset-md-1 col-lg-12">
                                 <a 
                                     href="/hackathon/"
-                                    target="_blank"
                                     rel="noopener noreferrer" 
                                     id="homepage-button-hackathon-learn-more"
                                 >
@@ -242,7 +238,6 @@ const Index = ({ data }) => {
                         <img className="homepage-tronpedia-tronbull-button image-fluid d-lg-none" src={tronbullButton} alt="tron bull button" />
                         <a 
                             href="/developers/learning/tronpedia/"
-                            target="_blank"
                             rel="noopener noreferrer"
                             id="homepage-tronpedia-lets-go-button"    
                         >
