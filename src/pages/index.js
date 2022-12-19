@@ -259,7 +259,7 @@ const Index = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <div className="homepage-email-capture col-12 col-md-8 mx-auto px-0">
+            <div className="homepage-email-capture col-12 col-md-8 col-xl-9 col-xxl-8 mx-auto px-0">
                 <EmailCapture/>
             </div>
         </div>

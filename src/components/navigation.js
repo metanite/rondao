@@ -26,7 +26,15 @@ import {
 const Navigation = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = (event) => {
+    setIsOpen(!isOpen)
+    if(isOpen) {
+      event.target.classList.remove("navbar-toggler-icon-close")
+    }else {
+      event.target.classList.add("navbar-toggler-icon-close")
+    }
+  };
+
   const closeMenu = () => {
     setIsOpen(false);
     closeNavDropDowns();
@@ -122,7 +130,7 @@ const Navigation = () => {
                 <a onClick={closeMenu} className="float-right" href="/">TRON DAO</a>
               </div>
             </div>
-            <NavbarToggler onClick={toggle} className="ml-auto mr-2 mr-md-4 my-2"/>
+            <NavbarToggler onClick={(e) => toggle(e)} className="ml-auto mr-2 mr-md-4 my-2"/>
             <Collapse isOpen={isOpen} navbar>
               <ul className="navbar-nav small mr-0 ml-lg-auto">
                 <li className="nav-item dropdown position-static">

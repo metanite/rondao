@@ -1,10 +1,17 @@
 import React from "react"
-import {FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaReddit, FaTiktok, FaTwitter, FaYoutube} from "react-icons/fa";
+import {
+    FaDiscord, 
+    FaFacebook, 
+    FaInstagram, 
+    FaLinkedin, 
+    FaReddit, 
+    FaTiktok, 
+    FaTwitter, 
+    FaYoutube
+} from "react-icons/fa";
 
 
 const EmailCapture = () => {
-
-
     return (
         <div className="email-capture d-flex flex-column flex-md-row justify-content-between">
             <div className="mb-2 mb-lg-5">

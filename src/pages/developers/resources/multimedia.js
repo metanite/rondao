@@ -93,7 +93,7 @@ const Multimedia = ({data}) => {
                         </div>
                     </div>
 
-                    <div className="col-11 col-md-10 col-lg-7 px-md-0 mx-auto">
+                    <div className="col-11 col-md-10 col-lg-9 col-xxl-8 px-md-0 mx-auto">
                         <EmailCapture />
                     </div>
                 </div>

@@ -144,7 +144,7 @@ const Governance = ({data}) => {
                         
                     </div>  
 
-                    <div className="governance-body-email-capture col-11 col-md-12 col-lg-8 mx-auto">
+                    <div className="governance-body-email-capture col-11 col-md-12 col-lg-9 col-xxl-8 mx-auto">
                         <EmailCapture />
                     </div>
                 </div>

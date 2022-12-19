@@ -277,7 +277,7 @@ const GetStarted = ({data}) => {
                 		
                     </div>
 
-                    <div className="col-11 col-lg-8 mx-auto">
+                    <div className="get-started-email-capture col-11 col-md-8 col-lg-9 col-xxl-8 mx-auto">
                     	<EmailCapture />
                     </div>
                 </div>
