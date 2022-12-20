@@ -10,13 +10,43 @@ import crypto_red from "../../images/tronpedia/crypto-red.svg"
 const Topics = ({limit}) => {
 
 	const topics = [
-		{"title": "DEFI", "image": defi_red},
-		{"title": "GAME-FI", "image": gamefi_red},
-		{"title": "NFT", "image": nft_red},
-		{"title": "WEB3", "image": web3_red},
-		{"title": "STABLECOIN", "image": stablecoin_red},
-		{"title": "CRYPTO", "image": crypto_red},
-		{"title": "BLOCKCHAIN", "image": blockchain_red}
+		{
+			"title": 
+			"DEFI", 
+			"image": defi_red,
+			"url": "/#",
+		},
+		{
+			"title": 
+			"GAME-FI", 
+			"image": gamefi_red,
+			"url": "/#",
+		},
+		{
+			"title": "NFT", 
+			"image": nft_red,
+			"url": "/#",
+		},
+		{
+			"title": "WEB3", 
+			"image": web3_red,
+			"url": "/developers/learning/tronpedia/web3",
+		},
+		{
+			"title": "STABLECOIN", 
+			"image": stablecoin_red,
+			"url": "/#",
+		},
+		{
+			"title": "CRYPTO", 
+			"image": crypto_red,
+			"url": "/#",
+		},
+		{
+			"title": "BLOCKCHAIN", 
+			"image": blockchain_red,
+			"url": "/#",
+		}
 	]
 
 	const filteredTopics = (limit) ? topics.slice(0,limit) : topics
@@ -27,7 +57,7 @@ const Topics = ({limit}) => {
 			filteredTopics.map((topic, i) => {
 	            return (
 	                <a 
-	                	href="/#" 
+	                	href={topic.url}
 	                	rel="noopener noreferrer" 
 	                	type="button" 
 	                	className="tronpedia-topics-button flex-fill"
