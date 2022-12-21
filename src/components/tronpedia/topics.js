@@ -14,18 +14,18 @@ const Topics = ({limit}) => {
 			"title": 
 			"DEFI", 
 			"image": defi_red,
-			"url": "/#",
+			"url": "/developers/learning/tronpedia/defi/",
 		},
 		{
 			"title": 
 			"GAME-FI", 
 			"image": gamefi_red,
-			"url": "/#",
+			"url": "/developers/learning/tronpedia/gamefi/",
 		},
 		{
 			"title": "NFT", 
 			"image": nft_red,
-			"url": "/#",
+			"url": "/developers/learning/tronpedia/nft/",
 		},
 		{
 			"title": "WEB3", 
@@ -35,17 +35,17 @@ const Topics = ({limit}) => {
 		{
 			"title": "STABLECOIN", 
 			"image": stablecoin_red,
-			"url": "/#",
+			"url": "/developers/learning/tronpedia/stablecoin/",
 		},
 		{
 			"title": "CRYPTO", 
 			"image": crypto_red,
-			"url": "/#",
+			"url": "/developers/learning/tronpedia/crypto/",
 		},
 		{
 			"title": "BLOCKCHAIN", 
 			"image": blockchain_red,
-			"url": "/#",
+			"url": "/developers/learning/tronpedia/blockchain/",
 		}
 	]
 
