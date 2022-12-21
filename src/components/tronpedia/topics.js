@@ -60,7 +60,7 @@ const Topics = ({limit}) => {
 	                	href={topic.url}
 	                	rel="noopener noreferrer" 
 	                	type="button" 
-	                	className="tronpedia-topics-button flex-fill"
+	                	className="tronpedia-topics-button flex-md-fill"
 	                	id={"tronpedia-topics-button-"+topic.title}
 	                	key={i}
 	                >

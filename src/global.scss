@@ -30,6 +30,12 @@ a {
 	text-decoration: none !important;
 }
 
+.col-xxl-7 {
+	@media (min-width: $xxl) {
+		max-width: 58.333333%;
+	}
+}
+
 .col-xxl-8 {
 	@media (min-width: $xxl) {
 		max-width: 66.666667%;
@@ -8698,18 +8704,28 @@ nav .navbar {
         	a {
         		font-family: Blender Pro Bold;
 	            color: white;
-	            background: $tronDarkBorder;
-	            border-radius: 12.3228px;
-	            padding: 10px;
+                background-color: #474747;
+	            border-radius: 5px;
+	            padding: 8px;
 	            display: flex;
 	            align-items: center;
 	            justify-content: space-around;
 	            gap: 10px;
 	            outline: none;
 	            border: none;
+                font-size: 10px;
+                
+                @media (max-width: $sm) {
+                    &:not(:last-child):not(:nth-last-child(2)) {
+                        flex: 1 1 auto;
+                    }
+                }
 
-	            @media (min-width: $lg) {
+	            @media (min-width: $md) {
+                    padding: 10px;
+                    border-radius: 12.3228px;
 	            	font-size: 17px;
+                    background: $tronDarkBorder;
 	            }
 
 	            img {
@@ -9513,7 +9529,7 @@ nav .navbar {
         	grid-template-columns: repeat(2, auto);
         	margin-top: 0;
         	column-gap: 3rem;
- 			row-gap: 0;
+ 			row-gap: 22px;
 
         	& > div:first-child, div:nth-child(2), div:nth-child(3) {
 	            grid-column-start: 1;
@@ -9575,6 +9591,10 @@ nav .navbar {
 			@media (min-width: $md) {
 				font-size: 18px;
 			}
+
+            @media (min-width: $xxl) {
+                width: 92%;
+            }
         }
 
         &-subtitle {

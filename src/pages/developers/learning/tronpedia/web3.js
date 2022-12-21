@@ -47,7 +47,7 @@ const TronpediaWeb3 = () => {
                 <meta property="og:title" content="TRONPEDIA WEB3 | TRONDAO"/>
             </Helmet>
 
-            <div className="tronpedia-topic-page col-10 col-lg-9 mx-auto">
+            <div className="tronpedia-topic-page col-10 col-lg-9 col-xxl-7 mx-auto">
             	<div className="d-flex flex-column">
             		<div className="tronpedia-topic-page-header order-2 order-lg-1">
             			<div>
