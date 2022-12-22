@@ -569,6 +569,13 @@ const Navigation = () => {
                                         </a>
                                     </li>
                                     <li>
+                                        <a onClick={closeMenu} href="/ecosystem-climate/"
+                                        rel="noopener noreferrer"
+                                        id="nav-ecosystem-climate">
+                                        Climate Program
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a onClick={closeMenu} href="/ecosystem/"
                                         rel="noopener noreferrer"
                                         id="nav-ecosystem-feature-projects">
