@@ -31,7 +31,7 @@ const EcosystemClimate = () => {
                     </a>
             	</div>
 
-            	<div className="col-11 col-md-10 mx-auto">
+            	<div className="col-11 col-md-10 col-xxl-7 mx-auto">
             		<div className="ecosystem-climate-partnership d-flex flex-column flex-md-row align-items-center justify-content-between">
 	            		<div>
 	            			<img src={Partnership} alt="tronbull with calculator and webpage" className="img-fluid"  />
