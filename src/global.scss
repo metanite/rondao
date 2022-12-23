@@ -9994,7 +9994,7 @@ nav .navbar {
 
 	&-header {
 		width: 100%;
-		padding: 136px 331px;
+		padding: 38px 30px 160px 30px;
 		background: url("images/ecosystem/climate/background.png");
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -10011,7 +10011,7 @@ nav .navbar {
 			text-transform: uppercase;
 			font-style: normal;
 			font-weight: 700;
-			font-size: 90px;
+			font-size: 30px;
 			line-height: 100%;
 			color: white;
 
@@ -10060,12 +10060,13 @@ nav .navbar {
 	}
 
 	&-partnership {
-		margin-top: 200px;
+		margin-top: 60px;
 		gap: 70px;
 
-		& > div {
-            @media (min-width: $lg) {
-                width: 50%;
+		@media (min-width: $lg) {
+			margin-top: 200px;
+            & > div {
+            	width: 50%;
             }
         }
 
@@ -10073,7 +10074,7 @@ nav .navbar {
 			text-transform: uppercase;
 			font-style: normal;
 			font-weight: 700;
-			font-size: 60px;
+			font-size: 30px;
 			line-height: 100%;
 			margin-bottom: 25px;
 
@@ -10085,7 +10086,7 @@ nav .navbar {
 		p {
 			font-style: normal;
 			font-weight: 400;
-			font-size: 18px;
+			font-size: 14px;
 			line-height: 170%;
 
 			@media (min-width: $lg) {
@@ -10096,7 +10097,7 @@ nav .navbar {
 	}
 
 	&-greener-world {
-		margin-top: 200px;
+		margin-top: 115px;
 
 		@media (min-width: $lg) {
 			margin-top: 200px;
@@ -10105,7 +10106,7 @@ nav .navbar {
 		&-header {
 			font-style: normal;
 			font-weight: 700;
-			font-size: 60px;
+			font-size: 30px;
 			line-height: 100%;
 			text-transform: uppercase;
 			text-align: center;
@@ -10120,10 +10121,6 @@ nav .navbar {
 			font-weight: 500;
 			font-size: 31.1px;
 			line-height: 34px;
-
-			@media (min-width: $lg) {
-				font-size: 31.1px;
-			}
 		}
 
 		a {
@@ -10149,7 +10146,7 @@ nav .navbar {
 		}
 
 		&-list {
-			margin-top: 100px;
+			margin-top: 65px;
 			display: grid;
 			grid-template-columns: 1fr;
 
@@ -10199,35 +10196,51 @@ nav .navbar {
 	}
 
 	&-sustainability {
-		margin-top: 235px;
-		margin-bottom: 158px;
+		margin-top: 135px;
+		margin-bottom: 125px;
 
-		& > div:first-child {
-			width: 70%;
+		@media (min-width: $lg) {
+			margin-top: 235px;
+			margin-bottom: 158px;
+			& > div:first-child {
+				width: 70%;
+			}
 		}
 
 		h2 {
 			font-style: normal;
 			font-weight: 700;
-			font-size: 60px;
+			font-size: 30px;
 			line-height: 100%;
 			text-transform: uppercase;
 			margin-bottom: 30px;
+
+			@media (min-width: $lg) {
+				font-size: 60px;
+			}
 		}
 
 		h5 {
 			font-style: normal;
 			font-weight: 500;
-			font-size: 33.5px;
+			font-size: 20px;
 			margin-bottom: 0px;
+
+			@media (min-width: $lg) {
+				font-size: 33.5px;
+			}
 		}
 
 		p {
 			font-style: normal;
 			font-weight: 500;
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 170%;
 			width: 94%;
+
+			@media (min-width: $lg) {
+				font-size: 20px;
+			}
 		}
 	}
 }

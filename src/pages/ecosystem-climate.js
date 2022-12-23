@@ -25,7 +25,7 @@ const EcosystemClimate = () => {
             			rel="noopener noreferrer" 
             			id="ecosystem-climate-submit-project-button" 
             		>
-            			<button className="ecosystem-climate-button">
+            			<button className="ecosystem-climate-button mt-5 mt-lg-0">
                         	Submit Your Project
                         </button>
                     </a>
@@ -104,7 +104,7 @@ const EcosystemClimate = () => {
 	            	</div>
 
 	            	<div className="ecosystem-climate-sustainability d-flex flex-column flex-md-row align-items-center justify-content-between">
-	            		<div className="d-flex flex-column justify-content-between">	
+	            		<div className="d-flex flex-column justify-content-between order-2 order-lg-1 mt-5 mt-lg-0">	
 	            			<div>
 	            				<h2>First Steps Towards Sustainability</h2>
 	            			</div>
@@ -138,7 +138,7 @@ const EcosystemClimate = () => {
 	            				</a>
 	            			</div>
 	            		</div>
-	            		<div>
+	            		<div className="order-1 order-lg-2">
 	            			<img src={Earth} alt="hand holding earth" className="img-fluid"  />
 	            		</div>
 	            	</div>
