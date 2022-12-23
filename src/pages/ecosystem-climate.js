@@ -25,14 +25,14 @@ const EcosystemClimate = () => {
             			rel="noopener noreferrer" 
             			id="ecosystem-climate-submit-project-button" 
             		>
-            			<button className="ecosystem-climate-button mt-5 mt-lg-0">
+            			<button className="ecosystem-climate-button mt-5">
                         	Submit Your Project
                         </button>
                     </a>
             	</div>
 
-            	<div className="col-11 col-md-10 col-xxl-7 mx-auto">
-            		<div className="ecosystem-climate-partnership d-flex flex-column flex-md-row align-items-center justify-content-between">
+            	<div className="col-11 col-md-10 col-xxl-8 mx-auto">
+            		<div className="ecosystem-climate-partnership d-flex flex-column flex-lg-row align-items-center justify-content-between">
 	            		<div>
 	            			<img src={Partnership} alt="tronbull with calculator and webpage" className="img-fluid"  />
 	            		</div>
@@ -57,26 +57,28 @@ const EcosystemClimate = () => {
 	            	
 	            		<div className="ecosystem-climate-greener-world-list">
 	            			<div className="d-flex flex-column justify-content-between">
-	            				<div>
-	            					<h3>Industry Partners</h3>
-	            					<ul>
-		            					<li>Support renewable energy sources for blockchain operations</li>
-		            					<li>Co-Fund the TRON Climate Initiative Grant or Pledge Funds Towards Carbon Removal</li>
-		            					<li>Co-sponsor events, conferences and workshops to promote sustainability</li>
-		            					<li>Support research and development of sustainable blockchain technologies</li>
-		            					<li>Track and report environmental data transparently</li>
-		            				</ul>
-	            				</div>
-	            				<div className="mt-5">
-	            					<a 
-		            					href="/#" 
-		            					target="_blank" 
-		            					rel="noopener noreferrer" 
-		            					id="ecosystem-climate-program-apply-button"
-		            				>
-		            					Apply
-		            				</a>
-	            				</div>
+                                <div>
+                                    <div>
+                                        <h3>Industry Partners</h3>
+                                        <ul>
+                                            <li>Support renewable energy sources for blockchain operations</li>
+                                            <li>Co-Fund the TRON Climate Initiative Grant or Pledge Funds Towards Carbon Removal</li>
+                                            <li>Co-sponsor events, conferences and workshops to promote sustainability</li>
+                                            <li>Support research and development of sustainable blockchain technologies</li>
+                                            <li>Track and report environmental data transparently</li>
+                                        </ul>
+                                    </div>
+                                    <div className="mt-5">
+                                        <a 
+                                            href="/#" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            id="ecosystem-climate-program-apply-button"
+                                        >
+                                            Apply
+                                        </a>
+                                    </div>
+                                </div>
 	            			</div>
 	            			<div className="d-flex flex-column justify-content-between">
 	            				<div>
@@ -103,7 +105,7 @@ const EcosystemClimate = () => {
 	            		</div>
 	            	</div>
 
-	            	<div className="ecosystem-climate-sustainability d-flex flex-column flex-md-row align-items-center justify-content-between">
+	            	<div className="ecosystem-climate-sustainability d-flex flex-column flex-lg-row align-items-center justify-content-between">
 	            		<div className="d-flex flex-column justify-content-between order-2 order-lg-1 mt-5 mt-lg-0">	
 	            			<div>
 	            				<h2>First Steps Towards Sustainability</h2>

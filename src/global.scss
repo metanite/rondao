@@ -9984,11 +9984,11 @@ nav .navbar {
 
 .ecosystem-climate {
 	color: $tronDarkBorder;
-	& * > h1, h2, h5 {
+	& * > h1, h2, h3, h5 {
 		font-family: Blender Pro Bold;
 	}
 
-	& * > p, h3, button, a, li {
+	& * > p, button, a, li {
 		font-family: Blender Pro;
 	}
 
@@ -9998,6 +9998,10 @@ nav .navbar {
 		background: url("images/ecosystem/climate/background.png");
 		background-size: cover;
 		background-repeat: no-repeat;
+
+        @media (min-width: $md) {
+			padding: 50px 60px;
+		}
 
 		@media (min-width: $lg) {
 			padding: 100px 160px;
@@ -10019,13 +10023,17 @@ nav .navbar {
 				color: $tronRed;
 			}
 
-			@media (min-width: $lg) {
+            @media (min-width: $md) {
                 width: 90%;
-                font-size: 70px;
+                font-size: 60px;
 			}
 
 			@media (min-width: $lg) {
-                width: 90%;
+                width: 78%;
+                font-size: 70px;
+			}
+
+			@media (min-width: $xxl) {
                 font-size: 90px;
 			}
 		}
@@ -10093,6 +10101,10 @@ nav .navbar {
 				width: 90%;
 				font-size: 18px;
 			}
+
+            @media (min-width: $xxl) {
+				width: 82%;
+            }
 		}
 	}
 
@@ -10150,16 +10162,35 @@ nav .navbar {
 			display: grid;
 			grid-template-columns: 1fr;
 
+            @media (max-width: 820px) {
+                & > div:first-child {
+                    border-bottom: 1px solid #E4E4E7;
+                    padding-bottom: 80px;
+                    margin-bottom: 80px;
+                }
+            }
+
 			@media (min-width: $lg) {
 				grid-template-columns: repeat(2, 1fr);
 				margin-top: 100px;
 
 				& > div:first-child {
-					width: 77%;
+                    @media (min-width: $lg) {
+                        border-right: 1px solid #E4E4E7;
+                    }
+
+                    & > div {
+                        width: 76%;
+                    }
+                    
 				}
 
 				& > div:last-child {
 					padding-left: 16%;
+
+                    @media (min-width: $xxl) {
+                        padding-left: 26%;
+                    }
 				}
 			}
 
@@ -10240,6 +10271,10 @@ nav .navbar {
 
 			@media (min-width: $lg) {
 				font-size: 20px;
+			}
+
+            @media (min-width: $xxl) {
+				width: 80%;
 			}
 		}
 	}
