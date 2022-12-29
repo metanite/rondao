@@ -21,7 +21,8 @@ const EcosystemClimate = () => {
             			<span> sustainable future in blockchain</span>
             		</h1>
             		<a 
-            			href="/#" 
+            			href="/#"
+						target="_blank"
             			rel="noopener noreferrer" 
             			id="ecosystem-climate-submit-project-button" 
             		>
