@@ -69,7 +69,10 @@ const Governance = ({data}) => {
                             <div className="col-md-6 col-lg-5 mx-auto order-2 order-md-1">
                                 <h1 className="text-uppercase">Proper Voting</h1>
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i
+                                With TRON's Delegated Proof of Stake consensus method, token holders get to make a real difference. 
+                                They can vote for "super representatives" who are tasked with keeping the network secure - and are 
+                                incentivized through rewards in tokens which they can choose to use on running their own node or 
+                                reinvesting back into the system.
                                 </p>
                             </div>
                             <div className="col-12 col-md-6 order-1 order-md-2">
@@ -80,7 +83,10 @@ const Governance = ({data}) => {
                             <div className="col-md-6 col-lg-5 mx-auto order-2 order-md-2">
                                 <h1 className="text-uppercase">Scalable Communities</h1>
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i] 
+                                The TRON network has implemented a unique system that ensures everyone - no matter their status or background - 
+                                gets to have an impact on the decisions made within the community. By opening polls and giving each vote equal 
+                                weight, all voices are heard in order to reach collective consensus based on what truly reflects majority opinion 
+                                and promotes fairness for all.
                                 </p>
                             </div>
                             <div className="col-12 col-md-6 order-1 order-md-1">
