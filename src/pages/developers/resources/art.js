@@ -22,7 +22,7 @@ const Art = ({data}) => {
                         <div className="col-lg-6">
     				        <h1 className="text-uppercase">Power Back To The Artists</h1>
                             <p className="col-lg-10">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et orem ipsum dolor sit amet 
+                            TRON is here to give artists what they should have had long ago: control and ownership of their artwork.
                             </p>
                             <a 
                                 href="/#" 
@@ -48,9 +48,10 @@ const Art = ({data}) => {
 	    						NFT Standard
 	    					</h1>
 	    					<p className="text-justify">
-	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-	    					Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-	    					ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i]
+	    					TRON Art is an innovative platform that allows artists to claim authority and reclaim their 
+                            rightful ownership of artwork. Through its exclusive NFT standard, TRON enables lightning-fast 
+                            transactions with minimal fees while ensuring creators receive royalty payments for every 
+                            transaction - so art remains in the hands of those who truly deserve it.
 	    					</p>
     					</div>
     					<div className="col-12 col-md-6 order-1 order-md-2">
@@ -63,9 +64,11 @@ const Art = ({data}) => {
 	    						Transparent Art
 	    					</h1>
 	    					<p className="text-justify">
-	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-	    					Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-	    					ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i]
+	    					TRON is changing the art world! Thanks to blockchain technology, all data on this network is 
+                            visible by anyone around the world which eliminates any room for fraud or deception – meaning 
+                            that no duplicate artwork can exist and each piece of artwork has an accurate record of ownership 
+                            stored in a secure distributed database. So take solace knowing your favorite masterpiece will be 
+                            safe with TRON!
 	    					</p>
     					</div>
                         <div className="col-md-6 order-1">
@@ -78,9 +81,10 @@ const Art = ({data}) => {
 	    						Reliability Utility
 	    					</h1>
 	    					<p className="text-justify">
-	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-	    					Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-	    					ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i]
+	    					With the TRON Art platform, you can be sure that your digital art will continuously benefit its 
+                            creator. If desired, royalties on future sales of your creation can easily be attached during minting 
+                            onto their blockchain network - so no matter who buys it down the line, a percentage goes directly back 
+                            to you!
 	    					</p>
     					</div>
                         <div className="col-12 col-md-6 order-1 order-md-2">
@@ -99,7 +103,9 @@ const Art = ({data}) => {
                         <div className="art-market-xxl col-11 col-md-5 my-5 mt-md-0">
                             <h1>APENFT</h1>
                             <p className="text-justify my-4">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor i]
+                            Go beyond the ordinary with TRON's APENFT marketplace. From decreased transaction 
+                            costs to accelerated settlements, enjoy a variety of features that will take your 
+                            business operations into high gear - learn more today!
                             </p>
                             <a 
                                 href="/"
@@ -107,7 +113,7 @@ const Art = ({data}) => {
                                 rel="noopener noreferrer"
                                 id="art-call-to-action-button"
                             >
-                                <button className="gaming-title-start-button">
+                                <button className="gaming-title-start-button mt-md-4">
                                     Call To Action
                                 </button>
                             </a>
