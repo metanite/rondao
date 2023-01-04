@@ -6858,7 +6858,7 @@ nav .navbar {
                 line-height: 100%;
                 margin: 2rem 0;
     
-                @media (min-width: $xxl) {
+                @media (min-width: $xl) {
                     font-size: 82px;
                 }
             }
@@ -7057,7 +7057,7 @@ nav .navbar {
     			grid-column: span 3;
     			@media (min-width: $lg) {
     				grid-column: span 2;
-    				width: 66.66667%;
+    				width: 78%;
     			}
     		}
 
@@ -7197,10 +7197,6 @@ nav .navbar {
     			background: #FBFBFB;
 				border-radius: 16.8959px;
 				padding: 2rem;
-
-				@media (min-width: $lg) {
-					min-height: 320px;
-				}
 
                 @media (min-width: $xxl) {
                     padding: 5rem 3rem;
