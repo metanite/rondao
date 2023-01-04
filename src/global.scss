@@ -7481,6 +7481,10 @@ nav .navbar {
     		font-weight: 400;
 			font-size: 18px;
 			line-height: 170%;
+
+            @media (min-width: $xxl) {
+                width: 105%;
+            }
     	}
 
     	button {

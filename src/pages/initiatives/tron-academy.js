@@ -71,7 +71,7 @@ const TronAcademy = ({data}) => {
 	           	</div>
 
 	           	<div className="tron-academy-partner w-100">
-		           	<div className="col-10 text-center mx-auto d-flex flex-column">
+		           	<div className="col-10 col-xxl-8 text-center mx-auto d-flex flex-column">
 		           		<h1>Partnered Schools</h1>
 		           		<div className="tron-academy-partner-schools d-flex flex-wrap justify-content-between">
 		           			{
@@ -93,7 +93,7 @@ const TronAcademy = ({data}) => {
 	           	</div>
 	           	<h5 className="mt-4 text-center">More to come!</h5>
 
-	           	<div className="tron-academy-research d-flex flex-column flex-lg-row justify-content-center align-items-center col-lg-10 mx-auto">
+	           	<div className="tron-academy-research d-flex flex-column flex-lg-row justify-content-center align-items-center col-lg-10 col-xxl-8 mx-auto">
 	           		<div className="d-flex flex-column col-12 col-lg-6 mt-5 mt-lg-0 order-2 order-lg-0">
 	           			<div className="position-relative">
 	           				<h1 className="text-uppercase text-center text-lg-left">Tron Research</h1>
