@@ -59,10 +59,10 @@ const TronpediaGameFi = () => {
             				</p>
             			</div>
             			<div className="d-none d-md-flex">
-            				<h2 className="tronpedia-topic-page-header-subtitle">TRONPEDIA > Defi</h2>
+            				<h2 className="tronpedia-topic-page-header-subtitle">TRONPEDIA > GameFi</h2>
             			</div>
             			<div>
-            				<img src={TronbullGamefi} alt="defi tronbull" className="img-fluid" />
+            				<img src={TronbullGamefi} alt="gamefi tronbull" className="img-fluid" />
             			</div>
             		</div>
             		<div className="mt-5 order-1 order-lg-2">
