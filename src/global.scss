@@ -83,7 +83,7 @@ a {
     color: white;
     font-weight: 700;
     font-size: 12px;
-    padding: 15px 24px;
+    padding: 10px 24px;
     line-height: 100%;
     border: none;
     width: auto;
@@ -5591,17 +5591,15 @@ nav .navbar {
 
         &-start-button {
             font-family: Blender Pro Bold;
-            background-color: $tronRed;
+            background-color: #E71E26;
             text-transform: uppercase;
             border-radius: 54px;
-            min-height: 53px;
             color: white;
             font-weight: 700;
             font-size: 18px;
-            padding: 0px 20px;
+            padding: 29px 72px;
             line-height: 100%;
             border: none;
-            width: 200px;
 
             &:hover {
                 background-color: $tronDarkBorder;

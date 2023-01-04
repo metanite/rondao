@@ -49,7 +49,7 @@ const Gaming = ({data}) => {
                             <img src={controller} alt="nintendo controller icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Frictionless Video Game</h3>
                             <p className="">
-                            Blurb about web3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            Enter a new realm of high-speed entertainment where no limits are set and your imagination is free to soar.
                             </p>
                         </div>
                         <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-md-4 mx-md-2 mx-lg-4">
@@ -63,7 +63,7 @@ const Gaming = ({data}) => {
                             <img src={key} alt="key icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Own Your Experience</h3>
                             <p className="">
-                            Blurb about web3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                            TRON aims to empower individuals to create and own their own games without fear of censorship or control from centralized authorities.
                             </p>
                         </div>
                     </div>
