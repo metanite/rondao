@@ -77,29 +77,25 @@ a {
 
 .cta-button {
     font-family: Blender Pro Bold;
-    background-color: #FF0000;
+    background-color: #E71E26;
     text-transform: uppercase;
     border-radius: 54px;
-    height: 20px;
     color: white;
     font-weight: 700;
-    font-size: 8px;
-    padding: 0px 10px;
+    font-size: 12px;
+    padding: 15px 24px;
     line-height: 100%;
     border: none;
-    width: 80px;
+    width: auto;
 
     @media (min-width: $md) {
         font-size: 15px;
-        width: 120px;
-        height: 40px;
     }
 
     @media (min-width: $lg) {
         font-size: 18px;
-        width: 200px;
-        height: 53px;
-        padding: 0px 20px;
+        padding: 29px 45px;
+        margin-top: 20px;
     }
 
     &:hover {
@@ -7302,7 +7298,7 @@ nav .navbar {
 		font-family: 'Blender Pro Bold';
 	}
 
-	& * > p {
+	& * > p, h3, h5 {
 		font-family: 'Blender Pro';
 	}
 
@@ -7412,30 +7408,43 @@ nav .navbar {
 
 		&-schools {
 			margin-top: 41px;
-			gap: 1rem;
-
-			@media (min-width: $lg) {
-				gap: 3rem;
-			}
+			row-gap: 20px;
 		}
 
 		&-school {
-			background: #FBFBFB;
-			box-shadow: 2.30398px 2.30398px 13.0559px rgba(0, 0, 0, 0.25);
-			border-radius: 16.8959px;
-			padding: 1rem;
+			flex-basis: 30%;
 
 			@media (min-width: $lg) {
-				padding: 1.5rem 2rem;
+				flex-basis: 10%;
 			}
 
-			img {
-				width: 120px;
-				height: auto;
+			&-image {
+				background: #FBFBFB;
+				box-shadow: 2.30398px 2.30398px 13.0559px rgba(0, 0, 0, 0.25);
+				border-radius: 16.8959px;
+				padding: 13px 20px;
 
 				@media (min-width: $lg) {
-					width: 150px;
+					padding: 19px 29px;
 				}
+
+				img {
+					width: 80px;
+					height: 80px;
+				}
+			}
+
+			h3 {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 116%;
+				margin-top: 15px;
+				width: 85%;
+
+				@media (min-width: $md) {
+					font-size: 18px;
+				}				
 			}
 		}
 
