@@ -64,10 +64,9 @@ const TronAcademy = ({data}) => {
             	<div className="tron-academy-mission d-flex flex-column col-lg-6 text-center mx-auto">
 	           		<h1 className="text-uppercase">Our Mission For Tron Academy</h1>
 	           		<p className="">
-	           		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
-	           		tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim 
-	           		ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
-	           		aliquip ex ea commodo consequat.
+	           		TRON Academy's industry-leading curriculum provides a comprehensive and innovative 
+	           		blockchain education for the next generation of technology leaders. With an inspiring 
+	           		learning environment, we empower students to change the world with Blockchain!
 	           		</p>
 	           	</div>
 
