@@ -112,7 +112,7 @@ const Research = ({data}) => {
                     </div>
                 </div>  
 
-                <div className="research-email-capture col-11 col-md-8 col-lg-9 col-xxl-8 mx-auto">
+                <div className="research-email-capture col-11 col-lg-9 col-xxl-8 mx-auto">
                     <EmailCapture />
                 </div>
             </div>

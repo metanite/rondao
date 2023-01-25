@@ -140,12 +140,12 @@ const Navigation = () => {
                             type="button" id="dropdownMenuButton0" onClick={toggleNavDropDown1}>
                     USE TRON
                     </button>
-                    <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div> 
+                    <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-lg-none'></div> 
                   <div className={isNavDropDown1Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton0">
-                    <div className="d-flex flex-wrap">
+                    <div className="dropdown-b d-flex flex-wrap">
                       <div
-                  			className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                  			className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <FaHubspot className="mr-2" />
                             NETWORK
@@ -202,12 +202,12 @@ const Navigation = () => {
                       type="button" id="dropdownMenuButton1" onClick={toggleNavDropDown2}>
                     INITIATIVES
                   </button>
-									<div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
+									<div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-lg-none'></div>
                   <div className={isNavDropDown2Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton1">
-                    <div className="d-flex flex-wrap">
+                    <div className="dropdown-b d-flex flex-wrap">
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top pr-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={globe} alt="Globe" className="mr-2"/>
                             PROGRAMS
@@ -239,7 +239,7 @@ const Navigation = () => {
                         </ul>
                       </div>
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={info_circle} alt="Info Circle" className="mr-2"/>
                             ABOUT
@@ -271,12 +271,12 @@ const Navigation = () => {
                       type="button" id="dropdownMenuButton2" onClick={toggleNavDropDown3}>
                     DEVELOPERS/BUILD
                   </button>
-                  <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
+                  <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-lg-none'></div>
                   <div className={isNavDropDown3Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton2">
-                    <div className="d-flex flex-wrap">
+                    <div className="dropdown-b d-flex flex-wrap">
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top pr-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
 													<img src={diamond} alt="Diamond" className="mr-2"/>
 													RESOURCES
@@ -325,7 +325,7 @@ const Navigation = () => {
 												</ul>
                       </div>
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
 													<img src={learning} alt="Learning" className="mr-2"/>
 													LEARNING
@@ -377,12 +377,12 @@ const Navigation = () => {
                       className={(isNavDropDown4Open === show ? 'active' : '') + ' nav-link dropdown-toggle w-100'}
                       type="button" id="dropdownMenuButton3" onClick={toggleNavDropDown4}>COMMUNITY
                   </button>
-                  <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-md-none d-lg-none'></div>
+                  <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-lg-none'></div>
                   <div className={isNavDropDown4Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton3">
-                    <div className="d-flex flex-wrap flex-column flex-md-row flex-lg-row">
+                    <div className="dropdown-b d-flex flex-wrap flex-column flex-md-row">
                       <div
-                          className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top pl-lg-0 justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={people} alt="People Icon" className="mr-2"/>
                                 COMMUNITY
@@ -394,7 +394,7 @@ const Navigation = () => {
                         </ul>
                       </div>
 						<div
-                          className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                             <p className="dropdown-menu-subtitle">
                                 <img src={grant} alt="Contract Icon" className="mr-2"/>
                                 GRANTS
@@ -406,7 +406,7 @@ const Navigation = () => {
                             </ul>
                         </div>
                       <div
-                          className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={calendar} alt="Calendar Icon" className="mr-2"/>
                             EVENTS
@@ -431,7 +431,7 @@ const Navigation = () => {
                         </ul>
                       </div>
                       <div
-                          className="text-left d-inline-block align-top justify-content-center col-md-2 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={content} alt="Content Icon" className="mr-2"/>
                             CONTENT
@@ -468,7 +468,7 @@ const Navigation = () => {
                       </div>
 					<div className="d-flex flex-column" style={{marginLeft: "0px", marginTop: "0px"}}>
                       <div
-                          className="text-left d-inline-block align-top px-0 justify-content-center col-md-8 offset-md-0 col-10 offset-1">
+                          className="text-left d-inline-block align-top px-0  justify-content-center col-md-8 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle" style={{marginTop: "0px"}}>
                             <img src={node} alt="Node Icon" className="mr-2"/>
                             SOCIAL
@@ -553,9 +553,9 @@ const Navigation = () => {
                   </button>
                     <div className={isNavDropDown5Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton4">
-                        <div className="d-flex flex-wrap">
+                        <div className="dropdown-b d-flex flex-wrap">
                             <div
-                                className="text-left d-inline-block align-top px-5 justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                                className="text-left d-inline-block align-top  justify-content-center col-md-3 offset-md-0 col-10 offset-1">
                                 <p className="dropdown-menu-subtitle">
                                     <img src={globe} alt="Globe" className="mr-2"/>
                                     ECOSYSTEM

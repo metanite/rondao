@@ -14,7 +14,7 @@ import {
 const EmailCapture = () => {
     return (
         <div className="email-capture d-flex flex-column flex-md-row justify-content-between">
-            <div className="mb-2 mb-lg-5">
+            <div className="d-none d-md-block mb-2 mb-lg-5">
                 <div className="col-12 pl-0 pl-md-4">
                     <div className="d-flex justify-content-start">
                         <div className="email-capture-know text-left pl-md-3 pl-lg-0">
@@ -22,7 +22,7 @@ const EmailCapture = () => {
                         </div>
                     </div>
                 </div>
-                <div className="d-none d-md-block col-lg-12 col-12 mt-1 pl-md-0">
+                <div className="col-lg-12 col-12 mt-1 pl-md-0">
                     <div className="d-flex flex-wrap justify-content-start">
                         <a id="email-capture-social-twitter"
                            aria-label="social-icon-twitter"

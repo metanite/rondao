@@ -82,11 +82,16 @@ a {
     border-radius: 54px;
     color: white;
     font-weight: 700;
-    font-size: 12px;
-    padding: 10px 24px;
+    font-size: 10px;
+    padding: 10px;
     line-height: 100%;
     border: none;
     width: auto;
+
+    @media (min-width: 375px) {
+        font-size: 12px;
+        padding: 10px 24px;
+    }
 
     @media (min-width: $md) {
         font-size: 15px;
@@ -240,7 +245,7 @@ a {
     &-left-arrow {
         left: -40px;
 
-        @media (min-width: $md) {
+        @media (min-width: $lg) {
         	left: -80px;
         }
     }
@@ -248,7 +253,7 @@ a {
     &-right-arrow {
         right: -40px;
 
-        @media (min-width: $md) {
+        @media (min-width: $lg) {
         	right: -80px;
         }
     }
@@ -926,8 +931,10 @@ body {
 	button {
 		outline: none;
 		color: black !important;
-		padding-left: 18px !important;
-		padding-right: 18px !important;
+		@media (min-width: 1157px) {
+            padding-left: 18px !important;
+		    padding-right: 18px !important;
+        }
 	}
 
 	button.active {
@@ -1007,18 +1014,23 @@ body {
 	}
 
     div > div {
-    	@media (min-width: $md) {
+    	@media (min-width: $lg) {
     		margin: 1.5rem 0 1.5rem 4rem;
     	}
-    	
-    	@media (max-width: $sm) {
+
+        @media (min-width: $md) and (max-width: 990px) {
+            margin-left: 1rem;
+            padding: 0 4rem 1.5rem 4rem !important;
+        }
+
+    	@media (max-width: 768px) {
     		margin: 0.5rem 1rem;
     		padding: 0 3rem;
     	}
     }
 
-    div div:first-child {
-    	@media (min-width: $md) {
+    .dropdown-b {
+    	@media (min-width: $lg) {
     		margin-left: 8rem !important;
     	}
     }
@@ -1204,7 +1216,7 @@ body {
 					border-width: 0 2px 2px 0;
 					transform: rotate(45deg);
 					padding: 3.2px;
-					@media(max-width: $sm) {
+					@media(max-width: 990px) {
 						float:right !important;
 					}
 				}	
@@ -3775,12 +3787,17 @@ nav .navbar {
 			width: 210px;
 			max-width: 100%;
             height: 25px;
+            @media (min-width: $md) {
+				height: 35px;
+				font-size: 10px!important;
+				width: 150px;
+			}
 			@media (min-width: $lg) {
 				height: 53px;
 				font-size: 15px!important;
 				width: 210px;
 			}
-			@media (max-width: $sm) {
+			@media (max-width: 764px) {
 				height: 30px;
 				font-size: 5px!important;
 				width: unset;
@@ -5525,7 +5542,6 @@ nav .navbar {
 
 .gaming {
     font-family: Blender Pro;
-    padding: 0px 25px;
 
     @media (min-width: $md) {
         padding: 0px;
@@ -5819,10 +5835,10 @@ nav .navbar {
                 font-weight: 500;
                 font-size: clamp(8px, 3vw, 1.8rem);
                 line-height: clamp(0.5rem, 3vw, 2.25rem);
-                margin-bottom: 0;
 
                 @media (min-width: $lg) {
                     margin-top: 1rem;
+                    margin-bottom: 0;
                 }
 
                 @media (min-width: $xxl) {
@@ -6739,7 +6755,7 @@ nav .navbar {
             h1 {
                 font-style: normal;
                 font-weight: 900;
-                font-size: 1.0625rem;
+                font-size: 18px;
                 line-height: 1;
 
                 @media (min-width: $md) {
@@ -6758,7 +6774,7 @@ nav .navbar {
             p {
                 font-style: normal;
                 font-weight: 500;
-                font-size: 0.6875rem;
+                font-size: 0.8rem;
                 line-height: 1;
                 width: 100%;
                 margin-bottom: 10px;
@@ -6976,6 +6992,10 @@ nav .navbar {
                 }
 
                 @media (min-width: $lg) {
+                    font-size: 5.2rem;
+                }
+
+                @media (min-width: $xl) {
                     font-size: 6.75rem;
                 }
 
@@ -7247,6 +7267,9 @@ nav .navbar {
                 width: 120px;
                 height: 120px;
 
+                @media (min-width: 528px) and (max-width: $lg) {
+                    bottom: 150px;
+                }
 
                 @media (min-width: $lg) {
                     position: absolute;

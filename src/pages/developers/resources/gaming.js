@@ -44,22 +44,22 @@ const Gaming = ({data}) => {
                     Faster, Safer, Better
                     </div>
                     
-                    <div className="gaming-row-one d-flex flex-column flex-md-row">
-                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-md-4">
+                    <div className="gaming-row-one d-flex flex-column flex-lg-row align-items-center">
+                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-4">
                             <img src={controller} alt="nintendo controller icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Frictionless Video Game</h3>
                             <p className="">
                             Enter a new realm of high-speed entertainment where no limits are set and your imagination is free to soar.
                             </p>
                         </div>
-                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-md-4 mx-md-2 mx-lg-4">
+                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-4 mx-md-2 mx-lg-4">
                             <img src={arrowDown} alt="arrow down icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Low Fees</h3>
                             <p className="">
                             Blurb about web3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             </p>
                         </div>
-                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-md-4">
+                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-4">
                             <img src={key} alt="key icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Own Your Experience</h3>
                             <p className="">
@@ -69,7 +69,7 @@ const Gaming = ({data}) => {
                     </div>
 
                     <div className="gaming-row-two d-flex flex-column flex-md-row">
-                        <div className="gaming-steps d-flex flex-column justify-content-center col-12 col-md-5 offset-md-1">
+                        <div className="gaming-steps d-flex flex-column justify-content-center align-items-center align-items-lg-start col-12 offset-md-1 col-md-5">
                             <h1 className="text-uppercase">
                                 Learn 
                                 <span>|</span>

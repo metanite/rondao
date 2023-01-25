@@ -19,7 +19,7 @@ const Art = ({data}) => {
             <div className="art">
     			<div className="art-main">
     				<div className="art-title d-flex flex-column flex-md-row align-items-start justify-content-center col-12">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 d-flex flex-column align-items-center align-items-md-start">
     				        <h1 className="text-uppercase">Power Back To The Artists</h1>
                             <p className="col-lg-10">
                             TRON is here to give artists what they should have had long ago: control and ownership of their artwork.
