@@ -1,11 +1,14 @@
-import React from "react"
+import React, {useState} from "react"
 import {Helmet} from "react-helmet"
 import {FaArrowRight} from "react-icons/fa"
 import GridCarousel from "../../../components/gridCarousel"
 import tronResearchBackground from "../../../images/research/tron-research.mp4"
 import EmailCapture from "../../../components/EmailCapture"
 
-const Research = ({data}) => {
+const Research = () => {
+    const buttons = ["Project Studies", "Reports"]
+    const [buttonActive, setActiveButton] = useState(buttons[0])
+
     return (
         <div className="trondao-research">
             <Helmet>
@@ -41,24 +44,20 @@ const Research = ({data}) => {
 
                 <div className="research-body col-11 col-lg-8 mx-auto">
                     <div className="research-body-tabs d-flex flex-wrap" role="tablist">
-                        <a 
-                            href="/#" 
-                            className="research-body-tabs-item active"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            id="research-project-studies-button"
-                        >
-                            Project Studies
-                        </a>
-                        <a 
-                            href="/#" 
-                            className="research-body-tabs-item"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            id="research-reports-button"
-                        >
-                            Reports
-                        </a>
+                        {
+                            buttons.map((button, i) => {
+                                return (
+                                    <button 
+                                    key={i}
+                                    type="button" 
+                                    className={"research-body-tabs-item "+ (button === buttonActive ? 'active' : '')}
+                                    onClick={() => setActiveButton(button)}
+                                    >
+                                        {button}
+                                    </button>
+                                )
+                            })
+                        }
                     </div>
 
                     <div className="research-body-article">

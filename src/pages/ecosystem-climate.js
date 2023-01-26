@@ -15,7 +15,7 @@ const EcosystemClimate = () => {
             </Helmet>
 
             <div className="ecosystem-climate">
-            	<div className="ecosystem-climate-header d-flex flex-column justify-content-center align-items-start">
+            	<div className="ecosystem-climate-header d-flex flex-column justify-content-center align-items-center align-items-lg-start">
             		<h1>
             			TRON Climate initiative leading the charge for a 
             			<span> sustainable future in blockchain</span>
@@ -107,7 +107,7 @@ const EcosystemClimate = () => {
 	            	</div>
 
 	            	<div className="ecosystem-climate-sustainability d-flex flex-column flex-lg-row align-items-center justify-content-between">
-	            		<div className="d-flex flex-column justify-content-between order-2 order-lg-1 mt-5 mt-lg-0">	
+	            		<div className="d-flex flex-column align-items-center align-items-lg-start justify-content-between order-2 order-lg-1 mt-5 mt-lg-0">	
 	            			<div>
 	            				<h2>First Steps Towards Sustainability</h2>
 	            			</div>

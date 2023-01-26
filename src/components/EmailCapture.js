@@ -13,17 +13,17 @@ import {
 
 const EmailCapture = () => {
     return (
-        <div className="email-capture d-flex flex-column flex-md-row justify-content-between">
+        <div className="email-capture d-flex flex-column flex-xl-row justify-content-between">
             <div className="d-none d-md-block mb-2 mb-lg-5">
                 <div className="col-12 pl-0 pl-md-4">
-                    <div className="d-flex justify-content-start">
-                        <div className="email-capture-know text-left pl-md-3 pl-lg-0">
+                    <div className="d-flex justify-content-start justify-content-md-center justify-content-xl-start">
+                        <div className="email-capture-know text-left text-md-center text-xl-left pl-md-3 pl-lg-0">
                             BE THE FIRST <br className="d-none d-lg-block" /> TO KNOW
                         </div>
                     </div>
                 </div>
                 <div className="col-lg-12 col-12 mt-1 pl-md-0">
-                    <div className="d-flex flex-wrap justify-content-start">
+                    <div className="d-flex flex-wrap justify-content-start justify-content-md-center justify-content-xl-start">
                         <a id="email-capture-social-twitter"
                            aria-label="social-icon-twitter"
                            href="https://twitter.com/trondao"
@@ -41,7 +41,7 @@ const EmailCapture = () => {
                            href="https://www.linkedin.com/company/trondao"
                            target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
                     </div>
-                    <div className="d-flex flex-wrap justify-content-start">
+                    <div className="d-flex flex-wrap justify-content-start justify-content-md-center justify-content-xl-start">
                         <a id="email-capture-social-youtube"
                            aria-label="social-icon-youtube"
                            href="https://www.youtube.com/channel/UC5OPOGRq02iK-0T9sKse_kA?view_as=subscriber"

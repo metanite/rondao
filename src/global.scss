@@ -1018,11 +1018,6 @@ body {
     		margin: 1.5rem 0 1.5rem 4rem;
     	}
 
-        @media (min-width: $md) and (max-width: 990px) {
-            margin-left: 1rem;
-            padding: 0 4rem 1.5rem 4rem !important;
-        }
-
     	@media (max-width: 768px) {
     		margin: 0.5rem 1rem;
     		padding: 0 3rem;
@@ -1033,6 +1028,13 @@ body {
     	@media (min-width: $lg) {
     		margin-left: 8rem !important;
     	}
+    }
+
+    .dropdown-spacer {
+    	@media (min-width: $md) and (max-width: 990px) {
+            margin-left: 1rem;
+            padding: 0 4rem 1.5rem 4rem !important;
+        }
     }
 
 	ul {
@@ -6510,8 +6512,6 @@ nav .navbar {
     }
 
     &-row {
-        width: 90%;
-
         @media (width: $md) {
             height: auto;
         }
@@ -6670,8 +6670,6 @@ nav .navbar {
     	margin-bottom: 134px;
 
     	&-members {
-    		width: 90%;
-
             @media (min-width: $xxl) {
                 width: 60%;
             }
@@ -7805,9 +7803,15 @@ nav .navbar {
     			text-transform: uppercase;
                 min-width: 140px;
 
+
     			&:hover, &.active {
     				background-color: $tronRed;
     				color: white;
+    			}
+
+    			&:focus {
+    				outline: none;
+    				border: none;
     			}
 
                 @media (min-width: $lg) {
@@ -7951,7 +7955,7 @@ nav .navbar {
             top center no-repeat;
         background-size: 100%, 100% 90%;
 
-        @media (min-width: $lg) {
+        @media (min-width: $md) {
         	height: 85vh;
         }
 
@@ -7968,7 +7972,7 @@ nav .navbar {
                 font-size: 35px;
                 line-height: 100%;
 
-                @media (min-width: $lg) {
+                @media (min-width: $md) {
                     font-size: 80px;
                 }
 
@@ -8011,9 +8015,13 @@ nav .navbar {
         gap: 2rem;
         margin-bottom: 50px;
 
+        @media (min-width: $md) {
+        	grid-template-columns: repeat(2, 1fr);
+        	margin-bottom: 120px;
+        }
+
         @media (min-width: $lg) {
         	grid-template-columns: repeat(3, 1fr);
-        	margin-bottom: 120px;
         }
 
         @media (min-width: $xxl) {
@@ -8043,6 +8051,11 @@ nav .navbar {
                 line-height: 170%;
             }
 
+            img {
+            	object-fit: cover;
+            	width: 100%;
+            }
+
             &-date {
                 font-family: "Blender Pro";
                 font-style: normal;
@@ -8066,7 +8079,7 @@ nav .navbar {
 
     &-lightbox {
         position: fixed;
-        z-index: 999;
+        z-index: 1030;
         width: 100%;
         height: 100%;
         top: 0;
@@ -8201,7 +8214,7 @@ nav .navbar {
 	            outline: none;
 	            padding: 15px 0;
 
-                &:hover {
+                &:hover:not([disabled]) {
                     color: $tronRed;
                 }
 	        }
@@ -8518,20 +8531,20 @@ nav .navbar {
         }
 
         & > div:first-child {
-        	@media (max-width: $md) {
+        	@media (max-width: $lg) {
         		display: flex;
         		align-items: center;
         	}
         }
 
         & > div:nth-child(2) {
-        	@media (max-width: $md) {
+        	@media (max-width: $lg) {
         		grid-column: span 2;
         	}
         }
 
         & > div:nth-child(3) {
-        	@media (max-width: $md) {
+        	@media (max-width: $lg) {
         		grid-row-start: 2;
         		grid-column: span 2;
         	}
@@ -9547,6 +9560,10 @@ nav .navbar {
 	margin-bottom: 85px;
 
 	@media (min-width: $md) {
+		margin-top: 150px;
+	}
+
+	@media (min-width: $lg) {
 		margin-top: 230px;
 	}
 
@@ -9556,7 +9573,7 @@ nav .navbar {
 		grid-template-columns: repeat(3, auto);
         gap: 0;
 
-        @media (min-width: $lg) {
+        @media (min-width: $md) {
         	grid-template-columns: repeat(2, auto);
         	margin-top: 0;
         	column-gap: 3rem;
@@ -9572,7 +9589,7 @@ nav .navbar {
         }
 
         & > div:first-child {
-        	@media (max-width: $md) {
+        	@media (max-width: $sm) {
         		grid-column-start: 1;
         		grid-row-start: 1;
         		display: flex;
@@ -9582,7 +9599,7 @@ nav .navbar {
         }
 
         & > div:nth-child(2) {
-        	@media (max-width: $md) {
+        	@media (max-width: $sm) {
         		grid-column: span 5;
         	}
         }
@@ -9591,7 +9608,7 @@ nav .navbar {
         	grid-column: span 4;
         	grid-row-start: 1;
 
-            @media (min-width: $lg) {
+            @media (min-width: $md) {
             	grid-column-start: 2;
 	            grid-row-start: 1;
 	            grid-row-end: 6;
@@ -9713,6 +9730,10 @@ nav .navbar {
                 height: 400px;
             }
 
+            @media (min-width: $md) {
+                height: 550px;
+            }
+
             @media (min-width: $lg) {
                 height: 821px;
             }
@@ -9729,7 +9750,7 @@ nav .navbar {
 				padding-left: 16%;
 			}
 
-            @media (min-width: $xxl) {
+            @media (min-width: 1920px) {
                 width: 80%;
 				padding-left: 325px;
 			}
@@ -9744,11 +9765,15 @@ nav .navbar {
 					color: $tronRed;
 				}
 
+				@media (min-width: $md) {
+					font-size: 50px;
+				}
+
 				@media (min-width: $xl) {
 					font-size: 70px;
 				}
 
-                @media (min-width: $xxl) {
+                @media (min-width: 1428px) {
 					font-size: 90px;
 				}
 			}
@@ -9785,10 +9810,6 @@ nav .navbar {
 	    line-height: 100%;
 	    border: none;
 	    width: auto;
-
-	    @media (min-width: $md) {
-	        font-size: 15px;
-	    }
 
 	    @media (min-width: $md) {
 	        font-size: 18px;
@@ -10081,10 +10102,6 @@ nav .navbar {
 	    line-height: 100%;
 	    border: none;
 	    width: auto;
-
-	    @media (min-width: $md) {
-	        font-size: 15px;
-	    }
 
 	    @media (min-width: $md) {
 	        font-size: 18px;

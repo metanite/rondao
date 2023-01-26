@@ -162,11 +162,11 @@ const Events = ({data}) => {
             			<h1 className="text-uppercase text-center">What is happening in the world of TRON</h1>
             		</div>
 
-                    <div className="events-main-tags col-11 col-md-6 d-flex justify-content-between mx-auto">
+                    <div className="events-main-tags col-11 col-sm-8 col-md-10 col-lg-7 col-xl-6 d-flex justify-content-between mx-auto">
                         {
-            				tags.map((tag) => {
+            				tags.map((tag, i) => {
             					return (
-            						<button type="button" className={tag === currentTag ? 'active' : ''} onClick={() => filterTags(tag)}>{tag}</button>
+            						<button key={i} type="button" className={tag === currentTag ? 'active' : ''} onClick={() => filterTags(tag)}>{tag}</button>
             					)	
             				})
             			}
@@ -192,7 +192,7 @@ const Events = ({data}) => {
                                             <div className="events-body-card-date">
                                             August 10, 2022 • NYC
                                             </div>
-                                            <div className="events-body-card-tag">
+                                            <div className="events-body-card-tag">  
                                             {event.tag}
                                             </div>
                                         </div>
@@ -220,9 +220,9 @@ const Events = ({data}) => {
                                 <div className="events-lightbox-box-slide"
                                 style={{ transform: `translateX(-${carouselIndex * 100}%)` }}>
                                 {
-                                    [selected.event.image, tronBalloon, tronBunny, tronEvent].map((img) => {
+                                    [selected.event.image, tronBalloon, tronBunny, tronEvent].map((img, i) => {
                                         return (
-                                            <img src={img} alt="sample images" className="img-fluid" />
+                                            <img key={i} src={img} alt="sample images" className="img-fluid" />
                                         )
                                     })
                                 }
@@ -262,9 +262,9 @@ const Events = ({data}) => {
                                     </div>
                                     <div className="events-lightbox-cover d-flex">
                                     {
-                                        coverImage.map(image => {
+                                        coverImage.map((image, i) => {
                                             return (
-                                                <img src={image} alt="video cover" />
+                                                <img key={i} src={image} alt="video cover" />
                                             )
                                         })
                                     }
@@ -272,8 +272,22 @@ const Events = ({data}) => {
                                 </div>
                             </div>
                             <div className="events-lightbox-buttons d-flex">
-                                <button type="button" onClick={() => navigate(selected.prev)} className="events-lightbox-prev">Previous</button>
-                                <button type="button" onClick={() => navigate(selected.next)} className="events-lightbox-next">Next</button>
+                                <button 
+                                    type="button" 
+                                    onClick={() => navigate(selected.prev)} 
+                                    className="events-lightbox-prev"
+                                    disabled={selected.prev < 0 ? true : false}
+                                >
+                                    Previous
+                                </button>
+                                <button 
+                                    type="button" 
+                                    onClick={() => navigate(selected.next)} 
+                                    className="events-lightbox-next"
+                                    disabled={selected.next > events.length - 1 ? true : false}
+                                >
+                                    Next
+                                </button>
                             </div>
                         </div>
                     </div> : ""

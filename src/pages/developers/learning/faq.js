@@ -6,7 +6,7 @@ import developer from "../../../images/home/developer.svg"
 import influencer from "../../../images/home/influencer.svg"
 import {FaSearch} from "react-icons/fa"
 
-const Faq = ({data}) => {
+const Faq = () => {
 	const [currentTopic, setTopic] = useState("USDD");
 
 	const topics = [
@@ -59,9 +59,9 @@ const Faq = ({data}) => {
             			<div className="order-1 order-lg-0">Topics:</div>
             			<div className="order-2 order-lg-0 d-flex flex-wrap">
             			{
-            				topics.map((topic) => {
+            				topics.map((topic, i) => {
             					return (
-            						<button type="button" className={topic === currentTopic ? 'active' : ''} onClick={() => setTopic(topic)}>{topic}</button>
+            						<button key={i} type="button" className={topic === currentTopic ? 'active' : ''} onClick={() => setTopic(topic)}>{topic}</button>
             					)	
             				})
             			}

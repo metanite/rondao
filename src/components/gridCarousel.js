@@ -4,7 +4,7 @@ import {FaAngleLeft, FaAngleRight, FaArrowRight, FaCircle} from "react-icons/fa"
 const GridCarousel = (data) => {
 
     const children = 6
-    const show = (window.gatsbyIsMobile) ? 1 : 3
+    const show = (typeof window !== 'undefined' && window.gatsbyIsMobile) ? 1 : 3
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const next = () => {

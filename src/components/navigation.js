@@ -145,7 +145,7 @@ const Navigation = () => {
                        aria-labelledby="dropdownMenuButton0">
                     <div className="dropdown-b d-flex flex-wrap">
                       <div
-                  			className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
+                  			className="dropdown-spacer dropdown-spacer text-left d-inline-block align-top justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <FaHubspot className="mr-2" />
                             NETWORK
@@ -207,7 +207,7 @@ const Navigation = () => {
                        aria-labelledby="dropdownMenuButton1">
                     <div className="dropdown-b d-flex flex-wrap">
                       <div
-                          className="text-left d-inline-block align-top pr-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer dropdown-spacer text-left d-inline-block align-top pr-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={globe} alt="Globe" className="mr-2"/>
                             PROGRAMS
@@ -239,7 +239,7 @@ const Navigation = () => {
                         </ul>
                       </div>
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer dropdown-spacer text-left d-inline-block align-top px-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={info_circle} alt="Info Circle" className="mr-2"/>
                             ABOUT
@@ -276,7 +276,7 @@ const Navigation = () => {
                        aria-labelledby="dropdownMenuButton2">
                     <div className="dropdown-b d-flex flex-wrap">
                       <div
-                          className="text-left d-inline-block align-top pr-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer dropdown-spacer text-left d-inline-block align-top pr-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
 													<img src={diamond} alt="Diamond" className="mr-2"/>
 													RESOURCES
@@ -325,7 +325,7 @@ const Navigation = () => {
 												</ul>
                       </div>
                       <div
-                          className="text-left d-inline-block align-top px-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer text-left d-inline-block align-top px-5 justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
 													<img src={learning} alt="Learning" className="mr-2"/>
 													LEARNING
@@ -380,33 +380,33 @@ const Navigation = () => {
                   <div style={{borderBottom: "0.5px solid #232323", width: "85%"}} className='mx-auto d-block d-sm-block d-lg-none'></div>
                   <div className={isNavDropDown4Open + ' dropdown-menu'}
                        aria-labelledby="dropdownMenuButton3">
-                    <div className="dropdown-b d-flex flex-wrap flex-column flex-md-row">
+                    <div className="dropdown-b d-flex flex-wrap flex-column flex-lg-row">
                       <div
-                          className="text-left d-inline-block align-top pl-lg-0 justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer text-left d-inline-block align-top pl-lg-0 justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={people} alt="People Icon" className="mr-2"/>
                                 COMMUNITY
                         </p>
                         <ul>
                           <li><a onClick={closeMenu} rel="noopener noreferrer" id="nav-community-home" href="/community/home">Home</a></li>
-                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-branding" href="/grants/">Branding</a></li>
-                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-tronic" href="/grants/">TRONIC</a></li>
+                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-branding" href="/#">Branding</a></li>
+                          <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-community-tronic" href="/#">TRONIC</a></li>
                         </ul>
                       </div>
 						<div
-                          className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                             <p className="dropdown-menu-subtitle">
                                 <img src={grant} alt="Contract Icon" className="mr-2"/>
                                 GRANTS
                             </p>
                             <ul>
-                                <li><a onClick={closeMenu} href="/">For Community</a></li>
-                                <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-grants-for-developers" href="/#">For Developers</a></li>
-                                <li><a onClick={closeMenu} target="_blank" rel="noopener noreferrer" id="nav-grants-for-influencers" href="/#">For Influencers</a></li>
+                                <li><a onClick={closeMenu} rel="noopener noreferrer" id="nav-grants-for-community" href="/ambassador-grants/#grants-community/">For Community</a></li>
+                                <li><a onClick={closeMenu} rel="noopener noreferrer" id="nav-grants-for-developers" href="/ambassador-grants/#grants-developers/">For Developers</a></li>
+                                <li><a onClick={closeMenu} rel="noopener noreferrer" id="nav-grants-for-influencers" href="/ambassador-grants/#grants-influencers/">For Influencers</a></li>
                             </ul>
                         </div>
                       <div
-                          className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={calendar} alt="Calendar Icon" className="mr-2"/>
                             EVENTS
@@ -418,7 +418,7 @@ const Navigation = () => {
                                 </a>
                             </li>
 							<li>
-                                <a onClick={closeMenu} href="/" rel="noopener noreferrer" id="nav-events-whale-night">
+                                <a onClick={closeMenu} href="/#" rel="noopener noreferrer" id="nav-events-whale-night">
                                     TRON Whale Night
                                 </a>
                             </li>
@@ -431,7 +431,7 @@ const Navigation = () => {
                         </ul>
                       </div>
                       <div
-                          className="text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer text-left d-inline-block align-top justify-content-center col-md-11 col-lg-2 offset-md-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle">
                             <img src={content} alt="Content Icon" className="mr-2"/>
                             CONTENT
@@ -466,9 +466,9 @@ const Navigation = () => {
                             </li>
                         </ul>
                       </div>
-					<div className="d-flex flex-column" style={{marginLeft: "0px", marginTop: "0px"}}>
+					 <div className="d-flex flex-column" style={{marginLeft: "0px", marginTop: "0px"}}>
                       <div
-                          className="text-left d-inline-block align-top px-0  justify-content-center col-md-8 offset-md-0 col-10 offset-1">
+                          className="dropdown-spacer text-left d-inline-block align-top px-0  justify-content-center col-md-11 col-lg-8 offset-lg-0 col-10 offset-1">
                         <p className="dropdown-menu-subtitle" style={{marginTop: "0px"}}>
                             <img src={node} alt="Node Icon" className="mr-2"/>
                             SOCIAL
@@ -555,7 +555,7 @@ const Navigation = () => {
                        aria-labelledby="dropdownMenuButton4">
                         <div className="dropdown-b d-flex flex-wrap">
                             <div
-                                className="text-left d-inline-block align-top  justify-content-center col-md-3 offset-md-0 col-10 offset-1">
+                                className="dropdown-spacer text-left d-inline-block align-top  justify-content-center col-md-11 col-lg-3 offset-md-0 col-10 offset-1">
                                 <p className="dropdown-menu-subtitle">
                                     <img src={globe} alt="Globe" className="mr-2"/>
                                     ECOSYSTEM

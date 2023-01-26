@@ -4,7 +4,7 @@ import tronbullCoins from "../../images/home/tronbull-coins2.png"
 const TronHelp = () => {
     return (
         <>
-        <div className="homepage-introduction col-12 col-md-7 col-lg-9 col-xxl-8 mx-auto">
+        <div className="homepage-introduction col-12 col-lg-9 col-xxl-8 mx-auto">
             <div className="homepage-introduction-header">
                 TRON is Here to Help
             </div>

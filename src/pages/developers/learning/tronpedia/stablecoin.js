@@ -49,7 +49,7 @@ const TronpediaStablecoin = () => {
 
             <div className="tronpedia-topic-page col-10 col-lg-9 col-xxl-7 mx-auto">
             	<div className="d-flex flex-column">
-            		<div className="tronpedia-topic-page-header order-2 order-lg-1">
+            		<div className="tronpedia-topic-page-header order-2 order-md-1">
             			<div>
             				<h1 className="tronpedia-topic-page-header-title">STABLECOIN</h1>
             			</div>
@@ -65,7 +65,7 @@ const TronpediaStablecoin = () => {
             				<img src={TronbullStablecoin} alt="stablecoin tronbull" className="img-fluid" />
             			</div>
             		</div>
-            		<div className="mt-5 order-1 order-lg-2">
+            		<div className="mt-5 order-1 order-md-2">
             			<TronpediaSearch />
             		</div>	
             	</div>

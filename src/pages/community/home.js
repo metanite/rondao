@@ -5,7 +5,7 @@ import checkCircle from "../../images/community/check-circle.svg"
 import avatar from "../../images/community/avatar.png"
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 
-const Community = ({data}) => {
+const Community = () => {
     return (
     	<div className="trondao-community">
             <Helmet>
@@ -42,7 +42,7 @@ const Community = ({data}) => {
                     </div>
 
                     <div className="community-row d-flex flex-column flex-md-row justify-content-center">
-                    	<div className="col-12 col-md-6">
+                    	<div className="col-12 col-md-5 col-lg-6">
                     		<div className="community-features d-flex flex-column align-items-center col-12"> 
                             <img src={checkCircle} alt="check circle with rotating arrow icon" className="mb-2 mb-lg-0"></img>
                             <h1 className="text-uppercase my-4">Adaptive</h1>
@@ -51,7 +51,7 @@ const Community = ({data}) => {
                             </p>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-5 col-lg-6">
                             <div className="community-features d-flex flex-column align-items-center col-12">
                             <img src={borderCircle} alt="circle with outside border icon" className="mb-2 mb-lg-0"></img>
                             <h1 className="text-uppercase my-4">Strong</h1>
@@ -78,7 +78,7 @@ const Community = ({data}) => {
               				TRON provides valuable funding and resources to creators who are building projects within its ecosystem.
               				</p>
               				<a 
-                                href="/#"
+                                href="/ambassador-grants/#grants-community/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 id="community-grants-button"
@@ -94,7 +94,7 @@ const Community = ({data}) => {
               				TRON is looking to support TRON eco-educators and influencers who are working on DAO-related projects and outreach.
               				</p>
               				<a 
-                                href="/"
+                                href="/ambassador-grants/#grants-influencers/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 id="influencer-grants-button"
@@ -110,7 +110,7 @@ const Community = ({data}) => {
               				TRON is looking to help developers that are making this network more secure through discovery of bugs and vulnerabilties 
               				</p>
               				<a 
-                                href="/#"
+                                href="/ambassador-grants/#grants-developers/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 id="community-grants-button"
@@ -128,11 +128,11 @@ const Community = ({data}) => {
                    		<h1 className="community-headline text-center">Responsive Team</h1>
                     </div>
 
-                    <div className="community-team-members community-trait d-flex flex-column flex-md-row justify-content-center mx-auto">
+                    <div className="community-team-members community-trait d-flex flex-column flex-md-row justify-content-center align-items-center mx-auto mx-md-0 mx-lg-auto">
                     	{
                             [...Array(3).keys()].map(i => {
                                 return (
-                                    <div key={i} className="col-12 col-md-4 mb-4 mb-md-0">
+                                    <div key={i} className="col-12 col-md-4 mb-4 mb-lg-0">
                                         <div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
                                             <img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
                                             <h1>Member Name</h1>
