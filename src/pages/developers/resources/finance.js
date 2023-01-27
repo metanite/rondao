@@ -8,7 +8,7 @@ import gear from "../../../images/finance/gear.svg"
 import dollar from "../../../images/finance/dollar.svg"
 import chats from "../../../images/finance/chats.svg"
 
-const Finance = ({data}) => {
+const Finance = () => {
     return (
     	<div className="trondao-finance">
     		<Helmet>

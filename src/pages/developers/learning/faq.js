@@ -30,7 +30,7 @@ const Faq = () => {
 
             <div className="faq">
             	<div className="faq-main">
-            		<div className="faq-main-title d-flex flex-column align-items-start justify-content-center col-11 col-lg-8 mx-auto h-100">
+            		<div className="faq-main-title d-flex flex-column align-items-start justify-content-center col-11 col-xl-8 mx-auto h-100">
             			<h1 className="text-uppercase">Your frequently Asked Questions <span>Answered</span></h1>
             			<p>
             			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et orem ipsum dolor sit amet
@@ -46,7 +46,7 @@ const Faq = () => {
 
             	<div className="faq-body col-12 col-lg-8 mx-auto">
             		<div className="faq-search d-flex">
-            			<div className="col-lg-10 col-8 position-relative">
+            			<div className="col-md-10 col-8 position-relative">
             				<FaSearch alt="search icon" size={25} className="faq-search-icon" />
             				<input type="text" className="faq-search-input" placeholder="Search topics" />
             			</div>

@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import {Helmet} from "react-helmet"
 import {FaArrowDown} from "react-icons/fa"
 
-const History = ({data}) => {
+const History = () => {
     const timelines = [
         {
             "year": "2017",
@@ -55,7 +55,7 @@ const History = ({data}) => {
 	                </div>
 				</div>
 				<div className="history-body">
-					<div className="history-body-line col-10 offset-2 col-lg-8 offset-lg-0 mx-lg-auto d-flex flex-column">
+					<div className="history-body-line col-10 offset-2 col-md-8 offset-lg-0 mx-lg-auto d-flex flex-column">
                         {
                             filteredTimelines.map((timeline, key) => {
                                 return (

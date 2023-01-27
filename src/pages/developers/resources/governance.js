@@ -8,7 +8,7 @@ import tronbullVoting from "../../../images/governance/tronbull-vote.svg"
 import tronbullLink from "../../../images/governance/tronbull-link.svg"
 import EmailCapture from "../../../components/EmailCapture"
 
-const Governance = ({data}) => {
+const Governance = () => {
     return (
         <div className="trondao-governance">
             <Helmet>
@@ -99,7 +99,7 @@ const Governance = ({data}) => {
                                     Build Your DAO
                                 </h1>
                             </div>
-                            <div className="d-flex flex-column flex-md-row justify-content-between mt-5">
+                            <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mt-5">
                                 <div className="d-flex flex-column justify-content-between">
                                     <div className="governance-body-section-circle-big d-flex justify-content-center position-relative">
                                     <div className="governance-body-section-circle-small d-flex justify-content-center align-items-center">

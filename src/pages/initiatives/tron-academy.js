@@ -10,7 +10,7 @@ import dartmouth from "../../images/academy/dartmouth.svg"
 import texas from "../../images/academy/texas.svg"
 import uci from "../../images/academy/uci.svg"
 
-const TronAcademy = ({data}) => {
+const TronAcademy = () => {
 
 	const universities = [
 		{
@@ -77,7 +77,7 @@ const TronAcademy = ({data}) => {
 		           			{
 		           				universities.map((university, i) => {
 		           					return (
-		           						<div className="tron-academy-partner-school d-flex flex-column">
+		           						<div key={i} className="tron-academy-partner-school d-flex flex-column">
 			           						<div className="tron-academy-partner-school-image d-flex justify-content-center">
 						           				<img src={university.image} alt={university.name +" logo"} />
 						           			</div>

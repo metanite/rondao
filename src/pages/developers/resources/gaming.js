@@ -6,7 +6,7 @@ import arrowDown from "../../../images/gaming/arrow-down.svg"
 import key from "../../../images/gaming/key.svg"
 import tronbullGaming from "../../../images/gaming/tronbull-gaming.svg"
 
-const Gaming = ({data}) => {
+const Gaming = () => {
     return (
         <div className="trondao-gaming">
             <Helmet>
@@ -44,22 +44,22 @@ const Gaming = ({data}) => {
                     Faster, Safer, Better
                     </div>
                     
-                    <div className="gaming-row-one d-flex flex-column flex-lg-row align-items-center">
-                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-4">
+                    <div className="gaming-row-one d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-3 col-xl-4">
                             <img src={controller} alt="nintendo controller icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Frictionless Video Game</h3>
                             <p className="">
                             Enter a new realm of high-speed entertainment where no limits are set and your imagination is free to soar.
                             </p>
                         </div>
-                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-4 mx-md-2 mx-lg-4">
+                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-3 col-xl-4 mx-md-2 mx-lg-4">
                             <img src={arrowDown} alt="arrow down icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Low Fees</h3>
                             <p className="">
                             Blurb about web3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             </p>
                         </div>
-                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-4">
+                        <div className="gaming-advantages d-flex flex-column align-items-center col-12 col-lg-3 col-xl-4">
                             <img src={key} alt="key icon" className="mb-2 mb-lg-0"></img>
                             <h3 className="text-uppercase my-4">Own Your Experience</h3>
                             <p className="">

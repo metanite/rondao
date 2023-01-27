@@ -128,11 +128,11 @@ const Community = () => {
                    		<h1 className="community-headline text-center">Responsive Team</h1>
                     </div>
 
-                    <div className="community-team-members community-trait d-flex flex-column flex-md-row justify-content-center align-items-center mx-auto mx-md-0 mx-lg-auto">
+                    <div className="community-team-members community-trait d-flex flex-column flex-md-row justify-content-center align-items-center mx-auto mx-md-0 mx-xl-auto">
                     	{
                             [...Array(3).keys()].map(i => {
                                 return (
-                                    <div key={i} className="col-12 col-md-4 mb-4 mb-lg-0">
+                                    <div key={i} className="col-12 col-md-3 col-xl-4 mb-4 mb-lg-0">
                                         <div className="community-team-member d-flex flex-column text-center justify-content-between col-12">
                                             <img src={avatar} alt="avatar" className="img-fluid d-block mx-auto"></img>
                                             <h1>Member Name</h1>

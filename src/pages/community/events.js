@@ -15,7 +15,7 @@ import videoCover3 from "../../images/events/video-cover3.png"
 import {FaAngleLeft, FaAngleRight, FaTimes, FaCircle} from "react-icons/fa"
 
 
-const Events = ({data}) => {
+const Events = () => {
     const tags = [
         'all',
         'conference',

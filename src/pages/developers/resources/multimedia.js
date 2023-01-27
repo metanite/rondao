@@ -6,7 +6,7 @@ import tronbullGraph from "../../../images/multimedia/tronbull-graph.png"
 import tronTv from "../../../images/multimedia/tron-tv.png"
 import EmailCapture from "../../../components/EmailCapture"
 
-const Multimedia = ({data}) => {
+const Multimedia = () => {
     return (
     	<div className="trondao-multimedia">
     		<Helmet>

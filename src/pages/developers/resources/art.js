@@ -6,7 +6,7 @@ import tronbullNft from "../../../images/art/tronbull-nft.png"
 import tronbullRainbow from "../../../images/art/tronbull-rainbow.png"
 import tronbullGuardCoins from "../../../images/art/tronbull-guard-coins.png"
 
-const Art = ({data}) => {
+const Art = () => {
     return (
     	<div className="trondao-art">
     		<Helmet>
@@ -100,7 +100,7 @@ const Art = ({data}) => {
                         <div className="col-12 col-md-6">
                             <img src={cryptoCoin} alt="cryto coin" className="img-fluid d-block mx-auto"></img>
                         </div>
-                        <div className="art-market-xxl col-11 col-md-5 my-5 mt-md-0">
+                        <div className="art-market-xxl d-flex flex-column align-items-center align-items-md-start col-11 col-md-5 my-5 mt-md-0">
                             <h1>APENFT</h1>
                             <p className="text-justify my-4">
                             Go beyond the ordinary with TRON's APENFT marketplace. From decreased transaction 
