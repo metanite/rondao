@@ -904,6 +904,12 @@ body {
 	color: rgba(0, 0, 0, 1);
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    @media (min-width: 993px) and (max-width: 1017px) {
+        padding-left: 0 !important;
+    }
+}
+
 .navbar-toggler {
 	font-size: 1.3rem !important;
 
@@ -7997,7 +8003,7 @@ nav .navbar {
         }
 
         &-tags {
-            @media (min-width: $xxl) {
+            @media (min-width: 1600px) {
                 max-width: 33.333333%;
             }
 
@@ -9493,6 +9499,10 @@ nav .navbar {
 				font-size: 15px;
 				line-height: 100%;
 
+                @media (min-width: $md) {
+                    font-size: 18px;
+                }
+
 				@media (min-width: $lg) {
 					font-size: 30px;
 					margin-bottom: 85px;
@@ -9506,6 +9516,11 @@ nav .navbar {
 				line-height: 100%;
 				color: #A9A9A9;
 				border-right: 1px solid #A9A9A9;
+
+                @media (min-width: $md) {
+                    font-size: 18px;
+                    margin-bottom: 25px;
+                }
 
 				@media (min-width: $lg) {
 					border-right: none;

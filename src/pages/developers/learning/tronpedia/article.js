@@ -35,7 +35,7 @@ const TronpediaArticle = () => {
                 	>
                 		<FaArrowLeft />
                 	</a>
-                	<div className="tronpedia-article-page-main-related order-2 order-md-1 col-12 col-lg-3 d-flex flex-wrap flex-lg-nowrap flex-row flex-md-column align-items-start">
+                	<div className="tronpedia-article-page-main-related order-2 order-md-1 col-12 col-md-3 d-flex flex-wrap flex-lg-nowrap flex-row flex-md-column align-items-start">
                 		<div>
                 			<h2 className="flex-fill">Related Articles</h2>
                 		</div>
